@@ -165,9 +165,9 @@ export const blogPosts = [
   },
   {
     "slug": "outsourcing-for-small-businesses-provider-questions",
-    "title": "Outsourcing Small Businesses: Questions to ask before hiring",
-    "excerpt": "Use these questions before you sign with a provider or freelancer.",
-    "minutes": 8
+    "title": "Questions to Ask an Outsourcing Provider Before You Hire",
+    "excerpt": "A practical provider call guide for checking role fit, quality, data access, pricing, and exit terms.",
+    "minutes": 10
   },
   {
     "slug": "outsourcing-for-small-businesses-onboarding-checklist",
@@ -176,6 +176,76 @@ export const blogPosts = [
     "minutes": 9
   }
 ] as const;
+
+export const blogDetails = {
+  "outsourcing-for-small-businesses-provider-questions": {
+    takeaways: [
+      "Ask who will do the work, who checks it, and who steps in when the usual worker is absent.",
+      "Test the provider with one real task before you hand over a full role or broad tool access.",
+      "Put approval limits, data access, total fees, and exit steps in writing before work starts."
+    ],
+    readinessRows: [
+      { topic: "Role fit", weak: "We can handle anything you need.", useful: "We would start with inbox triage and CRM updates, then review five samples before adding customer replies." },
+      { topic: "Quality", weak: "Our people are fully trained.", useful: "A team lead checks the first ten items against your examples and sends the misses back for correction." },
+      { topic: "Coverage", weak: "We always have backup.", useful: "One named backup shadows the role and can access the approved SOPs if the main worker is out." },
+      { topic: "Data access", weak: "Our systems are secure.", useful: "Each worker gets a separate account, MFA, and only the folders needed for the assigned tasks." },
+      { topic: "Exit", weak: "You can cancel at any time.", useful: "Within five business days we return your files, remove user access, and confirm deletion in writing." }
+    ],
+    sections: [
+      {
+        heading: "Start with the work, not the sales deck",
+        paragraphs: [
+          "A provider call gets vague fast when the role is vague. Bring three recurring tasks, one example of finished work, the tools involved, and the decisions that must stay with you. Ask the provider to explain how those exact tasks would move from request to review.",
+          "Listen for details. Who receives the task? Where is it tracked? What does the worker do when information is missing? Who checks the first batch? A useful answer names people, steps, and limits. A weak answer leans on words such as talent, experience, or flexibility without showing how the work gets done.",
+          "Do not hand over a whole department on day one. A paid sample or narrow two week pilot gives you real work to judge. Pick a task that happens often enough to test but will not hurt a customer or move money if someone makes a mistake."
+        ]
+      },
+      {
+        heading: "Ask who manages quality when you are busy",
+        paragraphs: [
+          "Small business owners often outsource because they already have too much to check. If the provider's quality plan depends on you reviewing every item forever, you have bought another job for yourself.",
+          "Ask what the team lead checks during the first week and what changes after the worker is steady. Request a sample scorecard. It can be simple: work completed, errors found, late items, open questions, and owner decisions needed. Ask who corrects a mistake and whether rework is included in the fee.",
+          "Then ask about absence and turnover. You need to know whether a backup has seen the SOP, how quickly the provider tells you about a staffing change, and whether you pay again for replacement training. A promise of backup coverage means little until the handoff steps are clear."
+        ]
+      },
+      {
+        heading: "Set limits around accounts and customer data",
+        paragraphs: [
+          "Ask the provider to describe access for this role, not security in general. Will the worker have a separate login? Is multi-factor authentication required? Can you remove access yourself? Which files can the team download? How does the provider remove access when a worker leaves?",
+          "Start with the least access the person needs. Customer support may need order lookup without refund approval. Bookkeeping help may prepare records without the power to send money. Admin help may draft email without sending it. These limits protect the business and make the worker's job easier because the decision line is visible.",
+          "NIST's Cybersecurity Framework is built around managing risk, while CISA recommends strong passwords and MFA. You do not need to turn a provider call into a security audit. You do need plain answers about accounts, permissions, device rules, incident reporting, and offboarding."
+        ]
+      },
+      {
+        heading: "Check the full cost and the way out",
+        paragraphs: [
+          "Ask for the full monthly amount and what can change it. Check setup fees, management fees, minimum hours, overtime, holiday coverage, software seats, replacement costs, and notice periods. If exchange rates can change the bill, ask how and when the rate is set.",
+          "Also confirm what kind of relationship you are buying. A managed provider, staffing firm, independent contractor, and direct employee can create different duties for your business. The IRS says the label in a contract does not decide worker status by itself. Control and the real working relationship matter. Ask your tax or legal adviser about your facts rather than accepting a provider's general answer.",
+          "Read the exit terms before the start date. Ask how you receive files, notes, passwords, and unfinished work. Confirm when accounts are removed and whether the provider will give reasonable transition help. A clean exit plan is useful even when the relationship goes well."
+        ]
+      }
+    ],
+    callScript: [
+      "We want help with [three tasks]. The work happens [daily or weekly] in [tools]. Walk me through who does each step and who checks the first batch.",
+      "These decisions must stay with us: [refunds, payments, account changes, legal issues]. How will your team pause and ask for approval?",
+      "Please show us a sample weekly report and explain what happens after an error, an absence, or a staffing change.",
+      "Which accounts will the worker need? Tell us how you use separate logins, MFA, limited permissions, and access removal.",
+      "What is the full cost, what can raise it, and what happens to our files and accounts if we end the service?"
+    ],
+    faqs: [
+      { q: "Should I ask an outsourcing provider for client references?", a: "Yes, but ask for a reference with a similar role and team size. Ask what went wrong during the first month, how the provider handled it, and how much owner review the work still needs." },
+      { q: "Is the lowest hourly rate the best way to compare providers?", a: "No. Compare the full monthly cost, management included, expected output, review time, backup coverage, and exit terms. A low rate can cost more if your team must redo the work." },
+      { q: "What should I test before signing a longer contract?", a: "Use one real recurring task with a clear example and a short quality checklist. Check the result, response to feedback, reporting, and whether the provider follows approval limits." },
+      { q: "What should stay under the owner's control?", a: "Keep money movement, pricing changes, legal responses, hiring decisions, broad account access, and unusual customer remedies with the owner or a named manager until written rules are proven." }
+    ],
+    sources: [
+      { name: "U.S. Small Business Administration: Hire and manage employees", url: "https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees", note: "Small business guidance on hiring, pay, records, and management duties." },
+      { name: "IRS: Independent contractor defined", url: "https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-defined", note: "Explains that worker status depends on the facts and the degree of control, not only a contract label." },
+      { name: "NIST Cybersecurity Framework", url: "https://www.nist.gov/cyberframework", note: "A risk management framework for identifying and reducing cybersecurity risk." },
+      { name: "CISA: Use strong passwords", url: "https://www.cisa.gov/secure-our-world/use-strong-passwords", note: "Practical account protection guidance, including strong passwords and multi-factor authentication." }
+    ]
+  }
+} as const;
 
 export const stats = [{label:'Typical savings target',value:'30-60%',note:'depends on role, management, and local hiring plan'},{label:'Best pilot length',value:'14 days',note:'enough time to test quality before scaling'},{label:'Start with',value:'5-10 tasks',note:'clear recurring tasks beat vague job descriptions'}] as const;
 
