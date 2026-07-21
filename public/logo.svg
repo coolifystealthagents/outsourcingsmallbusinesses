@@ -1,6 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Site logo">
-  <rect width="96" height="96" rx="24" fill="#17324D"/>
-  <path d="M24 60V29h13l22 28V29h13v38H59L37 39v28H24z" fill="#FFF8EE"/>
-  <circle cx="70" cy="26" r="8" fill="#F27B3D"/>
-  <path d="M22 73c15-8 36-8 52 0" fill="none" stroke="#0F8F73" stroke-width="8" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Outsourcing Small Businesses logo">
+  <rect width="96" height="96" rx="24" fill="#E45F3A"/>
+  <path d="M24 24h48a8 8 0 0 1 8 8v40H32a8 8 0 0 1-8-8V24Z" fill="#FFF8ED"/>
+  <path d="M37 43l7 7 15-17" fill="none" stroke="#0B655D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M38 62h26" fill="none" stroke="#172A3A" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="76" cy="76" r="12" fill="#172A3A"/>
+  <path d="M71 76h10M76 71v10" stroke="#FFF8ED" stroke-width="4" stroke-linecap="round"/>
 </svg>

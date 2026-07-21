@@ -9,16 +9,16 @@ export const site = {
   "dark": "#1a2e05",
   "color": "#65a30d",
   "accent": "#2563eb",
-  "heroImage": "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80",
-  "serviceImage": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
-  "alt": "small business owner working with virtual support team",
+  "heroImage": "/filipino-support-workspace.jpg",
+  "serviceImage": "/filipino-support-workspace.jpg",
+  "alt": "professional working at a laptop in a bright workspace",
   "badge": "Small biz ops"
 } as const;
 
 export const services = [
   {
     "slug": "operations-support",
-    "title": "Operations Support",
+    "title": "Operations support",
     "desc": "Operations support for small businesses that need SOPs, follow-up, task tracking, and owner review without adding another full-time manager.",
     "buyerProblem": "The owner is still chasing tasks, checking handoffs, and answering the same internal questions every week.",
     "bestTasks": [
@@ -51,9 +51,9 @@ export const services = [
   },
   {
     "slug": "customer-support",
-    "title": "Customer Support",
+    "title": "Customer support",
     "desc": "Customer support outsourcing for small businesses that need faster replies, better ticket notes, and clear escalation rules.",
-    "buyerProblem": "Customer messages sit too long, but the owner does not want an offshore staff member making refund or account decisions alone.",
+    "buyerProblem": "Customer messages sit too long, but the owner does not want a Filipino team member making refund or account decisions alone.",
     "bestTasks": [
       "answer common email, chat, and helpdesk questions from approved macros",
       "tag tickets by issue type, urgency, product, or customer status",
@@ -84,7 +84,7 @@ export const services = [
   },
   {
     "slug": "admin-support",
-    "title": "Admin Support",
+    "title": "Admin support",
     "desc": "Admin support for small businesses that need calendar help, inbox cleanup, data entry, document prep, and simple reporting.",
     "buyerProblem": "Small admin jobs steal hours from sales, service delivery, and owner follow-up.",
     "bestTasks": [
@@ -153,25 +153,25 @@ export const services = [
 export const blogPosts = [
   {
     "slug": "outsourcing-for-small-businesses-planning",
-    "title": "Outsourcing Small Businesses: What does it plan?",
-    "excerpt": "A plain-English guide to staffing details, scope, and hidden planning.",
+    "title": "A plain-English plan for your first outsourced role",
+    "excerpt": "Turn a pile of recurring work into a role with clear limits and a useful finish line.",
     "minutes": 6
   },
   {
     "slug": "outsourcing-for-small-businesses-tasks-to-outsource",
-    "title": "Outsourcing Small Businesses: What tasks should you outsource first?",
+    "title": "The first tasks to hand off in a small business",
     "excerpt": "Start with recurring work that has examples and clear review rules.",
     "minutes": 7
   },
   {
     "slug": "outsourcing-for-small-businesses-provider-questions",
-    "title": "Questions to Ask an Outsourcing Provider Before You Hire",
+    "title": "Questions to ask an outsourcing provider before you hire",
     "excerpt": "A practical provider call guide for checking role fit, quality, data access, pricing, and exit terms.",
     "minutes": 10
   },
   {
     "slug": "outsourcing-for-small-businesses-onboarding-checklist",
-    "title": "Outsourcing Small Businesses: First week onboarding checklist",
+    "title": "A first-week checklist for Filipino talent",
     "excerpt": "A simple checklist for tools, SOPs, calls, QA, and reporting.",
     "minutes": 9
   }
@@ -247,13 +247,17 @@ export const blogDetails = {
   }
 } as const;
 
-export const stats = [{label:'Typical savings target',value:'30-60%',note:'depends on role, management, and local hiring plan'},{label:'Best pilot length',value:'14 days',note:'enough time to test quality before scaling'},{label:'Start with',value:'5-10 tasks',note:'clear recurring tasks beat vague job descriptions'}] as const;
+export const stats = [
+  { label: 'Hiring location', value: 'Philippines', note: 'Filipino talent only' },
+  { label: 'Planning approach', value: 'Scope first', note: 'define the work before matching' },
+  { label: 'Owner control', value: 'Approval lines', note: 'keep sensitive decisions visible' },
+] as const;
 
 export const staffingOffer = {
   partner: 'our staffing team',
-  promise: 'Get a managed offshore staffing plan built around the work you need removed from your plate.',
+  promise: 'Get a managed Filipino staffing plan built around the work you need removed from your plate.',
   fit: [
-    'business owners who need reliable remote staff but do not want to screen alone',
+    'business owners who need reliable Filipino talent but do not want to screen alone',
     'teams that want trained support, backup coverage, and a clear manager path',
     'companies that need help with admin, operations, customer support, calls, bookkeeping, development, or marketing work',
   ],
@@ -281,9 +285,9 @@ export const leadQuestions = [
 
 export const staffingProcess = [
   { step: '1', title: 'Map the role', body: 'We turn messy tasks into one clear role with outcomes, tools, limits, and a first-week checklist.' },
-  { step: '2', title: 'Match the staff', body: 'our staffing team can help match remote staff to the work, schedule, communication style, and skill level you need.' },
+  { step: '2', title: 'Match the staff', body: 'The staffing team can match Filipino talent to the work, schedule, communication style, and skill level you need.' },
   { step: '3', title: 'Launch with control', body: 'Start with SOPs, sample work, limited access, daily review, and a simple scorecard so quality is easy to see.' },
   { step: '4', title: 'Scale what works', body: 'Once the first tasks are stable, add more work, better reporting, and stronger delegation without guessing.' },
 ] as const;
 
-export const staffingFitNote = 'Every staffing plan depends on role scope, schedule, skills, tools, and management needs. Send the role details and our staffing team can guide the best fit.';
+export const staffingFitNote = 'Every plan is built for talent recruited and hired in the Philippines. Role scope, schedule, skills, tools, and management needs determine the fit.';
