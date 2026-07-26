@@ -1,10 +1,13 @@
 import type { Metadata } from 'next';
 import { Header, Footer, CTA, JsonLd } from '../../components';
 import { blogDetails, blogPosts, site } from '../../data';
+import { richBlogDetails, type RichBlogDetail } from '../../rich-blog-data';
+import { StrictEvidenceArticle } from './strict-evidence-article';
 
 const baseUrl = 'https://outsourcingsmallbusinesses.com';
 type BlogDetail = (typeof blogDetails)[keyof typeof blogDetails];
 const detailsBySlug = blogDetails as Partial<Record<string, BlogDetail>>;
+const richDetailsBySlug = richBlogDetails as Partial<Record<string, RichBlogDetail>>;
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -153,5 +156,6 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const { slug } = await params;
   const post = blogPosts.find((item) => item.slug === slug) || blogPosts[0];
   const detail = detailsBySlug[slug];
-  return <><Header /><main className="section">{detail ? <RichArticle post={post} detail={detail} /> : <><LegacyArticle post={post} /><CTA /></>}</main><Footer /></>;
+  const richDetail = richDetailsBySlug[slug];
+  return <><Header articleMode /><main className="section">{richDetail ? <StrictEvidenceArticle post={post} detail={richDetail} /> : detail ? <RichArticle post={post} detail={detail} /> : <><LegacyArticle post={post} /><CTA /></>}</main><Footer articleMode /></>;
 }

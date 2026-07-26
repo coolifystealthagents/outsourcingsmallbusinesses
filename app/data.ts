@@ -174,6 +174,12 @@ export const blogPosts = [
     "title": "A first-week checklist for Filipino talent",
     "excerpt": "A simple checklist for tools, SOPs, calls, QA, and reporting.",
     "minutes": 9
+  },
+  {
+    "slug": "philippines-outsourced-support-account-access-checklist",
+    "title": "Account access checklist for Philippines-based outsourced support",
+    "excerpt": "Give a Filipino support specialist the access needed to work while keeping approvals, account ownership, and removal steps clear.",
+    "minutes": 12
   }
 ] as const;
 
