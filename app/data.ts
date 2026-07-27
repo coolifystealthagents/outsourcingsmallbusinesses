@@ -152,28 +152,10 @@ export const services = [
 
 export const blogPosts = [
   {
-    "slug": "outsourcing-for-small-businesses-planning",
-    "title": "A plain-English plan for your first outsourced role",
-    "excerpt": "Turn a pile of recurring work into a role with clear limits and a useful finish line.",
-    "minutes": 6
-  },
-  {
-    "slug": "outsourcing-for-small-businesses-tasks-to-outsource",
-    "title": "The first tasks to hand off in a small business",
-    "excerpt": "Start with recurring work that has examples and clear review rules.",
-    "minutes": 7
-  },
-  {
     "slug": "outsourcing-for-small-businesses-provider-questions",
     "title": "Questions to ask an outsourcing provider before you hire",
     "excerpt": "A practical provider call guide for checking role fit, quality, data access, pricing, and exit terms.",
     "minutes": 10
-  },
-  {
-    "slug": "outsourcing-for-small-businesses-onboarding-checklist",
-    "title": "A first-week checklist for Filipino talent",
-    "excerpt": "A simple checklist for tools, SOPs, calls, QA, and reporting.",
-    "minutes": 9
   },
   {
     "slug": "philippines-outsourced-support-account-access-checklist",

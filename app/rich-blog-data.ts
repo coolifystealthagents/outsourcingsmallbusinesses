@@ -95,7 +95,7 @@ export const richBlogDetails = {
     ],
     internalLinks: [
       { href: "/services/supplier-coordination", label: "Supplier coordination with task tracking and owner review" },
-      { href: "/blog/outsourcing-for-small-businesses-onboarding-checklist", label: "First-week checklist for Filipino talent" },
+      { href: "/blog", label: "First-week checklist for Filipino talent" },
       { href: "/services/owner-dashboard-reporting", label: "Owner dashboard reporting with clear source links" }
     ],
     faqs: [

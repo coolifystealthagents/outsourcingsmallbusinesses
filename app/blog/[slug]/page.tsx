@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { Header, Footer, CTA, JsonLd } from '../../components';
 import { blogDetails, blogPosts, site } from '../../data';
@@ -154,7 +155,8 @@ function LegacyArticle({ post }: { post: (typeof blogPosts)[number] }) {
 
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const post = blogPosts.find((item) => item.slug === slug) || blogPosts[0];
+  const post = blogPosts.find((item) => item.slug === slug);
+  if (!post) notFound();
   const detail = detailsBySlug[slug];
   const richDetail = richDetailsBySlug[slug];
   return <><Header articleMode /><main className="section">{richDetail ? <StrictEvidenceArticle post={post} detail={richDetail} /> : detail ? <RichArticle post={post} detail={detail} /> : <><LegacyArticle post={post} /><CTA /></>}</main><Footer articleMode /></>;
