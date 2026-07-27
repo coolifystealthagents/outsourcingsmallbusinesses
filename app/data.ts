@@ -162,6 +162,12 @@ export const blogPosts = [
     "title": "Account access checklist for Philippines-based outsourced support",
     "excerpt": "Give a Filipino support specialist the access needed to work while keeping approvals, account ownership, and removal steps clear.",
     "minutes": 12
+  },
+  {
+    "slug": "philippines-outsourced-support-incident-response-checklist",
+    "title": "Incident response checklist for Philippines-based outsourced support",
+    "excerpt": "Give a Philippines-based support specialist a clear way to report, contain, and document a suspected cyber incident. Keep evidence, customer-data decisions, recovery approval, and follow-up under business control.",
+    "minutes": 14
   }
 ] as const;
 

@@ -206,6 +206,7 @@ h1, h2 { font-family: var(--serif); letter-spacing: -.035em; }
 .evidence-chart, .access-graphic { border: 1px solid var(--line); border-radius: 18px; padding: 30px; background: var(--white); }
 .article-chart-svg, .article-process-svg { display: block; width: 100%; height: auto; margin-top: 22px; overflow: visible; }
 .visual-scroll { overflow-x: auto; }
+.visual-scroll:focus-visible, .guide-table-wrap:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 .visual-scroll::before { display: none; content: attr(data-scroll-cue); }
 .chart-label, .chart-value, .chart-detail, .process-number, .process-label, .process-note { font-family: var(--font); fill: var(--ink); }
 .chart-label, .process-label { font-size: 18px; font-weight: 800; }

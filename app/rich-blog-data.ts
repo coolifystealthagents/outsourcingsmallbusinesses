@@ -110,6 +110,132 @@ export const richBlogDetails = {
       { name: "CISA: Turn on multifactor authentication", url: "https://www.cisa.gov/secure-our-world/turn-mfa", note: "Account-protection guidance explaining why a second sign-in step helps when a password is stolen." },
       { name: "Republic Act No. 10173: Data Privacy Act of 2012", url: "https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html", note: "Philippine statutory text covering the protection of personal information and security measures." }
     ]
+  },
+  "philippines-outsourced-support-incident-response-checklist": {
+    revision: "incident-plan-2026-07-27",
+    publicationDate: "2026-07-27",
+    eyebrow: "Incident response field guide",
+    takeaways: [
+      "Stop the spread first, but preserve a simple record of what the support specialist saw and changed.",
+      "Use one owner-controlled channel for urgent reporting, especially when the normal inbox or chat may be affected.",
+      "Decide who handles customer records, regulator questions, recovery, and the return to work before an alert arrives."
+    ],
+    stats: [
+      { value: 31, label: "Breaches that now start with software vulnerabilities", shortLabel: "Software gaps" },
+      { value: 48, label: "Breaches that now involve ransomware", shortLabel: "Ransomware" },
+      { value: 15, label: "Attack techniques now bolstered by generative AI", shortLabel: "AI-assisted attacks" }
+    ],
+    methodsNote: "Methods note: Verizon published these three figures on its 2026 Data Breach Investigations Report page. The report draws on a global incident dataset, rather than a sample of Philippine support teams. The figures help set response priorities, but they do not measure any worker, provider, or country.",
+    tableRows: [
+      { task: "Unexpected sign-in", access: "End sessions and disable the named user", owner: "Preserve sign-in and account-change logs", proof: "Incident time, account, action, and reviewer" },
+      { task: "Suspicious customer message", access: "Pause links, attachments, and outbound replies", owner: "Save the original message and headers", proof: "Ticket link, screenshot, and escalation time" },
+      { task: "Possible data exposure", access: "Restrict the affected folder or queue", owner: "Record the data types and people involved", proof: "Access list and a dated event log" },
+      { task: "Malware or ransomware warning", access: "Disconnect the device from business networks", owner: "Keep the device powered and call technical help", proof: "Alert text, device name, and last known task" },
+      { task: "Recovery and return", access: "Use a clean device and reset credentials", owner: "Approve restored systems and support lanes", proof: "Recovery check, owner sign-off, and follow-up date" }
+    ],
+    sections: [
+      {
+        heading: "Define an incident in plain language",
+        paragraphs: [
+          "An outsourced support incident is any event that may put customer information, business systems, or service continuity at risk. It can begin with a strange sign-in, an unexpected verification prompt, a customer message carrying a suspicious file, a missing device, or a tool that suddenly encrypts records. The first report does not need to prove what happened; it needs to give the owner enough facts to start a controlled response.",
+          "Write a short trigger list beside the daily support procedure and show it during onboarding. Tell the Philippines-based specialist to report the event even when it turns out to be harmless, because silence removes the chance to check logs while they are still useful. Do not punish prompt reporting or ask the worker to investigate beyond the access and technical skill already assigned."
+        ]
+      },
+      {
+        heading: "Make the first report useful",
+        paragraphs: [
+          "Ask for six facts: who noticed the event, when it was noticed, which device or account was involved, what appeared on screen, what work was underway, and what action has already been taken. These details form a first timeline without asking the worker to diagnose malware or decide whether a breach is legally reportable. The specialist should use exact times with a time zone so a Manila shift and an overseas owner can line up events.",
+          "Preserve the original ticket, message, alert, or screen text when that can be done without opening a suspicious file again. A screenshot can help, but it should not expose more customer information than the incident record needs. Put the evidence in an owner-controlled case folder and limit that folder to the people handling the response."
+        ]
+      },
+      {
+        heading: "Contain the event without destroying clues",
+        paragraphs: [
+          "Containment means reducing the chance that the event spreads while keeping enough evidence to understand it. The owner may end active sessions, disable the named account, limit a shared folder, block a sender, or pause an integration after considering the business impact. The support specialist should not delete messages, wipe a device, reinstall software, or reset every account unless the response lead gives that instruction.",
+          "For a suspicious device, disconnect it from Wi-Fi, wired networks, and removable drives if this can be done safely. Leave it powered on, note what is visible, and contact the technical responder because shutting it down can remove information held in memory. Move urgent support work to a known clean device only after the owner creates a separate account path and confirms which records may be used."
+        ]
+      },
+      {
+        heading: "Protect Philippine customer information",
+        paragraphs: [
+          "The Philippine Data Privacy Act of 2012 requires reasonable and appropriate organizational, physical, and technical measures for personal information. It also places duties around security incidents and breaches, so the response lead should quickly identify what customer or worker data may be involved. This operational checklist cannot decide whether a particular event triggers notice, and the business should obtain qualified Philippine advice for that decision.",
+          "Create a small data map before an incident occurs. List the customer fields visible in the support queue, where attachments are stored, which people can export records, and which business owns each notice decision. During the event, record data categories and likely access rather than copying whole customer files into the timeline."
+        ]
+      },
+      {
+        heading: "Recover one support lane at a time",
+        paragraphs: [
+          "Recovery should restore a known clean service, not simply reopen every tool because the queue is growing. Confirm that the affected weakness is fixed, scan or replace the device as directed by technical help, reset exposed credentials, and review recovery methods before enabling the worker. Start with one low-risk support lane and watch account activity before restoring exports, connected applications, or broader permissions.",
+          "Tell the specialist exactly which device, account, and procedure are approved for the return. Give customers a reviewed service message when delays affect them, but do not speculate about cause, scope, or blame while facts are still being checked. Keep legal and notification language with the owner and qualified advisers rather than asking a frontline worker to improvise it."
+        ]
+      },
+      {
+        heading: "Learn from the response without blaming the reporter",
+        paragraphs: [
+          "Hold a short review after service is stable and the urgent evidence is secured. Rebuild the timeline, compare actions with the checklist, and identify where contacts, permissions, backups, or instructions slowed the response. Focus on changes to the system of work rather than assumptions about the worker's location or character.",
+          "Choose a small number of follow-up actions with an owner and due date. Useful actions may include removing an unused integration, shortening log retention gaps, revising an escalation message, testing a backup contact, or limiting downloads from the support tool. Track completion in the same owner dashboard used for normal operations so the lessons do not disappear in an archived case folder."
+        ]
+      }
+    ],
+    quote: {
+      text: "This publication seeks to assist organizations with incorporating cybersecurity incident response recommendations and considerations throughout their cybersecurity risk management activities as described by the NIST Cybersecurity Framework (CSF) 2.0.",
+      attribution: "Alexander Nelson, Sanjay Rekhi, Murugiah Souppaya, and Karen Scarfone, NIST Special Publication 800-61 Revision 3, April 2025",
+      url: "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+    },
+    graphicSteps: [
+      { step: "1", label: "Report", note: "Send facts by the safe channel" },
+      { step: "2", label: "Contain", note: "Limit spread and preserve clues" },
+      { step: "3", label: "Recover", note: "Restore one clean work lane" },
+      { step: "4", label: "Review", note: "Fix the plan and test it" }
+    ],
+    accessScript: [
+      "I noticed [event] at [time and time zone] while working in [account, device, or queue].",
+      "The screen or message showed [exact words], and the last normal task was [task].",
+      "I have [paused work, disconnected the device, or taken no action] and have not deleted files or reset accounts.",
+      "The evidence available is [ticket, alert, screenshot, or log], stored at [approved location].",
+      "Please confirm the safe channel and tell me whether to keep the device on, end a session, or move work."
+    ],
+    banners: [
+      { label: "Before an alert", title: "Map named account access", body: "Use the account access guide to reduce exposure and make urgent session removal possible.", href: "/blog/philippines-outsourced-support-account-access-checklist", cta: "Open the access guide" },
+      { label: "During recovery", title: "Keep the customer queue controlled", body: "Reopen a narrow inbox lane with reviewed replies and clear owner escalation rules.", href: "/services/customer-inbox-management", cta: "Plan inbox work" },
+      { label: "Build the support role", title: "Bring us the task and control list", body: "Share the tools, schedule, review owner, and decisions that must remain with your business.", href: "/contact", cta: "Contact us" }
+    ],
+    internalLinks: [
+      { href: "/services/owner-dashboard-reporting", label: "Track response actions in an owner dashboard" },
+      { href: "/services/operations-support", label: "Keep response procedures with the operations support plan" },
+      { href: "/blog/philippines-outsourced-support-account-access-checklist", label: "Set safer account access before an incident" }
+    ],
+    faqs: [
+      { q: "Should a support specialist shut down a suspicious computer?", a: "Not automatically, because powering down can remove useful evidence and may interrupt containment work. Disconnect it from networks when safe, leave it powered, and follow the technical response lead's instruction." },
+      { q: "What should the first incident message contain?", a: "Include the reporter, time and time zone, account or device, exact alert, current task, action already taken, and available evidence. Send it through the agreed safe channel and wait for an acknowledgement." },
+      { q: "Who decides whether Philippine data breach notice is required?", a: "The business's designated decision owner should work with qualified privacy and legal advisers using the facts of the event. A frontline support specialist should report facts promptly but should not make the legal determination." },
+      { q: "When can outsourced support return to work?", a: "Return after the response lead confirms a clean device, fresh credentials, corrected weakness, working logs, and an approved support lane. Restore broader permissions only after the narrow lane works as expected." }
+    ],
+    sources: [
+      { name: "Verizon: 2026 Data Breach Investigations Report", url: "https://www.verizon.com/business/resources/reports/dbir/", note: "Published in 2026. The official report page supplies the dated 31%, 48%, and 15% findings used in the chart and narrative." },
+      { name: "NIST Special Publication 800-61 Revision 3: Incident Response Recommendations and Considerations for Cybersecurity Risk Management", url: "https://csrc.nist.gov/pubs/sp/800/61/r3/final", note: "Published in April 2025. The block quotation reproduces the first sentence of the official abstract exactly." },
+      { name: "Republic Act No. 10173: Data Privacy Act of 2012", url: "https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html", note: "Official Philippine statutory text addressing personal-information security and security incidents." },
+      { name: "CISA: Incident Response", url: "https://www.cisa.gov/topics/cyber-threats-and-response/incident-response", note: "Official guidance explaining why organizations need clear, executable response plans and strategies." }
+    ],
+    display: {
+      chartEyebrow: "Dated breach evidence",
+      chartHeading: "Three patterns to prepare for in 2026",
+      chartTitle: "Three incident response findings from Verizon's 2026 Data Breach Investigations Report",
+      chartDescription: "Horizontal bars show 31 percent of breaches starting with software vulnerabilities, 48 percent involving ransomware, and 15 percent of attack techniques bolstered by generative AI.",
+      tableEyebrow: "First-action matrix",
+      tableHeading: "Choose a safe first action and preserve proof",
+      tableIntroduction: "Use this matrix to plan the first few minutes, then adapt it with technical and legal advisers who know your systems. Every action needs a named decision owner and a dated record.",
+      tableHeaders: ["Signal", "First containment step", "Evidence to preserve", "Minimum incident record"],
+      quoteHeading: "Put response inside everyday risk management",
+      graphicEyebrow: "Response cycle",
+      graphicHeading: "Move from report to a tested improvement",
+      graphicTitle: "Four-stage outsourced support incident response cycle",
+      graphicDescription: "Report facts through a safe channel, contain the event while preserving evidence, recover one clean work lane, then review and test improvements.",
+      graphicNote: "The response cycle stays under business control even when a provider supplies technical help. Keep contacts, evidence, and recovery approvals somewhere the owner can reach if the normal support systems are unavailable.",
+      scriptEyebrow: "Copy-ready alert",
+      scriptHeading: "First incident message for a support specialist",
+      relatedHeading: "Strengthen the surrounding support process"
+    }
   }
 } as const;
 

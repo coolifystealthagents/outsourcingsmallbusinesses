@@ -9,6 +9,8 @@ type Post = { slug: string; title: string; excerpt: string; minutes: number };
 export function StrictEvidenceArticle({ post, detail }: { post: Post; detail: RichBlogDetail }) {
   const url = `${baseUrl}/blog/${post.slug}`;
   const articleId = `${url}#article`;
+  const display = 'display' in detail ? detail.display : undefined;
+  const publicationDate = 'publicationDate' in detail ? detail.publicationDate : '2026-07-25';
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -18,8 +20,8 @@ export function StrictEvidenceArticle({ post, detail }: { post: Post; detail: Ri
         headline: post.title,
         description: post.excerpt,
         url,
-        datePublished: '2026-07-25',
-        dateModified: '2026-07-25',
+        datePublished: publicationDate,
+        dateModified: publicationDate,
         author: { '@type': 'Organization', name: site.brand },
         publisher: { '@type': 'Organization', name: site.brand, url: baseUrl },
         citation: detail.sources.map((source) => source.url),
@@ -66,12 +68,12 @@ export function StrictEvidenceArticle({ post, detail }: { post: Post; detail: Ri
       </section>
 
       <section className="evidence-chart" aria-labelledby="breach-chart-heading">
-        <p className="eyebrow">2026 evidence check</p>
-        <h2 id="breach-chart-heading">Why small access steps matter</h2>
-        <div className="visual-scroll" data-scroll-cue="Swipe to read the chart">
+        <p className="eyebrow">{display?.chartEyebrow ?? '2026 evidence check'}</p>
+        <h2 id="breach-chart-heading">{display?.chartHeading ?? 'Why small access steps matter'}</h2>
+        <div className="visual-scroll" data-scroll-cue="Swipe to read the chart" tabIndex={0} aria-label="Scrollable evidence chart">
         <svg className="article-chart-svg" viewBox="0 0 760 330" role="img" aria-labelledby="breach-chart-title breach-chart-desc">
-          <title id="breach-chart-title">Three findings from Verizon's 2026 Data Breach Investigations Report</title>
-          <desc id="breach-chart-desc">Horizontal bars show 31 percent for breaches starting with software vulnerabilities, 48 percent for breaches involving ransomware, and 15 percent for attack techniques bolstered by generative AI.</desc>
+          <title id="breach-chart-title">{display?.chartTitle ?? "Three findings from Verizon's 2026 Data Breach Investigations Report"}</title>
+          <desc id="breach-chart-desc">{display?.chartDescription ?? 'Horizontal bars show 31 percent for breaches starting with software vulnerabilities, 48 percent for breaches involving ransomware, and 15 percent for attack techniques bolstered by generative AI.'}</desc>
           {detail.stats.map((stat, index) => {
             const y = 38 + index * 92;
             return <g key={stat.shortLabel}>
@@ -90,12 +92,12 @@ export function StrictEvidenceArticle({ post, detail }: { post: Post; detail: Ri
       <Banner index={0} />
 
       <section aria-labelledby="access-table-heading">
-        <p className="eyebrow">Permission map</p>
-        <h2 id="access-table-heading">Match each task to a smaller account role</h2>
-        <p>Use this table as a starting point, then adjust it to the tools and records in your business. Each row keeps a sensitive decision with the owner and gives the specialist a visible way to prove the work.</p>
-        <div className="guide-table-wrap" data-scroll-cue="Swipe to see all columns">
+        <p className="eyebrow">{display?.tableEyebrow ?? 'Permission map'}</p>
+        <h2 id="access-table-heading">{display?.tableHeading ?? 'Match each task to a smaller account role'}</h2>
+        <p>{display?.tableIntroduction ?? 'Use this table as a starting point, then adjust it to the tools and records in your business. Each row keeps a sensitive decision with the owner and gives the specialist a visible way to prove the work.'}</p>
+        <div className="guide-table-wrap" data-scroll-cue="Swipe to see all columns" tabIndex={0} aria-label="Scrollable first-action table">
           <table className="guide-table access-table">
-            <thead><tr><th>Task</th><th>Specialist access</th><th>Owner keeps</th><th>Work proof</th></tr></thead>
+            <thead><tr><th>{display?.tableHeaders?.[0] ?? 'Task'}</th><th>{display?.tableHeaders?.[1] ?? 'Specialist access'}</th><th>{display?.tableHeaders?.[2] ?? 'Owner keeps'}</th><th>{display?.tableHeaders?.[3] ?? 'Work proof'}</th></tr></thead>
             <tbody>{detail.tableRows.map((row) => <tr key={row.task}><th scope="row">{row.task}</th><td>{row.access}</td><td>{row.owner}</td><td>{row.proof}</td></tr>)}</tbody>
           </table>
         </div>
@@ -110,18 +112,18 @@ export function StrictEvidenceArticle({ post, detail }: { post: Post; detail: Ri
 
       <section className="expert-quote" aria-labelledby="expert-quote-heading">
         <p className="eyebrow">Exact source quote</p>
-        <h2 id="expert-quote-heading">Do not trust an account because of its location</h2>
+        <h2 id="expert-quote-heading">{display?.quoteHeading ?? 'Do not trust an account because of its location'}</h2>
         <blockquote>"{detail.quote.text}"</blockquote>
         <p><a href={detail.quote.url} target="_blank" rel="noreferrer">{detail.quote.attribution}</a></p>
       </section>
 
       <section className="access-graphic" aria-labelledby="access-graphic-heading">
-        <p className="eyebrow">Account life cycle</p>
-        <h2 id="access-graphic-heading">The owner-controlled access loop</h2>
-        <div className="visual-scroll" data-scroll-cue="Swipe to follow all four steps">
+        <p className="eyebrow">{display?.graphicEyebrow ?? 'Account life cycle'}</p>
+        <h2 id="access-graphic-heading">{display?.graphicHeading ?? 'The owner-controlled access loop'}</h2>
+        <div className="visual-scroll" data-scroll-cue="Swipe to follow all four steps" tabIndex={0} aria-label="Scrollable process graphic">
         <svg className="article-process-svg" viewBox="0 0 820 260" role="img" aria-labelledby="access-loop-title access-loop-desc">
-          <title id="access-loop-title">Four-step account access loop</title>
-          <desc id="access-loop-desc">Request the minimum access, grant a named account, review work and logs, then remove access and transfer files.</desc>
+          <title id="access-loop-title">{display?.graphicTitle ?? 'Four-step account access loop'}</title>
+          <desc id="access-loop-desc">{display?.graphicDescription ?? 'Request the minimum access, grant a named account, review work and logs, then remove access and transfer files.'}</desc>
           <path d="M115 112 H705" className="process-line" />
           {detail.graphicSteps.map((item, index) => {
             const x = 115 + index * 197;
@@ -134,7 +136,7 @@ export function StrictEvidenceArticle({ post, detail }: { post: Post; detail: Ri
           })}
         </svg>
         </div>
-        <p>The loop belongs to the business, even when a provider helps with onboarding. Keep the account list and closing steps in a place the owner can reach without asking the worker to sign in.</p>
+        <p>{display?.graphicNote ?? 'The loop belongs to the business, even when a provider helps with onboarding. Keep the account list and closing steps in a place the owner can reach without asking the worker to sign in.'}</p>
       </section>
 
       {detail.sections.slice(3).map((section) => <section key={section.heading} className="guide-section strict-copy-section">
@@ -143,15 +145,15 @@ export function StrictEvidenceArticle({ post, detail }: { post: Post; detail: Ri
       </section>)}
 
       <section className="guide-script" aria-labelledby="access-script-heading">
-        <p className="eyebrow">Copy-ready handoff</p>
-        <h2 id="access-script-heading">Account access message for a new specialist</h2>
+        <p className="eyebrow">{display?.scriptEyebrow ?? 'Copy-ready handoff'}</p>
+        <h2 id="access-script-heading">{display?.scriptHeading ?? 'Account access message for a new specialist'}</h2>
         <ol>{detail.accessScript.map((line) => <li key={line}>{line}</li>)}</ol>
       </section>
 
       <Banner index={2} />
 
       <section aria-labelledby="related-plans-heading">
-        <h2 id="related-plans-heading">Keep planning the work</h2>
+        <h2 id="related-plans-heading">{display?.relatedHeading ?? 'Keep planning the work'}</h2>
         <ul className="related-plans">{detail.internalLinks.map((link) => <li key={link.href}><a href={link.href}>{link.label}</a></li>)}</ul>
       </section>
 
