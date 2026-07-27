@@ -236,6 +236,132 @@ export const richBlogDetails = {
       scriptHeading: "First incident message for a support specialist",
       relatedHeading: "Strengthen the surrounding support process"
     }
+  },
+  "philippines-outsourced-support-typhoon-continuity-plan": {
+    revision: "typhoon-continuity-2026-07-27",
+    publicationDate: "2026-07-27",
+    eyebrow: "Typhoon continuity field guide",
+    takeaways: [
+      "Protect people first. A support queue can wait when a worker needs to secure family, shelter, power, or a safe route home.",
+      "Choose a minimum service before bad weather arrives. Name the few customer tasks that must continue and the decisions that stay with the owner.",
+      "Use warning levels to cut work early. Do not wait for a lost connection to decide who sends the customer notice or where open work is recorded."
+    ],
+    stats: [
+      { value: 53.8, label: "Philippine population using the internet in 2020", shortLabel: "2020", valueLabel: "53.8%", barPercent: 53.8 },
+      { value: 75.2, label: "Philippine population using the internet in 2022", shortLabel: "2022", valueLabel: "75.2%", barPercent: 75.2 },
+      { value: 67.3, label: "Philippine population using the internet in 2024", shortLabel: "2024", valueLabel: "67.3%", barPercent: 67.3 }
+    ],
+    methodsNote: "Methods note: The World Bank indicator page and API report Philippine internet-use estimates of 53.76490021% for 2020, 75.21114422% for 2022, and 67.26300914% for 2024. The API was last updated on July 13, 2026, and identifies the International Telecommunication Union database as the source. We rounded each figure to one decimal place. These are national population estimates, not measures of a worker, home connection, staffing firm, or storm-day availability.",
+    tableRows: [
+      { task: "Normal watch", access: "Keep the usual queue, but confirm contacts and open work", owner: "Checks PAGASA information and names the next review time", proof: "Dated readiness note and current contact list" },
+      { task: "Severe weather expected", access: "Finish urgent items and stop starting long tasks", owner: "Moves deadlines and sends a reviewed customer note", proof: "Open-work list with owner, status, and next action" },
+      { task: "Unsafe travel or unstable utilities", access: "Pause live coverage and use the safe check-in channel", owner: "Takes the queue or activates a named backup", proof: "Last safe check-in and handoff time" },
+      { task: "Connection lost", access: "Do not use unknown public devices for customer records", owner: "Keeps customers informed and limits account sessions", proof: "Account log and missed-work record" },
+      { task: "Return to work", access: "Resume one low-risk queue on a known safe device", owner: "Confirms people, tools, records, and backlog order", proof: "Return check and first sample review" }
+    ],
+    sections: [
+      {
+        heading: "Decide what minimum service means",
+        paragraphs: [
+          "A typhoon plan should name the smallest useful service your business can keep running. For a customer inbox, that may mean reading urgent messages, sending one approved delay reply, and flagging safety or account issues for the owner. Routine tagging, long research jobs, and cleanup work can wait until the team is safe and the main tools are steady.",
+          "Write the minimum service as a short list with a clear stop point. Name the queue, hours, approved replies, and the person who can close the lane when conditions get worse. This keeps a Philippines-based specialist from guessing whether a customer message matters more than a power warning, flooded road, or family need."
+        ]
+      },
+      {
+        heading: "Tie each action to a warning trigger",
+        paragraphs: [
+          "PAGASA says an average of 20 tropical cyclones enter the Philippine Area of Responsibility each year, and about eight or nine cross the country. Its official overview also says nearly 70% of typhoons develop from July through October. Those broad figures do not tell you what one city will face, but they are enough reason to write the plan before the busiest part of the season.",
+          "Use official local forecasts and warnings rather than a fixed calendar alone. Your first trigger might mean checking contacts and charging devices; the next can move deadlines and finish urgent work; a higher warning can pause the queue. Write who calls each change and when the next check happens so the worker does not have to chase an overseas owner during a worsening event."
+        ]
+      },
+      {
+        heading: "Keep one backup contact path outside the main tools",
+        paragraphs: [
+          "The normal inbox or chat may be the first thing a worker loses. Keep one backup contact path that both sides have already tested, such as a phone number and a simple text-message rule. Store the number outside the affected app, and name a second business contact in case the owner is asleep, traveling, or handling another problem.",
+          "A useful check-in is short: safe or not safe, power available or not, connection available or not, last completed item, and next time the worker expects to check again. Do not ask for a long report from someone preparing for severe weather. The owner can turn those five facts into a customer update and a queue decision."
+        ]
+      },
+      {
+        heading: "Plan backup tools without pushing unsafe work",
+        paragraphs: [
+          "A charged phone, power bank, second connection, and saved contact card can help with a brief outage. They are backup tools, not a promise that work will continue through every storm. Never require a worker to travel through unsafe conditions, sit in a risky public place, or expose customer records on an unknown computer just to keep a queue open.",
+          "The World Bank's dated estimates show why a business should check the real work setup instead of assuming that national connectivity settles the question. The series reports internet use at 53.8% in 2020, 75.2% in 2022, and 67.3% in 2024 after rounding. Ask about the person's tested connections and devices, then keep sensitive files behind named accounts, multifactor authentication, and the smallest useful permissions."
+        ]
+      },
+      {
+        heading: "Move open work before the connection disappears",
+        paragraphs: [
+          "When severe weather is expected, move open work into one owner-visible list while the connection still works. For each item, record the customer or task, current status, promised date, next action, and person who can finish it. Avoid copying full customer records into a new sheet when a ticket link or order number is enough.",
+          "The owner should move deadlines, pause campaigns that could create more replies, and tell customers about likely delays. A specialist can prepare the list and draft the notice, but the business should approve promises and decide which customers need direct contact. This is also the right time to end old sessions and confirm that a backup can open the approved queue."
+        ]
+      },
+      {
+        heading: "Return in a small, checked step",
+        paragraphs: [
+          "Do not reopen every task as soon as one message gets through. First confirm that the worker and family are safe, the device is dry and working, the connection is steady enough for the task, and customer records have not moved to an unapproved place. Then reopen one low-risk lane and review the first few items before restoring broader access or live coverage.",
+          "After the backlog is under control, hold a short review without blaming the worker for the weather. Check which warning arrived, when work stopped, whether the backup contact worked, what customers were told, and which records were hard to reach. Fix one or two gaps, assign an owner, and set a date to test the contact path again."
+        ]
+      }
+    ],
+    quote: {
+      text: "This publication assists organizations in understanding the purpose, process, and format of information system contingency planning development through practical, real-world guidelines.",
+      attribution: "Marianne Swanson, Pauline Bowen, Amy Phillips, Dean Gallup, and David Lynes, NIST Special Publication 800-34 Revision 1, May 2010",
+      url: "https://csrc.nist.gov/pubs/sp/800/34/r1/final"
+    },
+    graphicSteps: [
+      { step: "1", label: "Watch", note: "Check warnings and contacts" },
+      { step: "2", label: "Reduce", note: "Keep only minimum service" },
+      { step: "3", label: "Pause", note: "Protect people and records" },
+      { step: "4", label: "Return", note: "Reopen one checked lane" }
+    ],
+    accessScript: [
+      "PAGASA or the local authority has issued [warning]. Our next review is [time and time zone].",
+      "Your safety comes first. Please send only: safe or not safe, power, connection, last completed item, and next check-in time.",
+      "Minimum service is now [queue and tasks]. Stop starting new work and place open items in [owner-visible list].",
+      "If the connection fails, do not travel or use an unknown device for customer records. The backup owner is [name and contact].",
+      "We will resume after confirming safety, device and account access, the backlog order, and the first review sample."
+    ],
+    banners: [
+      { label: "Before storm season", title: "Map the support lane", body: "Set approved replies, owner decisions, and a small queue before weather puts the plan under pressure.", href: "/services/customer-inbox-management", cta: "Plan inbox work" },
+      { label: "Keep the handoff visible", title: "Use an owner dashboard", body: "Record open items, blockers, backup owners, and the next review time in one place the business controls.", href: "/services/owner-dashboard-reporting", cta: "Plan the dashboard" },
+      { label: "Build a safer role", title: "Bring us the task and coverage plan", body: "Share the support hours, tools, minimum service, approval lines, and backup contact path.", href: "/contact", cta: "Contact us" }
+    ],
+    internalLinks: [
+      { href: "/blog/philippines-outsourced-support-account-access-checklist", label: "Set named account access before severe weather" },
+      { href: "/blog/philippines-outsourced-support-incident-response-checklist", label: "Prepare a separate response for suspected cyber incidents" },
+      { href: "/services/operations-support", label: "Keep the continuity checklist with the operations plan" }
+    ],
+    faqs: [
+      { q: "Should outsourced support stay online during a typhoon?", a: "Only when the worker is safe and the needed power, connection, device, and account access are steady. The plan should allow an early pause without penalty when travel, shelter, family safety, or utilities become a concern." },
+      { q: "What customer work should continue first?", a: "Keep the smallest useful lane, such as urgent inbox checks and one approved delay reply. Pause cleanup, long research, campaigns, and work that needs repeated owner decisions until normal coverage returns." },
+      { q: "What should a weather check-in include?", a: "Ask whether the person is safe, whether power and connection are available, the last completed item, and the next expected check-in. Keep it short and use the tested backup contact path if the normal tool is down." },
+      { q: "How soon should the full queue reopen?", a: "Reopen one low-risk lane after safety, device condition, account access, and backlog order are confirmed. Review the first few items before restoring live coverage, broad permissions, or sensitive work." }
+    ],
+    sources: [
+      { name: "World Bank: Individuals using the Internet (% of population), Philippines", url: "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=PH", note: "The current series runs through 2024 and names the International Telecommunication Union database as its source. The World Bank API, last updated July 13, 2026, supplies the 2020, 2022, and 2024 values used in the chart." },
+      { name: "DOST-PAGASA: Tropical Cyclone Information", url: "https://www.pagasa.dost.gov.ph/climate/tropical-cyclone-information", note: "Official overview accessed July 27, 2026. It reports the yearly average entering the Philippine Area of Responsibility, the number crossing the Philippines, and the July-to-October concentration." },
+      { name: "NIST Special Publication 800-34 Revision 1: Contingency Planning Guide for Federal Information Systems", url: "https://csrc.nist.gov/pubs/sp/800/34/r1/final", note: "Published in May 2010. The exact quotation reproduces the first sentence of the official abstract." },
+      { name: "Republic Act No. 10121: Philippine Disaster Risk Reduction and Management Act of 2010", url: "https://lawphil.net/statutes/repacts/ra2010/ra_10121_2010.html", note: "Philippine statutory text covering risk assessment, early warning, preparedness, response, and early recovery." }
+    ],
+    display: {
+      chartEyebrow: "Dated connectivity context",
+      chartHeading: "National internet use does not replace a worker-level backup check",
+      chartTitle: "Philippine population using the internet in 2020, 2022, and 2024",
+      chartDescription: "Horizontal bars show World Bank estimates of 53.8 percent in 2020, 75.2 percent in 2022, and 67.3 percent in 2024 after rounding to one decimal place.",
+      tableEyebrow: "Warning action matrix",
+      tableHeading: "Cut the support lane before conditions force the decision",
+      tableIntroduction: "Adapt these triggers to the worker's city, local warnings, customer needs, and your own systems. The owner calls each service change while the specialist reports safety and work facts.",
+      tableHeaders: ["Condition", "Support action", "Business owner action", "Minimum record"],
+      quoteHeading: "Write the contingency plan before it is needed",
+      graphicEyebrow: "Storm-day service path",
+      graphicHeading: "Move from watch to a checked return",
+      graphicTitle: "Four-step typhoon continuity path for outsourced support",
+      graphicDescription: "Watch official warnings, reduce the queue to minimum service, pause for safety and record protection, then return through one checked work lane.",
+      graphicNote: "The path can move backwards when conditions worsen. A return message is not proof that power, travel, devices, and connections are stable, so let the worker pause again without having to argue the case.",
+      scriptEyebrow: "Copy-ready weather message",
+      scriptHeading: "Typhoon continuity message for the support team",
+      relatedHeading: "Connect continuity to the normal support plan"
+    }
   }
 } as const;
 

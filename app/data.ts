@@ -168,6 +168,12 @@ export const blogPosts = [
     "title": "Incident response checklist for Philippines-based outsourced support",
     "excerpt": "Give a Philippines-based support specialist a clear way to report, contain, and document a suspected cyber incident. Keep evidence, customer-data decisions, recovery approval, and follow-up under business control.",
     "minutes": 14
+  },
+  {
+    "slug": "philippines-outsourced-support-typhoon-continuity-plan",
+    "title": "Typhoon continuity plan for Philippines-based outsourced support",
+    "excerpt": "Keep a small support lane safe during a Philippine typhoon with clear warning triggers, backup contacts, limited work, and an owner-led return plan.",
+    "minutes": 14
   }
 ] as const;
 

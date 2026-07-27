@@ -76,11 +76,13 @@ export function StrictEvidenceArticle({ post, detail }: { post: Post; detail: Ri
           <desc id="breach-chart-desc">{display?.chartDescription ?? 'Horizontal bars show 31 percent for breaches starting with software vulnerabilities, 48 percent for breaches involving ransomware, and 15 percent for attack techniques bolstered by generative AI.'}</desc>
           {detail.stats.map((stat, index) => {
             const y = 38 + index * 92;
+            const barPercent = 'barPercent' in stat ? stat.barPercent : stat.value;
+            const valueLabel = 'valueLabel' in stat ? stat.valueLabel : `${stat.value}%`;
             return <g key={stat.shortLabel}>
               <text x="0" y={y} className="chart-label">{stat.shortLabel}</text>
               <rect x="0" y={y + 18} width="680" height="30" rx="8" className="chart-track" />
-              <rect x="0" y={y + 18} width={stat.value * 6.8} height="30" rx="8" className="chart-bar" />
-              <text x={Math.min(stat.value * 6.8 + 12, 700)} y={y + 40} className="chart-value">{stat.value}%</text>
+              <rect x="0" y={y + 18} width={barPercent * 6.8} height="30" rx="8" className="chart-bar" />
+              <text x={Math.min(barPercent * 6.8 + 12, 700)} y={y + 40} className="chart-value">{valueLabel}</text>
               <text x="0" y={y + 70} className="chart-detail">{stat.label}</text>
             </g>;
           })}

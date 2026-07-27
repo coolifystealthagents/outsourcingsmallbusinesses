@@ -216,7 +216,11 @@ h1, h2 { font-family: var(--serif); letter-spacing: -.035em; }
 .chart-bar { fill: var(--coral); }
 .methods-note { margin: 18px 0 0; border-left: 4px solid var(--teal); padding: 14px 16px; background: #edf6f3; font-size: 14px !important; }
 .guide-table-wrap::before { display: block; padding: 10px 14px; background: var(--ink); color: white; font-size: 12px; font-weight: 800; content: attr(data-scroll-cue); }
-.access-table { min-width: 940px; }
+.access-table { min-width: 100%; table-layout: fixed; }
+.access-table th, .access-table td { overflow-wrap: anywhere; }
+@media (max-width: 640px) {
+  .access-table { min-width: 940px; table-layout: auto; }
+}
 .expert-quote { border-radius: 18px; padding: 34px; background: var(--ink); color: white; }
 .expert-quote h2, .expert-quote blockquote { color: white; }
 .expert-quote .eyebrow { color: #b9e9df; }
