@@ -362,6 +362,133 @@ export const richBlogDetails = {
       scriptHeading: "Typhoon continuity message for the support team",
       relatedHeading: "Connect continuity to the normal support plan"
     }
+  },
+  "philippines-outsourced-invoice-matching-checklist": {
+    revision: "invoice-match-2026-07-28",
+    publicationDate: "2026-07-28",
+    eyebrow: "Invoice control field guide",
+    takeaways: [
+      "Let the Philippines-based specialist collect, label, and match invoice records, but keep supplier account changes and payment release with the business owner.",
+      "Match each invoice to an approved order or request, proof that the goods or service arrived, and the supplier record before it reaches approval.",
+      "Give every mismatch a named owner and a dated note. A clean exception list is more useful than a folder that only looks complete."
+    ],
+    stats: [
+      { value: 42.1, label: "Share of monthly retail-payment volume conducted digitally in 2022", shortLabel: "2022", valueLabel: "42.1%", barPercent: 42.1 },
+      { value: 52.8, label: "Share of monthly retail-payment volume conducted digitally in 2023", shortLabel: "2023", valueLabel: "52.8%", barPercent: 52.8 },
+      { value: 57.4, label: "Share of monthly retail-payment volume conducted digitally in 2024", shortLabel: "2024", valueLabel: "57.4%", barPercent: 57.4 }
+    ],
+    methodsNote: "Methods note: The Bangko Sentral ng Pilipinas published these annual shares in its 2024 Report on the Status of Digital Payments in the Philippines. They measure the digital share of total monthly retail-payment transaction volume across the country. They do not measure invoice accuracy, outsourced work quality, or the share of small businesses using a particular payment method.",
+    tableRows: [
+      { task: "New invoice arrives", access: "Save the original file and create a dated intake record", owner: "Confirms the request or order belongs to the business", proof: "Invoice link, received time, supplier name, and intake ID" },
+      { task: "Supplier details differ", access: "Stop the match and flag the changed field", owner: "Verifies the change through a trusted contact outside the invoice thread", proof: "Call or portal check, reviewer, date, and outcome" },
+      { task: "Goods or service are complete", access: "Attach the receipt, delivery note, or work approval", owner: "Accepts the goods, service, or project result", proof: "Named approver and source document" },
+      { task: "Invoice is ready", access: "Prepare the matched packet and exception note", owner: "Approves or rejects the payment request", proof: "Approval record tied to the same intake ID" },
+      { task: "Payment appears at the bank", access: "Match the bank line to the approved packet", owner: "Reviews unmatched, changed, or repeated items", proof: "Bank reference, ledger entry, reviewer, and close date" }
+    ],
+    sections: [
+      {
+        heading: "Build one intake record before checking the numbers",
+        paragraphs: [
+          "An invoice can arrive by email, portal, shared folder, or paper scan. Put it into one owner-controlled intake list before anyone starts entering details. Give it a unique ID, received date, supplier name, invoice number, and link to the untouched source file so later reviewers can return to what actually arrived.",
+          "The Philippines-based bookkeeping specialist can own this intake step without owning the bank account. Ask the person to search the list for the same supplier, invoice number, amount, and service period. Similar details are a reason to pause and compare the records, not proof that either invoice is wrong."
+        ]
+      },
+      {
+        heading: "Match the invoice to three pieces of business proof",
+        paragraphs: [
+          "A useful match checks more than the total. First, find the approved purchase order, work request, or owner message that allowed the expense, then find proof that the goods arrived or the service was accepted. Compare the supplier name and account details with the trusted supplier record already held by the business.",
+          "Small businesses do not always use formal purchase orders, so do not invent one after the fact. A dated email, signed proposal, receiving note, or approved job card may be the real source. Record what was used and who accepted it, then send any missing proof to an exception list instead of filling the gap with a guess."
+        ]
+      },
+      {
+        heading: "Treat changed supplier details as a separate event",
+        paragraphs: [
+          "A new bank account, email address, tax detail, or contact name should never slide through as a normal invoice edit. The specialist should mark the changed field and stop that item. A business owner or another named reviewer should verify the change through a phone number, known portal, or contact record that did not come from the message asking for the change.",
+          "Keep the verification note beside the supplier record because an email thread alone is too easy to lose or misread later. Include the person contacted, channel used, date, reviewer, and result, and make sure the person who requests the change does not also accept it and release the related payment."
+        ]
+      },
+      {
+        heading: "Separate preparation, approval, release, and review",
+        paragraphs: [
+          "One person can collect invoices and prepare a clean packet. A second person should approve the business reason and resolve exceptions. Payment release should stay with the owner or another authorized person, while the bank and ledger check should be done by someone who did not prepare and release the same item whenever the team is large enough.",
+          "Very small teams may not have four people, but they can still create a second look. The owner can review supplier changes before release and review the bank statement after release. Use named accounts and dated approvals so the record shows who prepared, decided, released, and checked each item."
+        ]
+      },
+      {
+        heading: "Reconcile the records and close every exception",
+        paragraphs: [
+          "The final check starts with the bank statement, not the invoice folder. Match each bank line to the approved packet and ledger entry, then list anything missing, repeated, changed, or recorded in the wrong period. Do not mark the month complete while an unexplained bank line sits outside the list.",
+          "The BSP's 2023 banking control appendix describes monthly reconciliation by someone other than the bookkeeper or person processing the transactions. That rule governs banks, not ordinary small businesses, but the separation is a useful control model. Adapt it to the size of the team and keep the independent reviewer focused on source records and exceptions."
+        ]
+      },
+      {
+        heading: "Keep the evidence under business control",
+        paragraphs: [
+          "Republic Act 11976, signed in January 2024, amended the general tax-record preservation period to five years. A business should confirm how the rule applies to its records and whether an audit, case, contract, or another law calls for longer storage. Do not let an outsourced folder become the only copy of the invoice, approval, match note, and payment record.",
+          "Invoices may also contain names, addresses, bank details, or other personal information. The Philippine Data Privacy Act says a controller that subcontracts personal-information processing remains responsible for proper safeguards. Give the specialist only the fields and folders needed for matching, record exports, close access when the work ends, and get qualified advice for the business's own tax and privacy duties."
+        ]
+      }
+    ],
+    quote: {
+      text: "Monthly reconciliation of general ledger balances against respective subsidiary and supporting records and documentation by someone other than the bookkeeper or the person handling the records, or the person directly connected with processing the transactions;",
+      attribution: "Bangko Sentral ng Pilipinas, Examples of Minimum Internal Control Measures, Appendix 117 to Section 162, 2023 Manual of Regulations for Banks",
+      url: "https://www.bsp.gov.ph/Regulations/MORB/2023_MORB/2023_MORB_Appendices/2023%20App%20117.pdf"
+    },
+    graphicSteps: [
+      { step: "1", label: "Intake", note: "Save source" },
+      { step: "2", label: "Match", note: "Match proof" },
+      { step: "3", label: "Decide", note: "Clear exceptions" },
+      { step: "4", label: "Reconcile", note: "Check bank line" }
+    ],
+    accessScript: [
+      "Invoice [intake ID] came from [source] on [date and time]. The untouched file is saved at [link].",
+      "I matched it to [approved request] and [delivery or service proof]. The trusted supplier record is [link].",
+      "The following field differs or is missing: [field]. I stopped the item and assigned the exception to [owner].",
+      "I did not change the supplier record, approve the item, or release a payment. The next decision belongs to [named reviewer].",
+      "After release, match bank reference [reference] to this packet and record the final reviewer and close date."
+    ],
+    banners: [
+      { label: "Before invoice access", title: "Set a smaller bookkeeping lane", body: "Use the finance support page to separate record preparation from owner approvals and money movement.", href: "/services/finance-accounting", cta: "Plan finance support" },
+      { label: "Keep the month visible", title: "Build an owner dashboard", body: "Track open exceptions, missing proof, supplier changes, and the person responsible for the next decision.", href: "/services/owner-dashboard-reporting", cta: "Plan the dashboard" },
+      { label: "Ready to map the handoff?", title: "Bring us a sample invoice path", body: "Share how invoices arrive, who accepts the work, who approves, and where the final bank check happens.", href: "/contact", cta: "Contact us" }
+    ],
+    internalLinks: [
+      { href: "/services/finance-accounting", label: "Plan a finance support role with owner-held money controls" },
+      { href: "/blog/philippines-outsourced-support-account-access-checklist", label: "Set named account access before sharing invoice records" },
+      { href: "/services/owner-dashboard-reporting", label: "Track invoice exceptions in an owner dashboard" }
+    ],
+    faqs: [
+      { q: "Can a Philippines-based bookkeeping specialist approve invoices?", a: "The specialist can prepare the match and explain an exception, but the business should name its own approval owner. Keep supplier changes and payment release with separate authorized people." },
+      { q: "What if the business has no purchase orders?", a: "Use the real dated approval record, such as an owner email, signed proposal, job card, or work request. Do not create false paperwork after the invoice arrives; record the source that actually allowed the expense." },
+      { q: "How should a changed supplier bank account be checked?", a: "Stop the item and verify the change through a trusted contact path outside the message that requested it. Record who checked, the channel, date, and result before any related approval or release." },
+      { q: "Who should do the bank reconciliation?", a: "Use someone who did not both prepare and release the item whenever possible. In a very small team, the owner can provide the second look by reviewing changes before release and checking the bank statement afterward." }
+    ],
+    sources: [
+      { name: "Bangko Sentral ng Pilipinas: 2024 Report on the Status of Digital Payments in the Philippines", url: "https://www.bsp.gov.ph/PaymentAndSettlement/2024_Report_on_E-payments_Measurement.pdf", note: "Published in 2025 with measurement years through 2024. The report supplies the 42.1%, 52.8%, and 57.4% digital retail-payment volume shares used in the chart." },
+      { name: "Bangko Sentral ng Pilipinas: Examples of Minimum Internal Control Measures", url: "https://www.bsp.gov.ph/Regulations/MORB/2023_MORB/2023_MORB_Appendices/2023%20App%20117.pdf", note: "Appendix 117 to Section 162 of the 2023 Manual of Regulations for Banks. The exact quotation comes from its reconciliation control; the article treats it as a control model, not a rule for ordinary small businesses." },
+      { name: "Republic Act No. 11976: Ease of Paying Taxes Act", url: "https://lawphil.net/statutes/repacts/ra2024/ra_11976_2024.html", note: "Signed January 5, 2024. Section 33 amended Tax Code Section 235 and states the general five-year accounting-record preservation period." },
+      { name: "Republic Act No. 10173: Data Privacy Act of 2012", url: "https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html", note: "Official Philippine statutory text. Sections 14, 20, and 21 address subcontracted processing, safeguards, and continuing controller responsibility." },
+      { name: "NIST SP 800-53 Revision 5: Security and Privacy Controls for Information Systems and Organizations", url: "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final", note: "Published September 2020 and updated December 2020. Its separation-of-duties, least-privilege, and audit-review controls provide a general risk-management reference rather than Philippine legal advice." }
+    ],
+    display: {
+      chartEyebrow: "Dated payment context",
+      chartHeading: "More Philippine retail-payment volume moved through digital channels",
+      chartTitle: "Digital share of monthly retail-payment transaction volume in the Philippines, 2022 through 2024",
+      chartDescription: "Horizontal bars show 42.1 percent in 2022, 52.8 percent in 2023, and 57.4 percent in 2024, as reported by the Bangko Sentral ng Pilipinas.",
+      tableEyebrow: "Invoice control matrix",
+      tableHeading: "Give each invoice a source, decision owner, and closing record",
+      tableIntroduction: "Adapt this matrix to the records and team your business actually uses. The outsourced specialist can prepare and match the packet while the business keeps supplier changes, approval, and payment release with named decision owners.",
+      tableHeaders: ["Invoice stage", "Specialist action", "Business owner action", "Minimum record"],
+      quoteHeading: "Put an independent check between processing and reconciliation",
+      graphicEyebrow: "Document path",
+      graphicHeading: "Move one invoice from intake to a checked bank line",
+      graphicTitle: "Four-step invoice matching and reconciliation path",
+      graphicDescription: "Save and check the source invoice, match it to business proof and the supplier record, resolve exceptions and approve, then reconcile the bank line to the packet.",
+      graphicNote: "The path stops whenever proof is missing or supplier details change. The business owner decides when an exception is resolved; a full folder is not a reason to skip that decision.",
+      scriptEyebrow: "Copy-ready match note",
+      scriptHeading: "Invoice handoff note for an outsourced bookkeeping specialist",
+      relatedHeading: "Connect invoice matching to the wider owner-control plan"
+    }
   }
 } as const;
 

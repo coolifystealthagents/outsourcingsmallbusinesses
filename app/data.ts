@@ -174,6 +174,12 @@ export const blogPosts = [
     "title": "Typhoon continuity plan for Philippines-based outsourced support",
     "excerpt": "Keep a small support lane safe during a Philippine typhoon with clear warning triggers, backup contacts, limited work, and an owner-led return plan.",
     "minutes": 14
+  },
+  {
+    "slug": "philippines-outsourced-invoice-matching-checklist",
+    "title": "Invoice matching checklist for Philippines-based outsourced bookkeeping support",
+    "excerpt": "Set up a careful invoice handoff for a Philippines-based bookkeeping specialist. Keep supplier changes, approvals, payment release, and the final bank check with separate named people.",
+    "minutes": 14
   }
 ] as const;
 
