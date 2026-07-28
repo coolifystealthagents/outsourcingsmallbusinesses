@@ -16,7 +16,7 @@ export default function Home() {
 
   return <>
     <Header />
-    <main data-design="small-business-handoff-2026">
+    <main data-design="small-business-handoff-2026" data-gi-rollout="two-illustration-packs-one-icon-pack">
       <JsonLd data={schema} />
 
       <section className="hero">
@@ -38,13 +38,13 @@ export default function Home() {
               <span className="board-status"><i /> Ready to scope</span>
             </div>
             <div className="board-photo">
-              <img src="/filipino-support-workspace.jpg" alt="A professional at a laptop in a bright workspace" />
-              <span className="photo-label">Illustrative workspace</span>
+              <img src="/illustrations/getillustrations/goodle-business/owner-approved-remote-handoff.svg" alt="Illustration of an owner approving a remote support handoff" />
+              <span className="photo-label">Owner-approved handoff</span>
             </div>
             <div className="board-list">
-              <div><span className="task-icon coral">01</span><p><strong>Inbox and calendar</strong><small>Draft, sort, schedule</small></p><b>Daily</b></div>
-              <div><span className="task-icon mint">02</span><p><strong>Customer follow-up</strong><small>Reply, tag, escalate</small></p><b>Daily</b></div>
-              <div><span className="task-icon navy">03</span><p><strong>Operations report</strong><small>Gather, check, flag</small></p><b>Weekly</b></div>
+              <div><span className="task-icon coral">01</span><span className="task-symbol"><img src="/icons/getillustrations/sharpie-business/inbox-task-approval.svg" alt="" aria-hidden="true" /></span><p><strong>Inbox and calendar</strong><small>Draft, sort, schedule</small></p><b>Daily</b></div>
+              <div><span className="task-icon mint">02</span><span className="task-symbol"><img src="/icons/getillustrations/sharpie-business/customer-follow-up-target.svg" alt="" aria-hidden="true" /></span><p><strong>Customer follow-up</strong><small>Reply, tag, escalate</small></p><b>Daily</b></div>
+              <div><span className="task-icon navy">03</span><span className="task-symbol"><img src="/icons/getillustrations/sharpie-business/operations-reporting.svg" alt="" aria-hidden="true" /></span><p><strong>Operations report</strong><small>Gather, check, flag</small></p><b>Weekly</b></div>
             </div>
             <div className="owner-line"><span>Owner approval stays with</span><strong>Money, people, exceptions</strong></div>
           </div>
@@ -77,6 +77,7 @@ export default function Home() {
             <p className="eyebrow">A calmer first hire</p>
             <h2>Make the role small enough to explain.</h2>
             <p>A useful role plan names the work, the tools, the schedule, and the decisions that stay with you. That makes matching Filipino talent easier and gives everyone a fair start.</p>
+            <img className="scope-support-illustration" src="/illustrations/getillustrations/humano-scenes/small-business-role-planning.svg" alt="Illustration of a small team collaborating on a practical business role plan" />
             <a className="btn secondary" href="/contact">Map the first role</a>
           </div>
           <div className="scope-sheet">
