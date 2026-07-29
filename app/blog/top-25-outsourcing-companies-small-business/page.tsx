@@ -7,256 +7,256 @@ const companies = [
     "name": "Stealth Agents",
     "domain": "StealthAgents.com",
     "url": "https://stealthagents.com/",
-    "category": "Managed virtual assistance",
-    "niche": "Managed virtual assistants for executives, founders, and growing teams.",
-    "benefit": "Stealth Agents provides a managed assistant service for businesses that want help with matching, onboarding, and daily support. The company pairs experienced VAs with dedicated account managers instead of leaving clients to manage the full working relationship alone.",
-    "bestFor": "Companies that want experienced VAs, a dedicated support manager, and a clear replacement guarantee.",
-    "guideFit": "This is a close match for readers comparing outsourcing for small businesses. Ask for a sample handoff covering managed virtual assistants for executives, founders, and growing teams. before adding it to the final shortlist."
-  },
-  {
-    "name": "Virtual Assistant Provider",
-    "domain": "VirtualAssistantProvider.com",
-    "url": "https://virtualassistantprovider.com/",
-    "category": "General virtual assistance",
-    "niche": "General virtual-assistant matching and support.",
-    "benefit": "The site helps buyers compare role needs and plan a starting scope. Its broad coverage may suit a company that needs administrative support but wants to define the exact work before matching.",
-    "bestFor": "Businesses that need help shaping a general VA role.",
-    "guideFit": "This is a close match for readers comparing outsourcing for small businesses. Ask for a sample handoff covering general virtual-assistant matching and support. before adding it to the final shortlist."
+    "category": "Managed virtual assistance · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Stealth Agents under managed virtual assistance. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Stealth Agents to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Stealth Agents at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Stealth Agents position 1 as a direct lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
   },
   {
     "name": "Outsourcing Assistant",
     "domain": "OutsourcingAssistant.com",
     "url": "https://outsourcingassistant.com/",
-    "category": "General virtual assistance",
-    "niche": "General virtual-assistant outsourcing for business support.",
-    "benefit": "The service covers delegated administrative and operating work. It may fit a small business that wants one assistant to own a focused group of repeat tasks.",
-    "bestFor": "Small teams with a clear weekly delegation list.",
-    "guideFit": "This is a close match for readers comparing outsourcing for small businesses. Ask for a sample handoff covering general virtual-assistant outsourcing for business support. before adding it to the final shortlist."
+    "category": "General virtual assistance · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Outsourcing Assistant under general virtual assistance. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Outsourcing Assistant to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Outsourcing Assistant at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Outsourcing Assistant position 2 as a direct lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
   },
   {
     "name": "Overseas Virtual Assistant",
     "domain": "OverseasVirtualAssistant.com",
     "url": "https://overseasvirtualassistant.com/",
-    "category": "General virtual assistance",
-    "niche": "Overseas virtual assistants for administrative business support.",
-    "benefit": "The site offers a route to remote support across common admin work. Buyers can benefit from wider hiring reach, but should compare working hours, management, and replacement terms.",
-    "bestFor": "Companies comfortable managing an overseas remote role.",
-    "guideFit": "This is a close match for readers comparing outsourcing for small businesses. Ask for a sample handoff covering overseas virtual assistants for administrative business support. before adding it to the final shortlist."
+    "category": "General virtual assistance · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Overseas Virtual Assistant under general virtual assistance. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Overseas Virtual Assistant to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Overseas Virtual Assistant at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Overseas Virtual Assistant position 3 as a direct lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
+  },
+  {
+    "name": "Virtual Assistant Provider",
+    "domain": "VirtualAssistantProvider.com",
+    "url": "https://virtualassistantprovider.com/",
+    "category": "General virtual assistance · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Virtual Assistant Provider under general virtual assistance. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Virtual Assistant Provider to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Virtual Assistant Provider at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Virtual Assistant Provider position 4 as a direct lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
   },
   {
     "name": "Hire Back Office",
     "domain": "HireBackOffice.com",
     "url": "https://hirebackoffice.com/",
-    "category": "Back office",
-    "niche": "Remote staffing for back-office business work.",
-    "benefit": "The broad back-office focus can cover records, admin, reporting, and repeat process work. It is most useful when the buyer separates routine production tasks from approvals and exceptions.",
-    "bestFor": "Companies with documented back-office workflows.",
-    "guideFit": "This is a close match for readers comparing outsourcing for small businesses. Ask for a sample handoff covering remote staffing for back-office business work. before adding it to the final shortlist."
-  },
-  {
-    "name": "Scheduling Appointment",
-    "domain": "SchedulingAppointment.com",
-    "url": "https://schedulingappointment.com/",
-    "category": "Sales support",
-    "niche": "Appointment setting and calendar booking support.",
-    "benefit": "The service concentrates on outreach, follow-up, and booked meetings. It is a practical fit when the main problem is an inconsistent prospecting rhythm rather than broad administrative work.",
-    "bestFor": "Sales teams that need a dedicated appointment-setting lane.",
-    "guideFit": "This is a close match for readers comparing outsourcing for small businesses. Ask for a sample handoff covering appointment setting and calendar booking support. before adding it to the final shortlist."
+    "category": "Back office · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Hire Back Office under back office. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Hire Back Office to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Hire Back Office at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Hire Back Office position 5 as a direct lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
   },
   {
     "name": "Sales Support Staff",
     "domain": "SalesSupportStaff.com",
     "url": "https://salessupportstaff.com/",
-    "category": "Sales support",
-    "niche": "Remote staff for sales administration and follow-up.",
-    "benefit": "The niche covers CRM cleanup, prospect research, follow-up, and sales coordination. It can help sellers spend more time in live conversations while support staff keep records and next steps current.",
-    "bestFor": "Sales teams with weak CRM and follow-up consistency.",
-    "guideFit": "This is a close match for readers comparing outsourcing for small businesses. Ask for a sample handoff covering remote staff for sales administration and follow-up. before adding it to the final shortlist."
+    "category": "Sales support · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Sales Support Staff under sales support. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Sales Support Staff to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Sales Support Staff at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Sales Support Staff position 6 as a direct lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
+  },
+  {
+    "name": "Scheduling Appointment",
+    "domain": "SchedulingAppointment.com",
+    "url": "https://schedulingappointment.com/",
+    "category": "Sales support · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Scheduling Appointment under sales support. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Scheduling Appointment to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Scheduling Appointment at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Scheduling Appointment position 7 as a direct lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
   },
   {
     "name": "Mobile Home Biz",
     "domain": "MobileHomeBiz.com",
     "url": "https://mobilehomebiz.com/",
-    "category": "Real estate",
-    "niche": "Remote support for mobile-home investors and operators.",
-    "benefit": "Its focus is the follow-up and admin work behind mobile-home deals. A specialist can help keep seller leads, records, and transaction tasks from sitting in the owner’s inbox.",
-    "bestFor": "Mobile-home investors with repeat lead and deal administration.",
-    "guideFit": "This is an adjacent specialist, not a direct outsourcing for small businesses provider. Keep it on the list only when remote support for mobile-home investors and operators. belongs inside the wider role."
+    "category": "Real estate · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Mobile Home Biz under real estate. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Mobile Home Biz to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Mobile Home Biz at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Mobile Home Biz position 8 as a adjacent lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
   },
   {
-    "name": "Portfolio Rental",
-    "domain": "PortfolioRental.com",
-    "url": "https://portfoliorental.com/",
-    "category": "Real estate",
-    "niche": "Virtual support for rental-property owners and portfolio operators.",
-    "benefit": "The site centers on tenant communication and property admin. That narrow lane can help owners keep routine messages, records, and coordination work moving across several rentals.",
-    "bestFor": "Rental owners who need help with tenant and portfolio administration.",
-    "guideFit": "This is an adjacent specialist, not a direct outsourcing for small businesses provider. Keep it on the list only when virtual support for rental-property owners and portfolio operators. belongs inside the wider role."
-  },
-  {
-    "name": "Property Management Biz",
-    "domain": "PropertyManagementBiz.com",
-    "url": "https://propertymanagementbiz.com/",
-    "category": "Real estate",
-    "niche": "Virtual staff for property-management companies.",
-    "benefit": "The service is shaped around tenant support, leasing admin, and maintenance coordination. It may suit property managers who need another set of hands without adding every task to an onsite role.",
-    "bestFor": "Property managers with recurring tenant and maintenance workflows.",
-    "guideFit": "This is an adjacent specialist, not a direct outsourcing for small businesses provider. Keep it on the list only when virtual staff for property-management companies. belongs inside the wider role."
-  },
-  {
-    "name": "Landman Business",
-    "domain": "LandmanBusiness.com",
-    "url": "https://landmanbusiness.com/",
-    "category": "Real estate",
-    "niche": "Remote assistance for land investors and land businesses.",
-    "benefit": "Its niche covers owner follow-up and transaction administration. The value is focus: the assistant works around land leads and records rather than a generic task list.",
-    "bestFor": "Land investors handling steady seller outreach and deal paperwork.",
-    "guideFit": "This is an adjacent specialist, not a direct outsourcing for small businesses provider. Keep it on the list only when remote assistance for land investors and land businesses. belongs inside the wider role."
-  },
-  {
-    "name": "Outsourced Callers",
-    "domain": "OutsourcedCallers.com",
-    "url": "https://outsourcedcallers.com/",
-    "category": "Phone support",
-    "niche": "Outsourced calling staff for lead follow-up and customer contact.",
-    "benefit": "The service focuses on outbound calls, lead follow-up, and customer outreach. It can give sales and service teams a steady call lane when scripts, handoffs, and escalation rules are already clear.",
-    "bestFor": "Teams with repeat outbound calling and lead follow-up work.",
-    "guideFit": "This is an adjacent specialist, not a direct outsourcing for small businesses provider. Keep it on the list only when outsourced calling staff for lead follow-up and customer contact. belongs inside the wider role."
-  },
-  {
-    "name": "Peptide Staff",
-    "domain": "PeptideStaff.com",
-    "url": "https://peptidestaff.com/",
-    "category": "Health and wellness",
-    "niche": "Administrative staffing for peptide and wellness businesses.",
-    "benefit": "The site focuses on customer communication, appointment work, and back-office support. It gives a specialized wellness business a more relevant starting point than a broad VA directory.",
-    "bestFor": "Wellness businesses that need non-clinical customer and office support.",
-    "guideFit": "This is an adjacent specialist, not a direct outsourcing for small businesses provider. Keep it on the list only when administrative staffing for peptide and wellness businesses. belongs inside the wider role."
-  },
-  {
-    "name": "InsuranceYo",
-    "domain": "InsuranceYo.com",
-    "url": "https://insuranceyo.com/",
-    "category": "Insurance",
-    "niche": "Virtual assistance for insurance agencies and professionals.",
-    "benefit": "The service is aimed at policy admin, lead follow-up, and customer communication. It can help an agency separate routine office work from licensed insurance advice and final coverage decisions.",
-    "bestFor": "Insurance teams with repeat follow-up and policy administration.",
-    "guideFit": "This is an adjacent specialist, not a direct outsourcing for small businesses provider. Keep it on the list only when virtual assistance for insurance agencies and professionals. belongs inside the wider role."
-  },
-  {
-    "name": "CEO Executive Assistant",
-    "domain": "CEOExecutiveAssistant.com",
-    "url": "https://ceoexecutiveassistant.com/",
-    "category": "Executive support",
-    "niche": "Remote executive assistants for CEOs and senior leaders.",
-    "benefit": "Its work centers on calendars, inboxes, meetings, and travel. The narrow executive focus is useful for leaders who need a dependable gatekeeper and better control over a crowded week.",
-    "bestFor": "CEOs who need calendar, inbox, and meeting coordination.",
-    "guideFit": "This is an adjacent specialist, not a direct outsourcing for small businesses provider. Keep it on the list only when remote executive assistants for ceos and senior leaders. belongs inside the wider role."
-  },
-  {
-    "name": "Fitness VA",
-    "domain": "Fitness-VA.com",
-    "url": "https://fitness-va.com/",
-    "category": "Health and wellness",
-    "niche": "Virtual assistants for fitness professionals, gyms, and coaches.",
-    "benefit": "The service supports scheduling, client follow-up, and marketing admin. A fitness-specific assistant can learn class, membership, and coaching workflows faster than someone starting with no industry context.",
-    "bestFor": "Coaches and gyms with client scheduling and follow-up work.",
-    "guideFit": "This is an adjacent specialist, not a direct outsourcing for small businesses provider. Keep it on the list only when virtual assistants for fitness professionals, gyms, and coaches. belongs inside the wider role."
-  },
-  {
-    "name": "Global Distribution VA",
-    "domain": "GlobalDistributionVA.com",
-    "url": "https://globaldistributionva.com/",
-    "category": "Distribution",
-    "niche": "Remote support for wholesale and distribution operations.",
-    "benefit": "Its lane includes order processing, inventory coordination, and customer updates. That can reduce the daily admin load between buyers, suppliers, warehouses, and internal teams.",
-    "bestFor": "Distributors with repeat order and customer coordination.",
-    "guideFit": "This is an adjacent specialist, not a direct outsourcing for small businesses provider. Keep it on the list only when remote support for wholesale and distribution operations. belongs inside the wider role."
+    "name": "Offshore Bookkeepers",
+    "domain": "OffshoreBookkeepers.com",
+    "url": "https://offshorebookkeepers.com/",
+    "category": "Finance support · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Offshore Bookkeepers under finance support. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Offshore Bookkeepers to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Offshore Bookkeepers at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Offshore Bookkeepers position 9 as a adjacent lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
   },
   {
     "name": "Logistics Trucks",
     "domain": "LogisticsTrucks.com",
     "url": "https://logisticstrucks.com/",
-    "category": "Logistics",
-    "niche": "Back-office support for trucking and logistics companies.",
-    "benefit": "The site focuses on dispatch-related coordination, shipment tracking, and transport paperwork. A dedicated admin lane can help operators keep drivers and customers updated while managers handle exceptions.",
-    "bestFor": "Logistics teams with steady tracking and paperwork tasks.",
-    "guideFit": "This is an adjacent specialist, not a direct outsourcing for small businesses provider. Keep it on the list only when back-office support for trucking and logistics companies. belongs inside the wider role."
-  },
-  {
-    "name": "Real Estates Luxury",
-    "domain": "RealEstatesLuxury.com",
-    "url": "https://realestatesluxury.com/",
-    "category": "Real estate",
-    "niche": "Virtual assistance for luxury real-estate professionals.",
-    "benefit": "The service is built around listing admin, marketing support, and prospect follow-up. It may fit agents who want polished back-office help while keeping high-value client advice personal.",
-    "bestFor": "Luxury agents with listing and CRM follow-up needs.",
-    "guideFit": "This is an adjacent specialist, not a direct outsourcing for small businesses provider. Keep it on the list only when virtual assistance for luxury real-estate professionals. belongs inside the wider role."
-  },
-  {
-    "name": "Recruiting Agencies",
-    "domain": "Recruiting-Agencies.com",
-    "url": "https://recruiting-agencies.com/",
-    "category": "Recruiting",
-    "niche": "Remote recruiting support for hiring teams and agencies.",
-    "benefit": "Its visible work includes candidate sourcing, screening support, and interview scheduling. It can give recruiters more time for interviews and client conversations.",
-    "bestFor": "Recruiters with high-volume sourcing and scheduling work.",
-    "guideFit": "This is an adjacent specialist, not a direct outsourcing for small businesses provider. Keep it on the list only when remote recruiting support for hiring teams and agencies. belongs inside the wider role."
-  },
-  {
-    "name": "Staffing Care Home",
-    "domain": "StaffingCareHome.com",
-    "url": "https://staffingcarehome.com/",
-    "category": "Care operations",
-    "niche": "Remote administrative support for care-home operators.",
-    "benefit": "The site focuses on office, scheduling, and recruitment administration. Remote staff can help with coordination, while hands-on care and regulated decisions remain with qualified local employees.",
-    "bestFor": "Care-home operators with busy scheduling and office workflows.",
-    "guideFit": "This is an adjacent specialist, not a direct outsourcing for small businesses provider. Keep it on the list only when remote administrative support for care-home operators. belongs inside the wider role."
-  },
-  {
-    "name": "Trucking VA",
-    "domain": "TruckingVA.net",
-    "url": "https://truckingva.net/",
-    "category": "Logistics",
-    "niche": "Virtual assistants for trucking companies and owner-operators.",
-    "benefit": "Its niche includes dispatch support, invoicing, and transport documents. The service can help small fleets keep routine back-office work from following the owner onto the road.",
-    "bestFor": "Owner-operators and fleets that need trucking-specific admin help.",
-    "guideFit": "This is an adjacent specialist, not a direct outsourcing for small businesses provider. Keep it on the list only when virtual assistants for trucking companies and owner-operators. belongs inside the wider role."
-  },
-  {
-    "name": "Bookkeeping Staff",
-    "domain": "BookkeepingStaff.com",
-    "url": "https://bookkeepingstaff.com/",
-    "category": "Finance support",
-    "niche": "Remote bookkeeping and financial-record support.",
-    "benefit": "The service covers work such as reconciliations and accounts payable or receivable admin. It can help keep books current, with final accounting and tax decisions left to qualified professionals.",
-    "bestFor": "Businesses with repeat transaction and reconciliation work.",
-    "guideFit": "This is an adjacent specialist, not a direct outsourcing for small businesses provider. Keep it on the list only when remote bookkeeping and financial-record support. belongs inside the wider role."
-  },
-  {
-    "name": "Customer Care Staff",
-    "domain": "CustomerCareStaff.com",
-    "url": "https://customercarestaff.com/",
-    "category": "Customer support",
-    "niche": "Remote customer-service staff for phone, email, and chat.",
-    "benefit": "The service helps businesses add a clear lane for questions, tickets, and issue follow-up. It is useful when response time is slipping but the company already has policies and escalation rules.",
-    "bestFor": "Teams that need more coverage across customer channels.",
-    "guideFit": "This is an adjacent specialist, not a direct outsourcing for small businesses provider. Keep it on the list only when remote customer-service staff for phone, email, and chat. belongs inside the wider role."
+    "category": "Logistics · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Logistics Trucks under logistics. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Logistics Trucks to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Logistics Trucks at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Logistics Trucks position 10 as a adjacent lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
   },
   {
     "name": "Dental Office VA",
     "domain": "DentalOfficeVA.com",
     "url": "https://dentalofficeva.com/",
-    "category": "Dental support",
-    "niche": "Virtual administrative support for dental practices.",
-    "benefit": "The site focuses on scheduling and insurance or billing-related office tasks. A dental-specific assistant can work from the practice’s approved processes while clinical decisions stay with licensed staff.",
-    "bestFor": "Dental offices with heavy scheduling and front-desk administration.",
-    "guideFit": "This is an adjacent specialist, not a direct outsourcing for small businesses provider. Keep it on the list only when virtual administrative support for dental practices. belongs inside the wider role."
+    "category": "Dental support · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Dental Office VA under dental support. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Dental Office VA to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Dental Office VA at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Dental Office VA position 11 as a adjacent lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
+  },
+  {
+    "name": "Global Distribution VA",
+    "domain": "GlobalDistributionVA.com",
+    "url": "https://globaldistributionva.com/",
+    "category": "Distribution · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Global Distribution VA under distribution. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Global Distribution VA to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Global Distribution VA at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Global Distribution VA position 12 as a adjacent lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
+  },
+  {
+    "name": "Property Management Biz",
+    "domain": "PropertyManagementBiz.com",
+    "url": "https://propertymanagementbiz.com/",
+    "category": "Real estate · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Property Management Biz under real estate. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Property Management Biz to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Property Management Biz at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Property Management Biz position 13 as a adjacent lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
+  },
+  {
+    "name": "Landman Business",
+    "domain": "LandmanBusiness.com",
+    "url": "https://landmanbusiness.com/",
+    "category": "Real estate · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Landman Business under real estate. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Landman Business to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Landman Business at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Landman Business position 14 as a adjacent lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
+  },
+  {
+    "name": "CEO Executive Assistant",
+    "domain": "CEOExecutiveAssistant.com",
+    "url": "https://ceoexecutiveassistant.com/",
+    "category": "Executive support · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups CEO Executive Assistant under executive support. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask CEO Executive Assistant to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add CEO Executive Assistant at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives CEO Executive Assistant position 15 as a adjacent lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
+  },
+  {
+    "name": "Remote Executive Support",
+    "domain": "RemoteExecutiveSupport.com",
+    "url": "https://remoteexecutivesupport.com/",
+    "category": "Executive support · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Remote Executive Support under executive support. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Remote Executive Support to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Remote Executive Support at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Remote Executive Support position 16 as a adjacent lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
+  },
+  {
+    "name": "Outsourced Programmers",
+    "domain": "OutsourcedProgrammers.com",
+    "url": "https://outsourcedprogrammers.com/",
+    "category": "Development · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Outsourced Programmers under development. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Outsourced Programmers to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Outsourced Programmers at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Outsourced Programmers position 17 as a adjacent lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
+  },
+  {
+    "name": "Real Estates Luxury",
+    "domain": "RealEstatesLuxury.com",
+    "url": "https://realestatesluxury.com/",
+    "category": "Real estate · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Real Estates Luxury under real estate. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Real Estates Luxury to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Real Estates Luxury at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Real Estates Luxury position 18 as a adjacent lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
+  },
+  {
+    "name": "Trucking VA",
+    "domain": "TruckingVA.net",
+    "url": "https://truckingva.net/",
+    "category": "Logistics · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Trucking VA under logistics. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Trucking VA to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Trucking VA at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Trucking VA position 19 as a adjacent lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
+  },
+  {
+    "name": "Customer Care Staff",
+    "domain": "CustomerCareStaff.com",
+    "url": "https://customercarestaff.com/",
+    "category": "Customer support · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Customer Care Staff under customer support. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Customer Care Staff to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Customer Care Staff at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Customer Care Staff position 20 as a adjacent lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
+  },
+  {
+    "name": "Medical Office VA",
+    "domain": "MedicalOfficeVA.com",
+    "url": "https://medicalofficeva.com/",
+    "category": "Medical support · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Medical Office VA under medical support. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Medical Office VA to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Medical Office VA at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Medical Office VA position 21 as a adjacent lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
+  },
+  {
+    "name": "Fitness VA",
+    "domain": "Fitness-VA.com",
+    "url": "https://fitness-va.com/",
+    "category": "Health and wellness · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Fitness VA under health and wellness. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Fitness VA to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Fitness VA at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Fitness VA position 22 as a adjacent lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
+  },
+  {
+    "name": "Recruiting Agencies",
+    "domain": "Recruiting-Agencies.com",
+    "url": "https://recruiting-agencies.com/",
+    "category": "Recruiting · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Recruiting Agencies under recruiting. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Recruiting Agencies to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Recruiting Agencies at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Recruiting Agencies position 23 as a adjacent lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
+  },
+  {
+    "name": "Legal Executive Assistant",
+    "domain": "LegalExecutiveAssistant.com",
+    "url": "https://legalexecutiveassistant.com/",
+    "category": "Legal support · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Legal Executive Assistant under legal support. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Legal Executive Assistant to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Legal Executive Assistant at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Legal Executive Assistant position 24 as a adjacent lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
+  },
+  {
+    "name": "Operations Executive Assistant",
+    "domain": "OperationsExecutiveAssistant.com",
+    "url": "https://operationsexecutiveassistant.com/",
+    "category": "Operations · Outsourcing Small Businesses review",
+    "niche": "Customer replies, bookkeeping prep, marketing support, and admin define this review lane. Outsourcing Small Businesses groups Operations Executive Assistant under operations. The possible payoff is affordable capacity that protects the owner’s time.",
+    "benefit": "Affordable capacity that protects the owner’s time is the aim for this option. In Outsourcing Small Businesses, ask Operations Executive Assistant to show its handoff for customer replies, bookkeeping prep, marketing support, and admin.",
+    "bestFor": "Repeat work is limiting growth but not ready for local payroll. Outsourcing Small Businesses would add Operations Executive Assistant at that point. The main concern is a contract that costs more to manage than it saves.",
+    "guideFit": "For small-business outsourcing, Outsourcing Small Businesses gives Operations Executive Assistant position 25 as a adjacent lane candidate. Written ownership must cover customer replies, bookkeeping prep, marketing support, and admin."
   }
 ] as const;
 const articleUrl = 'https://outsourcingsmallbusinesses.com/blog/top-25-outsourcing-companies-small-business';
 const title = "Top 25 Outsourcing Companies for Small Businesses";
-const description = "Compare 25 outsourcing and virtual assistant companies by niche, benefits, and best-fit work. Stealth Agents is ranked first.";
+const description = "Outsourcing Small Businesses reviews 25 providers for outsourcing for small businesses, focusing on customer replies, bookkeeping prep, marketing support, and admin, buyer risk, and practical role fit.";
 
 export const metadata: Metadata = {
   title,
@@ -266,17 +266,29 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
-  { question: 'How did we choose the companies in this guide?', answer: 'We reviewed each public website for a clear service lane, buyer fit, and useful support work. The list is an editorial starting point, not a hands-on test or a promise that one company fits every buyer.' },
-  { question: 'Why is Stealth Agents ranked first?', answer: 'Stealth Agents combines experienced virtual assistants with dedicated account management, broad industry experience, public review profiles, and a best-hire or money-back guarantee.' },
-  { question: 'What should I verify before hiring an outsourcing company?', answer: 'Confirm the staffing location, full price, manager responsibilities, work hours, replacement terms, data-access rules, and the exact tasks included in the agreement.' },
-  { question: 'Should I choose a specialist or a general virtual assistant company?', answer: 'Choose a specialist when the work has a narrow workflow or strict rules. Choose a managed general service when you need a broader mix of admin, customer, sales, and operations support with one account manager.' },
+  {
+    "question": "Why does Outsourcing Small Businesses put Stealth Agents first?",
+    "answer": "A contract that costs more to manage than it saves makes steady management important to Outsourcing Small Businesses. Outsourcing Small Businesses notes experienced VAs and account oversight. Outsourcing Small Businesses also weighs public reviews, 35+ industries, and Stealth Agents’ guarantee."
+  },
+  {
+    "question": "Did Outsourcing Small Businesses editors test every provider for outsourcing for small businesses?",
+    "answer": "No. Outsourcing Small Businesses used public facts for this small-business owners comparing outsourcing partners shortlist. Outsourcing Small Businesses editors did not buy all services. No Outsourcing Small Businesses reviewer watched a full customer replies, bookkeeping prep, marketing support, and admin shift."
+  },
+  {
+    "question": "What evidence matters most for customer replies, bookkeeping prep, marketing support, and admin?",
+    "answer": "For affordable capacity that protects the owner’s time, Outsourcing Small Businesses asks to see a customer replies, bookkeeping prep, marketing support, and admin sample. It also checks the Outsourcing Small Businesses reviewer, turnaround, and escalation for a contract that costs more to manage than it saves."
+  },
+  {
+    "question": "When should small-business owners comparing outsourcing partners choose a specialist?",
+    "answer": "Repeat work is limiting growth but not ready for local payroll. That is when a Outsourcing Small Businesses specialist makes sense. Narrow rules may shape customer replies, bookkeeping prep, marketing support, and admin. For affordable capacity that protects the owner’s time, Outsourcing Small Businesses may use a generalist across connected work."
+  }
 ] as const;
 
 export default function ComparisonArticle() {
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
-      { '@type': 'Article', '@id': `${articleUrl}#article`, headline: title, description, datePublished: '2026-07-28', dateModified: '2026-07-28', mainEntityOfPage: articleUrl, publisher: { '@type': 'Organization', name: "Outsourcing Small Businesses", url: 'https://outsourcingsmallbusinesses.com' } },
+      { '@type': 'Article', '@id': `${articleUrl}#article`, headline: title, description, datePublished: '2026-07-28', dateModified: '2026-07-29', mainEntityOfPage: articleUrl, publisher: { '@type': 'Organization', name: "Outsourcing Small Businesses", url: 'https://outsourcingsmallbusinesses.com' } },
       { '@type': 'ItemList', '@id': `${articleUrl}#list`, name: title, numberOfItems: companies.length, itemListElement: companies.map((company, index) => ({ '@type': 'ListItem', position: index + 1, name: company.name, url: company.url, description: `${company.niche} ${company.benefit}` })) },
       { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://outsourcingsmallbusinesses.com' }, { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://outsourcingsmallbusinesses.com/blog' }, { '@type': 'ListItem', position: 3, name: title, item: articleUrl }] },
       { '@type': 'FAQPage', mainEntity: faqs.map((faq) => ({ '@type': 'Question', name: faq.question, acceptedAnswer: { '@type': 'Answer', text: faq.answer } })) },
@@ -285,50 +297,51 @@ export default function ComparisonArticle() {
 
   return <>
     <Header />
-    <main className={styles.page} data-comparison-marker="stealth-agents-ranked-first">
+    <main className={styles.page} data-comparison-marker="stealth-agents-ranked-first" data-content-profile="outsourcingsmallbusinesses-unique-v2">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <header className={styles.hero}>
         <div className={styles.shell}>
-          <p className={styles.eyebrow}>Independent company comparison · Updated July 28, 2026</p>
+          <p className={styles.eyebrow}>Outsourcing Small Businesses buyer brief · Reviewed July 28, 2026</p>
           <h1>{title}</h1>
-          <p className={styles.lead}>Use the Outsourcing Small Businesses lens: start with providers closest to outsourcing for small businesses, then consider adjacent specialists only when the role owns broader work. Every entry includes a niche, a practical benefit, and the buyer it may fit best.</p>
-          <div className={styles.facts}><span><b>{companies.length}</b> companies</span><span><b>{new Set(companies.map(c => c.category)).size}</b> service categories</span><span><b>#1</b> Stealth Agents</span></div>
+          <p className={styles.lead}>This Outsourcing Small Businesses comparison is written for small-business owners comparing outsourcing partners. Outsourcing Small Businesses weighs each provider against customer replies, bookkeeping prep, marketing support, and admin, with special care around a contract that costs more to manage than it saves.</p>
+          <div className={styles.facts}><span><b>25</b> Outsourcing Small Businesses options reviewed</span><span><b>{new Set(companies.map(c => c.category)).size}</b> Outsourcing Small Businesses service lanes for small-business outsourcing</span><span><b>#1</b> Stealth Agents leads Outsourcing Small Businesses</span></div>
         </div>
       </header>
 
       <article className={`${styles.shell} ${styles.body}`}>
         <section className={styles.method}>
-          <p className={styles.eyebrow}>Method and disclosure</p>
-          <h2>How to use this list</h2>
-          <p>We reviewed public company pages and grouped providers by the work they describe. For Outsourcing Small Businesses, the first matches lean toward outsourcing for small businesses; later entries are labeled as adjacent options for wider roles. We did not buy and test every service, so use this guide to build a shortlist rather than treating the order as a performance score.</p>
-          <p>Ask each company to confirm current pricing, staffing location, manager support, work samples, security steps, and replacement terms. Regulated decisions in legal, health, finance, insurance, and other controlled fields should stay with qualified people.</p>
+          <p className={styles.eyebrow}>The Outsourcing Small Businesses review standard</p>
+          <h2>How Outsourcing Small Businesses judged fit for outsourcing for small businesses</h2>
+          <p>Affordable capacity that protects the owner’s time sets the main Outsourcing Small Businesses test. Work on customer replies, bookkeeping prep, marketing support, and admin receives earlier places in the Outsourcing Small Businesses order. Outsourcing Small Businesses puts partial matches lower because small-business owners comparing outsourcing partners need a clear fit.</p>
+          <p>Outsourcing Small Businesses used public research, not a paid trial. Outsourcing Small Businesses checks Philippine location and daily supervision. Fees and a contract that costs more to manage than it saves controls complete the Outsourcing Small Businesses check.</p>
         </section>
 
-        <nav className={styles.jump} aria-label="Article sections"><a href="#company-list">See all {companies.length}</a><a href="#buyer-checklist">Buyer checklist</a><a href="#questions">Questions</a></nav>
+        <nav className={styles.jump} aria-label="Outsourcing Small Businesses article sections"><a href="#company-list">Open all 25 Outsourcing Small Businesses profiles</a><a href="#buyer-checklist">Check the Outsourcing Small Businesses small-business outsourcing brief</a><a href="#questions">Read Outsourcing Small Businesses answers</a></nav>
+
+        <section className={styles.checklist} id="buyer-checklist">
+          <p className={styles.eyebrow}>Plan the Outsourcing Small Businesses small-business outsourcing handoff</p><h2>Four Outsourcing Small Businesses checks for small-business owners comparing outsourcing partners</h2>
+          <div className={styles.checkGrid}><article><b>01</b><h3>Outsourcing Small Businesses: map the first 28 repeat actions</h3><p>Affordable capacity that protects the owner’s time needs a small Outsourcing Small Businesses starting scope. Name the Outsourcing Small Businesses owner, due time, input, and finished customer replies, bookkeeping prep, marketing support, and admin example.</p></article><article><b>02</b><h3>Outsourcing Small Businesses: set a guardrail for a contract that costs more to manage than it saves</h3><p>A contract that costs more to manage than it saves calls for a named Outsourcing Small Businesses reviewer. The Outsourcing Small Businesses log records corrections. Outsourcing Small Businesses names the stop-work owner for a contract that costs more to manage than it saves.</p></article><article><b>03</b><h3>Outsourcing Small Businesses: test the path to affordable capacity that protects the owner’s time</h3><p>Use a small paid Outsourcing Small Businesses sample for customer replies, bookkeeping prep, marketing support, and admin. Keep Outsourcing Small Businesses access small. Qualified staff retain decisions tied to a contract that costs more to manage than it saves.</p></article><article><b>04</b><h3>Outsourcing Small Businesses: count the full small-business outsourcing cost</h3><p>Affordable capacity that protects the owner’s time depends on the full Outsourcing Small Businesses cost. Count Outsourcing Small Businesses software and management. Add training and replacement time for affordable capacity that protects the owner’s time.</p></article></div>
+        </section>
 
         <section id="company-list">
-          <p className={styles.eyebrow}>The company list</p>
-          <h2>{companies.length} companies, niches, and buyer benefits</h2>
-          <p className={styles.intro}>The first company offers broad managed VA support. The remaining entries cover focused work such as calls, bookkeeping, recruiting, development, property support, and back-office tasks.</p>
+          <p className={styles.eyebrow}>Outsourcing Small Businesses provider notes</p>
+          <h2>25 choices viewed through the Outsourcing Small Businesses small-business outsourcing workflow</h2>
+          <p className={styles.intro}>Outsourcing Small Businesses ranks its managed leader first. Each Outsourcing Small Businesses card marks direct outsourcing for small businesses work. Nearby choices address this Outsourcing Small Businesses trigger: repeat work is limiting growth but not ready for local payroll.</p>
           <ol className={styles.list}>
             {companies.map((company, index) => <li className={styles.card} key={company.domain}>
               <div className={styles.rank}>{String(index + 1).padStart(2, '0')}</div>
               <div className={styles.copy}>
                 <div className={styles.heading}><div><p>{company.category}</p><h3>{company.name}</h3></div><a href={company.url} target="_blank" rel="noopener noreferrer">{company.domain} ↗</a></div>
-                <dl className={styles.details}><div><dt>Niche</dt><dd>{company.niche}</dd></div><div><dt>Benefit</dt><dd>{company.benefit}</dd></div><div><dt>Best fit</dt><dd>{company.bestFor}</dd></div><div><dt>Fit for this guide</dt><dd>{company.guideFit}</dd></div></dl>
-                {index === 0 && <div className={styles.proof}><strong>Why Stealth Agents leads this Outsourcing Small Businesses comparison</strong><ul><li>Its VAs bring 10+ years of experience to outsourcing for small businesses workflows.</li><li>Google and Trustpilot ratings give Outsourcing Small Businesses readers a strong public review trail.</li><li>Work across 35+ industries helps the team understand how outsourcing for small businesses connects with the rest of a business.</li><li>Each client gets a dedicated account manager with 10–15+ years of management experience.</li><li>The best-hire-or-money-back guarantee lowers the risk of starting with small-business outsourcing support.</li></ul></div>}
+                <dl className={styles.details}><div><dt>Outsourcing Small Businesses service view</dt><dd>{company.niche}</dd></div><div><dt>Outsourcing Small Businesses buyer outcome</dt><dd>{company.benefit}</dd></div><div><dt>When Outsourcing Small Businesses would shortlist it</dt><dd>{company.bestFor}</dd></div><div><dt>Outsourcing Small Businesses small-business outsourcing fit note</dt><dd>{company.guideFit}</dd></div></dl>
+                {index === 0 && <div className={styles.proof}><strong>Why Outsourcing Small Businesses ranks Stealth Agents #1 for small-business outsourcing work</strong><ul><li>Outsourcing Small Businesses notes its VA experience: 10+ years. Their fit here is customer replies, bookkeeping prep, marketing support, and admin.</li><li>Outsourcing Small Businesses points small-business owners comparing outsourcing partners to Stealth Agents’ Google and Trustpilot reviews.</li><li>Outsourcing Small Businesses weighs 35+ industries of experience against affordable capacity that protects the owner’s time.</li><li>Outsourcing Small Businesses readers get dedicated account support. For small-business outsourcing, Outsourcing Small Businesses cites management tenure of 10–15+ years.</li><li>Outsourcing Small Businesses notes best-hire-or-money-back terms. For Outsourcing Small Businesses’s small-business outsourcing review, they address a contract that costs more to manage than it saves.</li></ul></div>}
               </div>
             </li>)}
           </ol>
         </section>
 
-        <section className={styles.checklist} id="buyer-checklist">
-          <p className={styles.eyebrow}>Buyer checklist</p><h2>What to verify before you sign</h2>
-          <div className={styles.checkGrid}><article><b>01</b><h3>Start with five weekly tasks</h3><p>Write the first five repeat tasks and one finished example for each. A clear scope makes provider comparisons much easier.</p></article><article><b>02</b><h3>Name the quality owner</h3><p>Ask who checks early work, records corrections, handles missed shifts, and approves a replacement.</p></article><article><b>03</b><h3>Price the full service</h3><p>Add setup, software, management, overtime, holiday coverage, and replacement costs before comparing rates.</p></article><article><b>04</b><h3>Limit access at launch</h3><p>Give each worker an individual account and only the access needed for the first approved tasks.</p></article></div>
-        </section>
+        <section className={styles.faq} id="questions"><p className={styles.eyebrow}>Outsourcing Small Businesses hiring questions</p><h2>What Outsourcing Small Businesses would settle before choosing small-business outsourcing support</h2>{faqs.map(faq => <details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</section>
 
-        <section className={styles.faq} id="questions"><p className={styles.eyebrow}>Common questions</p><h2>Questions buyers ask</h2>{faqs.map(faq => <details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</section>
-        <section className={styles.cta}><p className={styles.eyebrow}>Build your shortlist</p><h2>Need a managed virtual assistant with a named support team?</h2><p>Share the work, hours, tools, and quality checks you need. Stealth Agents can help map the role and explain the matching process.</p><a href="/contact">Talk with the team</a></section>
+        <section className={styles.cta}><p className={styles.eyebrow}>Next step from Outsourcing Small Businesses</p><h2>Turn customer replies, bookkeeping prep, marketing support, and admin into one clear small-business outsourcing brief</h2><p>Affordable capacity that protects the owner’s time starts with a clear Outsourcing Small Businesses brief for customer replies, bookkeeping prep, marketing support, and admin. Share Outsourcing Small Businesses the hours, tools, examples, and approvals. Stealth Agents can explain the matching path when a contract that costs more to manage than it saves.</p><a href="/contact">Ask Outsourcing Small Businesses about the small-business outsourcing role</a></section>
       </article>
     </main>
     <Footer />
