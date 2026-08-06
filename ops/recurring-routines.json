@@ -1,0 +1,56 @@
+{
+  "site": "OutsourcingSmallBusinesses.com",
+  "siteLabel": "Outsourcing Small Businesses",
+  "repository": "coolifystealthagents/outsourcingsmallbusinesses",
+  "productionBranch": "main",
+  "timezone": "UTC",
+  "secretInjection": {
+    "github": "protected",
+    "gemini": "protected",
+    "neverPersistValues": true
+  },
+  "routines": [
+    {
+      "id": "daily-blog-publishing",
+      "title": "Daily Blog Publishing",
+      "cron": "0 9 * * 1-5",
+      "timezone": "UTC",
+      "concurrency": "skip_if_active",
+      "catchUp": "skip_missed",
+      "priority": "medium",
+      "target": { "randomMin": 20, "randomMax": 25 },
+      "contentDirectory": "app/blog/",
+      "runbook": [
+        "Choose and record one inclusive random quantity from 20 through 25.",
+        "Select commercially relevant outsourcing topics, reject duplicates and cannibalization, and create an internal brief for every article.",
+        "Research current facts and one authoritative external article per standard blog, then draft the complete site article structure.",
+        "Validate headings, intent, metadata, canonical URL, schema, CTAs, exactly two distinct contextual internal article-body links, exactly one authoritative external article-body link, three related article cards, and no placeholders, em dashes, or double hyphens.",
+        "Run the official blader/humanizer process from https://github.com/blader/humanizer, version 2.9.1 or later, then run factual, structural, link, schema, and protected-element validation again.",
+        "Assign and render the approved deterministic thumbnail, validate its source path and output, and update required indexes and sitemap inputs.",
+        "Run the repository build, fetch and rebase main, stage only intended batch files, commit, push to main, confirm the pushed commit SHA, and record repository, branch, SHA, files, UTC push time, and validation outcomes.",
+        "Stop after the verified GitHub push."
+      ]
+    },
+    {
+      "id": "daily-research-publishing",
+      "title": "Daily Research Publishing",
+      "cron": "0 6 * * *",
+      "timezone": "UTC",
+      "concurrency": "always_enqueue",
+      "catchUp": "skip_missed",
+      "priority": "high",
+      "target": { "randomMin": 10, "randomMax": 15 },
+      "contentDirectory": "app/research/",
+      "runbook": [
+        "Choose and record one inclusive random quantity from 10 through 15.",
+        "Select a niche-specific statistics, cost, salary, benchmark, ROI, adoption, trend, percentage, or comparison topic in a planned cluster; reject duplicates and cannibalization and create an internal brief.",
+        "Identify a liftable headline statistic, gather at least 10 real sources, explain methodology, and draft the complete research structure.",
+        "Validate headings, verified date, reading time, source count and visible source list, Key Stats, Key Takeaways, traceable numbers, tables, source notes, internal links, FAQs, related research cards, metadata, canonical URL, sitemap input, and schema.",
+        "Run the official blader/humanizer process from https://github.com/blader/humanizer, version 2.9.1 or later, with restrained evidence-first behavior, then run factual, structural, source, link, schema, and protected-element validation again.",
+        "Assign and render the approved deterministic thumbnail, validate its source path and output, and update required indexes, cluster data, related mappings, and sitemap inputs.",
+        "Run the repository build and structured-data validation, fetch and rebase main, stage only intended batch files, commit, push to main, confirm the pushed commit SHA, and record repository, branch, SHA, files, UTC push time, and validation outcomes.",
+        "Stop after the verified GitHub push."
+      ]
+    }
+  ]
+}

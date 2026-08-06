@@ -1,0 +1,32 @@
+{
+  "site": "OutsourcingSmallBusinesses.com",
+  "siteLabel": "Outsourcing Small Businesses",
+  "repoName": "outsourcingsmallbusinesses",
+  "productionBranch": "main",
+  "timezone": "UTC",
+  "schedulerManifest": "ops/recurring-routines.json",
+  "routines": [
+    {
+      "title": "Daily Blog Publishing",
+      "cron": "0 9 * * 1-5",
+      "timezone": "UTC",
+      "concurrency": "skip_if_active",
+      "catchUp": "skip_missed",
+      "priority": "medium",
+      "targetMin": 20,
+      "targetMax": 25,
+      "status": "installed as active Paperclip routine"
+    },
+    {
+      "title": "Daily Research Publishing",
+      "cron": "0 6 * * *",
+      "timezone": "UTC",
+      "concurrency": "always_enqueue",
+      "catchUp": "skip_missed",
+      "priority": "high",
+      "targetMin": 10,
+      "targetMax": 15,
+      "status": "installed as active Paperclip routine"
+    }
+  ]
+}
