@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "deploy:coolify:batch": "node scripts/batched-coolify-deploy.mjs",
     "start": "next start -H 0.0.0.0 -p 3000",
     "lint": "next lint"
   },

@@ -27,6 +27,15 @@
       "targetMin": 10,
       "targetMax": 15,
       "status": "installed as active Paperclip routine"
+    },
+    {
+      "title": "Batched Coolify Deployment",
+      "cron": "0 3,9,15,21 * * *",
+      "timezone": "UTC",
+      "concurrency": "skip_if_active",
+      "catchUp": "skip_missed",
+      "priority": "high",
+      "status": "installed as active Paperclip routine"
     }
   ]
 }

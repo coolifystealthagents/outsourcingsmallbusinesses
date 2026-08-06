@@ -51,6 +51,27 @@
         "Run the repository build and structured-data validation, fetch and rebase main, stage only intended batch files, commit, push to main, confirm the pushed commit SHA, and record repository, branch, SHA, files, UTC push time, and validation outcomes.",
         "Stop after the verified GitHub push."
       ]
+    },
+    {
+      "id": "batched-coolify-deployment",
+      "title": "Batched Coolify Deployment",
+      "cron": "0 3,9,15,21 * * *",
+      "timezone": "UTC",
+      "concurrency": "skip_if_active",
+      "catchUp": "skip_missed",
+      "priority": "high",
+      "assignee": "Chief of Staff",
+      "project": "Onboarding",
+      "runbook": [
+        "Check the current production cycle's daily Blog completion manifest; require every item and all validation evidence, including images, metadata, links, CTAs, schema, related content, and a successful build. On any missing or non-complete item, emit exactly SKIPPED_INCOMPLETE and stop until the next scheduled run.",
+        "Resolve and verify the exact domain-to-repository-to-production-branch-to-Coolify-application mapping for OutsourcingSmallBusinesses.com and Onboarding before mutation; never select by partial name and never enable GitHub auto-deploy.",
+        "Reconcile persisted deployment state and the current Git SHA before mutation. If the batch is already live emit ALREADY_DEPLOYED; if unchanged emit NO_NEW_CHANGES; if the SHA has queued or active deployment emit DEPLOYMENT_ALREADY_PENDING or DEPLOYMENT_IN_PROGRESS; if a successful deployment exists, verify the live site and emit LIVE_VERIFIED only after exact-commit and new-blog-page verification.",
+        "Combine the completed Blog changes into one validated commit and one push to the verified production branch. Never push per article. Use only protected COOLIFY_API_URL, COOLIFY_API_TOKEN, and COOLIFY_APPLICATION_UUID; never expose or persist secret values.",
+        "Inspect the global Coolify deployment queue across the server once. If queued count is three or more, emit exactly SKIPPED_COOLIFY_QUEUE, submit nothing, do not poll, and retry only at the next scheduled run.",
+        "With fewer than three queued deployments, recheck the exact application and SHA duplicate guard, then trigger exactly one manual deployment. Persist only non-secret domain, Paperclip project, application UUID, Git SHA, deployment UUID, UTC trigger time, accepted status, and observed queued count; an accepted request is DEPLOYMENT_SUBMITTED, not success.",
+        "On later runs reconcile persisted deployment/SHA before any mutation. Never blindly retry an uncertain request. If active emit DEPLOYMENT_IN_PROGRESS; if failed emit DEPLOYMENT_FAILED without an automatic duplicate; after success verify the exact SHA and new Blog pages on the live domain and emit LIVE_VERIFIED.",
+        "Every execution must finish with exactly one allowed outcome: SKIPPED_INCOMPLETE, NO_NEW_CHANGES, ALREADY_DEPLOYED, DEPLOYMENT_ALREADY_PENDING, SKIPPED_COOLIFY_QUEUE, DEPLOYMENT_SUBMITTED, DEPLOYMENT_IN_PROGRESS, DEPLOYMENT_FAILED, or LIVE_VERIFIED."
+      ]
     }
   ]
 }
