@@ -186,6 +186,21 @@ export const blogPosts = [
     "title": "Invoice matching checklist for Philippines-based outsourced bookkeeping support",
     "excerpt": "Set up a careful invoice handoff for a Philippines-based bookkeeping specialist. Keep supplier changes, approvals, payment release, and the final bank check with separate named people.",
     "minutes": 14
+  },
+  {"slug":"small-business-outsourcing-sop-checklist-2026-08-07","title":"Small-business outsourcing SOP checklist","excerpt":"Build a short, reviewable SOP before handing a repeatable task to an outsourced specialist.","minutes":9},
+  {"slug":"small-business-outsourcing-daily-handoff-2026-08-07","title":"Daily handoff routine for outsourced small-business work","excerpt":"Use a simple daily handoff to keep completed work, blockers, and owner decisions visible.","minutes":8},
+  {"slug":"small-business-outsourcing-quality-review-2026-08-07","title":"Quality review for a newly outsourced task","excerpt":"Review the first five items, record misses, and expand a work lane only when the finish line is clear.","minutes":9},
+  {"slug":"small-business-outsourcing-approval-rules-2026-08-07","title":"Approval rules for outsourced small-business tasks","excerpt":"Separate preparation from approvals for payments, refunds, pricing, legal replies, and unusual requests.","minutes":8},
+  {"slug":"small-business-outsourcing-tool-access-2026-08-07","title":"Tool access plan for a Philippines-based specialist","excerpt":"Give a named worker only the accounts, folders, and permissions needed for the first work lane.","minutes":10},
+  {"slug":"small-business-outsourcing-owner-scorecard-2026-08-07","title":"Owner scorecard for outsourced operations","excerpt":"Track output, errors, late items, decisions, and review time without watching every click.","minutes":9},
+  {"slug":"small-business-outsourcing-inbox-triage-2026-08-07","title":"How to outsource inbox triage safely","excerpt":"Start with tags, approved replies, escalation rules, and a review sample before sending customer messages.","minutes":10},
+  {"slug":"small-business-outsourcing-lead-intake-2026-08-07","title":"Outsource lead intake with a clean handoff","excerpt":"Create a repeatable lead-intake lane with required fields, source links, and owner follow-up.","minutes":8},
+  {"slug":"small-business-outsourcing-invoice-prep-2026-08-07","title":"Outsource invoice preparation without releasing payment","excerpt":"Let a specialist prepare matching evidence while the owner keeps supplier changes and payment release.","minutes":10},
+  {"slug":"small-business-outsourcing-vendor-follow-up-2026-08-07","title":"Vendor follow-up routine for a small business","excerpt":"Use dated requests, source links, and exception notes to make vendor follow-up easy to review.","minutes":8},
+  {"slug":"small-business-outsourcing-backup-coverage-2026-08-07","title":"Backup coverage plan for outsourced work","excerpt":"Keep a task lane moving when the usual specialist is unavailable without widening access unnecessarily.","minutes":8},
+  {"slug":"small-business-outsourcing-offboarding-2026-08-07","title":"Offboarding checklist for outsourced support","excerpt":"Close accounts, transfer files, rotate shared secrets, and confirm the business owns the final handoff.","minutes":10},
+  {"slug":"small-business-outsourcing-first-week-plan-2026-08-07","title":"First-week plan for outsourcing a daily task","excerpt":"Set a narrow first week with examples, named access, five reviewed items, and a clear escalation path.","minutes":9},
+  {"slug":"small-business-outsourcing-remote-work-continuity-2026-08-07","title":"Continuity plan for a remote outsourced work lane","excerpt":"Prepare contacts, backup tools, safe work limits, and a controlled return after disruption.","minutes":9
   }
 ] as const;
 
