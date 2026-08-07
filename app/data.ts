@@ -152,6 +152,12 @@ export const services = [
 
 export const blogPosts = [
   {
+    "slug": "daily-outsourcing-starting-point-for-small-businesses",
+    "title": "The best starting point for outsourcing in a small business",
+    "excerpt": "Choose one repeatable work lane, write the finish line, and keep approvals visible before you hand over a daily task.",
+    "minutes": 8
+  },
+  {
     "slug": "outsourcing-for-small-businesses-provider-questions",
     "title": "Questions to ask an outsourcing provider before you hire",
     "excerpt": "A practical provider call guide for checking role fit, quality, data access, pricing, and exit terms.",
@@ -184,6 +190,30 @@ export const blogPosts = [
 ] as const;
 
 export const blogDetails = {
+  "daily-outsourcing-starting-point-for-small-businesses": {
+    takeaways: ["Start with one repeatable task that has a clear finished result.", "Give the specialist examples, limited access, and a named reviewer.", "Keep money movement, legal decisions, pricing, and unusual customer remedies with the owner."],
+    readinessRows: [
+      { topic: "Scope", weak: "Help with whatever is needed.", useful: "Update the lead tracker every weekday and flag missing fields by 3 p.m." },
+      { topic: "Quality", weak: "The work will be checked.", useful: "The owner reviews five samples during week one against a written checklist." },
+      { topic: "Access", weak: "Use the shared account.", useful: "Use a named account with only the tracker and approved source folder." },
+      { topic: "Escalation", weak: "Ask if anything is difficult.", useful: "Pause for refunds, pricing changes, legal concerns, and missing customer data." }
+    ],
+    sections: [
+      { heading: "Pick a lane that repeats", paragraphs: ["The first outsourced task should happen often enough to teach and inspect. Inbox sorting, appointment reminders, CRM updates, invoice intake, and weekly reporting are usually easier starting points than a whole department.", "Write the trigger, steps, finished result, and review owner on one page. The U.S. Small Business Administration's hiring guidance is a useful reminder to define the role and expectations before recruiting.", "Choose one inclusive daily quantity from 20 through 25 for the first batch, then record what was completed and what needed a decision."] },
+      { heading: "Separate preparation from approval", paragraphs: ["A Philippines-based specialist can collect information, update a record, draft a reply, or prepare a report. The owner should keep decisions that move money, change pricing, create a legal commitment, or make an unusual promise to a customer.", "Give the worker a short escalation list and a daily done note with links to the work. Review the first five items before widening the task lane.", "Use named accounts and the least access needed. CISA recommends multifactor authentication as an additional account protection step."] },
+      { heading: "Measure the handoff for two weeks", paragraphs: ["Track completed items, errors found, late items, open questions, and owner decisions. After two weeks, keep the lane, revise the checklist, or stop it.", "A good outsourcing routine removes a repeatable burden while leaving the business owner with a clear view of risk and results."] }
+    ],
+    callScript: ["The first task is [task]. A finished item looks like [example], and [reviewer] checks the first five.", "Use only the named accounts and folders listed here. Do not export, delete, purchase, refund, or change pricing without approval.", "Send a daily done note with links, misses, blockers, and decisions needed.", "Pause and escalate anything involving money, legal risk, customer data, or an unusual request."],
+    faqs: [
+      { q: "What should a small business outsource first?", a: "Start with one repeatable admin, support, finance-preparation, or operations task that has examples and a clear review owner." },
+      { q: "How much access should the worker receive?", a: "Give only the named accounts, folders, and permissions needed for the first task." },
+      { q: "What should remain with the owner?", a: "Keep payments, refunds, pricing, legal replies, hiring decisions, broad exports, and unusual customer remedies with the owner or named manager." }
+    ],
+    sources: [
+      { name: "U.S. Small Business Administration: Hire and manage employees", url: "https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees", note: "Small business guidance on defining and managing work." },
+      { name: "CISA: Turn on multifactor authentication", url: "https://www.cisa.gov/secure-our-world/turn-mfa", note: "Account protection guidance for adding a second sign-in step." }
+    ]
+  },
   "outsourcing-for-small-businesses-provider-questions": {
     takeaways: [
       "Ask who will do the work, who checks it, and who steps in when the usual worker is absent.",
