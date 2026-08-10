@@ -4,11 +4,13 @@ import { Header, Footer, CTA, JsonLd } from '../../components';
 import { blogDetails, blogPosts, site } from '../../data';
 import { richBlogDetails, type RichBlogDetail } from '../../rich-blog-data';
 import { StrictEvidenceArticle } from './strict-evidence-article';
+import { dailyBlogBatch } from '../../daily-blog-batch';
 
 const baseUrl = 'https://outsourcingsmallbusinesses.com';
 type BlogDetail = (typeof blogDetails)[keyof typeof blogDetails];
 const detailsBySlug = blogDetails as Partial<Record<string, BlogDetail>>;
 const richDetailsBySlug = richBlogDetails as Partial<Record<string, RichBlogDetail>>;
+const dailyBySlug = new Map<string, { title: string; excerpt: string; focus: string; index: number }>(dailyBlogBatch.map(([slug, title, excerpt, focus], index) => [slug, { title, excerpt, focus, index }]));
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -153,11 +155,26 @@ function LegacyArticle({ post }: { post: (typeof blogPosts)[number] }) {
   );
 }
 
+function DailyArticle({ post, focus, index }: { post: (typeof blogPosts)[number]; focus: string; index: number }) {
+  const url = `${baseUrl}/blog/${post.slug}`;
+  const related = dailyBlogBatch.filter(([slug]) => slug !== post.slug).slice(index % 3, index % 3 + 3);
+  const source = 'https://www.sba.gov/business-guide/manage-your-business';
+  const sections = [
+    [`Define the ${focus} lane`, `Start with the recurring work that has a clear input and a visible finish line. Write down the source record, the expected output, the due time, and the decisions that remain with the owner. A narrow first lane makes feedback useful and prevents a new assistant from guessing at business policy.`],
+    ['Set the review and escalation rules', `Use examples to show what passes, what needs correction, and what must stop for approval. For ${focus}, keep money movement, customer remedies, account changes, legal concerns, and unusual requests with a named owner. The worker should be able to mark an item blocked without hiding the reason.`],
+    ['Run a measured first week', `Begin with a small sample and compare completed items with the checklist each day. Track volume, late work, rework, unanswered questions, and escalations. If the same question appears twice, improve the SOP before adding more volume. Review the weekly summary against the original task examples.`],
+    ['Protect access and continuity', `Give separate accounts, least-privilege access, and a documented offboarding step. Keep source links in the work record, not only in chat. A backup person should know where the SOP, queue, examples, and escalation contacts live so a short absence does not stop the lane.`]
+  ];
+  const schema = { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: post.title, description: post.excerpt, url, author: { '@type': 'Organization', name: site.brand }, publisher: { '@type': 'Organization', name: site.brand }, citation: source };
+  return <><JsonLd data={schema} /><article className="container guide-article strict-article" data-article-family="blog" data-batch="2026-08-10"><p className="eyebrow">Small business operations guide</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><section><h2>Quick answer</h2><p>Outsource {focus} only after the process has an example, an owner, a review point, and a clear stop rule. Keep the first batch small enough to inspect.</p><p>Use the <a href="/services/operations-support">operations support service guide</a> for the handoff pattern, then compare it with the <a href="/blog/outsourcing-for-small-businesses-provider-questions">provider questions checklist</a> before granting wider access. For general small-business management context, consult the <a href={source} target="_blank" rel="noreferrer">U.S. Small Business Administration guidance</a>.</p></section>{sections.map(([heading, body]) => <section key={heading}><h2>{heading}</h2><p>{body}</p></section>)}<section aria-labelledby="related-heading"><h2 id="related-heading">Related articles</h2><ul className="related-plans">{related.map(([slug, title]) => <li key={slug}><a href={`/blog/${slug}`}>{title}</a></li>)}</ul></section><section className="guide-script"><h2>Owner review prompt</h2><p>Which task passed, which item needed correction, and which decision should remain owner-approved before the next batch?</p></section></article><CTA /></>;
+}
+
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = blogPosts.find((item) => item.slug === slug);
   if (!post) notFound();
   const detail = detailsBySlug[slug];
   const richDetail = richDetailsBySlug[slug];
-  return <><Header articleMode /><main className="section">{richDetail ? <StrictEvidenceArticle post={post} detail={richDetail} /> : detail ? <RichArticle post={post} detail={detail} /> : <><LegacyArticle post={post} /><CTA /></>}</main><Footer articleMode /></>;
+  const daily = dailyBySlug.get(slug);
+  return <><Header articleMode /><main className="section">{richDetail ? <StrictEvidenceArticle post={post} detail={richDetail} /> : detail ? <RichArticle post={post} detail={detail} /> : daily ? <DailyArticle post={post} focus={daily.focus} index={daily.index} /> : <><LegacyArticle post={post} /><CTA /></>}</main><Footer articleMode /></>;
 }
