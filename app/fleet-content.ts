@@ -305,7 +305,6 @@ export const researchPosts: ReadonlyArray<{slug:string;title:string;excerpt:stri
     'Key takeaways: use one queue; timestamp updates; link evidence; avoid private-only decisions; and close the loop with an owner disposition. Sources: NIST, https://www.nist.gov/cyberframework; SBA, https://www.sba.gov/business-guide/manage-your-business.',
     'FAQ: What makes a handoff fail? Missing context, unclear ownership, or an exception that has no named decision-maker.'
   ]},
-],
   {slug:'outsourcing-small-business-customer-inbox',title:'How Small Businesses Can Measure Customer Inbox Outsourcing',excerpt:'A practical research brief on response queues, ownership, and review controls for outsourced inbox work.',published:'2026-08-10',body:[
     'Headline finding: the U.S. Small Business Administration recommends defining measurable objectives before adopting a technology or process change. For inbox work, that means tracking first response time, unresolved threads, and escalation accuracy rather than message volume alone.',
     'Method: this brief translates guidance from the SBA, FTC, and NIST into a small-business operating model. A daily queue should have a named owner, a documented answer boundary, and a manager review lane for exceptions.',
@@ -397,3 +396,8 @@ export const researchPosts: ReadonlyArray<{slug:string;title:string;excerpt:stri
     'FAQ: What makes a handoff fail? Missing context, unclear ownership, or an exception that has no named decision-maker.'
   ]},
 ];
+export const publicTiers = [
+  {name:'Executive Assistants', price:'$10/hour', detail:'Philippines-based support for structured executive and administrative work.'},
+  {name:'Senior Assistants', price:'$15/hour', detail:'Experienced Philippines-based support for specialized workflows and coordination.'},
+  {name:'C-Suite / Operations', price:'$18/hour', detail:'Philippines-based operational support for complex work lanes and leadership follow-through.'},
+] as const;
