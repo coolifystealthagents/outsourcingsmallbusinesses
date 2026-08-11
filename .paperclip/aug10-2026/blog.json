@@ -38,7 +38,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-calendar-management-small-business",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
@@ -52,7 +52,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-crm-cleanup-small-business",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
@@ -66,7 +66,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-lead-follow-up-small-business",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
@@ -80,7 +80,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-customer-returns-admin",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
@@ -94,7 +94,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-ecommerce-product-data",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
@@ -108,7 +108,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-appointment-reminders",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
@@ -122,7 +122,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-vendor-follow-up",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
@@ -136,7 +136,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-invoice-data-entry",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
@@ -150,7 +150,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-expense-receipt-capture",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
@@ -164,7 +164,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-weekly-owner-reporting",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
@@ -178,7 +178,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-sop-documentation",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
@@ -192,7 +192,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-social-content-scheduling",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
@@ -206,7 +206,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-review-monitoring",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
@@ -220,7 +220,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-competitor-research",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
@@ -234,7 +234,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-marketplace-order-support",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
@@ -248,7 +248,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-file-organization",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
@@ -262,7 +262,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-data-quality-checks",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
@@ -276,7 +276,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-operations-task-tracking",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
@@ -290,7 +290,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-service-quote-preparation",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
@@ -304,7 +304,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-client-onboarding-admin",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
@@ -318,7 +318,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-back-office-quality-review",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",

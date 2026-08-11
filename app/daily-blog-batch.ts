@@ -1,7 +1,28 @@
 export const dailyBlogPublicationDate = '2026-08-10';
 
 export const dailyBlogSourceDates = {
-  'outsource-inbox-triage-small-business': '2026-08-10'
+  'outsource-appointment-reminders': '2026-08-10',
+  'outsource-back-office-quality-review': '2026-08-10',
+  'outsource-calendar-management-small-business': '2026-08-10',
+  'outsource-client-onboarding-admin': '2026-08-10',
+  'outsource-competitor-research': '2026-08-10',
+  'outsource-crm-cleanup-small-business': '2026-08-10',
+  'outsource-customer-returns-admin': '2026-08-10',
+  'outsource-data-quality-checks': '2026-08-10',
+  'outsource-ecommerce-product-data': '2026-08-10',
+  'outsource-expense-receipt-capture': '2026-08-10',
+  'outsource-file-organization': '2026-08-10',
+  'outsource-inbox-triage-small-business': '2026-08-10',
+  'outsource-invoice-data-entry': '2026-08-10',
+  'outsource-lead-follow-up-small-business': '2026-08-10',
+  'outsource-marketplace-order-support': '2026-08-10',
+  'outsource-operations-task-tracking': '2026-08-10',
+  'outsource-review-monitoring': '2026-08-10',
+  'outsource-service-quote-preparation': '2026-08-10',
+  'outsource-social-content-scheduling': '2026-08-10',
+  'outsource-sop-documentation': '2026-08-10',
+  'outsource-vendor-follow-up': '2026-08-10',
+  'outsource-weekly-owner-reporting': '2026-08-10'
 } as const;
 
 export const dailyBlogBatch = [
