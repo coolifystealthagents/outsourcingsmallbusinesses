@@ -24,7 +24,7 @@
       "sourcePath": "app/daily-blog-batch.ts",
       "provenance": "original-aug10-batch",
       "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
-      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDateField": "dailyBlogSourceDates.outsource-inbox-triage-small-business",
       "sourceDate": "2026-08-10",
       "renderedDateFields": [
         "datePublished",
