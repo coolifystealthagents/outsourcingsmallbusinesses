@@ -11,12 +11,19 @@ const indexSource = fs.readFileSync(path.join(root, 'app/research/page.tsx'), 'u
 const sitemapSource = fs.readFileSync(path.join(root, 'app/sitemap.xml/route.ts'), 'utf8');
 const fail = (message) => { throw new Error(message); };
 
+manifest.entries.length === 15 || fail(`manifest must inventory exactly 15 articles, got ${manifest.entries.length}`);
 manifest.entries.length >= manifest.minimum || fail('manifest is below minimum');
 new Set(manifest.entries.map((entry) => entry.slug)).size === manifest.entries.length || fail('manifest has duplicate slugs');
+const entrySlugs = new Set(manifest.entries.map((entry) => entry.slug));
+const sourceRecords = [...source.matchAll(/\{slug:'([^']+)',[^\n]*published:'([^']+)'/g)];
+const sourceCounts = new Map();
+sourceRecords.forEach(([, slug]) => sourceCounts.set(slug, (sourceCounts.get(slug) || 0) + 1));
 manifest.entries.forEach((entry) => {
   entry.route === `/research/${entry.slug}` || fail(`bad route: ${entry.slug}`);
   entry.route.startsWith('/research/') || fail(`wrong family: ${entry.route}`);
+  entry.sourcePath === 'app/fleet-content.ts' || fail(`wrong source path: ${entry.slug}`);
   fs.existsSync(path.join(root, entry.sourcePath)) || fail(`missing source: ${entry.sourcePath}`);
+  sourceCounts.get(entry.slug) === 1 || fail(`source record count is not exactly one: ${entry.slug}`);
   entry.sourceDate === '2026-08-10' && entry.renderedDate === '2026-08-10' || fail(`bad manifest date: ${entry.slug}`);
   const record = source.match(new RegExp(`\\{slug:'${entry.slug}',[\\s\\S]*?published:'([^']+)'`));
   record && record[1] === '2026-08-10' || fail(`bad source date: ${entry.slug}`);
@@ -26,6 +33,8 @@ manifest.entries.forEach((entry) => {
   const introduced = execFileSync('git', ['show', `${entry.introducedByCommit}:app/fleet-content.ts`], {encoding:'utf8'});
   !parent.includes(`slug:'${entry.slug}'`) && introduced.includes(`slug:'${entry.slug}'`) || fail(`provenance diff does not prove addition: ${entry.slug}`);
 });
+const acceptedInSource = sourceRecords.filter(([, slug]) => entrySlugs.has(slug));
+acceptedInSource.length === manifest.entries.length || fail('manifest does not cover exactly its accepted source records');
 routeSource.includes("datePublished:post.published") && routeSource.includes("property=\"article:published_time\"") && routeSource.includes('<time dateTime={post.published}>') || fail('article route lacks date metadata');
 routeSource.includes('rel="canonical"') && routeSource.includes('href={articleUrl}') || fail('article route lacks canonical URL');
 sitemapSource.includes('researchPosts.map(p=>`/research/${p.slug}`)') || fail('research routes are not sitemap eligible');
@@ -39,7 +48,9 @@ if (fs.existsSync(renderedRoot)) {
     fs.existsSync(htmlPath) || fail(`missing built route: ${entry.slug}`);
     const html = fs.readFileSync(htmlPath, 'utf8');
     html.includes('2026-08-10') || fail(`built route lacks target date: ${entry.slug}`);
-    html.includes(entry.route) || fail(`built route lacks canonical route identity: ${entry.slug}`);
+    html.includes(`https://outsourcingsmallbusinesses.com${entry.route}`) || fail(`built route lacks canonical route identity: ${entry.slug}`);
+    html.includes(`property=\"article:published_time\"`) || fail(`built route lacks article published metadata: ${entry.slug}`);
+    html.includes(`<time dateTime=\"2026-08-10\">`) || fail(`built route lacks visible date: ${entry.slug}`);
   });
 }
 console.log(`PASS: ${manifest.entries.length} research entries, provenance, source/rendered dates, sitemap eligibility, and newest-first index verified`);
