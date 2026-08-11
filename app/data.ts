@@ -1,4 +1,4 @@
-import { dailyBlogBatch } from './daily-blog-batch';
+import { dailyBlogBatch, dailyBlogPublicationDate } from './daily-blog-batch';
 
 export const site = {
   "domain": "OutsourcingSmallBusinesses.com",
@@ -153,6 +153,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...dailyBlogBatch.map(([slug, title, excerpt]) => ({ slug, title, excerpt, minutes: 9, publicationDate: dailyBlogPublicationDate })),
   {
     "slug": "daily-outsourcing-starting-point-for-small-businesses",
     "title": "The best starting point for outsourcing in a small business",
@@ -204,7 +205,6 @@ export const blogPosts = [
   {"slug":"small-business-outsourcing-first-week-plan-2026-08-07","title":"First-week plan for outsourcing a daily task","excerpt":"Set a narrow first week with examples, named access, five reviewed items, and a clear escalation path.","minutes":9},
   {"slug":"small-business-outsourcing-remote-work-continuity-2026-08-07","title":"Continuity plan for a remote outsourced work lane","excerpt":"Prepare contacts, backup tools, safe work limits, and a controlled return after disruption.","minutes":9
   },
-  ...dailyBlogBatch.map(([slug, title, excerpt]) => ({ slug, title, excerpt, minutes: 9 }))
 ] as const;
 
 export const blogDetails = {

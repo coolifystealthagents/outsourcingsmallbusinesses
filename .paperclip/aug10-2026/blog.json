@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 1,
+  "contract": "sites3-aug10-public-date-v6",
+  "targetDate": "2026-08-10",
+  "family": "blog",
+  "domain": "outsourcingsmallbusinesses.com",
+  "repository": "coolifystealthagents/outsourcingsmallbusinesses",
+  "branch": "main",
+  "minimum": 22,
+  "priorRunId": "814c1721-ddee-44d5-a161-65f5d7719b02",
+  "priorIssueId": "ec4cc15f-7339-4d3d-9254-73473ebf806a",
+  "validationCommands": [
+    "node scripts/aug10-blog-regression.mjs",
+    "npm run build",
+    "npm run lint"
+  ],
+  "cleanBuildPassed": true,
+  "existingCompliancePassed": true,
+  "indexNewestFirstPassed": true,
+  "entries": [
+    {
+      "slug": "outsource-inbox-triage-small-business",
+      "route": "/blog/outsource-inbox-triage-small-business",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-calendar-management-small-business",
+      "route": "/blog/outsource-calendar-management-small-business",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-crm-cleanup-small-business",
+      "route": "/blog/outsource-crm-cleanup-small-business",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-lead-follow-up-small-business",
+      "route": "/blog/outsource-lead-follow-up-small-business",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-customer-returns-admin",
+      "route": "/blog/outsource-customer-returns-admin",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-ecommerce-product-data",
+      "route": "/blog/outsource-ecommerce-product-data",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-appointment-reminders",
+      "route": "/blog/outsource-appointment-reminders",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-vendor-follow-up",
+      "route": "/blog/outsource-vendor-follow-up",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-invoice-data-entry",
+      "route": "/blog/outsource-invoice-data-entry",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-expense-receipt-capture",
+      "route": "/blog/outsource-expense-receipt-capture",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-weekly-owner-reporting",
+      "route": "/blog/outsource-weekly-owner-reporting",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-sop-documentation",
+      "route": "/blog/outsource-sop-documentation",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-social-content-scheduling",
+      "route": "/blog/outsource-social-content-scheduling",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-review-monitoring",
+      "route": "/blog/outsource-review-monitoring",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-competitor-research",
+      "route": "/blog/outsource-competitor-research",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-marketplace-order-support",
+      "route": "/blog/outsource-marketplace-order-support",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-file-organization",
+      "route": "/blog/outsource-file-organization",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-data-quality-checks",
+      "route": "/blog/outsource-data-quality-checks",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-operations-task-tracking",
+      "route": "/blog/outsource-operations-task-tracking",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-service-quote-preparation",
+      "route": "/blog/outsource-service-quote-preparation",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-client-onboarding-admin",
+      "route": "/blog/outsource-client-onboarding-admin",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsource-back-office-quality-review",
+      "route": "/blog/outsource-back-office-quality-review",
+      "sourcePath": "app/daily-blog-batch.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "3a18327c59707c5fee84e1d429501a382708ea7f",
+      "sourceDateField": "dailyBlogPublicationDate",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    }
+  ]
+}

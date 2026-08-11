@@ -1,3 +1,5 @@
+export const dailyBlogPublicationDate = '2026-08-10';
+
 export const dailyBlogBatch = [
   ['outsource-inbox-triage-small-business', 'How to outsource inbox triage without losing the customer voice', 'A practical workflow for sorting messages, drafting replies, and keeping sensitive decisions with the owner.', 'inbox triage'],
   ['outsource-calendar-management-small-business', 'A small-business checklist for outsourcing calendar management', 'Set clear booking rules, protect focus time, and make calendar support easy to review.', 'calendar management'],
