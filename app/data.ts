@@ -1,6 +1,7 @@
 import { dailyBlogBatch, dailyBlogPublicationDate } from './daily-blog-batch';
 import { augustElevenBlogBatch } from './aug11-blog-batch';
 import { augustThirteenBlogBatch } from './aug13-blog-batch';
+import { augustFourteenBlogBatch } from './aug14-blog-batch';
 
 export const site = {
   "domain": "OutsourcingSmallBusinesses.com",
@@ -155,6 +156,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...augustFourteenBlogBatch.map((post) => ({ ...post, minutes: 9 })),
   ...augustThirteenBlogBatch.map((post) => ({ ...post, minutes: 9 })),
   ...augustElevenBlogBatch.map((post) => ({ ...post, minutes: 9, publicationDate: '2026-08-12' as const })),
   ...dailyBlogBatch.map(([slug, title, excerpt]) => ({ slug, title, excerpt, minutes: 9, publicationDate: dailyBlogPublicationDate })),

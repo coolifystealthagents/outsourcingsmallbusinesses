@@ -7,6 +7,7 @@ import { StrictEvidenceArticle } from './strict-evidence-article';
 import { dailyBlogBatch, dailyBlogPublicationDate } from '../../daily-blog-batch';
 import { augustElevenBlogBatch } from '../../aug11-blog-batch';
 import { augustThirteenBlogBatch } from '../../aug13-blog-batch';
+import { augustFourteenBlogBatch } from '../../aug14-blog-batch';
 
 const baseUrl = 'https://outsourcingsmallbusinesses.com';
 type BlogDetail = (typeof blogDetails)[keyof typeof blogDetails];
@@ -15,6 +16,7 @@ const richDetailsBySlug = richBlogDetails as Partial<Record<string, RichBlogDeta
 const dailyBySlug = new Map<string, { title: string; excerpt: string; focus: string; index: number }>(dailyBlogBatch.map(([slug, title, excerpt, focus], index) => [slug, { title, excerpt, focus, index }]));
 const augustElevenBySlug = new Map<string, { post: (typeof augustElevenBlogBatch)[number]; index: number }>(augustElevenBlogBatch.map((post, index) => [post.slug, { post, index }]));
 const augustThirteenBySlug = new Map<string, { post: (typeof augustThirteenBlogBatch)[number]; index: number }>(augustThirteenBlogBatch.map((post, index) => [post.slug, { post, index }]));
+const augustFourteenBySlug = new Map<string, { post: (typeof augustFourteenBlogBatch)[number]; index: number }>(augustFourteenBlogBatch.map((post, index) => [post.slug, { post, index }]));
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -189,6 +191,14 @@ function AugustThirteenArticle({ post, index }: { post: (typeof blogPosts)[numbe
   return <><JsonLd data={schema} /><article className="container guide-article strict-article" data-article-family="blog" data-batch={sourcePost.publicationDate}><p className="eyebrow">Small business operations guide</p><h1>{sourcePost.title}</h1><p className="lead">{sourcePost.excerpt}</p><time dateTime={sourcePost.publicationDate}>August 13, 2026</time><section><h2>Quick answer</h2><p>{sourcePost.opening}</p><p>Use a named record, an approved handoff, and a clear owner decision point. The <a href={source} target="_blank" rel="noreferrer">U.S. Small Business Administration business guidance</a> provides broader context for organizing this kind of work.</p></section><section><h2>What to set up first</h2><ul>{sourcePost.checklist.map((item) => <li key={item}>{item}</li>)}</ul></section><section><h2>Keep the boundary clear</h2><p>{sourcePost.watchout}</p></section><section><h2>How to tell whether it is working</h2><p>{sourcePost.measure}</p></section><section><h2>Owner review question</h2><p>Which part of {sourcePost.focus} is a repeatable record update, and which decision should remain with the owner?</p></section></article><CTA /></>;
 }
 
+function AugustFourteenArticle({ post, index }: { post: (typeof blogPosts)[number]; index: number }) {
+  const sourcePost = augustFourteenBlogBatch[index];
+  const url = `${baseUrl}/blog/${sourcePost.slug}`;
+  const source = 'https://www.sba.gov/business-guide/manage-your-business';
+  const schema = { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: sourcePost.title, description: sourcePost.excerpt, url, datePublished: sourcePost.publicationDate, dateModified: sourcePost.publicationDate, author: { '@type': 'Organization', name: site.brand }, publisher: { '@type': 'Organization', name: site.brand }, citation: source };
+  return <><JsonLd data={schema} /><article className="container guide-article strict-article" data-article-family="blog" data-batch={sourcePost.publicationDate}><p className="eyebrow">Small business operations guide</p><h1>{sourcePost.title}</h1><p className="lead">{sourcePost.excerpt}</p><time dateTime={sourcePost.publicationDate}>August 14, 2026</time><section><h2>Quick answer</h2><p>{sourcePost.opening}</p><p>Use a named record, an approved handoff, and a clear owner decision point. The <a href={source} target="_blank" rel="noreferrer">U.S. Small Business Administration business guidance</a> provides broader context for organizing this kind of work.</p></section><section><h2>What to set up first</h2><ul>{sourcePost.checklist.map((item) => <li key={item}>{item}</li>)}</ul></section><section><h2>Keep the boundary clear</h2><p>{sourcePost.watchout}</p></section><section><h2>How to tell whether it is working</h2><p>{sourcePost.measure}</p></section><section><h2>Owner review question</h2><p>Which part of {sourcePost.focus} is a repeatable record update, and which decision should remain with the owner?</p></section></article><CTA /></>;
+}
+
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = blogPosts.find((item) => item.slug === slug);
@@ -198,5 +208,6 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const daily = dailyBySlug.get(slug);
   const augustEleven = augustElevenBySlug.get(slug);
   const augustThirteen = augustThirteenBySlug.get(slug);
-  return <><Header articleMode /><main className="section">{augustThirteen ? <AugustThirteenArticle post={post} index={augustThirteen.index} /> : augustEleven ? <AugustElevenArticle post={post} index={augustEleven.index} /> : richDetail ? <StrictEvidenceArticle post={post} detail={richDetail} /> : detail ? <RichArticle post={post} detail={detail} /> : daily ? <DailyArticle post={post} focus={daily.focus} index={daily.index} /> : <><LegacyArticle post={post} /><CTA /></>}</main><Footer articleMode /></>;
+  const augustFourteen = augustFourteenBySlug.get(slug);
+  return <><Header articleMode /><main className="section">{augustFourteen ? <AugustFourteenArticle post={post} index={augustFourteen.index} /> : augustThirteen ? <AugustThirteenArticle post={post} index={augustThirteen.index} /> : augustEleven ? <AugustElevenArticle post={post} index={augustEleven.index} /> : richDetail ? <StrictEvidenceArticle post={post} detail={richDetail} /> : detail ? <RichArticle post={post} detail={detail} /> : daily ? <DailyArticle post={post} focus={daily.focus} index={daily.index} /> : <><LegacyArticle post={post} /><CTA /></>}</main><Footer articleMode /></>;
 }
