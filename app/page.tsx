@@ -42,9 +42,9 @@ export default function Home() {
               <span className="photo-label">Owner-approved handoff</span>
             </div>
             <div className="board-list">
-              <div><span className="task-icon coral">01</span><span className="task-symbol"><img src="/icons/getillustrations/sharpie-business/inbox-task-approval.svg" alt="" aria-hidden="true" /></span><p><strong>Inbox and calendar</strong><small>Draft, sort, schedule</small></p><b>Daily</b></div>
-              <div><span className="task-icon mint">02</span><span className="task-symbol"><img src="/icons/getillustrations/sharpie-business/customer-follow-up-target.svg" alt="" aria-hidden="true" /></span><p><strong>Customer follow-up</strong><small>Reply, tag, escalate</small></p><b>Daily</b></div>
-              <div><span className="task-icon navy">03</span><span className="task-symbol"><img src="/icons/getillustrations/sharpie-business/operations-reporting.svg" alt="" aria-hidden="true" /></span><p><strong>Operations report</strong><small>Gather, check, flag</small></p><b>Weekly</b></div>
+              <div><span className="task-icon coral">01</span><span className="task-symbol"><img src="/icons/getillustrations/sharpie-business/inbox-task-approval.svg" alt="Inbox and calendar task icon" /></span><p><strong>Inbox and calendar</strong><small>Draft, sort, schedule</small></p><b>Daily</b></div>
+              <div><span className="task-icon mint">02</span><span className="task-symbol"><img src="/icons/getillustrations/sharpie-business/customer-follow-up-target.svg" alt="Customer follow-up icon" /></span><p><strong>Customer follow-up</strong><small>Reply, tag, escalate</small></p><b>Daily</b></div>
+              <div><span className="task-icon navy">03</span><span className="task-symbol"><img src="/icons/getillustrations/sharpie-business/operations-reporting.svg" alt="Operations reporting icon" /></span><p><strong>Operations report</strong><small>Gather, check, flag</small></p><b>Weekly</b></div>
             </div>
             <div className="owner-line"><span>Owner approval stays with</span><strong>Money, people, exceptions</strong></div>
           </div>
@@ -62,7 +62,7 @@ export default function Home() {
           <p>You do not need to outsource everything. Pick the recurring work with a clear example, a clear finish line, and a clear point where the owner steps back in.</p>
         </div>
         <div className="service-grid">
-          {visibleServices.map((service, index) => <a className="service-card" href={`/services/${service.slug}`} key={service.slug}>
+          {visibleServices.map((service, index) => <a className="service-card" href="/services" key={service.slug}>
             <span className="service-number">0{index + 1}</span>
             <h3>{service.title}</h3>
             <p>{service.desc}</p>

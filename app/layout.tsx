@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   metadataBase: new URL('https://outsourcingsmallbusinesses.com'),
   title: {
-    default: 'Filipino talent for small businesses | Outsourcing Small Businesses',
+    default: 'Filipino Talent for Small Businesses',
     template: '%s | Outsourcing Small Businesses',
   },
   description: 'Plan a Filipino support role around the recurring admin, customer support, operations, and reporting work inside your small business.',
