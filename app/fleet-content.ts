@@ -1,3 +1,5 @@
+import { augustSeventeenResearchBatch } from './aug17-research-batch';
+
 export const fleetServices = [
   {
     "slug": "local-service-scheduling",
@@ -214,6 +216,7 @@ import { augustThirteenResearchBatch } from './aug13-research-batch';
 import { augustFourteenResearchBatch } from './aug14-research-batch';
 
 export const researchPosts: ReadonlyArray<{slug:string;title:string;excerpt:string;published:string;body:readonly string[]}> = [
+  ...augustSeventeenResearchBatch,
   ...augustFourteenResearchBatch,
   ...augustThirteenResearchBatch,
   {slug:'august-11-customer-service-outsourcing-evidence',title:'Research: When Customer Service Outsourcing Improves Small-Business Response Quality',excerpt:'What evidence a small business should review before assigning customer-service work to an external specialist.',published:'2026-08-12',body:['Finding: response speed is only useful when accuracy, escalation quality, and customer privacy remain visible. The U.S. Small Business Administration advises owners to define measurable objectives before changing how work is managed.','Method: compare a dated sample of incoming conversations with the same-sized reviewed sample after handoff. Record first-response time, unresolved threads, factual corrections, escalations, and cases where the owner had to intervene.','Implication: external support is a better fit for categorization, approved replies, and status updates than for refunds, legal complaints, account recovery, or promises outside written policy. Sources: SBA, https://www.sba.gov/business-guide/manage-your-business; FTC, https://www.ftc.gov/business-guidance.','Limit: this is a decision framework, not a claim about average provider performance. The business should use its own records and review the result before expanding access.']},
