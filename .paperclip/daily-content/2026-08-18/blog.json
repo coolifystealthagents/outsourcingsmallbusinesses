@@ -1,0 +1,28 @@
+{
+  "campaignDate": "2026-08-18",
+  "family": "blog",
+  "entries": [
+    {"route":"/blog/outsource-small-business-invoice-status-checks","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-project-risk-notes","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-customer-consent-records","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-supplier-quote-logs","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-customer-priority-flags","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-employee-document-indexes","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-service-issue-triage","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-content-approval-queues","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-customer-identity-questions","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-operations-calendar-reviews","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-customer-escalation-packets","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-website-content-inventories","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-lead-response-age-checks","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-work-instruction-version-checks","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-customer-appointment-confirmations","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-business-license-records","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-customer-sentiment-coding","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-open-question-registers","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-customer-message-translation-checks","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-business-continuity-contact-lists","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-customer-data-correction-logs","sourcePaths":["app/aug18-blog-batch.ts"]},
+    {"route":"/blog/outsource-small-business-recurring-task-coverage-reviews","sourcePaths":["app/aug18-blog-batch.ts"]}
+  ]
+}
