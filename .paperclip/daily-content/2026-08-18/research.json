@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "campaignDate": "2026-08-18",
+  "family": "research",
+  "repository": "coolifystealthagents/outsourcingsmallbusinesses",
+  "branch": "main",
+  "entries": [
+    {"slug":"august-18-research-outsourced-inbox-triage","route":"/research/august-18-research-outsourced-inbox-triage","sourcePath":"app/aug18-research-batch.ts"},
+    {"slug":"august-18-research-outsourced-bookkeeping-source-reconciliation","route":"/research/august-18-research-outsourced-bookkeeping-source-reconciliation","sourcePath":"app/aug18-research-batch.ts"},
+    {"slug":"august-18-research-outsourced-lead-intake-qualification-boundaries","route":"/research/august-18-research-outsourced-lead-intake-qualification-boundaries","sourcePath":"app/aug18-research-batch.ts"},
+    {"slug":"august-18-research-outsourced-scheduling-capacity-evidence","route":"/research/august-18-research-outsourced-scheduling-capacity-evidence","sourcePath":"app/aug18-research-batch.ts"},
+    {"slug":"august-18-research-outsourced-invoice-follow-up-evidence","route":"/research/august-18-research-outsourced-invoice-follow-up-evidence","sourcePath":"app/aug18-research-batch.ts"},
+    {"slug":"august-18-research-outsourced-order-exception-analysis","route":"/research/august-18-research-outsourced-order-exception-analysis","sourcePath":"app/aug18-research-batch.ts"},
+    {"slug":"august-18-research-outsourced-vendor-confirmation-controls","route":"/research/august-18-research-outsourced-vendor-confirmation-controls","sourcePath":"app/aug18-research-batch.ts"},
+    {"slug":"august-18-research-outsourced-customer-review-response-evidence","route":"/research/august-18-research-outsourced-customer-review-response-evidence","sourcePath":"app/aug18-research-batch.ts"},
+    {"slug":"august-18-research-outsourced-data-access-review","route":"/research/august-18-research-outsourced-data-access-review","sourcePath":"app/aug18-research-batch.ts"},
+    {"slug":"august-18-research-outsourced-content-claims-review","route":"/research/august-18-research-outsourced-content-claims-review","sourcePath":"app/aug18-research-batch.ts"}
+  ]
+}

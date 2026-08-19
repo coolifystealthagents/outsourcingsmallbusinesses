@@ -1,4 +1,5 @@
 import { augustSeventeenResearchBatch } from './aug17-research-batch';
+import { augustEighteenResearchBatch } from './aug18-research-batch';
 
 export const fleetServices = [
   {
@@ -216,6 +217,7 @@ import { augustThirteenResearchBatch } from './aug13-research-batch';
 import { augustFourteenResearchBatch } from './aug14-research-batch';
 
 export const researchPosts: ReadonlyArray<{slug:string;title:string;excerpt:string;published:string;body:readonly string[]}> = [
+  ...augustEighteenResearchBatch,
   ...augustSeventeenResearchBatch,
   ...augustFourteenResearchBatch,
   ...augustThirteenResearchBatch,
