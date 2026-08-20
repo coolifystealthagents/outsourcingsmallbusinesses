@@ -1,0 +1,25 @@
+{
+  "date": "2026-08-19",
+  "articles": [
+    {
+      "route": "/research/small-business-outsourcing-source-quality-evidence-research",
+      "source": "content/research/small-business-outsourcing-source-quality-evidence-research.md"
+    },
+    {
+      "route": "/research/small-business-outsourcing-exception-aging-patterns-research",
+      "source": "content/research/small-business-outsourcing-exception-aging-patterns-research.md"
+    },
+    {
+      "route": "/research/small-business-outsourcing-review-consistency-research",
+      "source": "content/research/small-business-outsourcing-review-consistency-research.md"
+    },
+    {
+      "route": "/research/small-business-outsourcing-access-governance-research",
+      "source": "content/research/small-business-outsourcing-access-governance-research.md"
+    },
+    {
+      "route": "/research/small-business-outsourcing-handoff-reliability-research",
+      "source": "content/research/small-business-outsourcing-handoff-reliability-research.md"
+    }
+  ]
+}

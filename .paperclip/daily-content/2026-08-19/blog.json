@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-19",
+  "articles": [
+    {
+      "route": "/blog/small-business-outsourcing-intake-source-register",
+      "source": "content/blog/small-business-outsourcing-intake-source-register.md"
+    },
+    {
+      "route": "/blog/small-business-outsourcing-approval-evidence-matrix",
+      "source": "content/blog/small-business-outsourcing-approval-evidence-matrix.md"
+    },
+    {
+      "route": "/blog/small-business-outsourcing-exception-queue-triage",
+      "source": "content/blog/small-business-outsourcing-exception-queue-triage.md"
+    },
+    {
+      "route": "/blog/small-business-outsourcing-quality-review-cadence",
+      "source": "content/blog/small-business-outsourcing-quality-review-cadence.md"
+    },
+    {
+      "route": "/blog/small-business-outsourcing-handoff-acceptance-log",
+      "source": "content/blog/small-business-outsourcing-handoff-acceptance-log.md"
+    },
+    {
+      "route": "/blog/small-business-outsourcing-access-recertification-review",
+      "source": "content/blog/small-business-outsourcing-access-recertification-review.md"
+    },
+    {
+      "route": "/blog/small-business-outsourcing-weekly-decision-brief",
+      "source": "content/blog/small-business-outsourcing-weekly-decision-brief.md"
+    },
+    {
+      "route": "/blog/small-business-outsourcing-source-of-truth-map",
+      "source": "content/blog/small-business-outsourcing-source-of-truth-map.md"
+    },
+    {
+      "route": "/blog/small-business-outsourcing-change-control-record",
+      "source": "content/blog/small-business-outsourcing-change-control-record.md"
+    },
+    {
+      "route": "/blog/small-business-outsourcing-work-queue-ownership",
+      "source": "content/blog/small-business-outsourcing-work-queue-ownership.md"
+    },
+    {
+      "route": "/blog/small-business-outsourcing-escalation-path-design",
+      "source": "content/blog/small-business-outsourcing-escalation-path-design.md"
+    },
+    {
+      "route": "/blog/small-business-outsourcing-launch-readiness-review",
+      "source": "content/blog/small-business-outsourcing-launch-readiness-review.md"
+    }
+  ]
+}
