@@ -1,0 +1,14 @@
+[
+  {"route":"/blog/outsourcing-small-business-content-calendar-control","sourcePath":"app/aug21-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-source-backed-article-briefs","sourcePath":"app/aug21-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-content-approval-boundaries","sourcePath":"app/aug21-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-editorial-revision-log","sourcePath":"app/aug21-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-content-asset-inventory","sourcePath":"app/aug21-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-content-refresh-queue","sourcePath":"app/aug21-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-content-performance-notes","sourcePath":"app/aug21-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-content-correction-intake","sourcePath":"app/aug21-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-content-brief-handoff","sourcePath":"app/aug21-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-content-topic-queue","sourcePath":"app/aug21-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-content-calendar-reconciliation","sourcePath":"app/aug21-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-content-archive-rules","sourcePath":"app/aug21-blog-batch.ts"}
+]

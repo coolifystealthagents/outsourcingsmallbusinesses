@@ -11,6 +11,7 @@ import { augustFourteenBlogBatch } from '../../aug14-blog-batch';
 import { augustSeventeenBlogBatch } from '../../aug17-blog-batch';
 import { augustEighteenBlogBatch } from '../../aug18-blog-batch';
 import { augustTwentyBlogBatch } from '../../aug20-blog-batch';
+import { augustTwentyOneBlogBatch } from '../../aug21-blog-batch';
 
 const baseUrl = 'https://outsourcingsmallbusinesses.com';
 type BlogDetail = (typeof blogDetails)[keyof typeof blogDetails];
@@ -23,6 +24,7 @@ const augustFourteenBySlug = new Map<string, { post: (typeof augustFourteenBlogB
 const augustSeventeenBySlug = new Map<string, { post: (typeof augustSeventeenBlogBatch)[number]; index: number }>(augustSeventeenBlogBatch.map((post, index) => [post.slug, { post, index }]));
 const augustEighteenBySlug = new Map<string, { post: (typeof augustEighteenBlogBatch)[number]; index: number }>(augustEighteenBlogBatch.map((post, index) => [post.slug, { post, index }]));
 const augustTwentyBySlug = new Map<string, { post: (typeof augustTwentyBlogBatch)[number]; index: number }>(augustTwentyBlogBatch.map((post, index) => [post.slug, { post, index }]));
+const augustTwentyOneBySlug = new Map<string, { post: (typeof augustTwentyOneBlogBatch)[number]; index: number }>(augustTwentyOneBlogBatch.map((post, index) => [post.slug, { post, index }]));
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -245,6 +247,14 @@ function AugustTwentyArticle({ post, index }: { post: (typeof blogPosts)[number]
   return <><JsonLd data={schema} /><article className="container guide-article strict-article" data-article-family="blog" data-batch="2026-08-20"><p className="eyebrow">Small business operations guide</p><h1>{sourcePost.title}</h1><p className="lead">{sourcePost.excerpt}</p><time dateTime="2026-08-20">August 20, 2026</time><figure><img src={sourcePost.imagePath} alt={`Illustration for ${sourcePost.focus}`} /></figure><section><h2>Quick answer</h2><p>{sourcePost.opening}</p></section>{sourcePost.sections.map(([heading, paragraph]) => <section key={heading}><h2>{heading}</h2><p>{paragraph}</p></section>)}<section><h2>Owner review prompt</h2><p>Which part of {sourcePost.focus} is preparation, which part needs evidence, and which decision remains with the owner?</p></section></article><CTA /></>;
 }
 
+function AugustTwentyOneArticle({ post, index }: { post: (typeof blogPosts)[number]; index: number }) {
+  const sourcePost = augustTwentyOneBlogBatch[index];
+  const url = `${baseUrl}/blog/${sourcePost.slug}`;
+  const schema = { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: sourcePost.title, description: sourcePost.excerpt, url, datePublished: '2026-08-21', dateModified: '2026-08-21', author: { '@type': 'Organization', name: site.brand }, publisher: { '@type': 'Organization', name: site.brand }, image: `${baseUrl}${sourcePost.imagePath}`, citation: 'https://www.sba.gov/business-guide/manage-your-business' };
+  const operatingClose = `Before expanding ${sourcePost.focus}, review one ordinary item, one incomplete item, one conflicting item, and one item that needs an owner decision. Record the source, identifier, observed date, permitted action, reviewer, and finish line for each. A support operator may organize the record, compare approved information, prepare a neutral draft, and point to a gap. The operator should stop when the source is missing, the instruction conflicts, or the next action would create a promise, change money, expose private information, alter access, interpret a policy, or make a consequential public claim. Keep those decisions with a named owner or qualified reviewer. Track returned work by reason so a repeated question improves the brief or checklist instead of becoming silent rework. Use the narrowest access that supports the task, named accounts, and a handoff another person can follow. Preserve earlier versions when the source or instruction changes. A clean completion count is not enough if blocked items disappear. Review the evidence and the exceptions together, then decide whether the lane is ready for more volume. The useful outcome is a prepared record that is easier to inspect and easier to correct, while the business still knows who is accountable for the result.`;
+  return <><JsonLd data={schema} /><article className="container guide-article strict-article" data-article-family="blog" data-batch="2026-08-21"><p className="eyebrow">Small business operations guide</p><h1>{sourcePost.title}</h1><p className="lead">{sourcePost.excerpt}</p><time dateTime="2026-08-21">August 21, 2026</time><figure><img src={sourcePost.imagePath} alt={`Illustration for ${sourcePost.focus}`} /></figure>{sourcePost.sections.map(([heading, paragraph]) => <section key={heading}><h2>{heading}</h2><p>{paragraph}</p></section>)}<section><h2>Operating check for {sourcePost.focus}</h2><p>{operatingClose}</p></section><section><h2>Owner review prompt</h2><p>Which part of {sourcePost.focus} is preparation, which part needs evidence, and which decision remains with the owner?</p></section></article><CTA /></>;
+}
+
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = blogPosts.find((item) => item.slug === slug);
@@ -258,5 +268,6 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const augustSeventeen = augustSeventeenBySlug.get(slug);
   const augustEighteen = augustEighteenBySlug.get(slug);
   const augustTwenty = augustTwentyBySlug.get(slug);
-  return <><Header articleMode /><main className="section">{augustTwenty ? <AugustTwentyArticle post={post} index={augustTwenty.index} /> : augustEighteen ? <AugustEighteenArticle post={post} index={augustEighteen.index} /> : augustSeventeen ? <AugustSeventeenArticle post={post} index={augustSeventeen.index} /> : augustFourteen ? <AugustFourteenArticle post={post} index={augustFourteen.index} /> : augustThirteen ? <AugustThirteenArticle post={post} index={augustThirteen.index} /> : augustEleven ? <AugustElevenArticle post={post} index={augustEleven.index} /> : richDetail ? <StrictEvidenceArticle post={post} detail={richDetail} /> : detail ? <RichArticle post={post} detail={detail} /> : daily ? <DailyArticle post={post} focus={daily.focus} index={daily.index} /> : <><LegacyArticle post={post} /><CTA /></>}</main><Footer articleMode /></>;
+  const augustTwentyOne = augustTwentyOneBySlug.get(slug);
+  return <><Header articleMode /><main className="section">{augustTwentyOne ? <AugustTwentyOneArticle post={post} index={augustTwentyOne.index} /> : augustTwenty ? <AugustTwentyArticle post={post} index={augustTwenty.index} /> : augustEighteen ? <AugustEighteenArticle post={post} index={augustEighteen.index} /> : augustSeventeen ? <AugustSeventeenArticle post={post} index={augustSeventeen.index} /> : augustFourteen ? <AugustFourteenArticle post={post} index={augustFourteen.index} /> : augustThirteen ? <AugustThirteenArticle post={post} index={augustThirteen.index} /> : augustEleven ? <AugustElevenArticle post={post} index={augustEleven.index} /> : richDetail ? <StrictEvidenceArticle post={post} detail={richDetail} /> : detail ? <RichArticle post={post} detail={detail} /> : daily ? <DailyArticle post={post} focus={daily.focus} index={daily.index} /> : <><LegacyArticle post={post} /><CTA /></>}</main><Footer articleMode /></>;
 }
