@@ -10,6 +10,7 @@ import { augustThirteenBlogBatch } from '../../aug13-blog-batch';
 import { augustFourteenBlogBatch } from '../../aug14-blog-batch';
 import { augustSeventeenBlogBatch } from '../../aug17-blog-batch';
 import { augustEighteenBlogBatch } from '../../aug18-blog-batch';
+import { augustTwentyBlogBatch } from '../../aug20-blog-batch';
 
 const baseUrl = 'https://outsourcingsmallbusinesses.com';
 type BlogDetail = (typeof blogDetails)[keyof typeof blogDetails];
@@ -21,6 +22,7 @@ const augustThirteenBySlug = new Map<string, { post: (typeof augustThirteenBlogB
 const augustFourteenBySlug = new Map<string, { post: (typeof augustFourteenBlogBatch)[number]; index: number }>(augustFourteenBlogBatch.map((post, index) => [post.slug, { post, index }]));
 const augustSeventeenBySlug = new Map<string, { post: (typeof augustSeventeenBlogBatch)[number]; index: number }>(augustSeventeenBlogBatch.map((post, index) => [post.slug, { post, index }]));
 const augustEighteenBySlug = new Map<string, { post: (typeof augustEighteenBlogBatch)[number]; index: number }>(augustEighteenBlogBatch.map((post, index) => [post.slug, { post, index }]));
+const augustTwentyBySlug = new Map<string, { post: (typeof augustTwentyBlogBatch)[number]; index: number }>(augustTwentyBlogBatch.map((post, index) => [post.slug, { post, index }]));
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -236,6 +238,13 @@ function AugustEighteenArticle({ post, index }: { post: (typeof blogPosts)[numbe
   return <><JsonLd data={schema} /><article className="container guide-article strict-article" data-article-family="blog" data-batch={sourcePost.publicationDate}><p className="eyebrow">Small business operations guide</p><h1>{sourcePost.title}</h1><p className="lead">{sourcePost.excerpt}</p><time dateTime={sourcePost.publicationDate}>August 18, 2026</time><section><h2>Quick answer</h2><p>{sourcePost.opening}</p><ul>{sourcePost.checklist.map((item) => <li key={item}>{item}</li>)}</ul></section>{paragraphs.map((paragraph, i) => <section key={i}><h2>{['Why this record matters','Define the work unit','Preserve the source','Set the approval boundary','Review the first batch','Use a stop rule','Protect the handoff','Summarize for the owner','Measure the lane','Owner review'][i]}</h2><p>{paragraph}</p></section>)}<section><h2>Keep the boundary clear</h2><p>{sourcePost.watchout}</p><p>{sourcePost.measure}</p><p>{sourcePost.lens}</p></section></article><CTA /></>;
 }
 
+function AugustTwentyArticle({ post, index }: { post: (typeof blogPosts)[number]; index: number }) {
+  const sourcePost = augustTwentyBlogBatch[index];
+  const url = `${baseUrl}/blog/${sourcePost.slug}`;
+  const schema = { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: sourcePost.title, description: sourcePost.excerpt, url, datePublished: '2026-08-20', dateModified: '2026-08-20', author: { '@type': 'Organization', name: site.brand }, publisher: { '@type': 'Organization', name: site.brand }, image: `${baseUrl}${sourcePost.imagePath}`, citation: 'https://www.sba.gov/business-guide/manage-your-business' };
+  return <><JsonLd data={schema} /><article className="container guide-article strict-article" data-article-family="blog" data-batch="2026-08-20"><p className="eyebrow">Small business operations guide</p><h1>{sourcePost.title}</h1><p className="lead">{sourcePost.excerpt}</p><time dateTime="2026-08-20">August 20, 2026</time><figure><img src={sourcePost.imagePath} alt={`Illustration for ${sourcePost.focus}`} /></figure><section><h2>Quick answer</h2><p>{sourcePost.opening}</p></section>{sourcePost.sections.map(([heading, paragraph]) => <section key={heading}><h2>{heading}</h2><p>{paragraph}</p></section>)}<section><h2>Owner review prompt</h2><p>Which part of {sourcePost.focus} is preparation, which part needs evidence, and which decision remains with the owner?</p></section></article><CTA /></>;
+}
+
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = blogPosts.find((item) => item.slug === slug);
@@ -248,5 +257,6 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const augustFourteen = augustFourteenBySlug.get(slug);
   const augustSeventeen = augustSeventeenBySlug.get(slug);
   const augustEighteen = augustEighteenBySlug.get(slug);
-  return <><Header articleMode /><main className="section">{augustEighteen ? <AugustEighteenArticle post={post} index={augustEighteen.index} /> : augustSeventeen ? <AugustSeventeenArticle post={post} index={augustSeventeen.index} /> : augustFourteen ? <AugustFourteenArticle post={post} index={augustFourteen.index} /> : augustThirteen ? <AugustThirteenArticle post={post} index={augustThirteen.index} /> : augustEleven ? <AugustElevenArticle post={post} index={augustEleven.index} /> : richDetail ? <StrictEvidenceArticle post={post} detail={richDetail} /> : detail ? <RichArticle post={post} detail={detail} /> : daily ? <DailyArticle post={post} focus={daily.focus} index={daily.index} /> : <><LegacyArticle post={post} /><CTA /></>}</main><Footer articleMode /></>;
+  const augustTwenty = augustTwentyBySlug.get(slug);
+  return <><Header articleMode /><main className="section">{augustTwenty ? <AugustTwentyArticle post={post} index={augustTwenty.index} /> : augustEighteen ? <AugustEighteenArticle post={post} index={augustEighteen.index} /> : augustSeventeen ? <AugustSeventeenArticle post={post} index={augustSeventeen.index} /> : augustFourteen ? <AugustFourteenArticle post={post} index={augustFourteen.index} /> : augustThirteen ? <AugustThirteenArticle post={post} index={augustThirteen.index} /> : augustEleven ? <AugustElevenArticle post={post} index={augustEleven.index} /> : richDetail ? <StrictEvidenceArticle post={post} detail={richDetail} /> : detail ? <RichArticle post={post} detail={detail} /> : daily ? <DailyArticle post={post} focus={daily.focus} index={daily.index} /> : <><LegacyArticle post={post} /><CTA /></>}</main><Footer articleMode /></>;
 }
