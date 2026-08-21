@@ -1,0 +1,11 @@
+{
+  "campaignDate": "2026-08-20",
+  "family": "research",
+  "entries": [
+    {"route":"/research/august-20-research-handoff-provenance-outsourced-support","sourcePaths":["app/aug20-research-batch.ts"],"imagePath":"public/research-heroes/aug20-handoff-provenance.png"},
+    {"route":"/research/august-20-research-least-privilege-outsourced-administration","sourcePaths":["app/aug20-research-batch.ts"],"imagePath":"public/research-heroes/aug20-least-privilege.png"},
+    {"route":"/research/august-20-research-bookkeeping-exception-reconciliation","sourcePaths":["app/aug20-research-batch.ts"],"imagePath":"public/research-heroes/aug20-bookkeeping-exceptions.png"},
+    {"route":"/research/august-20-research-scheduling-capacity-evidence","sourcePaths":["app/aug20-research-batch.ts"],"imagePath":"public/research-heroes/aug20-scheduling-capacity.png"},
+    {"route":"/research/august-20-research-public-review-response-evidence","sourcePaths":["app/aug20-research-batch.ts"],"imagePath":"public/research-heroes/aug20-review-response.png"}
+  ]
+}
