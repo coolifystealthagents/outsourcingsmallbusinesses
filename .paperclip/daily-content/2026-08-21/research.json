@@ -1,0 +1,11 @@
+{
+  "campaignDate": "2026-08-21",
+  "family": "research",
+  "entries": [
+    {"route":"/research/august-21-research-source-freshness-outsourced-content-briefs","sourcePaths":["app/aug21-research-batch.ts"]},
+    {"route":"/research/august-21-research-editorial-correction-loops-outsourced-articles","sourcePaths":["app/aug21-research-batch.ts"]},
+    {"route":"/research/august-21-research-topic-queue-diversity-small-business-publishing","sourcePaths":["app/aug21-research-batch.ts"]},
+    {"route":"/research/august-21-research-publication-readiness-outsourced-small-business-content","sourcePaths":["app/aug21-research-batch.ts"]},
+    {"route":"/research/august-21-research-content-archive-update-decisions-small-business-sites","sourcePaths":["app/aug21-research-batch.ts"]}
+  ]
+}
