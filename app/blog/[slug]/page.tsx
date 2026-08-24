@@ -12,7 +12,7 @@ import { augustSeventeenBlogBatch } from '../../aug17-blog-batch';
 import { augustEighteenBlogBatch } from '../../aug18-blog-batch';
 import { augustTwentyBlogBatch } from '../../aug20-blog-batch';
 import { augustTwentyOneBlogBatch } from '../../aug21-blog-batch';
-import { augustTwentyThreeBlogBatch } from '../../aug23-blog-batch';
+import { augustTwentyThreeApplicationNotes, augustTwentyThreeArticleClosings, augustTwentyThreeBlogBatch } from '../../aug23-blog-batch';
 
 const baseUrl = 'https://outsourcingsmallbusinesses.com';
 type BlogDetail = (typeof blogDetails)[keyof typeof blogDetails];
@@ -259,9 +259,11 @@ function AugustTwentyOneArticle({ post, index }: { post: (typeof blogPosts)[numb
 
 function AugustTwentyThreeArticle({ index }: { index: number }) {
   const sourcePost = augustTwentyThreeBlogBatch[index];
+  const closing = augustTwentyThreeArticleClosings[sourcePost.slug];
+  const applicationNote = augustTwentyThreeApplicationNotes[sourcePost.slug];
   const url = `${baseUrl}/blog/${sourcePost.slug}`;
   const schema = { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: sourcePost.title, description: sourcePost.excerpt, url, datePublished: '2026-08-23', dateModified: '2026-08-23', author: { '@type': 'Organization', name: site.brand }, publisher: { '@type': 'Organization', name: site.brand }, ...(sourcePost.imagePath ? { image: `${baseUrl}${sourcePost.imagePath}` } : {}), citation: 'https://www.sba.gov/business-guide/manage-your-business' };
-  return <><JsonLd data={schema} /><article className="container guide-article strict-article" data-article-family="blog" data-batch="2026-08-23"><p className="eyebrow">Small business operations guide</p><h1>{sourcePost.title}</h1><p className="lead">{sourcePost.excerpt}</p><time dateTime="2026-08-23">August 23, 2026</time>{sourcePost.imagePath ? <figure><img src={sourcePost.imagePath} alt={`Illustration for ${sourcePost.focus}`} /></figure> : null}{sourcePost.sections.map(([heading, paragraph]) => <section key={heading}><h2>{heading}</h2><p>{paragraph}</p></section>)}<section><h2>Owner review prompt</h2><p>Which part of {sourcePost.focus} can be prepared by an outsourced support role, which part needs evidence, and which decision remains with the owner?</p></section></article><CTA /></>;
+  return <><JsonLd data={schema} /><article className="container guide-article strict-article" data-article-family="blog" data-batch="2026-08-23"><p className="eyebrow">Small business operations guide</p><h1>{sourcePost.title}</h1><p className="lead">{sourcePost.excerpt}</p><time dateTime="2026-08-23">August 23, 2026</time>{sourcePost.imagePath ? <figure><img src={sourcePost.imagePath} alt={`Illustration for ${sourcePost.focus}`} /></figure> : null}{sourcePost.sections.map(([heading, paragraph]) => <section key={heading}><h2>{heading}</h2><p>{paragraph}</p></section>)}<section><h2>Apply the routine in practice</h2><p>{closing}</p></section><section><h2>Test the handoff</h2><p>{applicationNote}</p></section><section><h2>Owner review prompt</h2><p>Which part of {sourcePost.focus} can be prepared by an outsourced support role, which part needs evidence, and which decision remains with the owner?</p></section></article><CTA /></>;
 }
 
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
