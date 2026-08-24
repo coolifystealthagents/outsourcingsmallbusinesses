@@ -1,0 +1,12 @@
+{
+  "campaignDate": "2026-08-23",
+  "family": "research",
+  "imageStatus": "fallback-text-complete-gemini-unavailable",
+  "entries": [
+    {"route":"/research/august-23-research-outsourced-crm-data-quality","sourcePaths":["app/aug23-research-batch.ts"]},
+    {"route":"/research/august-23-research-outsourced-knowledge-base-maintenance","sourcePaths":["app/aug23-research-batch.ts"]},
+    {"route":"/research/august-23-research-outsourced-training-readiness","sourcePaths":["app/aug23-research-batch.ts"]},
+    {"route":"/research/august-23-research-outsourced-work-queue-aging","sourcePaths":["app/aug23-research-batch.ts"]},
+    {"route":"/research/august-23-research-outsourced-content-source-trails","sourcePaths":["app/aug23-research-batch.ts"]}
+  ]
+}
