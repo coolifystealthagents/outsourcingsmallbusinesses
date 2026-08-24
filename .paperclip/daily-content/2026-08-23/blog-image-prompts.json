@@ -1,0 +1,19 @@
+{
+  "status": "blocked",
+  "provider": "Gemini",
+  "reason": "Built-in image generation completed without returning an asset; no stock or retained-image substitution was made.",
+  "routes": [
+    "/blog/outsourcing-small-business-article-intake-desk",
+    "/blog/outsourcing-small-business-daily-source-capture",
+    "/blog/outsourcing-small-business-fact-check-queue",
+    "/blog/outsourcing-small-business-editorial-calendar-handoff",
+    "/blog/outsourcing-small-business-content-correction-loop",
+    "/blog/outsourcing-small-business-article-image-alt-text",
+    "/blog/outsourcing-small-business-internal-link-map",
+    "/blog/outsourcing-small-business-expert-interview-notes",
+    "/blog/outsourcing-small-business-article-refresh-triggers",
+    "/blog/outsourcing-small-business-content-capacity-board",
+    "/blog/outsourcing-small-business-editorial-style-sheet",
+    "/blog/outsourcing-small-business-weekly-publication-retrospective"
+  ]
+}

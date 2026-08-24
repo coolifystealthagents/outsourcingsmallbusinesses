@@ -12,6 +12,7 @@ import { augustSeventeenBlogBatch } from '../../aug17-blog-batch';
 import { augustEighteenBlogBatch } from '../../aug18-blog-batch';
 import { augustTwentyBlogBatch } from '../../aug20-blog-batch';
 import { augustTwentyOneBlogBatch } from '../../aug21-blog-batch';
+import { augustTwentyThreeBlogBatch } from '../../aug23-blog-batch';
 
 const baseUrl = 'https://outsourcingsmallbusinesses.com';
 type BlogDetail = (typeof blogDetails)[keyof typeof blogDetails];
@@ -25,6 +26,7 @@ const augustSeventeenBySlug = new Map<string, { post: (typeof augustSeventeenBlo
 const augustEighteenBySlug = new Map<string, { post: (typeof augustEighteenBlogBatch)[number]; index: number }>(augustEighteenBlogBatch.map((post, index) => [post.slug, { post, index }]));
 const augustTwentyBySlug = new Map<string, { post: (typeof augustTwentyBlogBatch)[number]; index: number }>(augustTwentyBlogBatch.map((post, index) => [post.slug, { post, index }]));
 const augustTwentyOneBySlug = new Map<string, { post: (typeof augustTwentyOneBlogBatch)[number]; index: number }>(augustTwentyOneBlogBatch.map((post, index) => [post.slug, { post, index }]));
+const augustTwentyThreeBySlug = new Map<string, { post: (typeof augustTwentyThreeBlogBatch)[number]; index: number }>(augustTwentyThreeBlogBatch.map((post, index) => [post.slug, { post, index }]));
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -255,6 +257,13 @@ function AugustTwentyOneArticle({ post, index }: { post: (typeof blogPosts)[numb
   return <><JsonLd data={schema} /><article className="container guide-article strict-article" data-article-family="blog" data-batch="2026-08-21"><p className="eyebrow">Small business operations guide</p><h1>{sourcePost.title}</h1><p className="lead">{sourcePost.excerpt}</p><time dateTime="2026-08-21">August 21, 2026</time><figure><img src={sourcePost.imagePath} alt={`Illustration for ${sourcePost.focus}`} /></figure>{sourcePost.sections.map(([heading, paragraph]) => <section key={heading}><h2>{heading}</h2><p>{paragraph}</p></section>)}<section><h2>Operating check for {sourcePost.focus}</h2><p>{operatingClose}</p></section><section><h2>Owner review prompt</h2><p>Which part of {sourcePost.focus} is preparation, which part needs evidence, and which decision remains with the owner?</p></section></article><CTA /></>;
 }
 
+function AugustTwentyThreeArticle({ index }: { index: number }) {
+  const sourcePost = augustTwentyThreeBlogBatch[index];
+  const url = `${baseUrl}/blog/${sourcePost.slug}`;
+  const schema = { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: sourcePost.title, description: sourcePost.excerpt, url, datePublished: '2026-08-23', dateModified: '2026-08-23', author: { '@type': 'Organization', name: site.brand }, publisher: { '@type': 'Organization', name: site.brand }, ...(sourcePost.imagePath ? { image: `${baseUrl}${sourcePost.imagePath}` } : {}), citation: 'https://www.sba.gov/business-guide/manage-your-business' };
+  return <><JsonLd data={schema} /><article className="container guide-article strict-article" data-article-family="blog" data-batch="2026-08-23"><p className="eyebrow">Small business operations guide</p><h1>{sourcePost.title}</h1><p className="lead">{sourcePost.excerpt}</p><time dateTime="2026-08-23">August 23, 2026</time>{sourcePost.imagePath ? <figure><img src={sourcePost.imagePath} alt={`Illustration for ${sourcePost.focus}`} /></figure> : null}{sourcePost.sections.map(([heading, paragraph]) => <section key={heading}><h2>{heading}</h2><p>{paragraph}</p></section>)}<section><h2>Owner review prompt</h2><p>Which part of {sourcePost.focus} can be prepared by an outsourced support role, which part needs evidence, and which decision remains with the owner?</p></section></article><CTA /></>;
+}
+
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = blogPosts.find((item) => item.slug === slug);
@@ -269,5 +278,6 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const augustEighteen = augustEighteenBySlug.get(slug);
   const augustTwenty = augustTwentyBySlug.get(slug);
   const augustTwentyOne = augustTwentyOneBySlug.get(slug);
-  return <><Header articleMode /><main className="section">{augustTwentyOne ? <AugustTwentyOneArticle post={post} index={augustTwentyOne.index} /> : augustTwenty ? <AugustTwentyArticle post={post} index={augustTwenty.index} /> : augustEighteen ? <AugustEighteenArticle post={post} index={augustEighteen.index} /> : augustSeventeen ? <AugustSeventeenArticle post={post} index={augustSeventeen.index} /> : augustFourteen ? <AugustFourteenArticle post={post} index={augustFourteen.index} /> : augustThirteen ? <AugustThirteenArticle post={post} index={augustThirteen.index} /> : augustEleven ? <AugustElevenArticle post={post} index={augustEleven.index} /> : richDetail ? <StrictEvidenceArticle post={post} detail={richDetail} /> : detail ? <RichArticle post={post} detail={detail} /> : daily ? <DailyArticle post={post} focus={daily.focus} index={daily.index} /> : <><LegacyArticle post={post} /><CTA /></>}</main><Footer articleMode /></>;
+  const augustTwentyThree = augustTwentyThreeBySlug.get(slug);
+  return <><Header articleMode /><main className="section">{augustTwentyThree ? <AugustTwentyThreeArticle index={augustTwentyThree.index} /> : augustTwentyOne ? <AugustTwentyOneArticle post={post} index={augustTwentyOne.index} /> : augustTwenty ? <AugustTwentyArticle post={post} index={augustTwenty.index} /> : augustEighteen ? <AugustEighteenArticle post={post} index={augustEighteen.index} /> : augustSeventeen ? <AugustSeventeenArticle post={post} index={augustSeventeen.index} /> : augustFourteen ? <AugustFourteenArticle post={post} index={augustFourteen.index} /> : augustThirteen ? <AugustThirteenArticle post={post} index={augustThirteen.index} /> : augustEleven ? <AugustElevenArticle post={post} index={augustEleven.index} /> : richDetail ? <StrictEvidenceArticle post={post} detail={richDetail} /> : detail ? <RichArticle post={post} detail={detail} /> : daily ? <DailyArticle post={post} focus={daily.focus} index={daily.index} /> : <><LegacyArticle post={post} /><CTA /></>}</main><Footer articleMode /></>;
 }

@@ -1,0 +1,14 @@
+[
+  {"route":"/blog/outsourcing-small-business-article-intake-desk","sourcePath":"app/aug23-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-daily-source-capture","sourcePath":"app/aug23-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-fact-check-queue","sourcePath":"app/aug23-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-editorial-calendar-handoff","sourcePath":"app/aug23-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-content-correction-loop","sourcePath":"app/aug23-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-article-image-alt-text","sourcePath":"app/aug23-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-internal-link-map","sourcePath":"app/aug23-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-expert-interview-notes","sourcePath":"app/aug23-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-article-refresh-triggers","sourcePath":"app/aug23-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-content-capacity-board","sourcePath":"app/aug23-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-editorial-style-sheet","sourcePath":"app/aug23-blog-batch.ts"},
+  {"route":"/blog/outsourcing-small-business-weekly-publication-retrospective","sourcePath":"app/aug23-blog-batch.ts"}
+]
