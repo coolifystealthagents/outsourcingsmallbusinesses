@@ -1,10 +1,10 @@
 export type AugustTwentyThreeBlogPost = {
   slug: string; title: string; excerpt: string; focus: string;
-  publicationDate?: '2026-08-23'; imagePath: string;
+  publicationDate?: '2026-08-24'; imagePath: string;
   sections: readonly [string, string][];
 };
 
-const date = '2026-08-23' as const;
+const date = '2026-08-24' as const;
 const image = (_name: string) => '';
 
 const authoredAugustTwentyThreeBlogBatch: AugustTwentyThreeBlogPost[] = [
