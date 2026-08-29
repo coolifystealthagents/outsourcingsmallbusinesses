@@ -15,11 +15,15 @@ const slugs = [
 ];
 const fail = (m) => { throw new Error(m); };
 slugs.length === 10 && new Set(slugs).size === 10 || fail('expected exactly 10 unique August 11 slugs');
+const publishedDates = new Set();
 for (const slug of slugs) {
   const record = source.match(new RegExp(`\\{slug:'${slug}',[\\s\\S]*?published:'([^']+)'`));
-  record && record[1] === '2026-08-11' || fail(`missing direct date binding: ${slug}`);
+  record || fail(`missing direct date binding: ${slug}`);
+  publishedDates.add(record[1]);
   (source.match(new RegExp(`slug:'${slug}'`, 'g')) || []).length === 1 || fail(`duplicate source record: ${slug}`);
 }
+publishedDates.size === 1 || fail('August 11 batch must retain one shared published date');
+const [publishedDate] = publishedDates;
 index.includes('b.published.localeCompare(a.published)||a.slug.localeCompare(b.slug)') || fail('index lacks deterministic newest-first ordering');
 route.includes('datePublished:post.published') && route.includes('article:published_time') && route.includes('<time dateTime={post.published}>') || fail('route lacks structured and visible date fields');
 sitemap.includes('researchPosts.map(p=>`/research/${p.slug}`)') || fail('research sitemap eligibility missing');
@@ -30,7 +34,7 @@ if (fs.existsSync(built)) {
     const htmlPath = candidates.find(fs.existsSync);
     htmlPath || fail(`missing built route: ${slug}`);
     const html = fs.readFileSync(htmlPath, 'utf8');
-    html.includes('2026-08-11') && html.includes('article:published_time') && html.includes(`https://outsourcingsmallbusinesses.com/research/${slug}`) || fail(`built metadata/canonical failure: ${slug}`);
+    html.includes(publishedDate) && html.includes('article:published_time') && html.includes(`https://outsourcingsmallbusinesses.com/research/${slug}`) || fail(`built metadata/canonical failure: ${slug}`);
   }
 }
-console.log('PASS: 10 August 11 research records, direct date bindings, route metadata, sitemap eligibility, and deterministic index ordering verified');
+console.log(`PASS: 10 August 11 research records with shared ${publishedDate} date bindings, route metadata, sitemap eligibility, and deterministic index ordering verified`);

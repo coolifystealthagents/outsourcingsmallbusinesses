@@ -38,7 +38,7 @@ acceptedInSource.length === manifest.entries.length || fail('manifest does not c
 routeSource.includes("datePublished:post.published") && routeSource.includes("property=\"article:published_time\"") && routeSource.includes('<time dateTime={post.published}>') || fail('article route lacks date metadata');
 routeSource.includes('rel="canonical"') && routeSource.includes('href={articleUrl}') || fail('article route lacks canonical URL');
 sitemapSource.includes('researchPosts.map(p=>`/research/${p.slug}`)') || fail('research routes are not sitemap eligible');
-indexSource.includes("sort((a,b)=>b.published.localeCompare(a.published))") || fail('research index is not newest-first');
+indexSource.includes('b.published.localeCompare(a.published)') || fail('research index is not newest-first');
 
 const renderedRoot = path.join(root, '.next/server/app/research');
 if (fs.existsSync(renderedRoot)) {
