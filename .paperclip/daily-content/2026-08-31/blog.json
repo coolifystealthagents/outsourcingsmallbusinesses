@@ -1,0 +1,21 @@
+{
+  "campaignDate": "2026-08-31",
+  "family": "blog",
+  "count": 12,
+  "sourcePath": "app/aug31-content.ts",
+  "entries": [
+    "/blog/outsourcing-small-business-content-request-scorecard",
+    "/blog/outsourcing-small-business-article-brief-version-control",
+    "/blog/outsourcing-small-business-editorial-decision-register",
+    "/blog/outsourcing-small-business-source-refresh-calendar",
+    "/blog/outsourcing-small-business-content-exception-queue",
+    "/blog/outsourcing-small-business-article-cta-approval",
+    "/blog/outsourcing-small-business-article-accessibility-check",
+    "/blog/outsourcing-small-business-content-cannibalization-review",
+    "/blog/outsourcing-small-business-research-claim-map",
+    "/blog/outsourcing-small-business-article-release-checklist",
+    "/blog/outsourcing-small-business-post-publication-audit",
+    "/blog/outsourcing-small-business-daily-content-retrospective"
+  ],
+  "validation": {"originality": "complete", "humanizer": "manual-style-pass-complete", "images": "generated-original-complete", "metadata": "complete", "links": "complete", "schema": "complete", "index": "complete", "sitemap": "complete"}
+}

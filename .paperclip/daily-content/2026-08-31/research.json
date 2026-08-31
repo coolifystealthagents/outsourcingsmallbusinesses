@@ -1,0 +1,14 @@
+{
+  "campaignDate": "2026-08-31",
+  "family": "research",
+  "count": 5,
+  "sourcePath": "app/aug31-content.ts",
+  "entries": [
+    "/research/august-31-research-editorial-review-latency",
+    "/research/august-31-research-source-traceability-rate",
+    "/research/august-31-research-content-rework-causes",
+    "/research/august-31-research-publication-control-coverage",
+    "/research/august-31-research-content-routine-resilience"
+  ],
+  "validation": {"originality": "complete", "humanizer": "restrained-evidence-style-pass-complete", "sources": "complete", "methodology": "complete", "keyStats": "complete", "limitations": "complete", "images": "generated-original-complete", "schema": "complete", "index": "complete", "sitemap": "complete"}
+}
