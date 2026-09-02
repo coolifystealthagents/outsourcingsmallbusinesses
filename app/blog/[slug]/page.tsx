@@ -15,6 +15,7 @@ import { augustTwentyOneBlogBatch } from '../../aug21-blog-batch';
 import { augustTwentyThreeApplicationNotes, augustTwentyThreeArticleClosings, augustTwentyThreeBlogBatch } from '../../aug23-blog-batch';
 import { augustThirtyOneBlogBatch } from '../../aug31-content';
 import { septemberOneBlogBatch } from '../../sep1-content';
+import { septemberTwoBlogBatch } from '../../sep2-content';
 
 const baseUrl = 'https://outsourcingsmallbusinesses.com';
 type BlogDetail = (typeof blogDetails)[keyof typeof blogDetails];
@@ -31,6 +32,7 @@ const augustTwentyOneBySlug = new Map<string, { post: (typeof augustTwentyOneBlo
 const augustTwentyThreeBySlug = new Map<string, { post: (typeof augustTwentyThreeBlogBatch)[number]; index: number }>(augustTwentyThreeBlogBatch.map((post, index) => [post.slug, { post, index }]));
 const augustThirtyOneBySlug = new Map<string, { post: (typeof augustThirtyOneBlogBatch)[number]; index: number }>(augustThirtyOneBlogBatch.map((post, index) => [post.slug, { post, index }]));
 const septemberOneBySlug = new Map<string, { post: (typeof septemberOneBlogBatch)[number]; index: number }>(septemberOneBlogBatch.map((post, index) => [post.slug, { post, index }]));
+const septemberTwoBySlug = new Map<string, { post: (typeof septemberTwoBlogBatch)[number]; index: number }>(septemberTwoBlogBatch.map((post, index) => [post.slug, { post, index }]));
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -286,6 +288,14 @@ function SeptemberOneArticle({ index }: { index: number }) {
   return <><JsonLd data={schema}/><article className="container guide-article strict-article" data-article-family="blog" data-batch="2026-09-01"><link rel="canonical" href={url}/><meta property="article:published_time" content={post.publicationDate}/><p className="eyebrow">Daily publishing operations guide</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><time dateTime={post.publicationDate}>September 1, 2026</time><figure><img src={post.imagePath} alt={`${post.focus} planning workspace`}/></figure>{post.sections.map(([heading,body])=><section key={heading}><h2>{heading}</h2><p>{body}</p></section>)}<section><h2>Daily routine checklist</h2><ul><li>Confirm the reader question and approved evidence.</li><li>Keep exceptions and owner decisions visible.</li><li>Verify content, metadata, route identity, and discovery before release.</li><li>Retain the exact revision and validation record.</li></ul></section><section><h2>Related September 1 guides</h2><div className="fleet-card-grid">{related.map(p=><a className="fleet-card" href={`/blog/${p.slug}`} key={p.slug}><h3>{p.title}</h3><p>{p.excerpt}</p></a>)}</div></section></article><CTA/></>;
 }
 
+function SeptemberTwoArticle({ index }: { index: number }) {
+  const post = septemberTwoBlogBatch[index];
+  const url = `${baseUrl}/blog/${post.slug}`;
+  const related = septemberTwoBlogBatch.filter((_, i) => i !== index).slice(index % 9, index % 9 + 3);
+  const schema = {'@context':'https://schema.org','@type':'Article',headline:post.title,description:post.excerpt,url,datePublished:post.publicationDate,dateModified:post.publicationDate,image:`${baseUrl}${post.imagePath}`,publisher:{'@type':'Organization',name:site.brand,url:baseUrl}};
+  return <><JsonLd data={schema}/><article className="container guide-article strict-article" data-article-family="blog" data-batch="2026-09-02"><link rel="canonical" href={url}/><meta property="article:published_time" content={post.publicationDate}/><p className="eyebrow">Daily publishing operations guide</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><time dateTime={post.publicationDate}>September 2, 2026</time><figure><img src={post.imagePath} alt={`${post.focus} planning workspace`}/></figure>{post.sections.map(([heading,body])=><section key={heading}><h2>{heading}</h2><p>{body}</p></section>)}<section><h2>Owner review prompt</h2><p>Which evidence proves this {post.focus} routine is ready, and which exception still needs an owner decision?</p></section><section><h2>Related September 2 guides</h2><div className="fleet-card-grid">{related.map(p=><a className="fleet-card" href={`/blog/${p.slug}`} key={p.slug}><h3>{p.title}</h3><p>{p.excerpt}</p></a>)}</div></section></article><CTA/></>;
+}
+
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = blogPosts.find((item) => item.slug === slug);
@@ -303,5 +313,6 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const augustTwentyThree = augustTwentyThreeBySlug.get(slug);
   const augustThirtyOne = augustThirtyOneBySlug.get(slug);
   const septemberOne = septemberOneBySlug.get(slug);
-  return <><Header articleMode /><main className="section">{septemberOne ? <SeptemberOneArticle index={septemberOne.index} /> : augustThirtyOne ? <AugustThirtyOneArticle index={augustThirtyOne.index} /> : augustTwentyThree ? <AugustTwentyThreeArticle index={augustTwentyThree.index} /> : augustTwentyOne ? <AugustTwentyOneArticle post={post} index={augustTwentyOne.index} /> : augustTwenty ? <AugustTwentyArticle post={post} index={augustTwenty.index} /> : augustEighteen ? <AugustEighteenArticle post={post} index={augustEighteen.index} /> : augustSeventeen ? <AugustSeventeenArticle post={post} index={augustSeventeen.index} /> : augustFourteen ? <AugustFourteenArticle post={post} index={augustFourteen.index} /> : augustThirteen ? <AugustThirteenArticle post={post} index={augustThirteen.index} /> : augustEleven ? <AugustElevenArticle post={post} index={augustEleven.index} /> : richDetail ? <StrictEvidenceArticle post={post} detail={richDetail} /> : detail ? <RichArticle post={post} detail={detail} /> : daily ? <DailyArticle post={post} focus={daily.focus} index={daily.index} /> : <><LegacyArticle post={post} /><CTA /></>}</main><Footer articleMode /></>;
+  const septemberTwo = septemberTwoBySlug.get(slug);
+  return <><Header articleMode /><main className="section">{septemberTwo ? <SeptemberTwoArticle index={septemberTwo.index} /> : septemberOne ? <SeptemberOneArticle index={septemberOne.index} /> : augustThirtyOne ? <AugustThirtyOneArticle index={augustThirtyOne.index} /> : augustTwentyThree ? <AugustTwentyThreeArticle index={augustTwentyThree.index} /> : augustTwentyOne ? <AugustTwentyOneArticle post={post} index={augustTwentyOne.index} /> : augustTwenty ? <AugustTwentyArticle post={post} index={augustTwenty.index} /> : augustEighteen ? <AugustEighteenArticle post={post} index={augustEighteen.index} /> : augustSeventeen ? <AugustSeventeenArticle post={post} index={augustSeventeen.index} /> : augustFourteen ? <AugustFourteenArticle post={post} index={augustFourteen.index} /> : augustThirteen ? <AugustThirteenArticle post={post} index={augustThirteen.index} /> : augustEleven ? <AugustElevenArticle post={post} index={augustEleven.index} /> : richDetail ? <StrictEvidenceArticle post={post} detail={richDetail} /> : detail ? <RichArticle post={post} detail={detail} /> : daily ? <DailyArticle post={post} focus={daily.focus} index={daily.index} /> : <><LegacyArticle post={post} /><CTA /></>}</main><Footer articleMode /></>;
 }
