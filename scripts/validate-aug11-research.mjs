@@ -24,8 +24,14 @@ for (const slug of slugs) {
 }
 publishedDates.size === 1 || fail('August 11 batch must retain one shared published date');
 const [publishedDate] = publishedDates;
+const bookkeepingSlug = 'august-11-small-business-outsourcing-bookkeeping-review';
+const bookkeepingRecord = source.match(new RegExp(`\\{slug:'${bookkeepingSlug}',[\\s\\S]*?(?=\\n  \\{slug:|\\n\\{slug:)`));
+bookkeepingRecord || fail('missing bookkeeping research record');
+bookkeepingRecord[0].includes("modified:'2026-09-02'") || fail('bookkeeping handoff must refresh its modified date');
+bookkeepingRecord[0].includes("serviceHandoff:{href:'/services/small-business-bookkeeping',label:'Plan Philippines bookkeeping support'") || fail('bookkeeping handoff must use the confirmed service destination and label');
+bookkeepingRecord[0].includes('You keep approval, payment, filing, and accounting judgment with the right owner.') || fail('bookkeeping handoff must retain the owner decision boundary');
 index.includes('b.published.localeCompare(a.published)||a.slug.localeCompare(b.slug)') || fail('index lacks deterministic newest-first ordering');
-route.includes('datePublished:post.published') && route.includes('article:published_time') && route.includes('<time dateTime={post.published}>') || fail('route lacks structured and visible date fields');
+route.includes('const modified=post.modified??post.published') && route.includes('datePublished:post.published') && route.includes('dateModified:modified') && route.includes('modifiedTime:modified') && route.includes('article:modified_time') && route.includes('<time dateTime={post.published}>') || fail('route lacks published and modified date fields');
 sitemap.includes('researchPosts.map(p=>`/research/${p.slug}`)') || fail('research sitemap eligibility missing');
 const built = path.join(root, '.next/server/app/research');
 if (fs.existsSync(built)) {
