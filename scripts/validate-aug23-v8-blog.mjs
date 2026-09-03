@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+const source = fs.readFileSync('app/aug23-v8-blog-batch.ts', 'utf8');
+const manifest = JSON.parse(fs.readFileSync('.paperclip/daily-content/2026-08-23/blog.json', 'utf8'));
+const routes = manifest.entries.map((entry) => entry.route);
+const slugs = routes.map((route) => route.replace('/blog/', ''));
+const fail = (message) => { throw new Error(message); };
+if (manifest.campaignDate !== '2026-08-23' || manifest.family !== 'blog' || manifest.count !== 12 || routes.length !== 12) fail('manifest contract mismatch');
+if (new Set(routes).size !== 12) fail('duplicate route');
+for (const slug of slugs) if (!source.includes(`slug:'${slug}'`)) fail(`missing source slug ${slug}`);
+if (!source.includes("const publicationDate = '2026-08-23' as const")) fail('literal date binding missing');
+if (source.includes('—') || source.includes('–') || source.includes(' -- ')) fail('humanizer dash rule failed');
+const prohibited = ['paperclip', 'gemini', 'deployment', 'git ', 'rate card', 'testimonial'];
+for (const term of prohibited) if (source.toLowerCase().includes(term)) fail(`prohibited public term: ${term}`);
+console.log(JSON.stringify({routes:routes.length,dateBinding:'PASS',humanizer:'PASS',prohibitedTopics:'PASS'}));

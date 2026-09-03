@@ -1,0 +1,21 @@
+{
+  "campaignDate": "2026-08-23",
+  "family": "blog",
+  "count": 12,
+  "entries": [
+    {"route":"/blog/small-business-outsourcing-appointment-confirmation-control","sourcePaths":["app/aug23-v8-blog-batch.ts"]},
+    {"route":"/blog/small-business-outsourcing-return-evidence-packet","sourcePaths":["app/aug23-v8-blog-batch.ts"]},
+    {"route":"/blog/small-business-outsourcing-crm-duplicate-review-desk","sourcePaths":["app/aug23-v8-blog-batch.ts"]},
+    {"route":"/blog/small-business-outsourcing-customer-quote-preparation-lane","sourcePaths":["app/aug23-v8-blog-batch.ts"]},
+    {"route":"/blog/small-business-outsourcing-warranty-intake-record","sourcePaths":["app/aug23-v8-blog-batch.ts"]},
+    {"route":"/blog/small-business-outsourcing-field-photo-indexing","sourcePaths":["app/aug23-v8-blog-batch.ts"]},
+    {"route":"/blog/small-business-outsourcing-interview-scheduling-guardrails","sourcePaths":["app/aug23-v8-blog-batch.ts"]},
+    {"route":"/blog/small-business-outsourcing-purchase-request-precheck","sourcePaths":["app/aug23-v8-blog-batch.ts"]},
+    {"route":"/blog/small-business-outsourcing-expense-receipt-recovery","sourcePaths":["app/aug23-v8-blog-batch.ts"]},
+    {"route":"/blog/small-business-outsourcing-knowledge-base-feedback-loop","sourcePaths":["app/aug23-v8-blog-batch.ts"]},
+    {"route":"/blog/small-business-outsourcing-subscription-cancellation-intake","sourcePaths":["app/aug23-v8-blog-batch.ts"]},
+    {"route":"/blog/small-business-outsourcing-project-change-request-log","sourcePaths":["app/aug23-v8-blog-batch.ts"]}
+  ],
+  "imageFallback": {"provider":"Gemini","status":"unavailable","reason":"No Gemini image-generation capability is exposed in this execution workspace; no stock or substitute images were used."},
+  "validation": {"humanizer":"embedded-pass-complete","images":"text-complete-fallback","familySeparation":"blog-only"}
+}
