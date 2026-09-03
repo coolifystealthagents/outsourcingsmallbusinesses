@@ -1,0 +1,19 @@
+{
+  "campaignDate":"2026-09-03","family":"blog","count":12,
+  "entries":[
+    {"route":"/blog/outsourcing-customer-onboarding-document-chase","sourcePaths":["app/sep3-blog-batch.ts"]},
+    {"route":"/blog/outsourcing-service-area-request-screening","sourcePaths":["app/sep3-blog-batch.ts"]},
+    {"route":"/blog/outsourcing-vendor-certificate-tracking","sourcePaths":["app/sep3-blog-batch.ts"]},
+    {"route":"/blog/outsourcing-dormant-lead-disposition-queue","sourcePaths":["app/sep3-blog-batch.ts"]},
+    {"route":"/blog/outsourcing-inventory-discrepancy-packets","sourcePaths":["app/sep3-blog-batch.ts"]},
+    {"route":"/blog/outsourcing-meeting-action-register","sourcePaths":["app/sep3-blog-batch.ts"]},
+    {"route":"/blog/outsourcing-timesheet-exception-preparation","sourcePaths":["app/sep3-blog-batch.ts"]},
+    {"route":"/blog/outsourcing-sop-observation-capture","sourcePaths":["app/sep3-blog-batch.ts"]},
+    {"route":"/blog/outsourcing-review-response-evidence-file","sourcePaths":["app/sep3-blog-batch.ts"]},
+    {"route":"/blog/outsourcing-maintenance-reminder-register","sourcePaths":["app/sep3-blog-batch.ts"]},
+    {"route":"/blog/outsourcing-invoice-dispute-decision-packet","sourcePaths":["app/sep3-blog-batch.ts"]},
+    {"route":"/blog/outsourcing-access-change-request-desk","sourcePaths":["app/sep3-blog-batch.ts"]}
+  ],
+  "imageFallback":{"provider":"Gemini","status":"unavailable","reason":"Gemini image generation is not exposed in this workspace; no stock or substitute imagery used."},
+  "validation":{"humanizer":"embedded-pass-complete","familySeparation":"blog-only"}
+}
