@@ -1,0 +1,37 @@
+{
+  "campaignDate": "2026-08-23",
+  "family": "research",
+  "count": 5,
+  "entries": [
+    {
+      "route": "/research/august-23-research-outsourced-crm-data-quality",
+      "sourcePaths": ["app/aug23-research-batch.ts"]
+    },
+    {
+      "route": "/research/august-23-research-outsourced-knowledge-base-maintenance",
+      "sourcePaths": ["app/aug23-research-batch.ts"]
+    },
+    {
+      "route": "/research/august-23-research-outsourced-training-readiness",
+      "sourcePaths": ["app/aug23-research-batch.ts"]
+    },
+    {
+      "route": "/research/august-23-research-outsourced-work-queue-aging",
+      "sourcePaths": ["app/aug23-research-batch.ts"]
+    },
+    {
+      "route": "/research/august-23-research-outsourced-content-source-trails",
+      "sourcePaths": ["app/aug23-research-batch.ts"]
+    }
+  ],
+  "imageFallback": {
+    "provider": "Gemini",
+    "status": "unavailable",
+    "reason": "No Gemini image-generation capability is exposed in this execution workspace; no stock or substitute images were used."
+  },
+  "validation": {
+    "humanizer": "pass-complete",
+    "images": "text-complete-fallback",
+    "familySeparation": "research-only"
+  }
+}
