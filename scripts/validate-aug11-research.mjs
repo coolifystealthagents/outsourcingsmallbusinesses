@@ -31,7 +31,13 @@ bookkeepingRecord[0].includes("modified:'2026-09-02'") || fail('bookkeeping hand
 bookkeepingRecord[0].includes("serviceHandoff:{href:'/services/small-business-bookkeeping',label:'Plan Philippines bookkeeping support'") || fail('bookkeeping handoff must use the confirmed service destination and label');
 bookkeepingRecord[0].includes('You keep approval, payment, filing, and accounting judgment with the right owner.') || fail('bookkeeping handoff must retain the owner decision boundary');
 index.includes('b.published.localeCompare(a.published)||a.slug.localeCompare(b.slug)') || fail('index lacks deterministic newest-first ordering');
-route.includes('const modified=post.modified??post.published') && route.includes('datePublished:post.published') && route.includes('dateModified:modified') && route.includes('modifiedTime:modified') && route.includes('article:modified_time') && route.includes('<time dateTime={post.published}>') || fail('route lacks published and modified date fields');
+const hasPublishedAndModifiedDateContract = /const modified\s*=\s*post\.modified\s*\?\?\s*post\.published/.test(route)
+  && /datePublished\s*:\s*post\.published/.test(route)
+  && /dateModified\s*:\s*modified/.test(route)
+  && /modifiedTime\s*:\s*modified/.test(route)
+  && /article:modified_time/.test(route)
+  && /<time\s+dateTime=\{post\.published\}>/.test(route);
+hasPublishedAndModifiedDateContract || fail('route lacks published and modified date fields');
 sitemap.includes('researchPosts.map(p=>`/research/${p.slug}`)') || fail('research sitemap eligibility missing');
 const built = path.join(root, '.next/server/app/research');
 if (fs.existsSync(built)) {

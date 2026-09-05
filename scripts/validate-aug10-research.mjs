@@ -35,7 +35,10 @@ manifest.entries.forEach((entry) => {
 });
 const acceptedInSource = sourceRecords.filter(([, slug]) => entrySlugs.has(slug));
 acceptedInSource.length === manifest.entries.length || fail('manifest does not cover exactly its accepted source records');
-routeSource.includes("datePublished:post.published") && routeSource.includes("property=\"article:published_time\"") && routeSource.includes('<time dateTime={post.published}>') || fail('article route lacks date metadata');
+const hasPublishedDateContract = /datePublished\s*:\s*post\.published/.test(routeSource)
+  && /property="article:published_time"/.test(routeSource)
+  && /<time\s+dateTime=\{post\.published\}>/.test(routeSource);
+hasPublishedDateContract || fail('article route lacks published-date metadata');
 routeSource.includes('rel="canonical"') && routeSource.includes('href={articleUrl}') || fail('article route lacks canonical URL');
 sitemapSource.includes('researchPosts.map(p=>`/research/${p.slug}`)') || fail('research routes are not sitemap eligible');
 indexSource.includes('b.published.localeCompare(a.published)') || fail('research index is not newest-first');
