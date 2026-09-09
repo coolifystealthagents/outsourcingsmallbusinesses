@@ -7,6 +7,7 @@ import { augustThirtyOneResearchBatch } from './aug31-content';
 import { septemberFourResearchBatch } from './sep4-content';
 import { septemberSevenResearchBatch } from './sep7-content';
 import { septemberEightResearchBatch } from './sep8-content';
+import { septemberNineResearchBatch } from './sep9-content';
 
 export const fleetServices = [
   {
@@ -224,6 +225,7 @@ import { augustThirteenResearchBatch } from './aug13-research-batch';
 import { augustFourteenResearchBatch } from './aug14-research-batch';
 
 export const researchPosts: ReadonlyArray<{slug:string;title:string;excerpt:string;published:string;modified?:string;body:readonly string[];imagePath?:string;serviceHandoff?:{href:string;label:string;description:string}}> = [
+  ...septemberNineResearchBatch,
   ...septemberEightResearchBatch,
   ...septemberSevenResearchBatch,
   ...septemberFourResearchBatch,
