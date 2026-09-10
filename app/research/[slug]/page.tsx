@@ -52,6 +52,7 @@ export default async function ResearchArticle({
   const isSep7 = post.published === "2026-09-07";
   const isSep8 = post.published === "2026-09-08";
   const isSep9 = post.published === "2026-09-09";
+  const isSep10 = post.published === "2026-09-10";
   const related = researchPosts
     .filter((p) => p.published === post.published && p.slug !== post.slug)
     .slice(0, 3);
@@ -102,7 +103,7 @@ export default async function ResearchArticle({
           {post.body.map((x, i) => (
             <p key={i}>{x}</p>
           ))}
-        {(isAug31 || isSep4 || isSep7 || isSep8 || isSep9) && (
+        {(isAug31 || isSep4 || isSep7 || isSep8 || isSep9 || isSep10) && (
             <>
               <section>
                 <h2>Sources</h2>
