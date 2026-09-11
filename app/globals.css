@@ -307,3 +307,16 @@ h1, h2 { font-family: var(--serif); letter-spacing: -.035em; }
 .task-symbol img { width: 28px; height: 28px; object-fit: contain; }
 .scope-support-illustration { width: min(300px, 100%); max-height: 210px; object-fit: contain; margin: 20px 0 22px; padding: 12px; border-radius: 16px; background: rgba(255,255,255,.08); }
 @media (max-width: 640px) { .board-photo img { padding: 8px; } .scope-support-illustration { max-height: 185px; } }
+
+/* Canonical free-call navigation and substantive service layouts. */
+.nav-call{white-space:nowrap;padding:.72rem 1rem;font-size:.9rem}
+.service-hero-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(260px,.88fr);align-items:center;gap:clamp(2rem,5vw,5rem)}
+.service-illustration,.contact-illustration{display:block;width:100%;max-width:540px;height:auto;margin-inline:auto}
+.split-detail{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(2rem,5vw,5rem);align-items:start}
+.narrow{max-width:850px}
+.check-list,.number-list{display:grid;gap:.8rem;padding-left:1.25rem}
+.faq-item{padding:1rem 0;border-bottom:1px solid rgba(26,46,5,.16)}
+.faq-item summary{cursor:pointer;font-weight:800;color:var(--ink)}
+.faq-item p{margin:.75rem 0 0}
+@media (max-width:900px){.fleet-links{display:none}.nav-inner{gap:.7rem}.nav-call{margin-left:auto}.service-hero-grid,.split-detail{grid-template-columns:1fr}.service-illustration,.contact-illustration{max-width:430px}}
+@media (max-width:520px){.logo-name{display:none}.nav-call{font-size:.78rem;padding:.62rem .72rem}.mobile-menu summary{padding:.58rem .68rem}.service-hero-grid{gap:1.5rem}}

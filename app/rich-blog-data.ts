@@ -91,7 +91,7 @@ export const richBlogDetails = {
     banners: [
       { label: "Before access", title: "Map one task first", body: "Use the lead intake page to separate updates, follow-up, and owner approvals before opening accounts.", href: "/services/lead-intake-administration", cta: "Map intake work" },
       { label: "During the first week", title: "Test a customer support lane", body: "Start with a small ticket group, saved replies, and clear escalation rules for a Philippines-based specialist.", href: "/services/customer-inbox-management", cta: "Plan support work" },
-      { label: "Ready to build the role?", title: "Bring the task list to us", body: "Share the tools, schedule, review owner, and decisions that must stay inside your business.", href: "/contact", cta: "Contact us" }
+      { label: "Ready to build the role?", title: "Bring the task list to us", body: "Share the tools, schedule, review owner, and decisions that must stay inside your business.", href: "/contact-us", cta: "Contact us" }
     ],
     internalLinks: [
       { href: "/services/supplier-coordination", label: "Supplier coordination with task tracking and owner review" },
@@ -198,7 +198,7 @@ export const richBlogDetails = {
     banners: [
       { label: "Before an alert", title: "Map named account access", body: "Use the account access guide to reduce exposure and make urgent session removal possible.", href: "/blog/philippines-outsourced-support-account-access-checklist", cta: "Open the access guide" },
       { label: "During recovery", title: "Keep the customer queue controlled", body: "Reopen a narrow inbox lane with reviewed replies and clear owner escalation rules.", href: "/services/customer-inbox-management", cta: "Plan inbox work" },
-      { label: "Build the support role", title: "Bring us the task and control list", body: "Share the tools, schedule, review owner, and decisions that must remain with your business.", href: "/contact", cta: "Contact us" }
+      { label: "Build the support role", title: "Bring us the task and control list", body: "Share the tools, schedule, review owner, and decisions that must remain with your business.", href: "/contact-us", cta: "Contact us" }
     ],
     internalLinks: [
       { href: "/services/owner-dashboard-reporting", label: "Track response actions in an owner dashboard" },
@@ -324,7 +324,7 @@ export const richBlogDetails = {
     banners: [
       { label: "Before storm season", title: "Map the support lane", body: "Set approved replies, owner decisions, and a small queue before weather puts the plan under pressure.", href: "/services/customer-inbox-management", cta: "Plan inbox work" },
       { label: "Keep the handoff visible", title: "Use an owner dashboard", body: "Record open items, blockers, backup owners, and the next review time in one place the business controls.", href: "/services/owner-dashboard-reporting", cta: "Plan the dashboard" },
-      { label: "Build a safer role", title: "Bring us the task and coverage plan", body: "Share the support hours, tools, minimum service, approval lines, and backup contact path.", href: "/contact", cta: "Contact us" }
+      { label: "Build a safer role", title: "Bring us the task and coverage plan", body: "Share the support hours, tools, minimum service, approval lines, and backup contact path.", href: "/contact-us", cta: "Contact us" }
     ],
     internalLinks: [
       { href: "/blog/philippines-outsourced-support-account-access-checklist", label: "Set named account access before severe weather" },
@@ -450,7 +450,7 @@ export const richBlogDetails = {
     banners: [
       { label: "Before invoice access", title: "Set a smaller bookkeeping lane", body: "Use the finance support page to separate record preparation from owner approvals and money movement.", href: "/services/finance-accounting", cta: "Plan finance support" },
       { label: "Keep the month visible", title: "Build an owner dashboard", body: "Track open exceptions, missing proof, supplier changes, and the person responsible for the next decision.", href: "/services/owner-dashboard-reporting", cta: "Plan the dashboard" },
-      { label: "Ready to map the handoff?", title: "Bring us a sample invoice path", body: "Share how invoices arrive, who accepts the work, who approves, and where the final bank check happens.", href: "/contact", cta: "Contact us" }
+      { label: "Ready to map the handoff?", title: "Bring us a sample invoice path", body: "Share how invoices arrive, who accepts the work, who approves, and where the final bank check happens.", href: "/contact-us", cta: "Contact us" }
     ],
     internalLinks: [
       { href: "/services/finance-accounting", label: "Plan a finance support role with owner-held money controls" },

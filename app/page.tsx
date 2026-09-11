@@ -2,6 +2,12 @@ import { Footer, Header, JsonLd } from './components';
 import { blogPosts, services, site, staffingOffer } from './data';
 
 const visibleServices = services.slice(0, 4);
+const serviceLinks = {
+  'operations-support': '/services/operations-support',
+  'customer-support': '/services/customer-support',
+  'admin-support': '/services/administrative-support',
+  'reporting-and-qa': '/services/reporting-quality-assurance',
+} as const;
 const visibleGuides = blogPosts.slice(0, 3);
 const siteUrl = `https://${site.domain.toLowerCase()}`;
 
@@ -23,10 +29,10 @@ export default function Home() {
         <div className="container hero-grid">
           <div className="hero-copy">
             <p className="eyebrow">Filipino talent for small business teams</p>
-            <h1>Hand off the busywork. Keep your hands on the business.</h1>
+            <h1>Build a Filipino support team around the work slowing your small business.</h1>
             <p className="lead">Build a Filipino support role around the work eating up your week, from inbox cleanup and customer follow-up to operations reporting.</p>
             <div className="actions">
-              <a className="btn primary" href="/contact">Build my role plan</a>
+              <a className="btn primary" href="/contact-us">Book a free call</a>
               <a className="text-link" href="#work-board">See what to hand off <span aria-hidden="true">↓</span></a>
             </div>
             <p className="disclosure">Staffing teams accepting requests through this site recruit and hire only in the Philippines. Your request may be routed to one of those teams for follow-up.</p>
@@ -62,7 +68,7 @@ export default function Home() {
           <p>You do not need to outsource everything. Pick the recurring work with a clear example, a clear finish line, and a clear point where the owner steps back in.</p>
         </div>
         <div className="service-grid">
-          {visibleServices.map((service, index) => <a className="service-card" href="/services" key={service.slug}>
+          {visibleServices.map((service, index) => <a className="service-card" href={serviceLinks[service.slug]} key={service.slug}>
             <span className="service-number">0{index + 1}</span>
             <h3>{service.title}</h3>
             <p>{service.desc}</p>
@@ -78,7 +84,7 @@ export default function Home() {
             <h2>Make the role small enough to explain.</h2>
             <p>A useful role plan names the work, the tools, the schedule, and the decisions that stay with you. That makes matching Filipino talent easier and gives everyone a fair start.</p>
             <img className="scope-support-illustration" src="/illustrations/getillustrations/humano-scenes/small-business-role-planning.svg" alt="Illustration of a small team collaborating on a practical business role plan" />
-            <a className="btn secondary" href="/contact">Map the first role</a>
+            <a className="btn secondary" href="/contact-us">Book a free call</a>
           </div>
           <div className="scope-sheet">
             <div className="sheet-header"><span>Role brief / 01</span><b>Owner reviewed</b></div>
@@ -136,7 +142,7 @@ export default function Home() {
         <p className="eyebrow">Your next hire can start on paper</p>
         <h2>Tell us what keeps landing back on your desk.</h2>
         <p>We will use the work, tools, schedule, and approval limits to shape a practical role for Filipino talent.</p>
-        <a className="btn primary" href="/contact">Build my role plan</a>
+        <a className="btn primary" href="/contact-us">Book a free call</a>
       </section>
     </main>
     <Footer />
