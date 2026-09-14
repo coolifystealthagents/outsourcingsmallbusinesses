@@ -1,13 +1,22 @@
 "use client";
 
 import { useEffect, useState, type FormEvent } from "react";
+import { formatPhone, isStaffingInquiry, normalizeInquiryType, submissionDestination, type InquiryType } from "./form-contract";
 
 type Props = { endpoint?: string; encoding?: "json" | "form" };
 type TrackerWindow = Window & { acrTracker?: { trackLead?: (payload: Record<string, unknown>) => void } };
 
+
 const companySizes = ["1-5", "5-10", "11-50", "51-250", "251-1k", "1k+"];
 const positions = ["Just 1 Position", "2-5 Positions", "6-10 Positions", "11-50 Positions", "51-100 Positions", "101-500 Positions", "501-1,000 Positions", "Over 1,000 Positions"];
 const referrals = ["Google", "Email", "LinkedIn", "Reddit", "X / Twitter", "Referral", "ChatGPT / AI", "Outbound Outreach", "Other"];
+const inquiryTypes: Array<[InquiryType, string]> = [
+  ["staffing", "Staffing or outsourcing help"],
+  ["privacy", "Privacy request"],
+  ["terms", "Terms question"],
+  ["cancellation", "Cancellation help"],
+  ["general", "General inquiry"],
+];
 const countryCodes = [
   ["🇺🇸", "+1"], ["🇨🇦", "+1"], ["🇮🇩", "+62"], ["🇵🇭", "+63"], ["🇬🇧", "+44"],
   ["🇦🇺", "+61"], ["🇳🇿", "+64"], ["🇸🇬", "+65"], ["🇮🇳", "+91"], ["🇦🇪", "+971"],
@@ -19,6 +28,8 @@ export default function StandardContactForm({ endpoint = "/api/contact", encodin
   const [error, setError] = useState("");
   const [countryCode, setCountryCode] = useState("+1");
   const [referral, setReferral] = useState("");
+  const [inquiryType, setInquiryType] = useState<InquiryType>("staffing");
+  const isStaffing = isStaffingInquiry(inquiryType);
 
   useEffect(() => {
     const zone = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
@@ -28,6 +39,8 @@ export default function StandardContactForm({ endpoint = "/api/contact", encodin
       "Pacific/Auckland": "+64", "Asia/Singapore": "+65", "Asia/Kolkata": "+91", "Asia/Dubai": "+971",
     };
     if (zones[zone]) setCountryCode(zones[zone]);
+    const requested = new URLSearchParams(window.location.search).get("inquiry");
+    setInquiryType(normalizeInquiryType(requested));
   }, []);
 
   async function submit(event: FormEvent<HTMLFormElement>) {
@@ -38,7 +51,7 @@ export default function StandardContactForm({ endpoint = "/api/contact", encodin
     if (String(data.get("website_url") || "").trim()) return;
     const firstName = String(data.get("firstName") || "").trim();
     const lastName = String(data.get("lastName") || "").trim();
-    const phone = `${countryCode} ${String(data.get("phoneLocal") || "").trim()}`.trim();
+    const phone = formatPhone(countryCode, String(data.get("phoneLocal") || ""));
     const payload: Record<string, string> = {
       firstName, lastName, name: `${firstName} ${lastName}`.trim(), fullName: `${firstName} ${lastName}`.trim(),
       email: String(data.get("email") || ""), businessEmail: String(data.get("email") || ""), phone,
@@ -47,7 +60,7 @@ export default function StandardContactForm({ endpoint = "/api/contact", encodin
       positions: String(data.get("positions") || ""), positionsToFill: String(data.get("positions") || ""),
       referral: String(data.get("referral") || ""), howTheyHeard: String(data.get("referral") || ""),
       referralSpecify: String(data.get("referralSpecify") || ""), message: String(data.get("message") || ""),
-      source: "contact-form", formId: "contactPageForm",
+      inquiryType, source: isStaffing ? "contact-form" : "policy-general-contact-form", formId: "contactPageForm",
     };
     setSubmitting(true);
     setError("");
@@ -58,13 +71,13 @@ export default function StandardContactForm({ endpoint = "/api/contact", encodin
       const response = await fetch(endpoint, request);
       if (!response.ok) throw new Error("Lead endpoint rejected the request");
       try { (window as TrackerWindow).acrTracker?.trackLead?.(payload); } catch {}
-      window.location.assign("/thank-you");
+      window.location.assign(submissionDestination(inquiryType));
     } catch {
       try {
         const tracker = (window as TrackerWindow).acrTracker?.trackLead;
         if (tracker) {
           tracker(payload);
-          window.location.assign("/thank-you");
+          window.location.assign(submissionDestination(inquiryType));
           return;
         }
       } catch {}
@@ -75,15 +88,16 @@ export default function StandardContactForm({ endpoint = "/api/contact", encodin
 
   return (
     <div className="sa-form-card">
-      <h2>Tell us what recurring work you want to hand off</h2>
+      <h2>{isStaffing ? "Tell us what recurring work you want to hand off" : "Send a policy or general inquiry"}</h2>
       <form onSubmit={submit} id="contactPageForm">
         <input className="sa-hp" name="website_url" tabIndex={-1} autoComplete="off" aria-hidden="true" />
+        <label>What can we help with? *<select name="inquiryType" required value={inquiryType} onChange={(e) => setInquiryType(e.target.value as InquiryType)}>{inquiryTypes.map(([value, label]) => <option value={value} key={value}>{label}</option>)}</select></label>
         <div className="sa-grid">
           <label>First Name *<input name="firstName" required autoComplete="given-name" /></label>
           <label>Last Name *<input name="lastName" required autoComplete="family-name" /></label>
         </div>
-        <label>Business Email *<input name="email" type="email" required autoComplete="email" /></label>
-        <label>Phone Number *<span className="sa-phone"><select aria-label="Country code" value={countryCode} onChange={(e) => setCountryCode(e.target.value)}>{countryCodes.map(([flag, code], i) => <option value={code} key={`${code}-${i}`}>{flag} {code}</option>)}</select><input name="phoneLocal" type="tel" required autoComplete="tel-national" placeholder="Phone number" /></span></label>
+        <label>{isStaffing ? "Business Email" : "Email"} *<input name="email" type="email" required autoComplete="email" /></label>
+        {isStaffing ? <><label>Phone Number *<span className="sa-phone"><select aria-label="Country code" value={countryCode} onChange={(e) => setCountryCode(e.target.value)}>{countryCodes.map(([flag, code], i) => <option value={code} key={`${code}-${i}`}>{flag} {code}</option>)}</select><input name="phoneLocal" type="tel" required autoComplete="tel-national" placeholder="Phone number" /></span></label>
         <div className="sa-grid">
           <label>Company Name *<input name="companyName" required autoComplete="organization" /></label>
           <label>Website / URL<input name="website" placeholder="example.com" autoComplete="url" /></label>
@@ -93,10 +107,10 @@ export default function StandardContactForm({ endpoint = "/api/contact", encodin
           <label>How Many Positions to Fill *<select name="positions" required defaultValue=""><option value="" disabled>Select...</option>{positions.map((x) => <option key={x}>{x}</option>)}</select></label>
         </div>
         <label>How Did You Hear About Us? *<select name="referral" required value={referral} onChange={(e) => setReferral(e.target.value)}><option value="" disabled>Select...</option>{referrals.map((x) => <option key={x}>{x}</option>)}</select></label>
-        {referral === "Other" ? <label>Please Specify *<input name="referralSpecify" required /></label> : null}
-        <label>Message<textarea name="message" rows={4} /></label>
+        {referral === "Other" ? <label>Please Specify *<input name="referralSpecify" required /></label> : null}</> : null}
+        <label>Message{isStaffing ? "" : " *"}<textarea name="message" rows={4} required={!isStaffing} /></label>
         {error ? <p className="sa-error" role="alert">{error}</p> : null}
-        <button type="submit" disabled={submitting}>{submitting ? "Submitting..." : "Book a free call"}</button>
+        <button type="submit" disabled={submitting}>{submitting ? "Submitting..." : isStaffing ? "Book a free call" : "Send inquiry"}</button>
       </form>
       <style jsx>{`
         .sa-form-card{width:100%;max-width:876px;margin:0 auto;background:#fff;border:1px solid #e3e8ef;border-radius:22px;padding:34px 48px 48px;box-shadow:0 18px 48px rgba(15,34,58,.16);color:#34415a;text-align:left}

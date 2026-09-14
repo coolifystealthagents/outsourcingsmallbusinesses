@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import test from 'node:test';
+import { formatPhone, normalizeInquiryType, submissionDestination } from '../app/contact-us/form-contract.ts';
 
 const root = process.cwd();
 const read = (relativePath) => fs.readFileSync(path.join(root, relativePath), 'utf8');
@@ -115,6 +116,44 @@ test('lead route preserves the canonical form referral selection', () => {
   assert.match(leadRoute, /text\(form,'howTheyHeard'/);
   assert.match(leadRoute, /text\(form,'referralSpecify'/);
   assert.doesNotMatch(leadRoute, /referral=text\(form,'source'/);
+});
+
+test('policy pages use the canonical contact route instead of auto-linked email text', () => {
+  const routes = new Map([
+    ['app/privacy/page.tsx', 'privacy'],
+    ['app/terms/page.tsx', 'terms'],
+    ['app/cancellation-policy/page.tsx', 'cancellation'],
+  ]);
+  for (const [file, inquiry] of routes) {
+    const source = read(file);
+    assert.match(source, new RegExp(`href="/contact-us\\?inquiry=${inquiry}#contact-form"`), `${file} must link to its canonical contact mode`);
+    assert.doesNotMatch(source, /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i, `${file} must not render a literal email address`);
+    assert.doesNotMatch(source, /@|site\.email/, `${file} must not contain email address source data for Cloudflare to rewrite`);
+  }
+  const form = read('app/contact-us/StandardContactForm.tsx');
+  assert.match(form, /from "\.\/form-contract"/);
+  assert.match(form, /new URLSearchParams\(window\.location\.search\)\.get\("inquiry"\)/);
+  assert.match(form, /required=\{!isStaffing\}/);
+  assert.match(form, /isStaffing \? "Book a free call" : "Send inquiry"/);
+  const leadRoute = read('app/api/contact/route.ts');
+  assert.match(leadRoute, /inquiryType=normalizeInquiryType\(text\(form,'inquiryType'/);
+  assert.match(leadRoute, /`Inquiry type: \$\{inquiryType\}`/);
+  assert.match(leadRoute, /submissionDestination\(inquiryType\)/);
+  const received = read('app/request-received/page.tsx');
+  assert.match(received, /No staffing call has been booked/);
+  assert.match(received, /robots: \{ index: false, follow: false \}/);
+  assert.doesNotMatch(received, /OnceHub|Book Your Call|Book your free call/);
+});
+
+test('contact submission contract omits empty phone and separates policy success', () => {
+  assert.equal(formatPhone('+1', ''), '');
+  assert.equal(formatPhone('+63', ' 912 345 6789 '), '+63 912 345 6789');
+  assert.equal(submissionDestination('staffing'), '/thank-you');
+  for (const inquiry of ['privacy', 'terms', 'cancellation', 'general']) {
+    assert.equal(normalizeInquiryType(inquiry), inquiry);
+    assert.equal(submissionDestination(inquiry), `/request-received?inquiry=${inquiry}`);
+  }
+  assert.equal(normalizeInquiryType('unexpected'), 'staffing');
 });
 
 test('reader-facing source has no unsupported testimonial component imports', () => {
