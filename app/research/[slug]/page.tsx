@@ -53,6 +53,7 @@ export default async function ResearchArticle({
   const isSep8 = post.published === "2026-09-08";
   const isSep9 = post.published === "2026-09-09";
   const isSep10 = post.published === "2026-09-10";
+  const isSep14 = post.published === "2026-09-14";
   const related = researchPosts
     .filter((p) => p.published === post.published && p.slug !== post.slug)
     .slice(0, 3);
@@ -89,7 +90,7 @@ export default async function ResearchArticle({
           <h1>{post.title}</h1>
           <p className="lead">{post.excerpt}</p>
           <time dateTime={post.published}>
-            Published {formatPublicDate(post.published)}
+            Published: {formatPublicDate(post.published)}
           </time>
           {post.imagePath && (
             <img
@@ -103,7 +104,7 @@ export default async function ResearchArticle({
           {post.body.map((x, i) => (
             <p key={i}>{x}</p>
           ))}
-        {(isAug31 || isSep4 || isSep7 || isSep8 || isSep9 || isSep10) && (
+          {(isAug31 || isSep4 || isSep7 || isSep8 || isSep9 || isSep10 || isSep14) && (
             <>
               <section>
                 <h2>Sources</h2>

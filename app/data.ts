@@ -14,6 +14,7 @@ import { septemberFourBlogBatch } from './sep4-content';
 import { septemberSevenBlogBatch } from './sep7-content';
 import { septemberEightBlogBatch } from './sep8-content';
 import { septemberNineBlogBatch } from './sep9-content';
+import { septemberFourteenBlogBatch } from './sep14-content';
 import { septemberTenBlogBatch } from './sep10-content';
 
 export const site = {
@@ -169,6 +170,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...septemberFourteenBlogBatch.map((post) => ({ ...post, minutes: 8 })),
   ...septemberTenBlogBatch.map((post) => ({ ...post, minutes: 8 })),
   ...septemberNineBlogBatch.map((post) => ({ ...post, minutes: 8 })),
   ...septemberEightBlogBatch.map((post) => ({ ...post, minutes: 8 })),
