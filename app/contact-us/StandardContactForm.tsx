@@ -89,15 +89,15 @@ export default function StandardContactForm({ endpoint = "/api/contact", encodin
   return (
     <div className="sa-form-card">
       <h2>{isStaffing ? "Tell us what recurring work you want to hand off" : "Send a policy or general inquiry"}</h2>
-      <form onSubmit={submit} id="contactPageForm">
-        <input className="sa-hp" name="website_url" tabIndex={-1} autoComplete="off" aria-hidden="true" />
+      <form action={endpoint} method="post" onSubmit={submit} id="contactPageForm">
+        <input className="sa-hp" name="website_url" type="hidden" tabIndex={-1} autoComplete="off" aria-label="Leave this field empty" />
         <label>What can we help with? *<select name="inquiryType" required value={inquiryType} onChange={(e) => setInquiryType(e.target.value as InquiryType)}>{inquiryTypes.map(([value, label]) => <option value={value} key={value}>{label}</option>)}</select></label>
         <div className="sa-grid">
           <label>First Name *<input name="firstName" required autoComplete="given-name" /></label>
           <label>Last Name *<input name="lastName" required autoComplete="family-name" /></label>
         </div>
         <label>{isStaffing ? "Business Email" : "Email"} *<input name="email" type="email" required autoComplete="email" /></label>
-        {isStaffing ? <><label>Phone Number *<span className="sa-phone"><select aria-label="Country code" value={countryCode} onChange={(e) => setCountryCode(e.target.value)}>{countryCodes.map(([flag, code], i) => <option value={code} key={`${code}-${i}`}>{flag} {code}</option>)}</select><input name="phoneLocal" type="tel" required autoComplete="tel-national" placeholder="Phone number" /></span></label>
+        {isStaffing ? <><label>Phone Number *<span className="sa-phone"><select name="countryCode" aria-label="Country code" value={countryCode} onChange={(e) => setCountryCode(e.target.value)}>{countryCodes.map(([flag, code], i) => <option value={code} key={`${code}-${i}`}>{flag} {code}</option>)}</select><input name="phoneLocal" type="tel" required autoComplete="tel-national" placeholder="Phone number" /></span></label>
         <div className="sa-grid">
           <label>Company Name *<input name="companyName" required autoComplete="organization" /></label>
           <label>Website / URL<input name="website" placeholder="example.com" autoComplete="url" /></label>
