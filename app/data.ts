@@ -16,6 +16,7 @@ import { septemberEightBlogBatch } from './sep8-content';
 import { septemberNineBlogBatch } from './sep9-content';
 import { septemberFourteenBlogBatch } from './sep14-content';
 import { septemberTenBlogBatch } from './sep10-content';
+import { septemberEighteenBlogBatch } from './sep18-blog-batch';
 
 export const site = {
   "domain": "OutsourcingSmallBusinesses.com",
@@ -170,6 +171,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...septemberEighteenBlogBatch.map((post) => ({ ...post, minutes: 11 })),
   ...septemberFourteenBlogBatch.map((post) => ({ ...post, minutes: 8 })),
   ...septemberTenBlogBatch.map((post) => ({ ...post, minutes: 8 })),
   ...septemberNineBlogBatch.map((post) => ({ ...post, minutes: 8 })),
