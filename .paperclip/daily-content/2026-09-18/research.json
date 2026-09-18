@@ -1,0 +1,15 @@
+{
+  "family": "research",
+  "publicationDate": "2026-09-18",
+  "timezone": "UTC",
+  "requiredCount": 5,
+  "entries": [
+    {"topic":"customer support coverage demand","slug":"september-18-research-customer-support-coverage-demand","contentHash":"7913ab1fb19d67878274f98097460f1ec3cf5db81e8334eba3eb23efe9646621","wordCount":1317,"sources":4,"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-18-research-customer-support-coverage-demand"},
+    {"topic":"true delegation cost","slug":"september-18-research-outsourcing-delegation-cost","contentHash":"195e5e87ce02d155c15a8bedb0f387f581a3d381d5af9236e26f3838a973de5f","wordCount":1230,"sources":4,"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-18-research-outsourcing-delegation-cost"},
+    {"topic":"time-zone scheduling errors","slug":"september-18-research-time-zone-scheduling-errors","contentHash":"765255435c4b0b8581d0fa5a4837fa32b3c7ebda338177e53b87ab90ad4b74aa","wordCount":1312,"sources":4,"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-18-research-time-zone-scheduling-errors"},
+    {"topic":"dashboard metric-definition drift","slug":"september-18-research-dashboard-metric-definition-drift","contentHash":"4ca59a86f618ef568f130bfb20aba71e326a5193de19567ee8d8eb13c281a901","wordCount":1246,"sources":4,"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-18-research-dashboard-metric-definition-drift"},
+    {"topic":"Philippines support continuity capacity","slug":"september-18-research-philippines-support-continuity-capacity","contentHash":"d585f1c2121dc3c84e36927019e5e256a0a86f72df44aab2b3c9a186bad00fa3","wordCount":1291,"sources":4,"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-18-research-philippines-support-continuity-capacity"}
+  ],
+  "validation": {"typecheck":"passed","productionBuild":"passed","minimumWords":1200,"canonical":"generated from final slug","sitemap":"generated from researchPosts","structuredData":"Article with matching datePublished","sourceCheckedDate":"2026-09-18"},
+  "deployment": {"repository":"coolifystealthagents/outsourcingsmallbusinesses","branch":"main","resource":"y85c6kbd6zekps7rxqzwrrn6","status":"pending"}
+}

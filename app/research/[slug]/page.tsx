@@ -104,11 +104,11 @@ export default async function ResearchArticle({
           {post.body.map((x, i) => (
             <p key={i}>{x}</p>
           ))}
-          {(isAug31 || isSep4 || isSep7 || isSep8 || isSep9 || isSep10 || isSep14) && (
+          {(post.referenceSources || isAug31 || isSep4 || isSep7 || isSep8 || isSep9 || isSep10 || isSep14) && (
             <>
               <section>
                 <h2>Sources</h2>
-                <ul>
+                {post.referenceSources ? <ul>{post.referenceSources.map((source)=><li key={source.url}><a href={source.url}>{source.title}</a> — {source.publisher}; checked {source.checked}</li>)}</ul> : <ul>
                   <li>
                     <a href="https://www.sba.gov/business-guide/manage-your-business">
                       U.S. Small Business Administration: Manage your business
@@ -129,7 +129,7 @@ export default async function ResearchArticle({
                       Google Search Central helpful content guidance
                     </a>
                   </li>
-                </ul>
+                </ul>}
               </section>
               <section>
                 <h2>Frequently asked questions</h2>
