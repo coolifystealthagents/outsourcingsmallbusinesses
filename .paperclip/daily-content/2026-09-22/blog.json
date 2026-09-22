@@ -1,0 +1,22 @@
+{
+  "campaignDate": "2026-09-22",
+  "family": "blog",
+  "count": 12,
+  "repository": "coolifystealthagents/outsourcingsmallbusinesses",
+  "productionBranch": "main",
+  "sourceBaseSha": "0e444e9fe1e12801744a51775d9f5af0415d8699",
+  "entries": [
+    {"route":"/blog/outsource-appointment-scheduling-small-business","topic":"appointment scheduling outsourcing","service":"local-service-scheduling"},
+    {"route":"/blog/ecommerce-customer-service-outsourcing-checklist","topic":"ecommerce customer service outsourcing checklist","service":"ecommerce-order-support"},
+    {"route":"/blog/outsource-lead-intake-without-losing-leads","topic":"lead intake outsourcing","service":"lead-intake-administration"},
+    {"route":"/blog/outsource-invoice-follow-up-small-business","topic":"invoice follow-up outsourcing","service":"invoice-follow-up"},
+    {"route":"/blog/outsource-customer-inbox-management","topic":"customer inbox outsourcing","service":"customer-inbox-management"},
+    {"route":"/blog/outsource-supplier-coordination-small-business","topic":"supplier coordination outsourcing","service":"supplier-coordination"},
+    {"route":"/blog/outsource-online-review-responses","topic":"online review response outsourcing","service":"review-response-drafting"},
+    {"route":"/blog/outsource-weekly-dashboard-reporting","topic":"weekly dashboard reporting outsourcing","service":"owner-dashboard-reporting"},
+    {"route":"/blog/outsource-crm-data-cleanup","topic":"CRM data cleanup outsourcing","service":"administrative-support"},
+    {"route":"/blog/outsource-appointment-setting-sales-team","topic":"sales appointment setting outsourcing","service":"administrative-support"},
+    {"route":"/blog/outsource-order-exception-management","topic":"ecommerce order exception outsourcing","service":"ecommerce-order-support"},
+    {"route":"/blog/who-owns-sop-updates-outsourced-team","topic":"outsourced team SOP ownership","service":"operations-support"}
+  ]
+}
