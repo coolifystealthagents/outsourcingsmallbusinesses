@@ -1,0 +1,18 @@
+{
+  "family": "research",
+  "publicationDate": "2026-09-22",
+  "timezone": "UTC",
+  "requiredCount": 5,
+  "repository": "coolifystealthagents/outsourcingsmallbusinesses",
+  "productionBranch": "main",
+  "deploymentResource": "y85c6kbd6zekps7rxqzwrrn6",
+  "entries": [
+    {"topic":"lead-routing leakage","slug":"september-22-research-lead-routing-leakage","contentHash":"88da79b0117ee7d579cc7c1f2b0108789e827bd7af1bbee1ffb69085255aa5f5","wordCount":1424,"sources":["https://www.sba.gov/business-guide/manage-your-business","https://www.nist.gov/cyberframework","https://www.ftc.gov/business-guidance/advertising-marketing"],"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-22-research-lead-routing-leakage"},
+    {"topic":"invoice promise-to-pay reliability","slug":"september-22-research-invoice-promise-to-pay-reliability","contentHash":"2597f409e5f831c80f2df15b0d6a492027ee27b7f65d80d4c8a4238f5eaccde1","wordCount":1272,"sources":["https://www.sba.gov/business-guide/manage-your-business/manage-your-finances","https://www.ftc.gov/business-guidance/resources/scams-your-small-business-guide-business","https://www.nist.gov/cyberframework"],"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-22-research-invoice-promise-to-pay-reliability"},
+    {"topic":"ecommerce return-reason integrity","slug":"september-22-research-ecommerce-return-reason-integrity","contentHash":"3baf80bd3a67c9b9f6c8d271ab5861693593e64d9f9eb43a41ff8852a94f9cc2","wordCount":1225,"sources":["https://www.census.gov/retail/ecommerce.html","https://www.ftc.gov/business-guidance/advertising-marketing","https://www.nist.gov/cyberframework"],"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-22-research-ecommerce-return-reason-integrity"},
+    {"topic":"supplier promised-date reliability","slug":"september-22-research-supplier-promised-date-reliability","contentHash":"300c65fb05d1b0c51226fe948dd42fcf8d7dfaf853e467a32778509926951c6a","wordCount":1251,"sources":["https://csrc.nist.gov/pubs/sp/800/161/r1/final","https://www.ftc.gov/business-guidance/resources/scams-your-small-business-guide-business","https://www.sba.gov/business-guide/manage-your-business"],"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-22-research-supplier-promised-date-reliability"},
+    {"topic":"knowledge-base answer decay","slug":"september-22-research-knowledge-base-answer-decay","contentHash":"79c5f36c1194ce255f0fcdd573a70351b7a878ec08c8f65eb66cb03079b0beae","wordCount":1264,"sources":["https://www.sba.gov/business-guide/manage-your-business","https://www.nist.gov/cyberframework","https://www.nist.gov/publications/small-business-information-security-fundamentals"],"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-22-research-knowledge-base-answer-decay"}
+  ],
+  "validation": {"minimumWords":1200,"canonical":"generated from final slug","sitemap":"generated from researchPosts","structuredData":"Article with matching datePublished","sourceCheckedDate":"2026-09-22"},
+  "deployment": {"status":"pending","commitSha":null,"verificationTimeUtc":null}
+}
