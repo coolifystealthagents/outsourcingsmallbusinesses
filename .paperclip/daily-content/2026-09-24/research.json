@@ -1,0 +1,18 @@
+{
+  "family": "research",
+  "publicationDate": "2026-09-24",
+  "timezone": "UTC",
+  "requiredCount": 5,
+  "repository": "coolifystealthagents/outsourcingsmallbusinesses",
+  "productionBranch": "main",
+  "deploymentResource": "y85c6kbd6zekps7rxqzwrrn6",
+  "entries": [
+    {"family":"research","topic":"customer inbox thread continuity","slug":"september-24-research-inbox-thread-continuity","contentHash":"8b115399b5ea56da65242ce1326ee202242684e43c3a7b06d7d29d285d5aac83","wordCount":1395,"sources":["https://www.sba.gov/business-guide/manage-your-business","https://www.ftc.gov/business-guidance/resources/start-security-guide-business","https://www.nist.gov/cyberframework"],"publicationDate":"2026-09-24","commitSha":null,"deploymentUuid":null,"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-24-research-inbox-thread-continuity","verifiedAt":null},
+    {"family":"research","topic":"bookkeeping duplicate evidence","slug":"september-24-research-bookkeeping-duplicate-evidence","contentHash":"09c14bf15dcc13a31c03d34b686fb0a9551a36b0e32e841482211cb28dc3f79a","wordCount":1357,"sources":["https://www.irs.gov/publications/p583","https://www.sba.gov/business-guide/manage-your-business/manage-your-finances","https://www.nist.gov/cyberframework"],"publicationDate":"2026-09-24","commitSha":null,"deploymentUuid":null,"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-24-research-bookkeeping-duplicate-evidence","verifiedAt":null},
+    {"family":"research","topic":"lead intake consent context","slug":"september-24-research-lead-intake-consent-context","contentHash":"525645f5d55a9b81711dc18d193c75ce63d7d903bbd445e3c5ed8143077c7cb5","wordCount":1366,"sources":["https://www.ftc.gov/business-guidance/advertising-marketing","https://www.ftc.gov/business-guidance/resources/start-security-guide-business","https://www.nist.gov/cyberframework"],"publicationDate":"2026-09-24","commitSha":null,"deploymentUuid":null,"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-24-research-lead-intake-consent-context","verifiedAt":null},
+    {"family":"research","topic":"supplier confirmation decay","slug":"september-24-research-supplier-confirmation-decay","contentHash":"88f8f1d6f780741b7b1c2326df7619c96495d8590c19ceb3bed168373eef7341","wordCount":1365,"sources":["https://www.sba.gov/business-guide/manage-your-business","https://www.nist.gov/cyberframework","https://www.ftc.gov/business-guidance/advertising-marketing"],"publicationDate":"2026-09-24","commitSha":null,"deploymentUuid":null,"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-24-research-supplier-confirmation-decay","verifiedAt":null},
+    {"family":"research","topic":"social content claim versioning","slug":"september-24-research-social-content-claim-versioning","contentHash":"35a5789076c267009d640cc56e5415b845a04f93af7be0e45ff91e83d2b6d678","wordCount":1376,"sources":["https://www.ftc.gov/business-guidance/advertising-marketing","https://www.ftc.gov/business-guidance/resources/start-security-guide-business","https://www.nist.gov/cyberframework"],"publicationDate":"2026-09-24","commitSha":null,"deploymentUuid":null,"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-24-research-social-content-claim-versioning","verifiedAt":null}
+  ],
+  "validation": {"minimumWords":1200,"canonical":"generated from final slug","sitemap":"generated from researchPosts","structuredData":"Article with matching datePublished","sourceCheckedDate":"2026-09-24"},
+  "deployment": {"status":"pending","verifiedCount":0,"commitSha":null,"remoteSha":null,"deploymentUuid":null,"finishedAtUtc":null,"verificationTimeUtc":null}
+}
