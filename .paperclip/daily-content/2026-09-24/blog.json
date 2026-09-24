@@ -1,0 +1,209 @@
+{
+  "runDate": "2026-09-24",
+  "family": "blog",
+  "requiredCount": 12,
+  "verifiedCount": 0,
+  "repository": "coolifystealthagents/outsourcingsmallbusinesses",
+  "productionBranch": "main",
+  "sourceBaseSha": "4263f4f43893ac14c1fe0d6c301099273ff028e3",
+  "commitSha": null,
+  "remoteSha": null,
+  "buildStatus": "passed",
+  "deploymentEvidence": {
+    "status": "pending"
+  },
+  "entries": [
+    {
+      "family": "blog",
+      "topic": "ecommerce returns support",
+      "slug": "outsource-ecommerce-returns-support",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.cisa.gov/resources-tools/resources/implementing-phishing-resistant-mfa"
+      ],
+      "contentHash": "129284b2fa2315cb2ab4b4c64550c680510dafb80d1eeff76c0d59b24f7e8f93",
+      "publicationDate": null,
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-ecommerce-returns-support",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "SaaS support ticket triage",
+      "slug": "outsource-saas-support-ticket-triage",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.cisa.gov/resources-tools/resources/implementing-phishing-resistant-mfa"
+      ],
+      "contentHash": "282f26144dc18523c7c0441f60ef3931a5b1a2c3ed41b54c8d645aee3ad0179f",
+      "publicationDate": null,
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-saas-support-ticket-triage",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "home care scheduling administration",
+      "slug": "outsource-home-care-scheduling-admin",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.cisa.gov/resources-tools/resources/implementing-phishing-resistant-mfa"
+      ],
+      "contentHash": "bf9bc6fdcada7487f7831a15015083ee1ce111638a19bdf43c8e9a5c84a0a82d",
+      "publicationDate": null,
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-home-care-scheduling-admin",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "veterinary reminder and recall administration",
+      "slug": "outsource-veterinary-appointment-reminders",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.cisa.gov/resources-tools/resources/implementing-phishing-resistant-mfa"
+      ],
+      "contentHash": "6de041dde3cc033ab32c8cacdc89ba96df2bf50f253d5cec79727d92c1b75b4a",
+      "publicationDate": null,
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-veterinary-appointment-reminders",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "auto repair estimate follow-up",
+      "slug": "outsource-auto-repair-estimate-follow-up",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.cisa.gov/resources-tools/resources/implementing-phishing-resistant-mfa"
+      ],
+      "contentHash": "25e5130ace51073d3c15fd8109b930e9a91f8fb7fe9c06f6318df6efa532d194",
+      "publicationDate": null,
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-auto-repair-estimate-follow-up",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "landscaping lead intake",
+      "slug": "outsource-landscaping-lead-intake",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.cisa.gov/resources-tools/resources/implementing-phishing-resistant-mfa"
+      ],
+      "contentHash": "5cb66259824de73238546b756a64e39d8f6996fc1f53521f8fcc46021540d202",
+      "publicationDate": null,
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-landscaping-lead-intake",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "mortgage document follow-up",
+      "slug": "outsource-mortgage-broker-document-follow-up",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.cisa.gov/resources-tools/resources/implementing-phishing-resistant-mfa"
+      ],
+      "contentHash": "3d4e1b060a3c8bb449208825e45a718b0538eeec5d9ecc79640ddef6e1ce39e7",
+      "publicationDate": null,
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-mortgage-broker-document-follow-up",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "architecture project administration",
+      "slug": "outsource-architecture-project-administration",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.cisa.gov/resources-tools/resources/implementing-phishing-resistant-mfa"
+      ],
+      "contentHash": "cf385e8a5643bcecb05faf0eaef1c25824cbedc25872eb40e1fd5fc80b8bc4c2",
+      "publicationDate": null,
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-architecture-project-administration",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "manufacturing purchase order follow-up",
+      "slug": "outsource-manufacturing-purchase-order-follow-up",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.cisa.gov/resources-tools/resources/implementing-phishing-resistant-mfa"
+      ],
+      "contentHash": "5a1ab911bf1bd464b212d73fee483f588cf682371b567530c988aed492c6baf9",
+      "publicationDate": null,
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-manufacturing-purchase-order-follow-up",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "event venue inquiry qualification",
+      "slug": "outsource-event-venue-inquiry-qualification",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.cisa.gov/resources-tools/resources/implementing-phishing-resistant-mfa"
+      ],
+      "contentHash": "88d5380fc457cc513cf0de758a22831deb135c7fb1f04dbcbafae031ae713650",
+      "publicationDate": null,
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-event-venue-inquiry-qualification",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "association membership administration",
+      "slug": "outsource-association-membership-administration",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.cisa.gov/resources-tools/resources/implementing-phishing-resistant-mfa"
+      ],
+      "contentHash": "8ec9c5a3683a68330fee9d4041fc127c83cfdf0e922b8531cc4865c1d039f3f2",
+      "publicationDate": null,
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-association-membership-administration",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "managed IT service ticket intake",
+      "slug": "outsource-msp-ticket-intake",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.cisa.gov/resources-tools/resources/implementing-phishing-resistant-mfa"
+      ],
+      "contentHash": "0025151a4bf3a26bb64f848fb816ea03db5c118cd75c420e27d1bba7d314ceac",
+      "publicationDate": null,
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-msp-ticket-intake",
+      "verifiedAt": null
+    }
+  ]
+}
