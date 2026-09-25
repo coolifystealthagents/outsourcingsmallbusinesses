@@ -11,6 +11,7 @@
     "validate:sep18-blog": "node scripts/validate-sep18-blog.mjs",
     "validate:sep22-blog": "node scripts/validate-sep22-blog.mjs",
     "validate:sep23-blog": "node scripts/validate-sep23-blog.mjs",
+    "verify:supplier-coordination-handoff": "node scripts/verify-supplier-coordination-handoff.mjs",
     "validate:sep24-blog": "node scripts/validate-sep24-blog.mjs",
     "validate:sep24-research": "node scripts/validate-sep24-research.mjs"
   },
