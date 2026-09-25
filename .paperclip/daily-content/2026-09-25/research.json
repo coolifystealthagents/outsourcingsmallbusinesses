@@ -14,5 +14,5 @@
     {"family":"research","topic":"outsourced access removal","slug":"september-25-research-outsourced-access-removal","contentHash":"0d49db301e02177ffa691566db04e6352f927fe703b1287473948598f81da86e","wordCount":1368,"sources":["https://www.nist.gov/cyberframework","https://www.ftc.gov/business-guidance/resources/start-security-guide-business","https://www.sba.gov/business-guide/manage-your-business"],"publicationDate":"2026-09-25","commitSha":null,"deploymentUuid":null,"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-25-research-outsourced-access-removal","verifiedAt":null}
   ],
   "validation": {"minimumWords":1200,"canonical":"generated from final slug","sitemap":"generated from researchPosts","structuredData":"Article with matching datePublished","sourceCheckedDate":"2026-09-25"},
-  "release": {"status":"awaiting-blog-integration","integrator":"Blog","researchCommitSha":null,"combinedRemoteSha":null,"deploymentUuid":null,"verifiedCount":0}
+  "release": {"status":"combined-clean-build-passed","integrator":"Blog","researchCommitSha":"314dd0b9228423301162d954bd45042ffc7f5d95","combinedRemoteSha":null,"deploymentUuid":null,"verifiedCount":0}
 }
