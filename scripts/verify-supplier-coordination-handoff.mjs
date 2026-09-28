@@ -19,11 +19,14 @@ assert.match(record, /owner or named manager keeps purchasing, changed terms, su
 assert.doesNotMatch(record, /guarantee|approve a substitute|negotiate/i, 'the handoff must not promise performance or authority');
 assert.match(route, /post\.serviceHandoff\.href/, 'the shared research renderer must render the data-owned destination');
 assert.match(route, /post\.serviceHandoff\.description/, 'the shared research renderer must render the data-owned boundary copy');
+assert.doesNotMatch(route, /<link rel="canonical"/, 'research metadata must be the sole canonical-link owner');
 
 const artifact = path.join(root, '.next/server/app/research', `${slug}.html`);
 if (existsSync(artifact)) {
   const html = readFileSync(artifact, 'utf8');
   const main = html.match(/<main\b[^>]*>[\s\S]*<\/main>/i)?.[0] ?? '';
+  const canonicals = [...html.matchAll(/<link\b[^>]*rel="canonical"[^>]*href="([^"]+)"[^>]*>/gi)].map((match) => match[1]);
+  assert.deepEqual(canonicals, [`https://outsourcingsmallbusinesses.com/research/${slug}`], 'built research route must have one canonical link');
   assert.match(main, /href="\/services\/supplier-coordination"/, 'built route-local main must contain the service handoff');
   assert.match(main, /chase confirmed delivery updates and keep the supplier record current/, 'built route-local main must contain the preparation marker');
   assert.match(html, /article:modified_time/, 'built article must emit modified metadata');

@@ -79,7 +79,6 @@ export default async function ResearchArticle({
       <Header />
       <main className="fleet-main">
         <article className="section article-shell">
-          <link rel="canonical" href={articleUrl} />
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
