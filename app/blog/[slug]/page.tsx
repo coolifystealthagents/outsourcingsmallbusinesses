@@ -27,6 +27,7 @@ import { septemberTwentyTwoBlogBatch } from '../../sep22-blog-batch';
 import { septemberTwentyThreeBlogBatch } from '../../sep23-blog-batch';
 import { septemberTwentyFourBlogBatch } from '../../sep24-blog-batch';
 import { septemberTwentyFiveBlogBatch } from '../../sep25-blog-batch';
+import { septemberTwentyEightBlogBatch } from '../../sep28-blog-batch';
 
 const baseUrl = 'https://outsourcingsmallbusinesses.com';
 type BlogDetail = (typeof blogDetails)[keyof typeof blogDetails];
@@ -54,7 +55,11 @@ const septemberEighteenBySlug = new Map<string, { post: (typeof septemberEightee
 const septemberTwentyTwoBySlug = new Map<string, { post: (typeof septemberTwentyTwoBlogBatch)[number]; index: number }>(septemberTwentyTwoBlogBatch.map((post, index) => [post.slug, { post, index }]));
 const septemberTwentyThreeBySlug = new Map<string, { post: (typeof septemberTwentyThreeBlogBatch)[number]; index: number }>(septemberTwentyThreeBlogBatch.map((post, index) => [post.slug, { post, index }]));
 const septemberTwentyFourBySlug = new Map<string, { post: (typeof septemberTwentyFourBlogBatch)[number]; index: number }>(septemberTwentyFourBlogBatch.map((post, index) => [post.slug, { post, index }]));
-const septemberTwentyFiveBySlug = new Map<string, { post: (typeof septemberTwentyFiveBlogBatch)[number]; index: number }>(septemberTwentyFiveBlogBatch.map((post, index) => [post.slug, { post, index }]));
+const septemberTwentyFiveBySlug = new Map<string, { post: unknown; index: number }>([
+  ...septemberTwentyFiveBlogBatch.map((post, index) => [post.slug, { post, index }] as const),
+  ...septemberTwentyEightBlogBatch.map((post, index) => [post.slug, { post, index: index + septemberTwentyFiveBlogBatch.length }] as const),
+]);
+const septemberTwentyEightBySlug = new Map<string, { post: (typeof septemberTwentyEightBlogBatch)[number]; index: number }>(septemberTwentyEightBlogBatch.map((post, index) => [post.slug, { post, index }]));
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -397,12 +402,21 @@ function SeptemberTwentyFourArticle({ index }: { index: number }) {
   return <><JsonLd data={schema}/><article className="container guide-article strict-article" data-article-family="blog" data-batch="2026-09-24"><link rel="canonical" href={url}/><meta property="article:published_time" content={post.publicationDate}/><p className="eyebrow">Small business outsourcing industry guide</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><time dateTime="2026-09-24">Published: September 24, 2026</time><figure><img src={post.imagePath} alt={`Small business owner planning ${post.lane} with a Philippines-based specialist`}/></figure>{post.sections.map(([heading,body])=><section key={heading}><h2>{heading}</h2><p>{body}</p></section>)}<section><h2>Sources and next steps</h2><ul>{post.sources.map(([label,sourceUrl])=><li key={sourceUrl}><a href={sourceUrl} target="_blank" rel="noreferrer">{label}</a></li>)}</ul><p>Compare the workflow with our <a href={`/services/${servicePath}`}>relevant outsourcing service guide</a>, or browse <a href="/services">all service guides</a>.</p></section><section><h2>Related industry guides</h2><div className="fleet-card-grid">{related.map(p=><a className="fleet-card" href={`/blog/${p.slug}`} key={p.slug}><h3>{p.title}</h3><p>{p.excerpt}</p></a>)}</div></section></article><CTA/></>;
 }
 function SeptemberTwentyFiveArticle({ index }: { index: number }) {
+  if (index >= septemberTwentyFiveBlogBatch.length) return <SeptemberTwentyEightArticle index={index - septemberTwentyFiveBlogBatch.length} />;
   const post = septemberTwentyFiveBlogBatch[index];
   const url = `${baseUrl}/blog/${post.slug}`;
   const servicePath = post.service === 'reporting-and-qa' ? 'reporting-quality-assurance' : post.service;
   const related = septemberTwentyFiveBlogBatch.filter((_,i)=>i!==index).slice(index%9,index%9+3);
   const schema = {'@context':'https://schema.org','@type':'BlogPosting',headline:post.title,description:post.excerpt,url,datePublished:post.publicationDate,mainEntityOfPage:url,image:`${baseUrl}${post.imagePath}`,citation:post.sources.map(([,sourceUrl])=>sourceUrl),author:{'@type':'Organization',name:site.brand},publisher:{'@type':'Organization',name:site.brand,url:baseUrl}};
   return <><JsonLd data={schema}/><article className="container guide-article strict-article" data-article-family="blog" data-batch="2026-09-25"><link rel="canonical" href={url}/><meta property="article:published_time" content={post.publicationDate}/><p className="eyebrow">Small business outsourcing workflow guide</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><time dateTime="2026-09-25">Published: September 25, 2026</time><figure><img src={post.imagePath} alt={`Small business owner planning ${post.lane} with a Philippines-based specialist`}/></figure>{post.sections.map(([heading,body])=><section key={heading}><h2>{heading}</h2><p>{body}</p></section>)}<section><h2>Sources and next steps</h2><ul>{post.sources.map(([label,sourceUrl])=><li key={sourceUrl}><a href={sourceUrl} target="_blank" rel="noreferrer">{label}</a></li>)}</ul><p>Compare the workflow with our <a href={`/services/${servicePath}`}>relevant outsourcing service guide</a>, or browse <a href="/services">all service guides</a>.</p></section><section><h2>Related workflow guides</h2><div className="fleet-card-grid">{related.map(p=><a className="fleet-card" href={`/blog/${p.slug}`} key={p.slug}><h3>{p.title}</h3><p>{p.excerpt}</p></a>)}</div></section></article><CTA/></>;
+}
+function SeptemberTwentyEightArticle({ index }: { index: number }) {
+  const post = septemberTwentyEightBlogBatch[index];
+  const url = `${baseUrl}/blog/${post.slug}`;
+  const servicePath = post.service === 'reporting-and-qa' ? 'reporting-quality-assurance' : post.service;
+  const related = septemberTwentyEightBlogBatch.filter((_,i)=>i!==index).slice(index%9,index%9+3);
+  const schema = {'@context':'https://schema.org','@type':'BlogPosting',headline:post.title,description:post.excerpt,url,datePublished:post.publicationDate,mainEntityOfPage:url,image:`${baseUrl}${post.imagePath}`,citation:post.sources.map(([,sourceUrl])=>sourceUrl),author:{'@type':'Organization',name:site.brand},publisher:{'@type':'Organization',name:site.brand,url:baseUrl}};
+  return <><JsonLd data={schema}/><article className="container guide-article strict-article" data-article-family="blog" data-batch="2026-09-28"><link rel="canonical" href={url}/><meta property="article:published_time" content={post.publicationDate}/><p className="eyebrow">Small business outsourcing workflow guide</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><time dateTime="2026-09-28">Published: September 28, 2026</time><figure><img src={post.imagePath} alt={`Small business owner planning ${post.lane} with a Philippines-based specialist`}/></figure>{post.sections.map(({heading,paragraphs})=><section key={heading}><h2>{heading}</h2>{paragraphs.map((body)=><p key={body}>{body}</p>)}</section>)}<section><h2>Sources and next steps</h2><ul>{post.sources.map(([label,sourceUrl])=><li key={sourceUrl}><a href={sourceUrl} target="_blank" rel="noreferrer">{label}</a></li>)}</ul><p>Compare the workflow with our <a href={`/services/${servicePath}`}>relevant outsourcing service guide</a>, or browse <a href="/services">all service guides</a>.</p></section><section><h2>Related workflow guides</h2><div className="fleet-card-grid">{related.map(p=><a className="fleet-card" href={`/blog/${p.slug}`} key={p.slug}><h3>{p.title}</h3><p>{p.excerpt}</p></a>)}</div></section></article><CTA/></>;
 }
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
