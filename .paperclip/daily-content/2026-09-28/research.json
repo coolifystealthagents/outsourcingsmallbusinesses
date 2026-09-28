@@ -1,0 +1,20 @@
+{
+  "family": "research",
+  "cycleLabel": "September28",
+  "publicationDate": "2026-09-28",
+  "timezone": "UTC",
+  "requiredCount": 5,
+  "baselineSha": "da179b96a46a2ba3b33471d173cc25cb7a763200",
+  "repository": "coolifystealthagents/outsourcingsmallbusinesses",
+  "productionBranch": "main",
+  "deploymentResource": "y85c6kbd6zekps7rxqzwrrn6",
+  "entries": [
+    {"family":"research","topic":"inbox escalation closure","slug":"september-28-research-inbox-escalation-closure","contentHash":"d1538ac27a1ec91b6b5c79c02dec399bafc678df0119e7cffa03b347952a2197","wordCount":1460,"sources":["https://www.ftc.gov/business-guidance/resources/start-security-guide-business","https://www.nist.gov/cyberframework","https://www.sba.gov/business-guide/manage-your-business"],"publicationDate":"2026-09-28","commitSha":null,"deploymentUuid":null,"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-28-research-inbox-escalation-closure","verifiedAt":null},
+    {"family":"research","topic":"duplicate invoice screening","slug":"september-28-research-duplicate-invoice-screening","contentHash":"1075164ae19613aa0300b735d19fd295a50e9cf7d8b68e2fe95f021c686438bb","wordCount":1437,"sources":["https://www.irs.gov/publications/p583","https://www.sba.gov/business-guide/manage-your-business/manage-your-finances","https://www.ftc.gov/business-guidance/resources/start-security-guide-business","https://www.nist.gov/cyberframework"],"publicationDate":"2026-09-28","commitSha":null,"deploymentUuid":null,"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-28-research-duplicate-invoice-screening","verifiedAt":null},
+    {"family":"research","topic":"order address change verification","slug":"september-28-research-order-address-change-verification","contentHash":"7f8433b0ca691c2cfe52354ac2c3e8f4701aa1ec19a501d663fd326ef07e7398","wordCount":1442,"sources":["https://www.ftc.gov/business-guidance/resources/start-security-guide-business","https://www.nist.gov/cyberframework","https://www.ftc.gov/business-guidance/advertising-marketing","https://www.sba.gov/business-guide/manage-your-business"],"publicationDate":"2026-09-28","commitSha":null,"deploymentUuid":null,"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-28-research-order-address-change-verification","verifiedAt":null},
+    {"family":"research","topic":"dashboard denominator control","slug":"september-28-research-dashboard-denominator-control","contentHash":"fd4419630a866939b58a55c4acd034ea17505058c9ca7f52d9faaff41a027ed1","wordCount":1423,"sources":["https://www.sba.gov/business-guide/manage-your-business","https://www.sba.gov/business-guide/manage-your-business/manage-your-finances","https://www.nist.gov/cyberframework"],"publicationDate":"2026-09-28","commitSha":null,"deploymentUuid":null,"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-28-research-dashboard-denominator-control","verifiedAt":null},
+    {"family":"research","topic":"social asset rights provenance","slug":"september-28-research-social-asset-rights-provenance","contentHash":"8b356d755a0a42c09891a2604977684ca7d65aefca98c82be8a2ea63216cf478","wordCount":1454,"sources":["https://www.copyright.gov/circs/circ01.pdf","https://www.ftc.gov/business-guidance/advertising-marketing","https://www.ftc.gov/business-guidance/resources/start-security-guide-business","https://www.sba.gov/business-guide/manage-your-business"],"publicationDate":"2026-09-28","commitSha":null,"deploymentUuid":null,"liveUrl":"https://outsourcingsmallbusinesses.com/research/september-28-research-social-asset-rights-provenance","verifiedAt":null}
+  ],
+  "validation": {"minimumWords":1200,"bodyOnly":true,"maximumPairwiseFiveWordShingleJaccard":0.3994,"canonical":"generated from final slug","sitemap":"generated from researchPosts","structuredData":"Article with matching datePublished","sourceCheckedDate":"2026-09-28"},
+  "release": {"status":"local-research-handoff","integrator":"Blog","researchCommitSha":null,"combinedRemoteSha":null,"deploymentUuid":null,"verifiedCount":0}
+}
