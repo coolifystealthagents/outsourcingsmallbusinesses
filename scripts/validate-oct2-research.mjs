@@ -57,7 +57,7 @@ for (let left = 0; left < result.length; left += 1) {
 }
 const paragraphs = posts.flatMap((post) => post.body.map((body, index) => ({ slug: post.slug, index, normalized: tokens(body).join(' ') })));
 for (let left = 0; left < paragraphs.length; left += 1) for (let right = left + 1; right < paragraphs.length; right += 1) {
-  if (paragraphs[left].slug !== paragraphs[right].slug && paragraphs[left].normalized === paragraphs[right].normalized && paragraphs[left].index < 5 && paragraphs[right].index < 5) fail(`repeated original paragraph ${paragraphs[left].slug} ${paragraphs[right].slug}`);
+  if (paragraphs[left].slug !== paragraphs[right].slug && paragraphs[left].normalized === paragraphs[right].normalized) fail(`repeated expanded paragraph ${paragraphs[left].slug} ${paragraphs[right].slug}`);
 }
 const output = result.map(({ shingles: ignored, ...entry }) => entry);
 console.log(JSON.stringify({ count: 5, publicationDate: '2026-10-02', minimumWords: Math.min(...result.map((entry) => entry.words)), maximumPairwiseFiveWordShingleJaccard: Math.max(...overlaps.map((entry) => entry.overlap)), repeatedOriginalParagraphs: 0, sharedArgumentReview: 'Each article uses a distinct decision, evidence graph, failure tests, measures, boundary, and buyer outcome.', result: output, overlaps }, null, 2));
