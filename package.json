@@ -15,15 +15,16 @@
     "validate:sep24-blog": "node scripts/validate-sep24-blog.mjs",
     "validate:sep24-research": "node scripts/validate-sep24-research.mjs",
     "validate:sep25-blog": "node scripts/validate-sep25-blog.mjs",
-    "validate:sep25-research": "node scripts/validate-sep25-research.mjs"
-    ,"validate:sep28-blog": "node scripts/validate-sep28-blog.mjs"
-    ,"validate:sep28-research": "node scripts/validate-sep28-research.mjs"
-    ,"validate:oct2-blog": "node scripts/validate-oct2-blog.mjs"
-    ,"validate:oct2-research": "node scripts/validate-oct2-research.mjs"
+    "validate:sep25-research": "node scripts/validate-sep25-research.mjs",
+    "validate:sep28-blog": "node scripts/validate-sep28-blog.mjs",
+    "validate:sep28-research": "node scripts/validate-sep28-research.mjs",
+    "validate:oct2-blog": "node scripts/validate-oct2-blog.mjs",
+    "validate:oct2-research": "node scripts/validate-oct2-research.mjs",
+    "validate:oct2-rendered": "node scripts/validate-oct2-rendered.mjs"
   },
   "dependencies": {
-    "@next/third-parties": "16.3.5",
-    "next": "16.3.5",
+    "@next/third-parties": "16.3.8",
+    "next": "16.3.8",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },
