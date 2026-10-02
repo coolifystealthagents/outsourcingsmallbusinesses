@@ -78,8 +78,8 @@
       "family": "blog",
       "topic": "dental benefit verification",
       "slug": "outsource-dental-benefit-verification",
-      "wordCount": 1000,
-      "contentHash": "3dfdbaad29670ad6142ccb1ac306c989a3b8c62b430358032b53d3a33f2a3f73",
+      "wordCount": 948,
+      "contentHash": "98c38d1bc8838ff390d5da79d8a807147ec75e3cefe3c07dd60db28491be1d55",
       "sources": [
         "https://www.sba.gov/business-guide/manage-your-business",
         "https://www.nist.gov/cyberframework",
@@ -95,8 +95,8 @@
       "family": "blog",
       "topic": "wholesale order-exception coordination",
       "slug": "outsource-wholesale-order-exceptions",
-      "wordCount": 981,
-      "contentHash": "0358eb2df201d40754eb3c63e6a2a56252324f836685d3146446d27cf7bcfce8",
+      "wordCount": 903,
+      "contentHash": "7a330948a5076f68960fe2e52cd290214897ee3fedd3d274ebe22131cfcddca8",
       "sources": [
         "https://www.sba.gov/business-guide/manage-your-business",
         "https://www.nist.gov/cyberframework",
@@ -112,8 +112,8 @@
       "family": "blog",
       "topic": "event vendor coordination",
       "slug": "outsource-event-vendor-coordination",
-      "wordCount": 1007,
-      "contentHash": "e33840c3edf5fed4606d1a97680135b7b03bd155b0377b5483cf1717b6f39185",
+      "wordCount": 901,
+      "contentHash": "eac18a3a55ec182f18350e4a721526901cef612ef535132f6ca072be5ba7a780",
       "sources": [
         "https://www.sba.gov/business-guide/manage-your-business",
         "https://www.nist.gov/cyberframework",
@@ -129,8 +129,8 @@
       "family": "blog",
       "topic": "field-service estimate follow-up",
       "slug": "outsource-field-service-estimate-followup",
-      "wordCount": 1007,
-      "contentHash": "8e0410d632bc19963629a935903a76fa0442a661a1ba0d28e30aa07bf2a9dea9",
+      "wordCount": 906,
+      "contentHash": "c47d51beb8fe361007d9074cfa52166033094385dcb697e090de30f062d75862",
       "sources": [
         "https://www.sba.gov/business-guide/manage-your-business",
         "https://www.nist.gov/cyberframework",
@@ -214,10 +214,14 @@
   "validation": {
     "minimumWords": 900,
     "bodyOnly": true,
-    "maximumPairwiseFiveWordShingleJaccard": 0.3569,
+    "maximumPairwiseFiveWordShingleJaccard": 0.35,
     "repeatedOriginalParagraphs": 0,
-    "sharedArgumentReview": "PASS: expanded review confirms each body follows its own domain decision, evidence, worked case, authority boundary, measure, and reader outcome. The rejected nine-module scaffold and its stock red-team, tabletop, exception-card, bidirectional-audit, and expansion prose are absent.",
-    "qualitativeApproved": true,
+    "sharedArgumentReview": "INCREMENTAL: the first eight Blog bodies have completed expanded qualitative review with independent topic-led structures and no shared eight-word spans. The final four remain explicitly pending rewrite; full-batch qualitative approval is not claimed.",
+    "qualitativeApproved": false,
+    "incrementalQualitativeApproved": {
+      "approvedCount": 8,
+      "pendingCount": 4
+    },
     "canonical": "generated from final slug",
     "sitemap": "generated from blogPosts",
     "structuredData": "BlogPosting with matching datePublished"
