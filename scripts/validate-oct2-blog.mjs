@@ -17,4 +17,4 @@ let maximum={score:0,left:'',right:''};for(let i=0;i<result.length;i++)for(let j
 if(Math.abs(manifest.validation.maximumPairwiseFiveWordShingleJaccard-Number(maximum.score.toFixed(4)))>.00001)throw new Error('manifest overlap metric mismatch');
 if(maximum.score>=.4)throw new Error(`cross-article overlap exceeds corrected independence ceiling: ${maximum.score}`);
 console.log(JSON.stringify({count:12,publicationDate:'2026-10-02',wordCounts:result.map(({slug,wordCount})=>({slug,wordCount})),maximumPairwiseFiveWordShingleJaccard:maximum,repeatedOriginalParagraphs:0,sharedArgumentReview:manifest.validation.sharedArgumentReview,qualitativeApproved:manifest.validation.qualitativeApproved,result:result.map(({body,shingles,...entry})=>entry)},null,2));
-if(manifest.validation.qualitativeApproved!==true&&manifest.validation.incrementalQualitativeApproved?.approvedCount!==8)throw new Error('qualitative originality gate has no validated increment');
+if(manifest.validation.qualitativeApproved!==true)throw new Error('qualitative originality gate is not approved');
