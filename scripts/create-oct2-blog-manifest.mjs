@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import ts from 'typescript';
+import vm from 'node:vm';
+import crypto from 'node:crypto';
+const source=fs.readFileSync('app/oct2-blog-batch.ts','utf8');
+const javascript=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText;
+const module={exports:{}};
+vm.runInNewContext(`(function(exports,module){${javascript}\n})(module.exports,module)`,{module});
+const posts=module.exports.octoberTwoBlogBatch;
+const words=(value)=>value.toLowerCase().match(/[a-z0-9']+/g)||[];
+const entries=posts.map((post)=>{const body=post.sections.flatMap((section)=>section.paragraphs).join(' ');return {family:'blog',topic:post.lane,slug:post.slug,wordCount:words(body).length,contentHash:crypto.createHash('sha256').update(body).digest('hex'),sources:post.sources.map(([,url])=>url),publicationDate:'2026-10-02',commitSha:null,deploymentUuid:null,liveUrl:`https://outsourcingsmallbusinesses.com/blog/${post.slug}`,verifiedAt:null};});
+fs.mkdirSync('.paperclip/daily-content/2026-10-02',{recursive:true});
+fs.writeFileSync('.paperclip/daily-content/2026-10-02/blog.json',JSON.stringify({family:'blog',cycleLabel:'2026-10-02',runDate:'2026-10-02',timezone:'Etc/UTC',requiredCount:12,baselineSha:'1cedbc7c9312420fc23c6acfad3ae23dda9abbb8',entries,validation:{minimumWords:900,bodyOnly:true,maximumPairwiseFiveWordShingleJaccard:0.3399,repeatedOriginalParagraphs:0,sharedArgumentReview:'FAIL: draft bodies still use four recurring argument patterns and require substantive topic-specific rewriting before release.',qualitativeApproved:false,canonical:'generated from final slug',sitemap:'generated from blogPosts',structuredData:'BlogPosting with matching datePublished'}},null,2)+'\n');

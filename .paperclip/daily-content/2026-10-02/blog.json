@@ -1,0 +1,225 @@
+{
+  "family": "blog",
+  "cycleLabel": "2026-10-02",
+  "runDate": "2026-10-02",
+  "timezone": "Etc/UTC",
+  "requiredCount": 12,
+  "baselineSha": "1cedbc7c9312420fc23c6acfad3ae23dda9abbb8",
+  "entries": [
+    {
+      "family": "blog",
+      "topic": "medical office referral tracking",
+      "slug": "outsource-medical-office-referral-tracking",
+      "wordCount": 3167,
+      "contentHash": "5ddef1a0ee2a1c3a8d009fc41e3f634a9cf0da27cbbbf121047cd640f1fe046e",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.ftc.gov/business-guidance/resources/start-security-guide-business"
+      ],
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentUuid": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-medical-office-referral-tracking",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "construction change-order logging",
+      "slug": "outsource-construction-change-order-log",
+      "wordCount": 3231,
+      "contentHash": "acef8f619af372fe847cfe701a3cf6f77e5bb521ca87c60297c7292008a38aa6",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.ftc.gov/business-guidance/resources/start-security-guide-business"
+      ],
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentUuid": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-construction-change-order-log",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "SaaS cancellation queue administration",
+      "slug": "outsource-saas-cancellation-queue",
+      "wordCount": 3298,
+      "contentHash": "b0508592ede18e31e33409ec2c019ac2392778b233a38d1316363b9fe61720c2",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.ftc.gov/business-guidance/resources/start-security-guide-business"
+      ],
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentUuid": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-saas-cancellation-queue",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "property maintenance request triage",
+      "slug": "outsource-property-maintenance-triage",
+      "wordCount": 3309,
+      "contentHash": "f191732d031f1c4d5ddd322353a302ef3375ed38a2781d2dcbd1b226581812f7",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.ftc.gov/business-guidance/resources/start-security-guide-business"
+      ],
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentUuid": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-property-maintenance-triage",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "dental benefit verification",
+      "slug": "outsource-dental-benefit-verification",
+      "wordCount": 3290,
+      "contentHash": "d4181440f1e50550283316041e8fb9111fe51744d6609328647c58272f779e4d",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.ftc.gov/business-guidance/resources/start-security-guide-business"
+      ],
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentUuid": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-dental-benefit-verification",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "wholesale order-exception coordination",
+      "slug": "outsource-wholesale-order-exceptions",
+      "wordCount": 3234,
+      "contentHash": "dd8868df0f5fc71931327bfc5173484f9bb5d49fff11526bcdcdb749e8c71181",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.ftc.gov/business-guidance/resources/start-security-guide-business"
+      ],
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentUuid": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-wholesale-order-exceptions",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "event vendor coordination",
+      "slug": "outsource-event-vendor-coordination",
+      "wordCount": 3345,
+      "contentHash": "fcf8a742705423b7e34bba42fae437fa369db5136f700770403c5470ae678013",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.ftc.gov/business-guidance/resources/start-security-guide-business"
+      ],
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentUuid": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-event-vendor-coordination",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "field-service estimate follow-up",
+      "slug": "outsource-field-service-estimate-followup",
+      "wordCount": 3403,
+      "contentHash": "4d908b7eb3cbec02606ae94fb1a4b836b5b916c0deae080990e4cd9ca01f6956",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.ftc.gov/business-guidance/resources/start-security-guide-business"
+      ],
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentUuid": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-field-service-estimate-followup",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "insurance claim document intake",
+      "slug": "outsource-insurance-claim-document-intake",
+      "wordCount": 3256,
+      "contentHash": "bf8b60517f52dab826a712f1cb60a561491f6e93ae9378c0bddf346e53dcab9b",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.ftc.gov/business-guidance/resources/start-security-guide-business"
+      ],
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentUuid": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-insurance-claim-document-intake",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "recruiting interview logistics",
+      "slug": "outsource-recruiting-interview-logistics",
+      "wordCount": 3235,
+      "contentHash": "fabaec39cabf81b785d93c7f719cc34ebea4a59b4a4ae0d3bdb0780bf964e018",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.ftc.gov/business-guidance/resources/start-security-guide-business"
+      ],
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentUuid": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-recruiting-interview-logistics",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "vendor invoice dispute logging",
+      "slug": "outsource-vendor-invoice-dispute-log",
+      "wordCount": 3346,
+      "contentHash": "a39873fe325f25348864c13dd35d5933721902e06b1671595a5d50d92cc48ba7",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.ftc.gov/business-guidance/resources/start-security-guide-business"
+      ],
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentUuid": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-vendor-invoice-dispute-log",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "membership renewal administration",
+      "slug": "outsource-membership-renewal-administration",
+      "wordCount": 3229,
+      "contentHash": "81865e07ba2d60b773918d7adc39658124280a282dadef4a67bffda86827e7e9",
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.ftc.gov/business-guidance/resources/start-security-guide-business"
+      ],
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentUuid": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-membership-renewal-administration",
+      "verifiedAt": null
+    }
+  ],
+  "validation": {
+    "minimumWords": 900,
+    "bodyOnly": true,
+    "maximumPairwiseFiveWordShingleJaccard": 0.3399,
+    "repeatedOriginalParagraphs": 0,
+    "sharedArgumentReview": "FAIL: draft bodies still use four recurring argument patterns and require substantive topic-specific rewriting before release.",
+    "qualitativeApproved": false,
+    "canonical": "generated from final slug",
+    "sitemap": "generated from blogPosts",
+    "structuredData": "BlogPosting with matching datePublished"
+  }
+}
