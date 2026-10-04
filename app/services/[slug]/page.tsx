@@ -1,13 +1,21 @@
 import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
 import { CTA, Footer, Header, JsonLd } from '../../components';
 import { site } from '../../data';
 import { fleetServices } from '../../service-data';
 
 export function generateStaticParams() { return fleetServices.map((service) => ({ slug: service.slug })); }
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const service = fleetServices.find((item) => item.slug === slug);
-  return service ? { title: service.title, description: service.summary } : {};
+  if (!service) return {};
+  const url = `https://${site.domain.toLowerCase()}/services/${service.slug}`;
+  return {
+    title: service.title,
+    description: service.summary,
+    alternates: { canonical: url },
+    openGraph: { title: service.title, description: service.summary, url },
+  };
 }
 
 export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {

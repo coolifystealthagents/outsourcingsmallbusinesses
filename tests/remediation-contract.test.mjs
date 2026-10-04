@@ -77,6 +77,13 @@ test('service template renders substantive, visual, conversion-ready sections', 
   assert.match(servicePage, /Book a free call/);
 });
 
+test('service metadata uses each generated route as its canonical and Open Graph URL', () => {
+  const servicePage = read('app/services/[slug]/page.tsx');
+  assert.match(servicePage, /const url = `https:\/\/\$\{site\.domain\.toLowerCase\(\)\}\/services\/\$\{service\.slug\}`/);
+  assert.match(servicePage, /alternates: \{ canonical: url \}/);
+  assert.match(servicePage, /openGraph: \{ title: service\.title, description: service\.summary, url \}/);
+});
+
 test('homepage service cards lead to individual major-service pages', () => {
   const home = read('app/page.tsx');
   for (const slug of ['operations-support', 'customer-support', 'administrative-support', 'reporting-quality-assurance']) {
