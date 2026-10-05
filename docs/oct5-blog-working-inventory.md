@@ -29,6 +29,6 @@ The production inventory through October 2 already covers broad generic lanes su
 ## Drafting status
 
 - Topics: 12/12 selected for full collision review.
-- Substantive bodies: 2/12 complete (veterinary prescription refill administration, 1,260 words; commercial lease certificate-of-insurance coordination, 1,370 words).
+- Substantive bodies: 3/12 complete (veterinary prescription refill administration, 1,260 words; commercial lease certificate-of-insurance coordination, 1,370 words; freight damage claim evidence, count pending audit).
 - Research handoff: pending from `OUTAAAAAAAAAAAAAAA-72`.
 - Integration, validation, commit, push, deployment, and public verification: pending.
