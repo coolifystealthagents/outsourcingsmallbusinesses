@@ -4,7 +4,7 @@ Freight damage work begins long before anyone decides who must pay. A receiver n
 
 ## Preserve the receiving event before the story changes
 
-Open the case from the shipment record and the first observed exception. Capture the shipper, consignee, carrier, tracking or PRO number, purchase and sales references, delivery location, arrival time, package count, seal information when supplied, and the exact notation on the delivery receipt. Store the original receipt and photographs without editing them. Record who created each image, when it was received, and what the sender said it showed. A coordinator may organize evidence, but should not label an image “carrier damage” when it only shows a torn carton.
+Open the case from the shipment record and the first observed exception. Capture the shipper, consignee, carrier, tracking or PRO number, purchase and sales references, delivery location, arrival time, package count, seal information when supplied, and the exact notation on the delivery receipt. Store the original receipt and photographs without editing them. Record who created each image, when it was received, and what the sender said it showed. A coordinator may organize evidence, but should not label an image "carrier damage" when it only shows a torn carton.
 
 Timing matters because goods move and packaging gets discarded. Use an approved receiving checklist that asks staff to retain the affected product and packaging, photograph several useful views, and identify the items against the packing list. The checklist must not encourage unsafe handling or delay an emergency response. Leaks, fumes, unstable loads, food-safety concerns, injuries, or hazardous materials go immediately to the business's safety route. The claims queue is not a substitute for that route.
 
@@ -12,7 +12,7 @@ Timing matters because goods move and packaging gets discarded. Use an approved 
 
 Build the record in layers. The shipment layer contains documents and identifiers. The condition layer contains what named people observed. The quantity layer compares ordered, shipped, received, affected, usable, and missing units using the business's approved units of measure. The communication layer preserves carrier, supplier, warehouse, customer, and insurer statements. The decision layer is reserved for authorized owners.
 
-This separation prevents an expensive shortcut. If ten cases arrived and two outer cartons are dented, the coordinator should not record twenty damaged units unless someone inspected and counted them. “Subject to inspection” on a receipt is not the same as a confirmed concealed-damage count. A carrier representative's statement about probable handling is still a sourced statement, not a finding. The packet should show what is known, what conflicts, and what inspection remains.
+This separation prevents an expensive shortcut. If ten cases arrived and two outer cartons are dented, the coordinator should not record twenty damaged units unless someone inspected and counted them. "Subject to inspection" on a receipt is not the same as a confirmed concealed-damage count. A carrier representative's statement about probable handling is still a sourced statement, not a finding. The packet should show what is known, what conflicts, and what inspection remains.
 
 ## Reconcile documents before submitting a packet
 

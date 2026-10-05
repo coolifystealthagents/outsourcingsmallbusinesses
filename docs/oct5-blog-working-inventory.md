@@ -29,6 +29,6 @@ The production inventory through October 2 already covers broad generic lanes su
 ## Drafting status
 
 - Topics: 12/12 selected for full collision review.
-- Substantive bodies: 5/12 complete (veterinary prescription refill administration, 1,260 words; commercial lease certificate-of-insurance coordination, 1,370 words; freight damage claim evidence, 1,137 words; permit inspection scheduling and bank statement follow-up counts pending audit).
+- Substantive bodies: 6/12 complete (veterinary refill, commercial lease insurance, freight damage, permit inspection, bank statement follow-up, and MSP user onboarding; counts recorded by the originality audit).
 - Research handoff: pending from `OUTAAAAAAAAAAAAAAA-72`.
 - Integration, validation, commit, push, deployment, and public verification: pending.
