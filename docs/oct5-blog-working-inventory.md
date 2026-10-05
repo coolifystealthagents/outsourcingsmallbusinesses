@@ -29,6 +29,6 @@ The production inventory through October 2 already covers broad generic lanes su
 ## Drafting status
 
 - Topics: 12/12 selected for full collision review.
-- Substantive bodies: 6/12 complete (veterinary refill, commercial lease insurance, freight damage, permit inspection, bank statement follow-up, and MSP user onboarding; counts recorded by the originality audit).
+- Substantive bodies: 8/12 complete (the prior six plus specialty-food sample follow-up and auto-repair supplement documentation; counts recorded by the originality audit).
 - Research handoff: pending from `OUTAAAAAAAAAAAAAAA-72`.
 - Integration, validation, commit, push, deployment, and public verification: pending.
