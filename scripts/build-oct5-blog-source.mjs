@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import crypto from 'node:crypto';
 
 const date = '2026-10-05';
+const contentCommitSha = process.env.CONTENT_COMMIT_SHA || null;
 const sba = ['U.S. Small Business Administration: Manage your business', 'https://www.sba.gov/business-guide/manage-your-business'];
 const nist = ['NIST Cybersecurity Framework 2.0', 'https://www.nist.gov/cyberframework'];
 const ftc = ['Federal Trade Commission: Start with Security', 'https://www.ftc.gov/business-guidance/resources/start-security-guide-business'];
@@ -60,7 +61,7 @@ const entries = posts.map((post) => {
     contentHash: crypto.createHash('sha256').update(JSON.stringify(post)).digest('hex'),
     bodyHash: crypto.createHash('sha256').update(body).digest('hex'),
     paragraphHashes: paragraphs.map((paragraph) => crypto.createHash('sha256').update(paragraph).digest('hex')),
-    wordCount: words(body).length, publicationDateCandidate: date, commitSha: null,
+    wordCount: words(body).length, publicationDateCandidate: date, commitSha: contentCommitSha,
     deploymentEvidence: null, liveUrl: `https://outsourcingsmallbusinesses.com/blog/${post.slug}`, verifiedAt: null,
   };
 });
@@ -69,7 +70,7 @@ const manifest = {
   requiredCount:12, baselineSha:'3d32419abe9023449b9b7b4b6fc0cb7ba9d281fa', repository:'coolifystealthagents/outsourcingsmallbusinesses',
   productionBranch:'main', blogBranch:'routine/blog-2026-10-05', deploymentResource:'y85c6kbd6zekps7rxqzwrrn6', entries,
   validation:{minimumWords:900,bodyOnly:true,sourceBodyParagraphParity:'ordered paragraph hashes',qualitativeOriginality:'pending combined validator'},
-  release:{status:'local-combined-draft',combinedRemoteSha:null,deploymentEvidence:null,verifiedCount:0},
+  release:{status:'validated-combined-candidate',contentCommitSha,combinedRemoteSha:null,deploymentEvidence:null,verifiedCount:0},
 };
 fs.mkdirSync('.paperclip/daily-content/2026-10-05',{recursive:true});
 fs.writeFileSync('.paperclip/daily-content/2026-10-05/blog.json',`${JSON.stringify(manifest,null,2)}\n`);

@@ -55,7 +55,7 @@
       ],
       "wordCount": 1201,
       "publicationDateCandidate": "2026-10-05",
-      "commitSha": null,
+      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-veterinary-prescription-refill-administration",
       "verifiedAt": null
@@ -108,7 +108,7 @@
       ],
       "wordCount": 1310,
       "publicationDateCandidate": "2026-10-05",
-      "commitSha": null,
+      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-commercial-lease-insurance-certificate-requests",
       "verifiedAt": null
@@ -156,7 +156,7 @@
       ],
       "wordCount": 1088,
       "publicationDateCandidate": "2026-10-05",
-      "commitSha": null,
+      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-freight-damage-claim-evidence",
       "verifiedAt": null
@@ -206,7 +206,7 @@
       ],
       "wordCount": 1145,
       "publicationDateCandidate": "2026-10-05",
-      "commitSha": null,
+      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-permit-inspection-scheduling",
       "verifiedAt": null
@@ -256,7 +256,7 @@
       ],
       "wordCount": 1091,
       "publicationDateCandidate": "2026-10-05",
-      "commitSha": null,
+      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-client-bank-statement-followup",
       "verifiedAt": null
@@ -306,7 +306,7 @@
       ],
       "wordCount": 1004,
       "publicationDateCandidate": "2026-10-05",
-      "commitSha": null,
+      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-msp-user-onboarding-intake",
       "verifiedAt": null
@@ -356,7 +356,7 @@
       ],
       "wordCount": 1001,
       "publicationDateCandidate": "2026-10-05",
-      "commitSha": null,
+      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-specialty-food-sample-followup",
       "verifiedAt": null
@@ -406,7 +406,7 @@
       ],
       "wordCount": 981,
       "publicationDateCandidate": "2026-10-05",
-      "commitSha": null,
+      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-auto-repair-supplement-documentation",
       "verifiedAt": null
@@ -458,7 +458,7 @@
       ],
       "wordCount": 942,
       "publicationDateCandidate": "2026-10-05",
-      "commitSha": null,
+      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-legal-document-production-administration",
       "verifiedAt": null
@@ -508,7 +508,7 @@
       ],
       "wordCount": 920,
       "publicationDateCandidate": "2026-10-05",
-      "commitSha": null,
+      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-architecture-submittal-register",
       "verifiedAt": null
@@ -558,7 +558,7 @@
       ],
       "wordCount": 971,
       "publicationDateCandidate": "2026-10-05",
-      "commitSha": null,
+      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-restaurant-equipment-service-coordination",
       "verifiedAt": null
@@ -610,7 +610,7 @@
       ],
       "wordCount": 941,
       "publicationDateCandidate": "2026-10-05",
-      "commitSha": null,
+      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-continuing-education-record-intake",
       "verifiedAt": null
@@ -623,7 +623,8 @@
     "qualitativeOriginality": "pending combined validator"
   },
   "release": {
-    "status": "local-combined-draft",
+    "status": "validated-combined-candidate",
+    "contentCommitSha": "572850a939ae70d16116a39b81116bbc4748554a",
     "combinedRemoteSha": null,
     "deploymentEvidence": null,
     "verifiedCount": 0
