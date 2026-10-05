@@ -1,0 +1,631 @@
+{
+  "family": "blog",
+  "cycleLabel": "2026-10-05",
+  "timezone": "UTC",
+  "actualPublicationDate": null,
+  "publicationDateCandidate": "2026-10-05",
+  "requiredCount": 12,
+  "baselineSha": "3d32419abe9023449b9b7b4b6fc0cb7ba9d281fa",
+  "repository": "coolifystealthagents/outsourcingsmallbusinesses",
+  "productionBranch": "main",
+  "blogBranch": "routine/blog-2026-10-05",
+  "deploymentResource": "y85c6kbd6zekps7rxqzwrrn6",
+  "entries": [
+    {
+      "family": "blog",
+      "topic": "How to Outsource Veterinary Prescription Refill Request Administration",
+      "slug": "outsource-veterinary-prescription-refill-administration",
+      "sources": [
+        {
+          "title": "U.S. Small Business Administration: Manage your business",
+          "url": "https://www.sba.gov/business-guide/manage-your-business",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "NIST Cybersecurity Framework 2.0",
+          "url": "https://www.nist.gov/cyberframework",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "Federal Trade Commission: Start with Security",
+          "url": "https://www.ftc.gov/business-guidance/resources/start-security-guide-business",
+          "checked": "2026-10-05"
+        }
+      ],
+      "contentHash": "d06cbead308ac04cc73138fb192691254952854ad3c63f8d4ad705c63f7324dc",
+      "bodyHash": "0eda9725c00d872eefc755a53608ecfe599bb089871e182e5f5498f34f44b175",
+      "paragraphHashes": [
+        "ba8576071f2ca0f1d16edc2602b6252b09aa3960e21da5b8071711f85dd26c32",
+        "69c406f21c4827e711242bfe44d8d070ae8ea5b6367ee9e85eb8e970487a38ca",
+        "d4fe44c2fddb2781d3f907309c9815c0dd378a56cef3f2b54328ca0a3bbbbe03",
+        "9aac3ad119d36aa4179468fd932ba71bcf0fdabf56abacdd9c0f15f8ae6aed50",
+        "2ab8684352b5fe43bc0fa53fd2f12e9a245cc0371960ed8f3de3080752738ac4",
+        "72536ce89f0bde25bfb7291bace6efb17e175f7265eadba0c6ea3356454d2e16",
+        "91245b1d421f458cfe4b3749ac683a407d18bca2d2a5f8cc63ee205df5636aec",
+        "19df2c130cd144a47650cf92c05930bac1c18e623341ec9d7c467b10aea90601",
+        "28cf04dce052c9e7c264a2327ea30de0f57fef726c24be2703c8e76b3ce6c364",
+        "687aeb45f7de08129d30412128ff31a1533773fe85bb7f39eb160678329d74ba",
+        "599a66d74ef2cb4f72427b7e3508f0036ac6d9e874bdc2a6d6c97cd17fcbd0b5",
+        "8db57e056ec3baa24db45f8c35a65c2f34a50af37c6d52b5be229af041199e70",
+        "f44e71b1dc11b188740c31f274c7ee01ad8fed67b16a1cdf96af9b3899e5cb7a",
+        "49bb09fec328e938e24b78994cc126f04aa31d28eff89935260c80715b1b5410",
+        "aa057386d21dc5b8fbdaf6821846ec1f3544178255686aae9f00286478fdae28",
+        "54d0d5a0f011bf233366647efb0e62cb29a7c7c20f4e0a448a852d4922ea2bfa",
+        "2b45def84807ee75f3aa80e15c318106d97f97d6dfa355e74fcb1327c261e039"
+      ],
+      "wordCount": 1201,
+      "publicationDateCandidate": "2026-10-05",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-veterinary-prescription-refill-administration",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "Outsource Commercial Lease Certificate-of-Insurance Requests Without Interpreting Coverage",
+      "slug": "outsource-commercial-lease-insurance-certificate-requests",
+      "sources": [
+        {
+          "title": "U.S. Small Business Administration: Manage your business",
+          "url": "https://www.sba.gov/business-guide/manage-your-business",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "NIST Cybersecurity Framework 2.0",
+          "url": "https://www.nist.gov/cyberframework",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "Federal Trade Commission: Start with Security",
+          "url": "https://www.ftc.gov/business-guidance/resources/start-security-guide-business",
+          "checked": "2026-10-05"
+        }
+      ],
+      "contentHash": "cdc3813c593118c84aa10b62bb074a2d43d058014a2ccd377eb553c0bb333759",
+      "bodyHash": "98d8b025823daa209cf2b07bc16a32515c793c7ad3604a463aa00d1a09565d57",
+      "paragraphHashes": [
+        "4b8380608958d2e0c859266319de11254eb5e3a7ae65d6cd37b6b7cf0433fc6a",
+        "efc27497030aec464f583acc5c948c519158dc0b1c01b89c85e624b042725a11",
+        "786a60715d20319ce25510b0926e6df186b27bbbe55eca6476cf00eae7b3d18e",
+        "3b3a875a69176a24ebcad775c4d90e35c04cc2a4fa5d604fbf4e96dd12471685",
+        "c3fccbd77f2c841c13ffaca709fe46dd86f8aa0ef024df077308e713fd63d911",
+        "82a3b18963c111d975716c7922a2a63db4e1d79f60ce4931dd13aee9db71f488",
+        "ffd933011ca425d866ac94304496c13cf17be526ed889e2af18ad8dd5e0ce828",
+        "108b0dc2116a3ecae71b62c363c2cac02d420d6287fe27cf5e2357acda3b3f1e",
+        "9a8d0068f52c710da90f540f3341b07ed9e636da7af4974f3949b69f90802725",
+        "297b3509d8d4d8dda76271821b53ccac6bc7da030e01b4a481f9b72759cf0b69",
+        "3209dc0826b2b9116e912e1226e68acff3f951da2b6a703ebc0890dd7edbaeab",
+        "da78bb1f2a74d0b3d093fac73458fb710effa3b1b32731d4914cb601447b078b",
+        "790b5870eb8d8c2de89711cc08e8e59292202e5654ecfd4dad77d578dc9035b9",
+        "43c90f26fccffd4330479f341f514259020fe05ece7cd5da4c4175c269f7ce8a",
+        "e637c1f65dcca593b743b713c229acc912f340330ea920312306142aa9ca0a67",
+        "7b3817dce549a1e31d389debed2ecf2dba3751f95d0639957a4b02fd3bd39c94",
+        "14927656f2bd560ec72bf30d71f5a19dfcfae0323a62d397e973f1abc6a5a077",
+        "8166ff53bdca53013c9d4266555cc4d84a74e9eada84bd1220cd92c9f3729b88",
+        "1ec6ddae9d15666904e3abdf93cfde6bffbb9afe44bae88940007c9355325ff0",
+        "172ee10e0653d69047a489f6c2b713c375fd711744f210e24991353104d6dc21",
+        "0367c11943f81583649d023c4c9c38b376790850eb91de0d28b30bc56a342dbc"
+      ],
+      "wordCount": 1310,
+      "publicationDateCandidate": "2026-10-05",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-commercial-lease-insurance-certificate-requests",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "Outsource Freight Damage Claim Evidence Without Deciding Liability",
+      "slug": "outsource-freight-damage-claim-evidence",
+      "sources": [
+        {
+          "title": "U.S. Small Business Administration: Manage your business",
+          "url": "https://www.sba.gov/business-guide/manage-your-business",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "NIST Cybersecurity Framework 2.0",
+          "url": "https://www.nist.gov/cyberframework",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "Occupational Safety and Health Administration: Recommended Practices",
+          "url": "https://www.osha.gov/safety-management",
+          "checked": "2026-10-05"
+        }
+      ],
+      "contentHash": "362af55b7ea0b3426ec1d608361fbad87947070d4b73ca675b337ea2e4b497bc",
+      "bodyHash": "b54347745f405acc6f9fae717a556bba48960e1a6043c8adb6d8b51a9278b0a4",
+      "paragraphHashes": [
+        "391e5e8825609a9281b8f80b5d51bb6f60d9592702bfca441d7e9f4837e81bd8",
+        "48b0d3699b1a8bc10b234a0769a9050e4eb167f1f9efd195edd59ce9024a0330",
+        "3abf27b99ba1892e9bbdeb7aa821efd23f84f1c60c1d5a2afcd5d923c27779f1",
+        "242571f1b11087b91e7a6223283cf2d9a5c6a6027865d54dda37b670e8c2aea3",
+        "33d7b27514675ff8e80abac86721d9621b9c607bf1a54880b3a472f003b32f17",
+        "11a0d6080ac292d9cdff2891531c176001128297dabc1dc6df0e6eebc2cdad42",
+        "5e39a6f9f5ecdb09f7b87282a9241ce8aeec42d56b1fa0bb709b8220e0b5827e",
+        "69bfafbf1a6afe2c444f703f3bb3c5ec5a5aabd80eeb4565d125ac881351cc02",
+        "4c33178feaaf59367de871fd3f7811156238342df8ed5304a2a0ffa12834f244",
+        "2a0fd8d345d9b74d9b200d00a568b4bf0d50e653330b906d55e2cac6a4497a12",
+        "d3ed0d413a786984f3f5858d7c0a728f8feb87b9818b1478b7f1a78f6d06b0b8",
+        "18086bca63edced84183fbb7fd19e242ffb3288af704f27bdf70162170fabddf",
+        "5f009511c970010a70ca06f790e8da4438ff2c44521c569973082f1a26a1c0f5",
+        "ab19631d54606955f353946dcb12c505b59e87766fae17fedc40e4022bfeb00a",
+        "c060e54ddc80b7a8ea9c7f532b3bb418620cdcffd06197106b6b2fecf39eb8a5",
+        "c77ce4b860fbf5b10031333e862fe41c4cb358cc82702c8864b3dd7b7cf5141b"
+      ],
+      "wordCount": 1088,
+      "publicationDateCandidate": "2026-10-05",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-freight-damage-claim-evidence",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "Outsource Permit Inspection Scheduling Without Certifying the Work",
+      "slug": "outsource-permit-inspection-scheduling",
+      "sources": [
+        {
+          "title": "U.S. Small Business Administration: Manage your business",
+          "url": "https://www.sba.gov/business-guide/manage-your-business",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "NIST Cybersecurity Framework 2.0",
+          "url": "https://www.nist.gov/cyberframework",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "Occupational Safety and Health Administration: Recommended Practices",
+          "url": "https://www.osha.gov/safety-management",
+          "checked": "2026-10-05"
+        }
+      ],
+      "contentHash": "a8fddb6e60f174469410793620d4829dd2fa90ff48d4d6446811920fc2a13fe3",
+      "bodyHash": "d42d2ca23f19934ccf08c0e5a4e1ba30ef27f159cdece400f5a771f2d6f6412a",
+      "paragraphHashes": [
+        "3dd2734e4ae465b62b4fa3cc3e90da32f2c3ba82345afbae070e2205303d36a2",
+        "bc93a3d1d42e9ee3a636ae00e511dd2f5e134a5aeac6b03ae4d76316e87eba7b",
+        "051da91b18973a09c38cd2ceb80f3a6e030a258842fc80136394ca29f8995247",
+        "c2bd02f18b9d307a3c462b61596df75817a6983c4c5601a1f2fb1cb035841163",
+        "f697a820bae029bb8d79e8bee4b6c2e5742ac3e7dbe64463d33dd1a522ca96eb",
+        "46537e95d6133ff65b81bfee1f6310ca9e205bcffbee0c59636a3aadb48b4f92",
+        "8804a9508305eecd45fe2704757c4fd8e124f70b4bcbab4ee81178cf35d7d63d",
+        "d11fdd52b62ff55176c1885dd526d1a5938c34dfa4e98d38d6336dbe504f34b6",
+        "e4fdf8e5c61a31939d0234a5f1b333498c15d8357d8cbb0602dec413447db74a",
+        "be3e9898ec8283b769ffa8d0eefc91897f804d83da9aff8d37dbdfe327fb6ac2",
+        "6764c993428e10d047993748b2fa9cd93a6f00883bf3b64770a6ed1baa8805cb",
+        "f3c9ef51863d364c593aa994d22e225d1d63526a9cff31f2d2b84a474402bb05",
+        "4bb423b9f53ae65b3b14d4f9b24294b94fc3729519347eb30982bae39a2c435d",
+        "c31a51b4461a98aa260366b74fcdc81ba94702d612cdca4ade13fdc3ebd00ccb",
+        "143eb4045c1a75ebfce04c98d31adb9e9c65055a7289483000babd7215b90771",
+        "c86395530078086d3f55debaaa4168ad15712807acf640cf075b008c83a87e7c",
+        "e52bc593d8ded55ea3d8af4a8050f6dddd014005117731dc9bda2bd4d64a8894",
+        "444afb707f4b3f5793d765dad261b762e35f8b5a969456289ac7b39247845150"
+      ],
+      "wordCount": 1145,
+      "publicationDateCandidate": "2026-10-05",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-permit-inspection-scheduling",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "Outsource Client Bank Statement Follow-Up Without Taking Account Access",
+      "slug": "outsource-client-bank-statement-followup",
+      "sources": [
+        {
+          "title": "Internal Revenue Service Publication 583",
+          "url": "https://www.irs.gov/publications/p583",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "NIST Cybersecurity Framework 2.0",
+          "url": "https://www.nist.gov/cyberframework",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "Federal Trade Commission: Start with Security",
+          "url": "https://www.ftc.gov/business-guidance/resources/start-security-guide-business",
+          "checked": "2026-10-05"
+        }
+      ],
+      "contentHash": "47ad307b14118db256f9e8a3a4e3484adf90cd07e95d188155cab5079dc62fb3",
+      "bodyHash": "a475b1d2bd2eb6d33d150a60ec9254d8e73c2f48e2717610542eb2a238d7cbf0",
+      "paragraphHashes": [
+        "851d8c07191a3c29950781cf04dd05be488e104bd0ddd0761a639c1d1ece3d37",
+        "a9364a22abb9eaadc1f6741562cf1617c52fdf48f813a1e92d4f6d681e4b117d",
+        "f997b78ea2ebfdfd3747a87c90a6ce690ef50721b10c8c482b07bd34b49dbcd5",
+        "61646755b5cd2383850a0d6d9ab9d3aae63ea3e9f83590bcec885f7fe071ebaf",
+        "75df25dbacd3dee41d40ea73ec5099b7183ad094a8e9974ad6dcb073f001d3e8",
+        "bce093bd0e2041ef93b6d31702badad788d431cd3399d1b70c89df92bd1186df",
+        "cf8c9fb0dd6f1551b0f1d79867daf6dfc0acd49edd9e74af6b2e8e70b5a3346c",
+        "5b679eb5f1ffc1384fa8443a8bca77863862b7d1c1707545849ee12ff1f1cf34",
+        "d0e54d76744ab63d692fc2ed36457eb966011178457855f0a706136ce8fe0186",
+        "c88f213d84b7540868bf7044073078f60a2e667565ffb21418aec1aebbd59dcc",
+        "b18a86ab0e1353d128e70bbf895262bc0050a7a3be991e52ef49c8dda62b6fee",
+        "2e2f99f7141577bf93d5f9c110c4ee4f0113a03e73dc1d7b15ee2cd697742716",
+        "783df20eb463627f9760e65b33140a6d8aceed6095459095bb7254847711f97e",
+        "e42c3ea9777c2660a4bd2708693ad349e3f75189721c458b3274493dba756306",
+        "f6d34803743f470efc717f6491eacf6f42b3a70593d2f2c3608aedb72534be32",
+        "86eabb9553a40dcf122bfa0a879f82a19e7c3b2fed78b75b42d0778bdc7578eb",
+        "e8cbd18ebaa1990a748e21e95f7d75b76721871ddcd4427100ec44c42e38d32d",
+        "844f6d16890b995436eae962374ef706c10f77ac172caa284d05620602af5973"
+      ],
+      "wordCount": 1091,
+      "publicationDateCandidate": "2026-10-05",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-client-bank-statement-followup",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "Outsource MSP User Onboarding Intake Without Granting Unapproved Access",
+      "slug": "outsource-msp-user-onboarding-intake",
+      "sources": [
+        {
+          "title": "NIST Cybersecurity Framework 2.0",
+          "url": "https://www.nist.gov/cyberframework",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "CISA: More than a Password",
+          "url": "https://www.cisa.gov/mfa",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "Federal Trade Commission: Start with Security",
+          "url": "https://www.ftc.gov/business-guidance/resources/start-security-guide-business",
+          "checked": "2026-10-05"
+        }
+      ],
+      "contentHash": "c5b9a6755b9d186818ede29ee0e40bf72e6c7f9bda290cf7d2ecbabe3e427ff6",
+      "bodyHash": "ad1f23326693cd955583d77dc858fac1a52e33c3b722b3c38a6553aa974b81a2",
+      "paragraphHashes": [
+        "b63ccddadb3a066bb7edf8e93ac123681558e0d508c123e7e340785cfd4bc7fa",
+        "0d79fc0a542513eced1105ef799415c86895c4d5773b2685112bfa259c367b62",
+        "25d5c8949500de762e175c7600a490abb13a9c5c80a57d3a264a08c8982d891f",
+        "90a114c2ff54902ae4174d189bc65a7d277a4cd1c7dcd876686e1c2c02dbb94c",
+        "b6918fbc737d98f3293cc7414f6ca174ed0ab9bd314f501c8f5577a5d7dc610f",
+        "0810fc64cc0daf7b07a90b9be29f1a035e24de79b22335a8814b465301815206",
+        "1f92f456157233c4e3e49f2ae1a4c988103d2b380dcfbd79a291d6275b9b0b2d",
+        "76c55d55faab1654e1ebecd44e4dcb8f9ae583614109c83169c2a83ce699bb74",
+        "5a1b78ad4c28eca58bfcf31005eb48e536a6eb2ba93850f67a4515c58b23c3e7",
+        "bf4168e66d550aa85a5b58560e6e5d926e157e3832e7144fd25fadad81eb0b09",
+        "0c7099288a573bb5e2bc192518b3ee683ad63517f77862f92f7fbec75b96c615",
+        "b8cb894ec2226d0b364fc58859fecfddfbd91ed7da4f442a3bf78b9cbacdf84a",
+        "d800f093d9d0d093e57aa9f322cfbcea787c3e77463d45ec17af29a46f9a8fe4",
+        "4489ba10bad594fdf046866a3cfbafedddf6681d2de9603bb21a76ea3484a879",
+        "966207e7e3b74b134b4fbcdca4da0dab2ef4f3c20c03bf954d06be17b69dc935",
+        "788b13dc917d5e11879683152deb30790628ae30c21d926466fb1e8f8b8fe1f5",
+        "496930297b9a177274d51bc3bcf385730997bd7e95c4af957202570d4dd9cc94",
+        "f800780c909e251def26ed26f1677ef3e69362ec68bf7483af683c1d7ed79d62"
+      ],
+      "wordCount": 1004,
+      "publicationDateCandidate": "2026-10-05",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-msp-user-onboarding-intake",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "Outsource Specialty Food Sample Follow-Up Without Promising Suitability",
+      "slug": "outsource-specialty-food-sample-followup",
+      "sources": [
+        {
+          "title": "U.S. Food and Drug Administration: Food Allergies",
+          "url": "https://www.fda.gov/food/food-labeling-nutrition/food-allergies",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "U.S. Small Business Administration: Manage your business",
+          "url": "https://www.sba.gov/business-guide/manage-your-business",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "Federal Trade Commission: Start with Security",
+          "url": "https://www.ftc.gov/business-guidance/resources/start-security-guide-business",
+          "checked": "2026-10-05"
+        }
+      ],
+      "contentHash": "efa9a1b2564b227387c23fadc9cbc179f8fd616a82a7546035aa6c4a9f6b58f3",
+      "bodyHash": "dc19b6f3bc8076b7064f4fd72b70fcd714b0fd50a0137876a41e622d62ef3b3b",
+      "paragraphHashes": [
+        "23df65f9317995b184352c7a63a600d11afadf5fd96225e4ea85c152ddd389bd",
+        "23619cfa9b7cc4017f33963ff049a3c5a70c4b6cb7682da7e193ed705a1cb971",
+        "5f9bfc4bc8a544a300ac3a270100f560af149b71dc5600422cf51c28bc140d9b",
+        "e4c71256ab367ad18532050b1d19648797c15201a3ab53e6a1ec01fcb12c6f35",
+        "fa488d59631f1c5096abfcbb172eb7f79f4cedc964b8c59f886214a6e1a80923",
+        "f15d5f73360b72e662bac47acb4e66e76e1bce6720fb41b9827037b9dc316222",
+        "7e6f25b38084370a6c0a768896082ca3f147ccab28d5f85e3a05cbdf2975ef6c",
+        "474836795236aa42917f70e9f685bf696d23b5e63bc2cf53d27a3e1afdef36c1",
+        "da5c49abf9727333185569b8a5bcd67de7cbfa8ea79df675e72079738ec013b6",
+        "594b8684dc1f0477faf946af5f72175305d4c4940856df9f5651e273747d4164",
+        "760a2f1c030aa59703c9a42a56dc35a74f36c5e5f0540552a593a7baa74363c8",
+        "900cf2627e4551a5b34003397dc1e16ec614ee5b7ced4cd2be93c9d90b3af0e0",
+        "1e0b44457b2fbd41ffd0ec434bf26259095a85e368d05b2f095ae4def7b5ba30",
+        "7c47d2518239535b67b1cec7d9c8387de0ee1429519f5486ca9768403925ea96",
+        "379474de634f78e7053e543b79acb5150736d678a9bef1d63e6d5d1fc3d5c36b",
+        "c99615b6e44d5d7cb10affbd451e5d297e818e7d9a3b601462feef0d235872df",
+        "0bb66ac81fb84cedf8cdb192159683920545b352f6b833ac22602fb635c96579",
+        "90089ba77d13ebbb4f100dd846927b9d3fa6ce2fc22283e012d42f527c712dc5"
+      ],
+      "wordCount": 1001,
+      "publicationDateCandidate": "2026-10-05",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-specialty-food-sample-followup",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "Outsource Auto-Repair Supplement Documentation Without Approving the Repair",
+      "slug": "outsource-auto-repair-supplement-documentation",
+      "sources": [
+        {
+          "title": "U.S. Small Business Administration: Manage your business",
+          "url": "https://www.sba.gov/business-guide/manage-your-business",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "NIST Cybersecurity Framework 2.0",
+          "url": "https://www.nist.gov/cyberframework",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "Federal Trade Commission: Start with Security",
+          "url": "https://www.ftc.gov/business-guidance/resources/start-security-guide-business",
+          "checked": "2026-10-05"
+        }
+      ],
+      "contentHash": "083dbc1913ce6815d0ef711aad9394539a53fbf2a1c55dd1b12aefd5e32502ac",
+      "bodyHash": "c4b5116ca079685af37cc39c18f5a6e607bbcbfbdaca690060cd7ad2a74cb24f",
+      "paragraphHashes": [
+        "c875589c17e8655d95bd032237b7625a34d863560b6c981ed8d45b9a3f227bac",
+        "bf5942371a96edc9f62ea141492fd9149a9ca0bbfe55e8dff9ebc5f0bad7c20d",
+        "db4c2e58176ed22e5cf5f05e0933a7779fdfc01cea4d71982b321f8c63bc19db",
+        "a13c2493a1f80b9a95d81017723a85e9e4e2d9de69eedda58b5a7dc21319b392",
+        "55c99411f3120371ff9eb8950e6ccd84c2c74759c0f249b7a7c96070b5902c2a",
+        "cbd46bf512a8178314961181843b6fc848856017017a7d1b38f87ef71375755b",
+        "fac3719929755a47ac9ab0762146554bfca42d4a41a22d47011238ed425b4d46",
+        "4b7c80f1fa7ea67f62eb99480896234a73dbb25ec465db457c2e44e2815ab228",
+        "409cbf3cacdaafbf1f3806f899dbb2bb914177023708654f2533bf27adcbeebd",
+        "6db66bcd1e0ebec12f517a941fbe749b2253d923e3c8f0c1dc09ef68996c5eab",
+        "8f3a581bad81229ed33eab2c90ade1f30fdb504a8ba93860a4616b289e8c2eaf",
+        "0dbe03e2b52e5cec738c81b73bedf145c69686a308fc574577c2617c00879856",
+        "48190bc0d487a02b74f213415c14870c04f225aa310692cb86c02d5b53d8dda9",
+        "ecdbbe4c59a4462f97537b74ef6e7d6f66df5ebaccc081cc602afad5a1add4ae",
+        "40d3edb983699e5842bcddf58def15a942a25f455d01dbc9346a68a8a336fdbd",
+        "cb8377d68b8b820fded624e2db3e1714267a0c0497a8042719cca276a22c54d3",
+        "cd22b412de4e7a31e658326671686755c2e41243805d7af4f0738b75e850ffd8",
+        "05b498ac637b9a514fbc074f29cf11bd549f6209fc1df9411948b71a789fdfd7"
+      ],
+      "wordCount": 981,
+      "publicationDateCandidate": "2026-10-05",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-auto-repair-supplement-documentation",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "Outsource Legal Document Production Administration Without Making Legal Decisions",
+      "slug": "outsource-legal-document-production-administration",
+      "sources": [
+        {
+          "title": "NIST Cybersecurity Framework 2.0",
+          "url": "https://www.nist.gov/cyberframework",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "Federal Trade Commission: Start with Security",
+          "url": "https://www.ftc.gov/business-guidance/resources/start-security-guide-business",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "CISA: More than a Password",
+          "url": "https://www.cisa.gov/mfa",
+          "checked": "2026-10-05"
+        }
+      ],
+      "contentHash": "a0bd503224e39586b387abc81cc9418631a5ca49883f7fa2f2d012603e2e9bf0",
+      "bodyHash": "77d1b2dc1d4cafee613ece364f6c1592bee9da277ea4140d273eaafb59e6e67c",
+      "paragraphHashes": [
+        "b7cfa104c4693fa2b9c63b2a768ff4a609dc558b24cea5bd782516df8238ea76",
+        "a2243ac2ff67d36f8213dbc02808f1506e60d5b593ee241dad2741d5e7b6d6bd",
+        "5e7124f8db7d3b7d9ef406e030d31a247f78a83f9b08644fee2afcfd5570c3a3",
+        "b4d9493c41162232cb804e448f513007de2988f39e191d449a38b4aa110cd89b",
+        "329e976041b515e899c2ac1186c055c9a44b8260c2d2f6caba7babc91164b599",
+        "68a5c353010f84a3726eff879f67e2a1a635742a2c5a0748d9436a784c47e0d1",
+        "d5c07764acd45cf8e8494bdaba63f349c9fe6bc2b5f9ca6c4de6deeadf452bf6",
+        "70208f67d4b99f2966ff42d4f6b4fabd0183d73c8c9fc3cc97ae8d3870a04f1c",
+        "98dceed8e3e9ee87433061a00a059e65a35cadcb2c750e63203d6ccadb08b928",
+        "dd38ae5b592303d7e7c951669ebbe2aca94619317245ba78ae867a675f3c233f",
+        "754915849244853d58ce64f2b2aa5331f9447c1524370a719075bc00ae80b87a",
+        "27d941d39ff5bc59226f6d8d236f93662ffb2d3866f2f963ea6157d266f010c4",
+        "e543e3365fe855c38f775eff480ebc8c58da67fa6e62e3abc7fa2464f7971d95",
+        "622d031ef56d13535b23c2c6b6114947091292268a3ad1f9c6c092eda55b7eaf",
+        "99e9c654789963a239c13040093540e6b33b1f1ddf0341330aa78427b458a1a2",
+        "a8aa91a16d561296a830ffda9c028542d5123314a7877ab12edf1721f5da1bb9",
+        "724d2cfc7e0ee7cba37e123f07f16203213f60e919fa24e4f38d2583e0e67304",
+        "2ab49331c5fb58ea53602a45a8bdf40a6f6eeedec9f471b4b98f483053feecae",
+        "0edaca04c87b5e8e761d70ae67440ec31b54f4962ba0c109f44bb44db011f863",
+        "cf30ad54324f33909d1f14617a0786667190543a878e4f65a6256233bb103c27"
+      ],
+      "wordCount": 942,
+      "publicationDateCandidate": "2026-10-05",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-legal-document-production-administration",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "Outsource an Architecture Submittal Register Without Approving the Design",
+      "slug": "outsource-architecture-submittal-register",
+      "sources": [
+        {
+          "title": "U.S. Small Business Administration: Manage your business",
+          "url": "https://www.sba.gov/business-guide/manage-your-business",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "NIST Cybersecurity Framework 2.0",
+          "url": "https://www.nist.gov/cyberframework",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "Occupational Safety and Health Administration: Recommended Practices",
+          "url": "https://www.osha.gov/safety-management",
+          "checked": "2026-10-05"
+        }
+      ],
+      "contentHash": "69ed9cdc8d428b9d80024bb789e4b9e08d612375af780860dfb490f22766ce97",
+      "bodyHash": "f5f2e07481d5fe0b2369dadaeccd10fd5ab0cfe50a9ba38ab8c107c295a67512",
+      "paragraphHashes": [
+        "89f76ac628d6a8164a17f56eae554ca041b521898d62b9f1abaf636b8a686dfd",
+        "b90b9db321dc7a53dc6d16d5f7b225c305300b1d4cd41c84125a2d8163bd2810",
+        "6cab483bb1d362fcce3058e1b96957d64dd849d6fe19e130e7688bd6facedfcd",
+        "f5b97e0f7bc74928744c3e43e0c23d5484fbebc1c0316c14d97a85c7cc7cf367",
+        "a9701ea17e2281d6729bd4b68bc2e52dc1b9e5bf875f66542f56b772ab737b56",
+        "148b5e0987eea6ead3e801de4dd7cc9de4e4b46d9103c8817dd52110ba7e7790",
+        "6988e4a7425ab66c23cf03b4f6f456bb7954caa0135eff6ec92f10b829f7c1ad",
+        "e361b12f1ee712cdc0f3a76357f41e5be8f06e273c4d178c05f4673c8e4395a0",
+        "e22a32dce55d00cabc7a2d198254e7053dd87e7138f3a9673aa06de69efeb80e",
+        "ee11f341c2bf059cf88d1120dbc9ba177eb8e9d8b30b17a17281e48a1503b191",
+        "bf2132d43896cda30130197c530e5f28484eda7940031d43ab4c18f6291b5fcf",
+        "54f4f110f83ff556a907b1cd3d97b9d82de5e0e95c9d9200e65553eac210bea6",
+        "5723796a9f26660b10a597e48d5177e28bd6d2afb2f995b563be81abbacd493b",
+        "1797961830f2921ef2b770708ea03298d2eefaebb83ff4626e56d6d514f37b64",
+        "22f7d75fdeceab3f0bb793e1e948148262a2e43d025695ad591ba7cde7902713",
+        "d99b2504d6af7f5ef002b3cc2bf84e17ec2fac058f5b1af31f12c3a251389d44",
+        "e9886f64ffc4e0bf8df710bec1fee62bc7a1215f06caf5cb694c0b1916eb75fe",
+        "4c8b8455088ade57fb23f3096df720aad8f0561a5bd37704571aec443fba27b6"
+      ],
+      "wordCount": 920,
+      "publicationDateCandidate": "2026-10-05",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-architecture-submittal-register",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "Outsource Multi-Location Restaurant Equipment Service Coordination Safely",
+      "slug": "outsource-restaurant-equipment-service-coordination",
+      "sources": [
+        {
+          "title": "U.S. Food and Drug Administration: Food Allergies",
+          "url": "https://www.fda.gov/food/food-labeling-nutrition/food-allergies",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "Occupational Safety and Health Administration: Recommended Practices",
+          "url": "https://www.osha.gov/safety-management",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "U.S. Small Business Administration: Manage your business",
+          "url": "https://www.sba.gov/business-guide/manage-your-business",
+          "checked": "2026-10-05"
+        }
+      ],
+      "contentHash": "6869a146a5b59db9a5f76503e08d6428a97a63b7d0b221a8661029d0bda42479",
+      "bodyHash": "967f252a4f9cd76a67644d09cab53e49a69f4547e708c661f6eabba6663f42c7",
+      "paragraphHashes": [
+        "d214d77fd328aa1df1acc2dee7f7eb4277b05a1e9f998cbbe04248b13f32c70f",
+        "00f0ff94a9dcc4274c63badbec7627fceb923e4e58769caa7bee17879cb33b4b",
+        "bc155de36a18d6fe3c3d1a5bbad213a2b9cd77759b8a9380a128659588242f03",
+        "bb81409371b3042a2a6ee83dc3a833511bfe41281c0e5115fdc961b4665e87e3",
+        "ade5ad11d0595a39f48f07ebca084a3fa5a05a5815c77e7011a462547fcc0aca",
+        "16d4f6711eec1888a8f00e89001dd643bf9634e4abd02c727ccd33e6c0ff3236",
+        "ce58322cfb4c083e73c3d749830548aabd53dd71190f2db345eeea997dcf5fbf",
+        "5e053a379eb98e4e695c6328af171713e9a7aac0d3b9dca1f0cf8b9e04c8c3a2",
+        "964d3f0268b1fe3871bdfaeef45fc3cf4bf18b20a2b860eb6a49e6a9b967a50d",
+        "36ed6c566b962668fd1ddf3d98420ceb21adcd4dfed19eedfb698e45b7892ac7",
+        "86d99a8a0fcb9a20b1bc06b76e41d12144a31e2d4e72c08408aba6f32e106e9f",
+        "6859f949f2a09c7fa4e4b9008d5aac7a11809460123b757d96eedb439f9d3e3e",
+        "442a8fce450d14b72927b38ef801674470cf76b9f6bb8fd866ce563fb8fbec01",
+        "0667775375cc89f26e2fb7562dba85509406b806e5bcd3f9ffe3c65047a83762",
+        "9a934839e8528516377107d760ada3a1b09b26f2910c0caab08631508c993ee5",
+        "9b737906c0405f06790566dcc7131c64fb0dae68724f3cd97a7cc33c6372de0d",
+        "0553077c3e46a70a121b0cce278a4d8cc01ca71817acc5be6332d47d01377559",
+        "50453a5629c6cc37f12c0e1519f64c9c3ac10a18bbae6184146d391d10e36c83"
+      ],
+      "wordCount": 971,
+      "publicationDateCandidate": "2026-10-05",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-restaurant-equipment-service-coordination",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "Outsource Continuing-Education Record Intake Without Certifying Eligibility",
+      "slug": "outsource-continuing-education-record-intake",
+      "sources": [
+        {
+          "title": "U.S. Small Business Administration: Manage your business",
+          "url": "https://www.sba.gov/business-guide/manage-your-business",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "NIST Cybersecurity Framework 2.0",
+          "url": "https://www.nist.gov/cyberframework",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "Federal Trade Commission: Start with Security",
+          "url": "https://www.ftc.gov/business-guidance/resources/start-security-guide-business",
+          "checked": "2026-10-05"
+        }
+      ],
+      "contentHash": "562f5d3b93875cfda63fd0c6ef777a4808906635a76de1b89989b3f6d8fa8a35",
+      "bodyHash": "94e0b69ce2374fd5d456e77c10cb16c019b2f7ab80e0636eaedf5bfeb9eb1624",
+      "paragraphHashes": [
+        "6be09fc6a2fa6ad92e7cededb2933a9dfac664e68af00f4e739a1f5679e18360",
+        "f5880b7996e0e05f45feee281d12769f796268f223364499a2f062ecf5e1c0c5",
+        "1ca71b3cfbda38f87e3ba1c92997c0e437e937a2ed99b0fc8f0a45a4dff30bd6",
+        "63c98f38df33f5938717771a0c8c4bd83dfe359c39e47aee8590f90c5e251dcc",
+        "219ef8fb65c89fff09ec6e744aa71b2b8bb5bccc48bd82e1aa343c0dc7acea3d",
+        "47b8d45fca73d19e26048b413cc24646c933ee1750739a16320668c71ad8bffc",
+        "31cda938bed29034e2cadef0bee0cf30e9112f2cc22e299f28a91caf96d5051a",
+        "63995c78b993ba74043bdb327acded695f3d6b4af23debd87eab83eda32ae4f2",
+        "ed7b2a761f1cd9c799477003973e8c49b385b5ba750e4417b7d5ced4c4335607",
+        "8c5e266cb4fc72e59b98418bef157823bac01289551195a98b57d485606ad9df",
+        "26ba00662cecf249c27248d373d11efd1f197e3945e4c46a6d2c6478bf97f414",
+        "b5bd27533aba240e1c2d07f14ceceab4ad32c30aef171462bb8fbd39ccf2bc2b",
+        "b734364924fd05322844ee3962d0f12a7ce5c3b4f1c5cd384c731b76d9f00d4b",
+        "235d219e092b9ea0ff3c1e70b046c6d36fd6a22f597ab21d3f1c833dfad2243d",
+        "6ac3d5dca1a1e4720bc3115733366a4e24da8d258a27218669325bdaab1b9ceb",
+        "6748a331636d124ecb816d889ec6a2717cd1bff016466689d445b2f6c4811997",
+        "b6d9cbedb3cbe82e9e1bc39a12b3d04514007d13177f8112331e4ed8c1d6f9df",
+        "8948c7f02016e405e76dff1655fd13ae1003cf54c4572580048f950bb0e9e619",
+        "d24771c04d1ec246bc3d3ba7285a150211f147b03d952e110a742c3e74e54959",
+        "011979e40d918aebd03d75cf2edf1528d82f29989430afd2cc2c1713f56bfee3"
+      ],
+      "wordCount": 941,
+      "publicationDateCandidate": "2026-10-05",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-continuing-education-record-intake",
+      "verifiedAt": null
+    }
+  ],
+  "validation": {
+    "minimumWords": 900,
+    "bodyOnly": true,
+    "sourceBodyParagraphParity": "ordered paragraph hashes",
+    "qualitativeOriginality": "pending combined validator"
+  },
+  "release": {
+    "status": "local-combined-draft",
+    "combinedRemoteSha": null,
+    "deploymentEvidence": null,
+    "verifiedCount": 0
+  }
+}

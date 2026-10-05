@@ -39,7 +39,7 @@
       "bodyHash": "336cdc3e78a3ccb86b4ada1f152e92bc274703db2ee7500139052c81c5c8c9cf",
       "wordCount": 1240,
       "publicationDateCandidate": "2026-10-05",
-      "commitSha": "38e6b57b9eedc98cb66a7bbf30eda468958f58d0",
+      "commitSha": null,
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/research/october-5-research-crm-duplicate-merge-reversibility",
       "verifiedAt": null
@@ -78,7 +78,7 @@
       "bodyHash": "7d237dfaaec61687f4021e2b2705ad244777c0fed404aadf111b838e44c33921",
       "wordCount": 1308,
       "publicationDateCandidate": "2026-10-05",
-      "commitSha": "38e6b57b9eedc98cb66a7bbf30eda468958f58d0",
+      "commitSha": null,
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/research/october-5-research-payroll-time-entry-exception-preparation",
       "verifiedAt": null
@@ -111,7 +111,7 @@
       "bodyHash": "75c0af7e73ee74b7da1f0355846dcc13aad75c335823c1f3b41cb34d4eece50a",
       "wordCount": 1249,
       "publicationDateCandidate": "2026-10-05",
-      "commitSha": "38e6b57b9eedc98cb66a7bbf30eda468958f58d0",
+      "commitSha": null,
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/research/october-5-research-appointment-waitlist-offer-control",
       "verifiedAt": null
@@ -150,7 +150,7 @@
       "bodyHash": "6ecf728076ee4bee0bc01d21eadfe4b1c0ea4304450970aaba60111bc0779efe",
       "wordCount": 1259,
       "publicationDateCandidate": "2026-10-05",
-      "commitSha": "38e6b57b9eedc98cb66a7bbf30eda468958f58d0",
+      "commitSha": null,
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/research/october-5-research-marketing-suppression-sync-integrity",
       "verifiedAt": null
@@ -189,7 +189,7 @@
       "bodyHash": "56817623ebe9d9bfc6c39e61dc2cb3e7776a745e55aaa2b0b8d072e71e2e8f87",
       "wordCount": 1228,
       "publicationDateCandidate": "2026-10-05",
-      "commitSha": "38e6b57b9eedc98cb66a7bbf30eda468958f58d0",
+      "commitSha": null,
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/research/october-5-research-vendor-credential-expiry-monitoring",
       "verifiedAt": null
@@ -214,7 +214,7 @@
   "release": {
     "status": "local-research-handoff",
     "integrator": "Blog",
-    "researchContentCommitSha": "38e6b57b9eedc98cb66a7bbf30eda468958f58d0",
+    "researchContentCommitSha": null,
     "combinedRemoteSha": null,
     "deploymentEvidence": null,
     "verifiedCount": 0
