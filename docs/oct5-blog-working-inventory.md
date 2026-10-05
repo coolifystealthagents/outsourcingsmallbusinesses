@@ -21,7 +21,7 @@ The production inventory through October 2 already covers broad generic lanes su
 6. Managed-service-provider user onboarding intake — assemble identity, device, application, approval, and start-date evidence without granting access.
 7. Specialty-food wholesale sample follow-up — coordinate shipment, allergen-document requests, feedback, and next steps without promising suitability.
 8. Auto-repair supplement documentation — connect estimate, teardown evidence, insurer response, and customer authorization without approving repairs.
-9. Therapy-practice waitlist administration — preserve availability and contact preferences without ranking clinical need.
+9. Legal document production administration — preserve matter, source, review, redaction, manifest, authorization, and transfer evidence without making legal decisions.
 10. Architecture submittal register administration — track revisions, reviewers, responses, and due dates without approving design.
 11. Multi-location restaurant equipment service coordination — link asset, symptom, vendor visit, and operating impact without diagnosing safety.
 12. Professional-association continuing-education record intake — match supplied evidence to published requirements without certifying eligibility.
@@ -29,6 +29,6 @@ The production inventory through October 2 already covers broad generic lanes su
 ## Drafting status
 
 - Topics: 12/12 selected for full collision review.
-- Substantive bodies: 10/12 complete (the prior eight plus architecture submittal administration and restaurant equipment service coordination; counts recorded by the originality audit).
+- Substantive bodies: 12/12 complete (all candidate lanes have independent full drafts; counts and originality findings are recorded by the audit before native conversion).
 - Research handoff: pending from `OUTAAAAAAAAAAAAAAA-72`.
 - Integration, validation, commit, push, deployment, and public verification: pending.
