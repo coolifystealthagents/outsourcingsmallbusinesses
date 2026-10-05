@@ -12,6 +12,7 @@ vm.runInNewContext(`(function(exports,module,require){${javascript}\n})(module.e
 const posts = module.exports.octoberFiveResearchBatch;
 const requiredCount = 5;
 const minimumWords = 1200;
+const contentCommitSha = process.env.RESEARCH_CONTENT_COMMIT_SHA || null;
 const productionSlugs = new Set([...fs.readFileSync('app/fleet-content.ts', 'utf8').matchAll(/slug:\s*['"]([^'"]+)['"]/g)].map((match) => match[1]));
 const priorFiles = fs.readdirSync('app').filter((name) => name.includes('research') && name.endsWith('.ts') && name !== 'oct5-research.ts');
 const priorText = priorFiles.map((name) => fs.readFileSync(`app/${name}`, 'utf8')).join('\n').toLowerCase();
@@ -50,7 +51,7 @@ const entries = posts.map((post) => {
     bodyHash: crypto.createHash('sha256').update(bodyText).digest('hex'),
     wordCount,
     publicationDateCandidate: post.published,
-    commitSha: null,
+    commitSha: contentCommitSha,
     deploymentEvidence: null,
     liveUrl: `https://outsourcingsmallbusinesses.com/research/${post.slug}`,
     verifiedAt: null,
@@ -102,7 +103,7 @@ const manifest = {
   release: {
     status: 'local-research-handoff',
     integrator: 'Blog',
-    researchCommitSha: null,
+    researchContentCommitSha: contentCommitSha,
     combinedRemoteSha: null,
     deploymentEvidence: null,
     verifiedCount: 0,

@@ -1,0 +1,222 @@
+{
+  "family": "research",
+  "cycleLabel": "2026-10-05",
+  "timezone": "UTC",
+  "actualPublicationDate": null,
+  "publicationDateCandidate": "2026-10-05",
+  "requiredCount": 5,
+  "baselineSha": "3d32419abe9023449b9b7b4b6fc0cb7ba9d281fa",
+  "repository": "coolifystealthagents/outsourcingsmallbusinesses",
+  "productionBranch": "main",
+  "researchBranch": "routine/research-2026-10-05",
+  "deploymentResource": "y85c6kbd6zekps7rxqzwrrn6",
+  "entries": [
+    {
+      "family": "research",
+      "topic": "CRM Duplicate Merges: Test Reversibility Before Delegating Record Cleanup",
+      "slug": "october-5-research-crm-duplicate-merge-reversibility",
+      "sources": [
+        {
+          "title": "Start with Security: A Guide for Business",
+          "publisher": "Federal Trade Commission",
+          "url": "https://www.ftc.gov/business-guidance/resources/start-security-guide-business",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "NIST Cybersecurity Framework 2.0 for Small Business",
+          "publisher": "National Institute of Standards and Technology",
+          "url": "https://www.nist.gov/itl/smallbusinesscyber/nist-cybersecurity-framework-0",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "Manage your business",
+          "publisher": "U.S. Small Business Administration",
+          "url": "https://www.sba.gov/business-guide/manage-your-business",
+          "checked": "2026-10-05"
+        }
+      ],
+      "contentHash": "1b1f20c9243c8b333e6129426b21cb7a97403c4a53fafe3a3fbf60485ae6e961",
+      "bodyHash": "336cdc3e78a3ccb86b4ada1f152e92bc274703db2ee7500139052c81c5c8c9cf",
+      "wordCount": 1240,
+      "publicationDateCandidate": "2026-10-05",
+      "commitSha": "38e6b57b9eedc98cb66a7bbf30eda468958f58d0",
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/research/october-5-research-crm-duplicate-merge-reversibility",
+      "verifiedAt": null
+    },
+    {
+      "family": "research",
+      "topic": "Payroll Time-Entry Exceptions: Test the Evidence Queue Before Outsourcing Preparation",
+      "slug": "october-5-research-payroll-time-entry-exception-preparation",
+      "sources": [
+        {
+          "title": "Handy Reference Guide to the Fair Labor Standards Act",
+          "publisher": "U.S. Department of Labor",
+          "url": "https://www.dol.gov/agencies/whd/compliance-assistance/handy-reference-guide-flsa",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "Publication 15 (Circular E), Employer’s Tax Guide",
+          "publisher": "Internal Revenue Service",
+          "url": "https://www.irs.gov/publications/p15",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "Manage your finances",
+          "publisher": "U.S. Small Business Administration",
+          "url": "https://www.sba.gov/business-guide/manage-your-business/manage-your-finances",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "NIST Cybersecurity Framework 2.0 for Small Business",
+          "publisher": "National Institute of Standards and Technology",
+          "url": "https://www.nist.gov/itl/smallbusinesscyber/nist-cybersecurity-framework-0",
+          "checked": "2026-10-05"
+        }
+      ],
+      "contentHash": "04ece7e02e09c17d350e74e093489edd2b19914d63d5b57e91e5ea05deb30c42",
+      "bodyHash": "7d237dfaaec61687f4021e2b2705ad244777c0fed404aadf111b838e44c33921",
+      "wordCount": 1308,
+      "publicationDateCandidate": "2026-10-05",
+      "commitSha": "38e6b57b9eedc98cb66a7bbf30eda468958f58d0",
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/research/october-5-research-payroll-time-entry-exception-preparation",
+      "verifiedAt": null
+    },
+    {
+      "family": "research",
+      "topic": "Appointment Waitlist Offers: Test Fairness and Capacity Evidence Before Delegating Outreach",
+      "slug": "october-5-research-appointment-waitlist-offer-control",
+      "sources": [
+        {
+          "title": "Manage your business",
+          "publisher": "U.S. Small Business Administration",
+          "url": "https://www.sba.gov/business-guide/manage-your-business",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "Start with Security: A Guide for Business",
+          "publisher": "Federal Trade Commission",
+          "url": "https://www.ftc.gov/business-guidance/resources/start-security-guide-business",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "NIST Cybersecurity Framework 2.0 for Small Business",
+          "publisher": "National Institute of Standards and Technology",
+          "url": "https://www.nist.gov/itl/smallbusinesscyber/nist-cybersecurity-framework-0",
+          "checked": "2026-10-05"
+        }
+      ],
+      "contentHash": "5bf92fa782312f6d4aedeec8d305f7e5007328af05d2e97de4e937096c67f7ee",
+      "bodyHash": "75c0af7e73ee74b7da1f0355846dcc13aad75c335823c1f3b41cb34d4eece50a",
+      "wordCount": 1249,
+      "publicationDateCandidate": "2026-10-05",
+      "commitSha": "38e6b57b9eedc98cb66a7bbf30eda468958f58d0",
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/research/october-5-research-appointment-waitlist-offer-control",
+      "verifiedAt": null
+    },
+    {
+      "family": "research",
+      "topic": "Marketing Suppression Sync: Test Whether Opt-Out Evidence Reaches Every Approved Send List",
+      "slug": "october-5-research-marketing-suppression-sync-integrity",
+      "sources": [
+        {
+          "title": "CAN-SPAM Act: A Compliance Guide for Business",
+          "publisher": "Federal Trade Commission",
+          "url": "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "Start with Security: A Guide for Business",
+          "publisher": "Federal Trade Commission",
+          "url": "https://www.ftc.gov/business-guidance/resources/start-security-guide-business",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "NIST Cybersecurity Framework 2.0 for Small Business",
+          "publisher": "National Institute of Standards and Technology",
+          "url": "https://www.nist.gov/itl/smallbusinesscyber/nist-cybersecurity-framework-0",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "Manage your business",
+          "publisher": "U.S. Small Business Administration",
+          "url": "https://www.sba.gov/business-guide/manage-your-business",
+          "checked": "2026-10-05"
+        }
+      ],
+      "contentHash": "00b286f3881fe1c846b8b5d1c128abc29a8e0b8a01be2660ae03dff2a7af5021",
+      "bodyHash": "6ecf728076ee4bee0bc01d21eadfe4b1c0ea4304450970aaba60111bc0779efe",
+      "wordCount": 1259,
+      "publicationDateCandidate": "2026-10-05",
+      "commitSha": "38e6b57b9eedc98cb66a7bbf30eda468958f58d0",
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/research/october-5-research-marketing-suppression-sync-integrity",
+      "verifiedAt": null
+    },
+    {
+      "family": "research",
+      "topic": "Vendor Credential Expiry: Test Monitoring Without Letting a Tracker Approve the Supplier",
+      "slug": "october-5-research-vendor-credential-expiry-monitoring",
+      "sources": [
+        {
+          "title": "Manage your business",
+          "publisher": "U.S. Small Business Administration",
+          "url": "https://www.sba.gov/business-guide/manage-your-business",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "Start with Security: A Guide for Business",
+          "publisher": "Federal Trade Commission",
+          "url": "https://www.ftc.gov/business-guidance/resources/start-security-guide-business",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "NIST Cybersecurity Framework 2.0 for Small Business",
+          "publisher": "National Institute of Standards and Technology",
+          "url": "https://www.nist.gov/itl/smallbusinesscyber/nist-cybersecurity-framework-0",
+          "checked": "2026-10-05"
+        },
+        {
+          "title": "More than a Password",
+          "publisher": "Cybersecurity and Infrastructure Security Agency",
+          "url": "https://www.cisa.gov/mfa",
+          "checked": "2026-10-05"
+        }
+      ],
+      "contentHash": "dd209f36058dccb71e1c997c42b0752bdaf4193d931ffd9d9cd2e59de2704fd8",
+      "bodyHash": "56817623ebe9d9bfc6c39e61dc2cb3e7776a745e55aaa2b0b8d072e71e2e8f87",
+      "wordCount": 1228,
+      "publicationDateCandidate": "2026-10-05",
+      "commitSha": "38e6b57b9eedc98cb66a7bbf30eda468958f58d0",
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcingsmallbusinesses.com/research/october-5-research-vendor-credential-expiry-monitoring",
+      "verifiedAt": null
+    }
+  ],
+  "validation": {
+    "minimumWords": 1200,
+    "bodyOnly": true,
+    "maximumPairwiseFiveWordShingleJaccard": 0.0045,
+    "maximumPair": [
+      "october-5-research-appointment-waitlist-offer-control",
+      "october-5-research-vendor-credential-expiry-monitoring"
+    ],
+    "repeatedOriginalParagraphs": 0,
+    "sharedArgumentReview": "PASS: each article uses its own decision, population, challenge cases, measures, recovery or reperformance method, limitations, and buyer outcome. Worked examples and section sequences are topic-specific; no common fill-in template or reused argument remains.",
+    "priorCorpusSlugCollision": false,
+    "canonical": "generated from final slug",
+    "sitemap": "generated from researchPosts",
+    "structuredData": "Article with matching datePublished candidate; integrator must reconcile actual first-publication date before the sole push",
+    "sourceCheckedDate": "2026-10-05"
+  },
+  "release": {
+    "status": "local-research-handoff",
+    "integrator": "Blog",
+    "researchContentCommitSha": "38e6b57b9eedc98cb66a7bbf30eda468958f58d0",
+    "combinedRemoteSha": null,
+    "deploymentEvidence": null,
+    "verifiedCount": 0
+  }
+}
