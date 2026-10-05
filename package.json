@@ -21,6 +21,8 @@
     "validate:oct2-blog": "node scripts/validate-oct2-blog.mjs",
     "validate:oct2-research": "node scripts/validate-oct2-research.mjs",
     "validate:oct2-rendered": "node scripts/validate-oct2-rendered.mjs"
+    ,"validate:oct5-combined": "node scripts/validate-oct5-combined.mjs"
+    ,"validate:oct5-rendered": "node scripts/validate-oct5-rendered.mjs"
   },
   "dependencies": {
     "@next/third-parties": "16.3.8",

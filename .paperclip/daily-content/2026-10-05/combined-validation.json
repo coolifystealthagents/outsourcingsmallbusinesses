@@ -1,0 +1,93 @@
+{
+  "counts": {
+    "blog": 12,
+    "research": 5,
+    "routes": 17
+  },
+  "blogWordCounts": [
+    {
+      "slug": "outsource-veterinary-prescription-refill-administration",
+      "words": 1201
+    },
+    {
+      "slug": "outsource-commercial-lease-insurance-certificate-requests",
+      "words": 1310
+    },
+    {
+      "slug": "outsource-freight-damage-claim-evidence",
+      "words": 1088
+    },
+    {
+      "slug": "outsource-permit-inspection-scheduling",
+      "words": 1145
+    },
+    {
+      "slug": "outsource-client-bank-statement-followup",
+      "words": 1091
+    },
+    {
+      "slug": "outsource-msp-user-onboarding-intake",
+      "words": 1004
+    },
+    {
+      "slug": "outsource-specialty-food-sample-followup",
+      "words": 1001
+    },
+    {
+      "slug": "outsource-auto-repair-supplement-documentation",
+      "words": 981
+    },
+    {
+      "slug": "outsource-legal-document-production-administration",
+      "words": 942
+    },
+    {
+      "slug": "outsource-architecture-submittal-register",
+      "words": 920
+    },
+    {
+      "slug": "outsource-restaurant-equipment-service-coordination",
+      "words": 971
+    },
+    {
+      "slug": "outsource-continuing-education-record-intake",
+      "words": 941
+    }
+  ],
+  "researchWordCounts": [
+    {
+      "slug": "october-5-research-crm-duplicate-merge-reversibility",
+      "words": 1240
+    },
+    {
+      "slug": "october-5-research-payroll-time-entry-exception-preparation",
+      "words": 1308
+    },
+    {
+      "slug": "october-5-research-appointment-waitlist-offer-control",
+      "words": 1249
+    },
+    {
+      "slug": "october-5-research-marketing-suppression-sync-integrity",
+      "words": 1259
+    },
+    {
+      "slug": "october-5-research-vendor-credential-expiry-monitoring",
+      "words": 1228
+    }
+  ],
+  "blogMaximumPairwiseFiveWordShingleJaccard": {
+    "score": 0.0016019223067681217,
+    "left": "outsource-veterinary-prescription-refill-administration",
+    "right": "outsource-commercial-lease-insurance-certificate-requests"
+  },
+  "researchMaximumPairwiseFiveWordShingleJaccard": {
+    "score": 0.004475183075671277,
+    "left": "october-5-research-appointment-waitlist-offer-control",
+    "right": "october-5-research-vendor-credential-expiry-monitoring"
+  },
+  "repeatedParagraphs": 0,
+  "orderedDraftNativeParity": true,
+  "priorCorpusSlugCollision": false,
+  "failures": []
+}

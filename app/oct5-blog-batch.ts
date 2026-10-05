@@ -245,8 +245,8 @@ export const octoberFiveBlogBatch = [
         "https://www.nist.gov/cyberframework"
       ],
       [
-        "Occupational Safety and Health Administration: Recommended Practices",
-        "https://www.osha.gov/safety-management"
+        "CISA: More than a Password",
+        "https://www.cisa.gov/mfa"
       ]
     ]
   },
@@ -333,8 +333,8 @@ export const octoberFiveBlogBatch = [
         "https://www.nist.gov/cyberframework"
       ],
       [
-        "Occupational Safety and Health Administration: Recommended Practices",
-        "https://www.osha.gov/safety-management"
+        "CISA: More than a Password",
+        "https://www.cisa.gov/mfa"
       ]
     ]
   },
@@ -868,8 +868,8 @@ export const octoberFiveBlogBatch = [
         "https://www.nist.gov/cyberframework"
       ],
       [
-        "Occupational Safety and Health Administration: Recommended Practices",
-        "https://www.osha.gov/safety-management"
+        "CISA: More than a Password",
+        "https://www.cisa.gov/mfa"
       ]
     ]
   },
@@ -952,8 +952,8 @@ export const octoberFiveBlogBatch = [
         "https://www.fda.gov/food/food-labeling-nutrition/food-allergies"
       ],
       [
-        "Occupational Safety and Health Administration: Recommended Practices",
-        "https://www.osha.gov/safety-management"
+        "CISA: More than a Password",
+        "https://www.cisa.gov/mfa"
       ],
       [
         "U.S. Small Business Administration: Manage your business",

@@ -1,0 +1,206 @@
+{
+  "origin": "http://127.0.0.1:3015",
+  "count": 17,
+  "routeEvidence": [
+    {
+      "family": "blog",
+      "slug": "outsource-veterinary-prescription-refill-administration",
+      "status": 200,
+      "paragraphs": 17,
+      "bodyHash": "0eda9725c00d872eefc755a53608ecfe599bb089871e182e5f5498f34f44b175",
+      "canonical": "https://outsourcingsmallbusinesses.com/blog/outsource-veterinary-prescription-refill-administration",
+      "image": "/filipino-support-workspace.jpg",
+      "date": "2026-10-05"
+    },
+    {
+      "family": "blog",
+      "slug": "outsource-commercial-lease-insurance-certificate-requests",
+      "status": 200,
+      "paragraphs": 21,
+      "bodyHash": "98d8b025823daa209cf2b07bc16a32515c793c7ad3604a463aa00d1a09565d57",
+      "canonical": "https://outsourcingsmallbusinesses.com/blog/outsource-commercial-lease-insurance-certificate-requests",
+      "image": "/filipino-support-workspace.jpg",
+      "date": "2026-10-05"
+    },
+    {
+      "family": "blog",
+      "slug": "outsource-freight-damage-claim-evidence",
+      "status": 200,
+      "paragraphs": 16,
+      "bodyHash": "b54347745f405acc6f9fae717a556bba48960e1a6043c8adb6d8b51a9278b0a4",
+      "canonical": "https://outsourcingsmallbusinesses.com/blog/outsource-freight-damage-claim-evidence",
+      "image": "/filipino-support-workspace.jpg",
+      "date": "2026-10-05"
+    },
+    {
+      "family": "blog",
+      "slug": "outsource-permit-inspection-scheduling",
+      "status": 200,
+      "paragraphs": 18,
+      "bodyHash": "d42d2ca23f19934ccf08c0e5a4e1ba30ef27f159cdece400f5a771f2d6f6412a",
+      "canonical": "https://outsourcingsmallbusinesses.com/blog/outsource-permit-inspection-scheduling",
+      "image": "/filipino-support-workspace.jpg",
+      "date": "2026-10-05"
+    },
+    {
+      "family": "blog",
+      "slug": "outsource-client-bank-statement-followup",
+      "status": 200,
+      "paragraphs": 18,
+      "bodyHash": "a475b1d2bd2eb6d33d150a60ec9254d8e73c2f48e2717610542eb2a238d7cbf0",
+      "canonical": "https://outsourcingsmallbusinesses.com/blog/outsource-client-bank-statement-followup",
+      "image": "/filipino-support-workspace.jpg",
+      "date": "2026-10-05"
+    },
+    {
+      "family": "blog",
+      "slug": "outsource-msp-user-onboarding-intake",
+      "status": 200,
+      "paragraphs": 18,
+      "bodyHash": "ad1f23326693cd955583d77dc858fac1a52e33c3b722b3c38a6553aa974b81a2",
+      "canonical": "https://outsourcingsmallbusinesses.com/blog/outsource-msp-user-onboarding-intake",
+      "image": "/filipino-support-workspace.jpg",
+      "date": "2026-10-05"
+    },
+    {
+      "family": "blog",
+      "slug": "outsource-specialty-food-sample-followup",
+      "status": 200,
+      "paragraphs": 18,
+      "bodyHash": "dc19b6f3bc8076b7064f4fd72b70fcd714b0fd50a0137876a41e622d62ef3b3b",
+      "canonical": "https://outsourcingsmallbusinesses.com/blog/outsource-specialty-food-sample-followup",
+      "image": "/filipino-support-workspace.jpg",
+      "date": "2026-10-05"
+    },
+    {
+      "family": "blog",
+      "slug": "outsource-auto-repair-supplement-documentation",
+      "status": 200,
+      "paragraphs": 18,
+      "bodyHash": "c4b5116ca079685af37cc39c18f5a6e607bbcbfbdaca690060cd7ad2a74cb24f",
+      "canonical": "https://outsourcingsmallbusinesses.com/blog/outsource-auto-repair-supplement-documentation",
+      "image": "/filipino-support-workspace.jpg",
+      "date": "2026-10-05"
+    },
+    {
+      "family": "blog",
+      "slug": "outsource-legal-document-production-administration",
+      "status": 200,
+      "paragraphs": 20,
+      "bodyHash": "77d1b2dc1d4cafee613ece364f6c1592bee9da277ea4140d273eaafb59e6e67c",
+      "canonical": "https://outsourcingsmallbusinesses.com/blog/outsource-legal-document-production-administration",
+      "image": "/filipino-support-workspace.jpg",
+      "date": "2026-10-05"
+    },
+    {
+      "family": "blog",
+      "slug": "outsource-architecture-submittal-register",
+      "status": 200,
+      "paragraphs": 18,
+      "bodyHash": "f5f2e07481d5fe0b2369dadaeccd10fd5ab0cfe50a9ba38ab8c107c295a67512",
+      "canonical": "https://outsourcingsmallbusinesses.com/blog/outsource-architecture-submittal-register",
+      "image": "/filipino-support-workspace.jpg",
+      "date": "2026-10-05"
+    },
+    {
+      "family": "blog",
+      "slug": "outsource-restaurant-equipment-service-coordination",
+      "status": 200,
+      "paragraphs": 18,
+      "bodyHash": "967f252a4f9cd76a67644d09cab53e49a69f4547e708c661f6eabba6663f42c7",
+      "canonical": "https://outsourcingsmallbusinesses.com/blog/outsource-restaurant-equipment-service-coordination",
+      "image": "/filipino-support-workspace.jpg",
+      "date": "2026-10-05"
+    },
+    {
+      "family": "blog",
+      "slug": "outsource-continuing-education-record-intake",
+      "status": 200,
+      "paragraphs": 20,
+      "bodyHash": "94e0b69ce2374fd5d456e77c10cb16c019b2f7ab80e0636eaedf5bfeb9eb1624",
+      "canonical": "https://outsourcingsmallbusinesses.com/blog/outsource-continuing-education-record-intake",
+      "image": "/filipino-support-workspace.jpg",
+      "date": "2026-10-05"
+    },
+    {
+      "family": "research",
+      "slug": "october-5-research-crm-duplicate-merge-reversibility",
+      "status": 200,
+      "paragraphs": 12,
+      "bodyHash": "336cdc3e78a3ccb86b4ada1f152e92bc274703db2ee7500139052c81c5c8c9cf",
+      "canonical": "https://outsourcingsmallbusinesses.com/research/october-5-research-crm-duplicate-merge-reversibility",
+      "image": "/filipino-support-workspace.jpg",
+      "date": "2026-10-05"
+    },
+    {
+      "family": "research",
+      "slug": "october-5-research-payroll-time-entry-exception-preparation",
+      "status": 200,
+      "paragraphs": 13,
+      "bodyHash": "7d237dfaaec61687f4021e2b2705ad244777c0fed404aadf111b838e44c33921",
+      "canonical": "https://outsourcingsmallbusinesses.com/research/october-5-research-payroll-time-entry-exception-preparation",
+      "image": "/filipino-support-workspace.jpg",
+      "date": "2026-10-05"
+    },
+    {
+      "family": "research",
+      "slug": "october-5-research-appointment-waitlist-offer-control",
+      "status": 200,
+      "paragraphs": 13,
+      "bodyHash": "75c0af7e73ee74b7da1f0355846dcc13aad75c335823c1f3b41cb34d4eece50a",
+      "canonical": "https://outsourcingsmallbusinesses.com/research/october-5-research-appointment-waitlist-offer-control",
+      "image": "/filipino-support-workspace.jpg",
+      "date": "2026-10-05"
+    },
+    {
+      "family": "research",
+      "slug": "october-5-research-marketing-suppression-sync-integrity",
+      "status": 200,
+      "paragraphs": 13,
+      "bodyHash": "6ecf728076ee4bee0bc01d21eadfe4b1c0ea4304450970aaba60111bc0779efe",
+      "canonical": "https://outsourcingsmallbusinesses.com/research/october-5-research-marketing-suppression-sync-integrity",
+      "image": "/filipino-support-workspace.jpg",
+      "date": "2026-10-05"
+    },
+    {
+      "family": "research",
+      "slug": "october-5-research-vendor-credential-expiry-monitoring",
+      "status": 200,
+      "paragraphs": 13,
+      "bodyHash": "56817623ebe9d9bfc6c39e61dc2cb3e7776a745e55aaa2b0b8d072e71e2e8f87",
+      "canonical": "https://outsourcingsmallbusinesses.com/research/october-5-research-vendor-credential-expiry-monitoring",
+      "image": "/filipino-support-workspace.jpg",
+      "date": "2026-10-05"
+    }
+  ],
+  "image": {
+    "status": 200,
+    "mime": "image/jpeg",
+    "signature": "ffd8ff",
+    "format": "jpeg",
+    "width": 1600,
+    "height": 1067
+  },
+  "checkedDestinations": [
+    "https://www.sba.gov/business-guide/manage-your-business",
+    "https://www.nist.gov/cyberframework",
+    "https://www.ftc.gov/business-guidance/resources/start-security-guide-business",
+    "/services/administrative-support",
+    "https://www.cisa.gov/mfa",
+    "/services/operations-support",
+    "/services/local-service-scheduling",
+    "https://www.irs.gov/publications/p583",
+    "/services/small-business-bookkeeping",
+    "https://www.fda.gov/food/food-labeling-nutrition/food-allergies",
+    "/services/lead-intake-administration",
+    "https://www.nist.gov/itl/smallbusinesscyber/nist-cybersecurity-framework-0",
+    "https://www.dol.gov/agencies/whd/compliance-assistance/handy-reference-guide-flsa",
+    "https://www.irs.gov/publications/p15",
+    "https://www.sba.gov/business-guide/manage-your-business/manage-your-finances",
+    "/services/reporting-quality-assurance",
+    "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business",
+    "/services/social-content-administration",
+    "/services/supplier-coordination"
+  ],
+  "failures": []
+}
