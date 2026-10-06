@@ -12,6 +12,7 @@
     "app/blog/[slug]/page.tsx",
     "app/oct5-blog-batch.ts",
     "app/oct5-research.ts",
+    "package-lock.json",
     "scripts/build-oct5-blog-source.mjs",
     "scripts/validate-oct5-combined.mjs",
     "scripts/validate-oct5-rendered.mjs",
