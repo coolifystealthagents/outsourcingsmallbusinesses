@@ -37,7 +37,7 @@ const entries = posts.map((post) => {
   if (productionSlugs.has(post.slug)) failures.push(`slug already appears in prior production inventory ${post.slug}`);
   if (priorText.includes(`slug: '${post.slug.toLowerCase()}'`) || priorText.includes(`slug:"${post.slug.toLowerCase()}"`)) failures.push(`slug collision in prior research ${post.slug}`);
   if (wordCount < minimumWords) failures.push(`${post.slug} has ${wordCount} body words`);
-  if (post.published !== '2026-10-05') failures.push(`${post.slug} has incorrect publication candidate ${post.published}`);
+  if (post.published !== '2026-10-06') failures.push(`${post.slug} has incorrect publication candidate ${post.published}`);
   if (!post.imagePath || !fs.existsSync(`public${post.imagePath}`)) failures.push(`${post.slug} image is missing`);
   if (!post.referenceSources || post.referenceSources.length < 3) failures.push(`${post.slug} has fewer than three sources`);
   for (const ref of post.referenceSources || []) if (ref.checked !== 'October 5, 2026' || !ref.url.startsWith('https://')) failures.push(`${post.slug} has invalid source metadata`);
@@ -50,6 +50,7 @@ const entries = posts.map((post) => {
     contentHash: crypto.createHash('sha256').update(JSON.stringify(post)).digest('hex'),
     bodyHash: crypto.createHash('sha256').update(bodyText).digest('hex'),
     wordCount,
+    actualPublicationDate: post.published,
     publicationDateCandidate: post.published,
     commitSha: contentCommitSha,
     deploymentEvidence: null,
@@ -78,8 +79,8 @@ const manifest = {
   family: 'research',
   cycleLabel: '2026-10-05',
   timezone: 'UTC',
-  actualPublicationDate: null,
-  publicationDateCandidate: '2026-10-05',
+  actualPublicationDate: '2026-10-06',
+  publicationDateCandidate: '2026-10-06',
   requiredCount,
   baselineSha: '3d32419abe9023449b9b7b4b6fc0cb7ba9d281fa',
   repository: 'coolifystealthagents/outsourcingsmallbusinesses',

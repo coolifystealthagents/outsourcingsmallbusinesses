@@ -2,8 +2,8 @@
   "family": "blog",
   "cycleLabel": "2026-10-05",
   "timezone": "UTC",
-  "actualPublicationDate": null,
-  "publicationDateCandidate": "2026-10-05",
+  "actualPublicationDate": "2026-10-06",
+  "publicationDateCandidate": "2026-10-06",
   "requiredCount": 12,
   "baselineSha": "3d32419abe9023449b9b7b4b6fc0cb7ba9d281fa",
   "repository": "coolifystealthagents/outsourcingsmallbusinesses",
@@ -32,7 +32,7 @@
           "checked": "2026-10-05"
         }
       ],
-      "contentHash": "d06cbead308ac04cc73138fb192691254952854ad3c63f8d4ad705c63f7324dc",
+      "contentHash": "fc032fae1a2310c9f15de2dd35f3e8898f01cb5cc827777384b078fdccc4c639",
       "bodyHash": "0eda9725c00d872eefc755a53608ecfe599bb089871e182e5f5498f34f44b175",
       "paragraphHashes": [
         "ba8576071f2ca0f1d16edc2602b6252b09aa3960e21da5b8071711f85dd26c32",
@@ -54,8 +54,9 @@
         "2b45def84807ee75f3aa80e15c318106d97f97d6dfa355e74fcb1327c261e039"
       ],
       "wordCount": 1201,
-      "publicationDateCandidate": "2026-10-05",
-      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
+      "actualPublicationDate": "2026-10-06",
+      "publicationDateCandidate": "2026-10-06",
+      "commitSha": "local-date-reconciliation",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-veterinary-prescription-refill-administration",
       "verifiedAt": null
@@ -81,7 +82,7 @@
           "checked": "2026-10-05"
         }
       ],
-      "contentHash": "cdc3813c593118c84aa10b62bb074a2d43d058014a2ccd377eb553c0bb333759",
+      "contentHash": "d389d3ef409dd259c8ccbf77f765ffc6606fcb91174efec13aa8e6fbc457ff85",
       "bodyHash": "98d8b025823daa209cf2b07bc16a32515c793c7ad3604a463aa00d1a09565d57",
       "paragraphHashes": [
         "4b8380608958d2e0c859266319de11254eb5e3a7ae65d6cd37b6b7cf0433fc6a",
@@ -107,8 +108,9 @@
         "0367c11943f81583649d023c4c9c38b376790850eb91de0d28b30bc56a342dbc"
       ],
       "wordCount": 1310,
-      "publicationDateCandidate": "2026-10-05",
-      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
+      "actualPublicationDate": "2026-10-06",
+      "publicationDateCandidate": "2026-10-06",
+      "commitSha": "local-date-reconciliation",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-commercial-lease-insurance-certificate-requests",
       "verifiedAt": null
@@ -134,7 +136,7 @@
           "checked": "2026-10-05"
         }
       ],
-      "contentHash": "230d05cad89de389e2b565070c6e15b8d1b9107c5bf53b839b0afce24305787b",
+      "contentHash": "b8bc292a58b64bd5b4c8e2a7c59e42e90c46f0f832c0ef16bd11c6553b33e185",
       "bodyHash": "b54347745f405acc6f9fae717a556bba48960e1a6043c8adb6d8b51a9278b0a4",
       "paragraphHashes": [
         "391e5e8825609a9281b8f80b5d51bb6f60d9592702bfca441d7e9f4837e81bd8",
@@ -155,8 +157,9 @@
         "c77ce4b860fbf5b10031333e862fe41c4cb358cc82702c8864b3dd7b7cf5141b"
       ],
       "wordCount": 1088,
-      "publicationDateCandidate": "2026-10-05",
-      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
+      "actualPublicationDate": "2026-10-06",
+      "publicationDateCandidate": "2026-10-06",
+      "commitSha": "local-date-reconciliation",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-freight-damage-claim-evidence",
       "verifiedAt": null
@@ -182,7 +185,7 @@
           "checked": "2026-10-05"
         }
       ],
-      "contentHash": "0c8c7621865bb88bca15804988445e82853e698e11a93dad2fad991e163f03ed",
+      "contentHash": "748b15273fd8b5163c953a26e51d7ac2c03345e1ae9653ae50f845fd2cef627c",
       "bodyHash": "d42d2ca23f19934ccf08c0e5a4e1ba30ef27f159cdece400f5a771f2d6f6412a",
       "paragraphHashes": [
         "3dd2734e4ae465b62b4fa3cc3e90da32f2c3ba82345afbae070e2205303d36a2",
@@ -205,8 +208,9 @@
         "444afb707f4b3f5793d765dad261b762e35f8b5a969456289ac7b39247845150"
       ],
       "wordCount": 1145,
-      "publicationDateCandidate": "2026-10-05",
-      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
+      "actualPublicationDate": "2026-10-06",
+      "publicationDateCandidate": "2026-10-06",
+      "commitSha": "local-date-reconciliation",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-permit-inspection-scheduling",
       "verifiedAt": null
@@ -232,7 +236,7 @@
           "checked": "2026-10-05"
         }
       ],
-      "contentHash": "47ad307b14118db256f9e8a3a4e3484adf90cd07e95d188155cab5079dc62fb3",
+      "contentHash": "3e49ea4ee6f5fdf4036ec9833f315027bdb922f695b2898d3b841238c1c817dc",
       "bodyHash": "a475b1d2bd2eb6d33d150a60ec9254d8e73c2f48e2717610542eb2a238d7cbf0",
       "paragraphHashes": [
         "851d8c07191a3c29950781cf04dd05be488e104bd0ddd0761a639c1d1ece3d37",
@@ -255,8 +259,9 @@
         "844f6d16890b995436eae962374ef706c10f77ac172caa284d05620602af5973"
       ],
       "wordCount": 1091,
-      "publicationDateCandidate": "2026-10-05",
-      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
+      "actualPublicationDate": "2026-10-06",
+      "publicationDateCandidate": "2026-10-06",
+      "commitSha": "local-date-reconciliation",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-client-bank-statement-followup",
       "verifiedAt": null
@@ -282,7 +287,7 @@
           "checked": "2026-10-05"
         }
       ],
-      "contentHash": "c5b9a6755b9d186818ede29ee0e40bf72e6c7f9bda290cf7d2ecbabe3e427ff6",
+      "contentHash": "a283227152c55fe88418642b895dd4c1f532af9f6e0dbd1632c1a9c0418758a9",
       "bodyHash": "ad1f23326693cd955583d77dc858fac1a52e33c3b722b3c38a6553aa974b81a2",
       "paragraphHashes": [
         "b63ccddadb3a066bb7edf8e93ac123681558e0d508c123e7e340785cfd4bc7fa",
@@ -305,8 +310,9 @@
         "f800780c909e251def26ed26f1677ef3e69362ec68bf7483af683c1d7ed79d62"
       ],
       "wordCount": 1004,
-      "publicationDateCandidate": "2026-10-05",
-      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
+      "actualPublicationDate": "2026-10-06",
+      "publicationDateCandidate": "2026-10-06",
+      "commitSha": "local-date-reconciliation",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-msp-user-onboarding-intake",
       "verifiedAt": null
@@ -332,7 +338,7 @@
           "checked": "2026-10-05"
         }
       ],
-      "contentHash": "efa9a1b2564b227387c23fadc9cbc179f8fd616a82a7546035aa6c4a9f6b58f3",
+      "contentHash": "280dc4833bcdcb51bd485a96541cd394dcaba5eb07b062332c4f2dab823339a6",
       "bodyHash": "dc19b6f3bc8076b7064f4fd72b70fcd714b0fd50a0137876a41e622d62ef3b3b",
       "paragraphHashes": [
         "23df65f9317995b184352c7a63a600d11afadf5fd96225e4ea85c152ddd389bd",
@@ -355,8 +361,9 @@
         "90089ba77d13ebbb4f100dd846927b9d3fa6ce2fc22283e012d42f527c712dc5"
       ],
       "wordCount": 1001,
-      "publicationDateCandidate": "2026-10-05",
-      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
+      "actualPublicationDate": "2026-10-06",
+      "publicationDateCandidate": "2026-10-06",
+      "commitSha": "local-date-reconciliation",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-specialty-food-sample-followup",
       "verifiedAt": null
@@ -382,7 +389,7 @@
           "checked": "2026-10-05"
         }
       ],
-      "contentHash": "083dbc1913ce6815d0ef711aad9394539a53fbf2a1c55dd1b12aefd5e32502ac",
+      "contentHash": "7d83c329635a4f42e08ff094d86e55838d693776dc8c543c6f25375c7de4cedb",
       "bodyHash": "c4b5116ca079685af37cc39c18f5a6e607bbcbfbdaca690060cd7ad2a74cb24f",
       "paragraphHashes": [
         "c875589c17e8655d95bd032237b7625a34d863560b6c981ed8d45b9a3f227bac",
@@ -405,8 +412,9 @@
         "05b498ac637b9a514fbc074f29cf11bd549f6209fc1df9411948b71a789fdfd7"
       ],
       "wordCount": 981,
-      "publicationDateCandidate": "2026-10-05",
-      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
+      "actualPublicationDate": "2026-10-06",
+      "publicationDateCandidate": "2026-10-06",
+      "commitSha": "local-date-reconciliation",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-auto-repair-supplement-documentation",
       "verifiedAt": null
@@ -432,7 +440,7 @@
           "checked": "2026-10-05"
         }
       ],
-      "contentHash": "a0bd503224e39586b387abc81cc9418631a5ca49883f7fa2f2d012603e2e9bf0",
+      "contentHash": "6dd17436ff89a41edbfa10dafdf34ddb9382acdf36c38a67ac77d27fc90f0b76",
       "bodyHash": "77d1b2dc1d4cafee613ece364f6c1592bee9da277ea4140d273eaafb59e6e67c",
       "paragraphHashes": [
         "b7cfa104c4693fa2b9c63b2a768ff4a609dc558b24cea5bd782516df8238ea76",
@@ -457,8 +465,9 @@
         "cf30ad54324f33909d1f14617a0786667190543a878e4f65a6256233bb103c27"
       ],
       "wordCount": 942,
-      "publicationDateCandidate": "2026-10-05",
-      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
+      "actualPublicationDate": "2026-10-06",
+      "publicationDateCandidate": "2026-10-06",
+      "commitSha": "local-date-reconciliation",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-legal-document-production-administration",
       "verifiedAt": null
@@ -484,7 +493,7 @@
           "checked": "2026-10-05"
         }
       ],
-      "contentHash": "fc9cf2a7cb22ddc0880506d457ca1f7a5e1aa1bd8aa19daf4aa5f0f6bb61f464",
+      "contentHash": "b5c55560b45105415be20424b886bf0356ad3d396ccc0b62955640bf9accc039",
       "bodyHash": "f5f2e07481d5fe0b2369dadaeccd10fd5ab0cfe50a9ba38ab8c107c295a67512",
       "paragraphHashes": [
         "89f76ac628d6a8164a17f56eae554ca041b521898d62b9f1abaf636b8a686dfd",
@@ -507,8 +516,9 @@
         "4c8b8455088ade57fb23f3096df720aad8f0561a5bd37704571aec443fba27b6"
       ],
       "wordCount": 920,
-      "publicationDateCandidate": "2026-10-05",
-      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
+      "actualPublicationDate": "2026-10-06",
+      "publicationDateCandidate": "2026-10-06",
+      "commitSha": "local-date-reconciliation",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-architecture-submittal-register",
       "verifiedAt": null
@@ -534,7 +544,7 @@
           "checked": "2026-10-05"
         }
       ],
-      "contentHash": "0ce088b76400752e04a2ab5ecd068658e06e3753c8fd542c4b4dc090307b83c7",
+      "contentHash": "919e7e53cb9865d26da52d08263dd80f1fd1edd9616528c7aaea04e17e58b9c0",
       "bodyHash": "967f252a4f9cd76a67644d09cab53e49a69f4547e708c661f6eabba6663f42c7",
       "paragraphHashes": [
         "d214d77fd328aa1df1acc2dee7f7eb4277b05a1e9f998cbbe04248b13f32c70f",
@@ -557,8 +567,9 @@
         "50453a5629c6cc37f12c0e1519f64c9c3ac10a18bbae6184146d391d10e36c83"
       ],
       "wordCount": 971,
-      "publicationDateCandidate": "2026-10-05",
-      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
+      "actualPublicationDate": "2026-10-06",
+      "publicationDateCandidate": "2026-10-06",
+      "commitSha": "local-date-reconciliation",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-restaurant-equipment-service-coordination",
       "verifiedAt": null
@@ -584,7 +595,7 @@
           "checked": "2026-10-05"
         }
       ],
-      "contentHash": "562f5d3b93875cfda63fd0c6ef777a4808906635a76de1b89989b3f6d8fa8a35",
+      "contentHash": "6ce7d083383a772196e0d51fc567cd3181e375e19f803ecdcbc54ac1d3e486a3",
       "bodyHash": "94e0b69ce2374fd5d456e77c10cb16c019b2f7ab80e0636eaedf5bfeb9eb1624",
       "paragraphHashes": [
         "6be09fc6a2fa6ad92e7cededb2933a9dfac664e68af00f4e739a1f5679e18360",
@@ -609,8 +620,9 @@
         "011979e40d918aebd03d75cf2edf1528d82f29989430afd2cc2c1713f56bfee3"
       ],
       "wordCount": 941,
-      "publicationDateCandidate": "2026-10-05",
-      "commitSha": "572850a939ae70d16116a39b81116bbc4748554a",
+      "actualPublicationDate": "2026-10-06",
+      "publicationDateCandidate": "2026-10-06",
+      "commitSha": "local-date-reconciliation",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcingsmallbusinesses.com/blog/outsource-continuing-education-record-intake",
       "verifiedAt": null
@@ -624,7 +636,7 @@
   },
   "release": {
     "status": "validated-combined-candidate",
-    "contentCommitSha": "572850a939ae70d16116a39b81116bbc4748554a",
+    "contentCommitSha": "local-date-reconciliation",
     "combinedRemoteSha": null,
     "deploymentEvidence": null,
     "verifiedCount": 0

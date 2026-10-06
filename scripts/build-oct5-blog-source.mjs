@@ -1,7 +1,9 @@
 import fs from 'node:fs';
 import crypto from 'node:crypto';
 
-const date = '2026-10-05';
+const cycleLabel = '2026-10-05';
+const publicationDate = '2026-10-06';
+const sourceCheckedDate = '2026-10-05';
 const contentCommitSha = process.env.CONTENT_COMMIT_SHA || null;
 const sba = ['U.S. Small Business Administration: Manage your business', 'https://www.sba.gov/business-guide/manage-your-business'];
 const nist = ['NIST Cybersecurity Framework 2.0', 'https://www.nist.gov/cyberframework'];
@@ -45,11 +47,11 @@ function parse(file) {
 }
 
 const posts = items.map(([file,slug,lane,service,excerpt,sources]) => ({
-  slug, ...parse(file), excerpt, lane, service, publicationDate: date,
+  slug, ...parse(file), excerpt, lane, service, publicationDate,
   imagePath: '/filipino-support-workspace.jpg', sources,
 }));
 
-fs.writeFileSync('app/oct5-blog-batch.ts', `export const octoberFivePublicationDate = ${JSON.stringify(date)} as const;\n\nexport const octoberFiveBlogBatch = ${JSON.stringify(posts, null, 2)} as const;\n`);
+fs.writeFileSync('app/oct5-blog-batch.ts', `export const octoberFivePublicationDate = ${JSON.stringify(publicationDate)} as const;\n\nexport const octoberFiveBlogBatch = ${JSON.stringify(posts, null, 2)} as const;\n`);
 
 const words = (value) => value.toLowerCase().match(/[a-z0-9']+/g) || [];
 const entries = posts.map((post) => {
@@ -57,16 +59,16 @@ const entries = posts.map((post) => {
   const body = paragraphs.join(' ');
   return {
     family: 'blog', topic: post.title, slug: post.slug,
-    sources: post.sources.map(([title,url]) => ({ title, url, checked: date })),
+    sources: post.sources.map(([title,url]) => ({ title, url, checked: sourceCheckedDate })),
     contentHash: crypto.createHash('sha256').update(JSON.stringify(post)).digest('hex'),
     bodyHash: crypto.createHash('sha256').update(body).digest('hex'),
     paragraphHashes: paragraphs.map((paragraph) => crypto.createHash('sha256').update(paragraph).digest('hex')),
-    wordCount: words(body).length, publicationDateCandidate: date, commitSha: contentCommitSha,
+    wordCount: words(body).length, actualPublicationDate: publicationDate, publicationDateCandidate: publicationDate, commitSha: contentCommitSha,
     deploymentEvidence: null, liveUrl: `https://outsourcingsmallbusinesses.com/blog/${post.slug}`, verifiedAt: null,
   };
 });
 const manifest = {
-  family:'blog', cycleLabel:date, timezone:'UTC', actualPublicationDate:null, publicationDateCandidate:date,
+  family:'blog', cycleLabel, timezone:'UTC', actualPublicationDate:publicationDate, publicationDateCandidate:publicationDate,
   requiredCount:12, baselineSha:'3d32419abe9023449b9b7b4b6fc0cb7ba9d281fa', repository:'coolifystealthagents/outsourcingsmallbusinesses',
   productionBranch:'main', blogBranch:'routine/blog-2026-10-05', deploymentResource:'y85c6kbd6zekps7rxqzwrrn6', entries,
   validation:{minimumWords:900,bodyOnly:true,sourceBodyParagraphParity:'ordered paragraph hashes',qualitativeOriginality:'pending combined validator'},

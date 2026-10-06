@@ -1,4 +1,4 @@
-const published = '2026-10-05' as const;
+const published = '2026-10-06' as const;
 const checked = 'October 5, 2026';
 
 const sources = {

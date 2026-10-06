@@ -1,4 +1,4 @@
-export const octoberFivePublicationDate = "2026-10-05" as const;
+export const octoberFivePublicationDate = "2026-10-06" as const;
 
 export const octoberFiveBlogBatch = [
   {
@@ -66,7 +66,7 @@ export const octoberFiveBlogBatch = [
     "excerpt": "Build a source-linked refill request queue while veterinarians retain prescribing, clinical, and urgency decisions.",
     "lane": "veterinary prescription refill request administration",
     "service": "administrative-support",
-    "publicationDate": "2026-10-05",
+    "publicationDate": "2026-10-06",
     "imagePath": "/filipino-support-workspace.jpg",
     "sources": [
       [
@@ -152,7 +152,7 @@ export const octoberFiveBlogBatch = [
     "excerpt": "Coordinate certificate requests and versioned evidence without interpreting insurance coverage or lease requirements.",
     "lane": "commercial lease certificate-of-insurance coordination",
     "service": "administrative-support",
-    "publicationDate": "2026-10-05",
+    "publicationDate": "2026-10-06",
     "imagePath": "/filipino-support-workspace.jpg",
     "sources": [
       [
@@ -233,7 +233,7 @@ export const octoberFiveBlogBatch = [
     "excerpt": "Assemble shipment, condition, quantity, and deadline evidence while liability and settlement stay with authorized owners.",
     "lane": "freight damage claim evidence assembly",
     "service": "operations-support",
-    "publicationDate": "2026-10-05",
+    "publicationDate": "2026-10-06",
     "imagePath": "/filipino-support-workspace.jpg",
     "sources": [
       [
@@ -321,7 +321,7 @@ export const octoberFiveBlogBatch = [
     "excerpt": "Coordinate permit inspection requests and access without certifying work or interpreting code requirements.",
     "lane": "permit inspection scheduling",
     "service": "local-service-scheduling",
-    "publicationDate": "2026-10-05",
+    "publicationDate": "2026-10-06",
     "imagePath": "/filipino-support-workspace.jpg",
     "sources": [
       [
@@ -409,7 +409,7 @@ export const octoberFiveBlogBatch = [
     "excerpt": "Request and match the correct statement period securely without taking banking credentials or making bookkeeping judgments.",
     "lane": "client bank statement follow-up",
     "service": "small-business-bookkeeping",
-    "publicationDate": "2026-10-05",
+    "publicationDate": "2026-10-06",
     "imagePath": "/filipino-support-workspace.jpg",
     "sources": [
       [
@@ -497,7 +497,7 @@ export const octoberFiveBlogBatch = [
     "excerpt": "Prepare identity, device, application, and approval evidence while clients and technicians retain access control.",
     "lane": "managed service provider user onboarding intake",
     "service": "operations-support",
-    "publicationDate": "2026-10-05",
+    "publicationDate": "2026-10-06",
     "imagePath": "/filipino-support-workspace.jpg",
     "sources": [
       [
@@ -585,7 +585,7 @@ export const octoberFiveBlogBatch = [
     "excerpt": "Coordinate sample delivery, product questions, and buyer feedback without promising suitability, safety, price, or availability.",
     "lane": "specialty food sample follow-up",
     "service": "lead-intake-administration",
-    "publicationDate": "2026-10-05",
+    "publicationDate": "2026-10-06",
     "imagePath": "/filipino-support-workspace.jpg",
     "sources": [
       [
@@ -673,7 +673,7 @@ export const octoberFiveBlogBatch = [
     "excerpt": "Keep repair supplement evidence, versions, and approvals aligned without diagnosing damage or authorizing repairs.",
     "lane": "auto-repair supplement documentation",
     "service": "administrative-support",
-    "publicationDate": "2026-10-05",
+    "publicationDate": "2026-10-06",
     "imagePath": "/filipino-support-workspace.jpg",
     "sources": [
       [
@@ -768,7 +768,7 @@ export const octoberFiveBlogBatch = [
     "excerpt": "Maintain matter, review, redaction, manifest, and transfer evidence while legal decisions remain with counsel.",
     "lane": "legal document production administration",
     "service": "administrative-support",
-    "publicationDate": "2026-10-05",
+    "publicationDate": "2026-10-06",
     "imagePath": "/filipino-support-workspace.jpg",
     "sources": [
       [
@@ -856,7 +856,7 @@ export const octoberFiveBlogBatch = [
     "excerpt": "Control submittal versions, routing, dates, and distribution without approving design or interpreting contracts.",
     "lane": "architecture submittal register administration",
     "service": "operations-support",
-    "publicationDate": "2026-10-05",
+    "publicationDate": "2026-10-06",
     "imagePath": "/filipino-support-workspace.jpg",
     "sources": [
       [
@@ -944,7 +944,7 @@ export const octoberFiveBlogBatch = [
     "excerpt": "Coordinate asset-specific service calls while restaurant owners and technicians retain safety, repair, and operating decisions.",
     "lane": "multi-location restaurant equipment service coordination",
     "service": "operations-support",
-    "publicationDate": "2026-10-05",
+    "publicationDate": "2026-10-06",
     "imagePath": "/filipino-support-workspace.jpg",
     "sources": [
       [
@@ -1039,7 +1039,7 @@ export const octoberFiveBlogBatch = [
     "excerpt": "Prepare traceable course evidence and calculations without certifying eligibility, exceptions, or renewal.",
     "lane": "continuing-education record intake",
     "service": "administrative-support",
-    "publicationDate": "2026-10-05",
+    "publicationDate": "2026-10-06",
     "imagePath": "/filipino-support-workspace.jpg",
     "sources": [
       [

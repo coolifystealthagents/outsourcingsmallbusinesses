@@ -37,7 +37,7 @@ for(const post of blog){
   const paragraphs=post.sections.flatMap((s)=>s.paragraphs), body=paragraphs.join(' '), words=token(body).length;
   const entry=blogManifest.entries.find((x)=>x.slug===post.slug);
   if(words<900) failures.push(`${post.slug} words ${words}`);
-  if(post.publicationDate!=='2026-10-05') failures.push(`${post.slug} date`);
+  if(post.publicationDate!=='2026-10-06') failures.push(`${post.slug} date`);
   if(!fs.existsSync(`public${post.imagePath}`)) failures.push(`${post.slug} image`);
   if(post.sources.length<3||post.sources.some(([,url])=>!url.startsWith('https://'))) failures.push(`${post.slug} sources`);
   if(!post.service) failures.push(`${post.slug} service`);

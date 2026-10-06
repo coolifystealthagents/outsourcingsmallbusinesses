@@ -19,9 +19,9 @@ for(const [family,posts] of [['blog',blog],['research',research]])for(const post
   const body=expected.join(' '),renderedBody=matched.join(' ');
   if(matched.length!==expected.length||hash(renderedBody)!==hash(body))failures.push(`${path} ordered body hash mismatch`);
   const canonical=`https://outsourcingsmallbusinesses.com${path}`;
-  for(const needle of [post.title,'2026-10-05',canonical,post.imagePath,'application/ld+json'])if(!html.includes(needle))failures.push(`${path} missing ${needle}`);
+  for(const needle of [post.title,'2026-10-06',canonical,post.imagePath,'application/ld+json'])if(!html.includes(needle))failures.push(`${path} missing ${needle}`);
   for(const match of html.matchAll(/<a[^>]+href="([^"]+)"/g)){const href=match[1];if(href.startsWith('/services/')||href.startsWith('https://'))destinations.add(href);}
-  routeEvidence.push({family,slug:post.slug,status:response.status,paragraphs:matched.length,bodyHash:hash(renderedBody),canonical,image:post.imagePath,date:'2026-10-05'});
+  routeEvidence.push({family,slug:post.slug,status:response.status,paragraphs:matched.length,bodyHash:hash(renderedBody),canonical,image:post.imagePath,date:'2026-10-06'});
 }
 for(const path of ['/blog','/research','/sitemap.xml']){const r=await fetch(`${origin}${path}`),text=await r.text();if(r.status!==200)failures.push(`${path} status ${r.status}`);for(const post of path==='/blog'?blog:path==='/research'?research:[...blog,...research])if(!text.includes(post.slug))failures.push(`${path} missing ${post.slug}`);}
 for(const href of destinations){const target=href.startsWith('/')?`${origin}${href}`:href;try{const r=await fetch(target,{redirect:'follow',headers:{'user-agent':'Mozilla/5.0'}});if(r.status>=400)failures.push(`destination ${href} status ${r.status}`);}catch(error){failures.push(`destination ${href} ${error.message}`);}}
