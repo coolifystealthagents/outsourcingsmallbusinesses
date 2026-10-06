@@ -6,6 +6,8 @@
   "baseSha": "5f7d2e056419566088bccf2a3fba5a2dd8e9a31d",
   "changedFiles": [
     ".paperclip/daily-content/2026-10-05/blog.json",
+    ".paperclip/daily-content/2026-10-05/date-reconciliation.json",
+    ".paperclip/daily-content/2026-10-05/rendered-validation.json",
     ".paperclip/daily-content/2026-10-05/research.json",
     "app/blog/[slug]/page.tsx",
     "app/oct5-blog-batch.ts",
@@ -13,7 +15,8 @@
     "scripts/build-oct5-blog-source.mjs",
     "scripts/validate-oct5-combined.mjs",
     "scripts/validate-oct5-rendered.mjs",
-    "scripts/validate-oct5-research.mjs"
+    "scripts/validate-oct5-research.mjs",
+    "scripts/validate-oct6-date-reconciliation.mjs"
   ],
   "priorCycleChanges": [],
   "families": [
