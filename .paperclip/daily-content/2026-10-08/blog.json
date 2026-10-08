@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-08",
+  "requiredCount": 12,
+  "entries": [
+    {
+      "slug": "small-business-outsourcing-customer-inbox-owner-transfer",
+      "title": "Transfer a Customer Inbox Lane Without Losing Ownership",
+      "route": "/blog/small-business-outsourcing-customer-inbox-owner-transfer",
+      "words": 1170
+    },
+    {
+      "slug": "small-business-outsourcing-vendor-invoice-approval-mismatch",
+      "title": "Resolve a Vendor Invoice Approval Mismatch Before Posting",
+      "route": "/blog/small-business-outsourcing-vendor-invoice-approval-mismatch",
+      "words": 1170
+    },
+    {
+      "slug": "small-business-outsourcing-ecommerce-return-reason-reconciliation",
+      "title": "Reconcile Ecommerce Return Reasons Across Store and Carrier Records",
+      "route": "/blog/small-business-outsourcing-ecommerce-return-reason-reconciliation",
+      "words": 1176
+    },
+    {
+      "slug": "small-business-outsourcing-founder-calendar-reschedule-boundary",
+      "title": "Set a Safe Boundary for Founder Calendar Rescheduling",
+      "route": "/blog/small-business-outsourcing-founder-calendar-reschedule-boundary",
+      "words": 1170
+    },
+    {
+      "slug": "small-business-outsourcing-crm-consent-field-conflict",
+      "title": "Preserve a CRM Consent-Field Conflict for Owner Review",
+      "route": "/blog/small-business-outsourcing-crm-consent-field-conflict",
+      "words": 1170
+    },
+    {
+      "slug": "small-business-outsourcing-inventory-reorder-exception-packet",
+      "title": "Prepare an Inventory Reorder Exception Packet",
+      "route": "/blog/small-business-outsourcing-inventory-reorder-exception-packet",
+      "words": 1158
+    },
+    {
+      "slug": "small-business-outsourcing-proposal-version-handoff",
+      "title": "Control Proposal Versions During an Outsourced Handoff",
+      "route": "/blog/small-business-outsourcing-proposal-version-handoff",
+      "words": 1164
+    },
+    {
+      "slug": "small-business-outsourcing-subscription-cancellation-evidence-queue",
+      "title": "Build a Subscription Cancellation Evidence Queue",
+      "route": "/blog/small-business-outsourcing-subscription-cancellation-evidence-queue",
+      "words": 1158
+    },
+    {
+      "slug": "small-business-outsourcing-payroll-source-cutoff-handoff",
+      "title": "Freeze Payroll Source Records at the Handoff Cutoff",
+      "route": "/blog/small-business-outsourcing-payroll-source-cutoff-handoff",
+      "words": 1170
+    },
+    {
+      "slug": "small-business-outsourcing-helpdesk-access-recertification",
+      "title": "Recertify Helpdesk Access Before Expanding the Queue",
+      "route": "/blog/small-business-outsourcing-helpdesk-access-recertification",
+      "words": 1164
+    },
+    {
+      "slug": "small-business-outsourcing-marketing-asset-approval-register",
+      "title": "Maintain a Marketing Asset Approval Register",
+      "route": "/blog/small-business-outsourcing-marketing-asset-approval-register",
+      "words": 1158
+    },
+    {
+      "slug": "small-business-outsourcing-offboarding-shared-link-review",
+      "title": "Review Shared Links During Outsourced Staff Offboarding",
+      "route": "/blog/small-business-outsourcing-offboarding-shared-link-review",
+      "words": 1164
+    }
+  ]
+}

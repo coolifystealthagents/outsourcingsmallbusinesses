@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-08",
+  "requiredCount": 5,
+  "entries": [
+    {
+      "slug": "small-business-outsourcing-owner-decision-latency-study",
+      "title": "Small-Business Outsourcing Decision Latency: A Bounded Owner-Acknowledgement Study",
+      "route": "/research/small-business-outsourcing-owner-decision-latency-study",
+      "words": 1088,
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.ftc.gov/business-guidance/resources/start-security-guide-business",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ]
+    },
+    {
+      "slug": "small-business-outsourcing-source-reconstruction-study",
+      "title": "Can a Second Reviewer Reconstruct an Outsourced Work Packet?",
+      "route": "/research/small-business-outsourcing-source-reconstruction-study",
+      "words": 1098,
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.ftc.gov/business-guidance/resources/start-security-guide-business",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ]
+    },
+    {
+      "slug": "small-business-outsourcing-exception-reviewer-agreement-study",
+      "title": "Do Reviewers Agree on Outsourcing Exceptions?",
+      "route": "/research/small-business-outsourcing-exception-reviewer-agreement-study",
+      "words": 1068,
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.ftc.gov/business-guidance/resources/start-security-guide-business",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ]
+    },
+    {
+      "slug": "small-business-outsourcing-access-removal-evidence-study",
+      "title": "Does Outsourced Staff Offboarding Prove Access Removal?",
+      "route": "/research/small-business-outsourcing-access-removal-evidence-study",
+      "words": 1078,
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.ftc.gov/business-guidance/resources/start-security-guide-business",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ]
+    },
+    {
+      "slug": "small-business-outsourcing-reopened-work-recurrence-study",
+      "title": "Why Does Outsourced Work Reopen After Closure?",
+      "route": "/research/small-business-outsourcing-reopened-work-recurrence-study",
+      "words": 1078,
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://www.ftc.gov/business-guidance/resources/start-security-guide-business",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ]
+    }
+  ]
+}
