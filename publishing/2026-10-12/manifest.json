@@ -1,0 +1,206 @@
+{
+  "site": "OutsourcingSmallBusinesses.com",
+  "repository": "coolifystealthagents/outsourcingsmallbusinesses",
+  "branch": "main",
+  "publicationDate": "2026-10-12",
+  "blogCount": 12,
+  "researchCount": 5,
+  "entries": [
+    {
+      "type": "Blog",
+      "slug": "small-business-daily-owner-approval-queue",
+      "title": "Build a Daily Owner Approval Queue That Does Not Become a Bottleneck",
+      "route": "/blog/small-business-daily-owner-approval-queue",
+      "thumbnail": "/october-12-2026/small-business-daily-owner-approval-queue.png",
+      "words": 1624
+    },
+    {
+      "type": "Blog",
+      "slug": "small-business-customer-refund-evidence-packet",
+      "title": "Prepare a Customer Refund Evidence Packet Before Approval",
+      "route": "/blog/small-business-customer-refund-evidence-packet",
+      "thumbnail": "/october-12-2026/small-business-customer-refund-evidence-packet.png",
+      "words": 1492
+    },
+    {
+      "type": "Blog",
+      "slug": "small-business-vendor-bank-detail-change-check",
+      "title": "Verify a Vendor Bank Detail Change Before Payment",
+      "route": "/blog/small-business-vendor-bank-detail-change-check",
+      "thumbnail": "/october-12-2026/small-business-vendor-bank-detail-change-check.png",
+      "words": 1500
+    },
+    {
+      "type": "Blog",
+      "slug": "small-business-payroll-input-cutoff-register",
+      "title": "Create a Payroll Input Cutoff Register for Outsourced Preparation",
+      "route": "/blog/small-business-payroll-input-cutoff-register",
+      "thumbnail": "/october-12-2026/small-business-payroll-input-cutoff-register.png",
+      "words": 1533
+    },
+    {
+      "type": "Blog",
+      "slug": "small-business-shared-inbox-after-hours-coverage",
+      "title": "Design After-Hours Coverage for a Shared Business Inbox",
+      "route": "/blog/small-business-shared-inbox-after-hours-coverage",
+      "thumbnail": "/october-12-2026/small-business-shared-inbox-after-hours-coverage.png",
+      "words": 1500
+    },
+    {
+      "type": "Blog",
+      "slug": "small-business-marketing-claim-approval-workflow",
+      "title": "Route Marketing Claims Through a Small-Business Approval Workflow",
+      "route": "/blog/small-business-marketing-claim-approval-workflow",
+      "thumbnail": "/october-12-2026/small-business-marketing-claim-approval-workflow.png",
+      "words": 1493
+    },
+    {
+      "type": "Blog",
+      "slug": "small-business-inventory-reorder-exception-brief",
+      "title": "Prepare an Inventory Reorder Exception Brief",
+      "route": "/blog/small-business-inventory-reorder-exception-brief",
+      "thumbnail": "/october-12-2026/small-business-inventory-reorder-exception-brief.png",
+      "words": 1426
+    },
+    {
+      "type": "Blog",
+      "slug": "small-business-software-seat-access-review",
+      "title": "Review Software Seats Before Renewing Access",
+      "route": "/blog/small-business-software-seat-access-review",
+      "thumbnail": "/october-12-2026/small-business-software-seat-access-review.png",
+      "words": 1433
+    },
+    {
+      "type": "Blog",
+      "slug": "small-business-owner-absence-decision-coverage",
+      "title": "Document Decision Coverage Before the Owner Is Away",
+      "route": "/blog/small-business-owner-absence-decision-coverage",
+      "thumbnail": "/october-12-2026/small-business-owner-absence-decision-coverage.png",
+      "words": 1500
+    },
+    {
+      "type": "Blog",
+      "slug": "small-business-automation-fallback-action-log",
+      "title": "Use a Manual Fallback Log When an Automation Fails",
+      "route": "/blog/small-business-automation-fallback-action-log",
+      "thumbnail": "/october-12-2026/small-business-automation-fallback-action-log.png",
+      "words": 1519
+    },
+    {
+      "type": "Blog",
+      "slug": "small-business-month-end-missing-receipt-queue",
+      "title": "Run a Missing Receipt Queue Before Month-End Close",
+      "route": "/blog/small-business-month-end-missing-receipt-queue",
+      "thumbnail": "/october-12-2026/small-business-month-end-missing-receipt-queue.png",
+      "words": 1493
+    },
+    {
+      "type": "Blog",
+      "slug": "small-business-client-onboarding-scope-boundary",
+      "title": "Set the Scope Boundary During Client Onboarding",
+      "route": "/blog/small-business-client-onboarding-scope-boundary",
+      "thumbnail": "/october-12-2026/small-business-client-onboarding-scope-boundary.png",
+      "words": 1469
+    },
+    {
+      "type": "Research",
+      "slug": "small-business-approval-wait-time-protocol",
+      "title": "Approval Wait Time in Owner-Led Businesses",
+      "route": "/research/small-business-approval-wait-time-protocol",
+      "thumbnail": "/october-12-2026/small-business-approval-wait-time-protocol.png",
+      "words": 1152,
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.gao.gov/greenbook",
+        "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business-0",
+        "https://www.cisa.gov/topics/cybersecurity-best-practices/identity-and-access-management",
+        "https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping",
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://www.iso.org/quality-management/principles",
+        "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0479"
+      ]
+    },
+    {
+      "type": "Research",
+      "slug": "small-business-outsourced-rework-denominators",
+      "title": "Denominators for Measuring Outsourced Task Rework",
+      "route": "/research/small-business-outsourced-rework-denominators",
+      "thumbnail": "/october-12-2026/small-business-outsourced-rework-denominators.png",
+      "words": 1160,
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.gao.gov/greenbook",
+        "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business-0",
+        "https://www.cisa.gov/topics/cybersecurity-best-practices/identity-and-access-management",
+        "https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping",
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://www.iso.org/quality-management/principles",
+        "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0479"
+      ]
+    },
+    {
+      "type": "Research",
+      "slug": "small-business-permission-creep-cohort",
+      "title": "Permission Creep Across Small-Business Software Accounts",
+      "route": "/research/small-business-permission-creep-cohort",
+      "thumbnail": "/october-12-2026/small-business-permission-creep-cohort.png",
+      "words": 1165,
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.gao.gov/greenbook",
+        "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business-0",
+        "https://www.cisa.gov/topics/cybersecurity-best-practices/identity-and-access-management",
+        "https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping",
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://www.iso.org/quality-management/principles",
+        "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0479"
+      ]
+    },
+    {
+      "type": "Research",
+      "slug": "small-business-owner-absence-routing-consistency",
+      "title": "Exception Routing During Owner Absence",
+      "route": "/research/small-business-owner-absence-routing-consistency",
+      "thumbnail": "/october-12-2026/small-business-owner-absence-routing-consistency.png",
+      "words": 1134,
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.gao.gov/greenbook",
+        "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business-0",
+        "https://www.cisa.gov/topics/cybersecurity-best-practices/identity-and-access-management",
+        "https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping",
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://www.iso.org/quality-management/principles",
+        "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0479"
+      ]
+    },
+    {
+      "type": "Research",
+      "slug": "small-business-month-end-source-completeness",
+      "title": "Source Completeness Before Small-Business Month-End Close",
+      "route": "/research/small-business-month-end-source-completeness",
+      "thumbnail": "/october-12-2026/small-business-month-end-source-completeness.png",
+      "words": 1159,
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.gao.gov/greenbook",
+        "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business-0",
+        "https://www.cisa.gov/topics/cybersecurity-best-practices/identity-and-access-management",
+        "https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping",
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://www.iso.org/quality-management/principles",
+        "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0479"
+      ]
+    }
+  ]
+}
