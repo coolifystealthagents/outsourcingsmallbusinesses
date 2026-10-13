@@ -88,6 +88,7 @@ export default async function ResearchArticle({
           <p className="eyebrow">Small-business outsourcing research</p>
           <h1>{post.title}</h1>
           <p className="lead">{post.excerpt}</p>
+          {post.studyNote ? <p>{post.studyNote}</p> : null}
           <time dateTime={post.published}>
             Published: {formatPublicDate(post.published)}
           </time>

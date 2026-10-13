@@ -1,0 +1,206 @@
+{
+  "site": "OutsourcingSmallBusinesses.com",
+  "repository": "coolifystealthagents/outsourcingsmallbusinesses",
+  "branch": "main",
+  "publicationDate": "2026-10-13",
+  "blogCount": 12,
+  "researchCount": 5,
+  "entries": [
+    {
+      "type": "Blog",
+      "slug": "small-business-outsourcing-first-week-control-plan",
+      "title": "Plan the First Week of a Small-Business Outsourcing Role",
+      "route": "/blog/small-business-outsourcing-first-week-control-plan",
+      "thumbnail": "/october-13-2026/small-business-outsourcing-first-week-control-plan.png",
+      "words": 1547
+    },
+    {
+      "type": "Blog",
+      "slug": "small-business-recurring-task-source-map",
+      "title": "Create a Source Map for Recurring Outsourced Tasks",
+      "route": "/blog/small-business-recurring-task-source-map",
+      "thumbnail": "/october-13-2026/small-business-recurring-task-source-map.png",
+      "words": 1510
+    },
+    {
+      "type": "Blog",
+      "slug": "small-business-customer-promise-register",
+      "title": "Maintain a Customer Promise Register Without Expanding Authority",
+      "route": "/blog/small-business-customer-promise-register",
+      "thumbnail": "/october-13-2026/small-business-customer-promise-register.png",
+      "words": 1516
+    },
+    {
+      "type": "Blog",
+      "slug": "outsourced-small-business-cash-forecast-input-check",
+      "title": "Check Cash Forecast Inputs Before Owner Review",
+      "route": "/blog/outsourced-small-business-cash-forecast-input-check",
+      "thumbnail": "/october-13-2026/outsourced-small-business-cash-forecast-input-check.png",
+      "words": 1466
+    },
+    {
+      "type": "Blog",
+      "slug": "small-business-lead-handoff-acceptance-record",
+      "title": "Use an Acceptance Record When Outsourcing Lead Handoffs",
+      "route": "/blog/small-business-lead-handoff-acceptance-record",
+      "thumbnail": "/october-13-2026/small-business-lead-handoff-acceptance-record.png",
+      "words": 1507
+    },
+    {
+      "type": "Blog",
+      "slug": "small-business-vendor-renewal-decision-brief",
+      "title": "Prepare a Vendor Renewal Decision Brief",
+      "route": "/blog/small-business-vendor-renewal-decision-brief",
+      "thumbnail": "/october-13-2026/small-business-vendor-renewal-decision-brief.png",
+      "words": 1448
+    },
+    {
+      "type": "Blog",
+      "slug": "outsourced-appointment-reminder-boundary",
+      "title": "Set a Safe Boundary for Outsourced Appointment Reminders",
+      "route": "/blog/outsourced-appointment-reminder-boundary",
+      "thumbnail": "/october-13-2026/outsourced-appointment-reminder-boundary.png",
+      "words": 1501
+    },
+    {
+      "type": "Blog",
+      "slug": "small-business-weekly-outsource-capacity-brief",
+      "title": "Build a Weekly Capacity Brief for an Outsourced Team",
+      "route": "/blog/small-business-weekly-outsource-capacity-brief",
+      "thumbnail": "/october-13-2026/small-business-weekly-outsource-capacity-brief.png",
+      "words": 1536
+    },
+    {
+      "type": "Blog",
+      "slug": "small-business-social-access-handoff",
+      "title": "Control Social Account Access for Outsourced Marketing Support",
+      "route": "/blog/small-business-social-access-handoff",
+      "thumbnail": "/october-13-2026/small-business-social-access-handoff.png",
+      "words": 1501
+    },
+    {
+      "type": "Blog",
+      "slug": "outsourced-small-business-file-retention-map",
+      "title": "Create a File Retention Map for Outsourced Operations",
+      "route": "/blog/outsourced-small-business-file-retention-map",
+      "thumbnail": "/october-13-2026/outsourced-small-business-file-retention-map.png",
+      "words": 1510
+    },
+    {
+      "type": "Blog",
+      "slug": "small-business-service-recovery-owner-pack",
+      "title": "Prepare a Service Recovery Pack for Owner Decision",
+      "route": "/blog/small-business-service-recovery-owner-pack",
+      "thumbnail": "/october-13-2026/small-business-service-recovery-owner-pack.png",
+      "words": 1502
+    },
+    {
+      "type": "Blog",
+      "slug": "outsourcing-process-exit-readiness-check",
+      "title": "Run an Exit Readiness Check Before Ending an Outsourced Process",
+      "route": "/blog/outsourcing-process-exit-readiness-check",
+      "thumbnail": "/october-13-2026/outsourcing-process-exit-readiness-check.png",
+      "words": 1575
+    },
+    {
+      "type": "Research",
+      "slug": "small-business-handoff-acceptance-reliability",
+      "title": "How Reliably Are Outsourced Handoffs Accepted?",
+      "route": "/research/small-business-handoff-acceptance-reliability",
+      "thumbnail": "/october-13-2026/small-business-handoff-acceptance-reliability.png",
+      "words": 1523,
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.gao.gov/greenbook",
+        "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business-0",
+        "https://www.cisa.gov/topics/cybersecurity-best-practices/identity-and-access-management",
+        "https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping",
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://www.iso.org/quality-management/principles",
+        "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0479"
+      ]
+    },
+    {
+      "type": "Research",
+      "slug": "outsourced-small-business-source-conflict-study",
+      "title": "Which Source Conflicts Cause the Most Outsourced Rework?",
+      "route": "/research/outsourced-small-business-source-conflict-study",
+      "thumbnail": "/october-13-2026/outsourced-small-business-source-conflict-study.png",
+      "words": 1583,
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.gao.gov/greenbook",
+        "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business-0",
+        "https://www.cisa.gov/topics/cybersecurity-best-practices/identity-and-access-management",
+        "https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping",
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://www.iso.org/quality-management/principles",
+        "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0479"
+      ]
+    },
+    {
+      "type": "Research",
+      "slug": "small-business-outsourcing-scope-drift-cohort",
+      "title": "How Does Scope Drift Enter Small-Business Outsourcing Work?",
+      "route": "/research/small-business-outsourcing-scope-drift-cohort",
+      "thumbnail": "/october-13-2026/small-business-outsourcing-scope-drift-cohort.png",
+      "words": 1594,
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.gao.gov/greenbook",
+        "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business-0",
+        "https://www.cisa.gov/topics/cybersecurity-best-practices/identity-and-access-management",
+        "https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping",
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://www.iso.org/quality-management/principles",
+        "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0479"
+      ]
+    },
+    {
+      "type": "Research",
+      "slug": "outsourced-queue-oldest-case-sensitivity",
+      "title": "What Does the Oldest Outsourced Queue Item Reveal?",
+      "route": "/research/outsourced-queue-oldest-case-sensitivity",
+      "thumbnail": "/october-13-2026/outsourced-queue-oldest-case-sensitivity.png",
+      "words": 1603,
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.gao.gov/greenbook",
+        "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business-0",
+        "https://www.cisa.gov/topics/cybersecurity-best-practices/identity-and-access-management",
+        "https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping",
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://www.iso.org/quality-management/principles",
+        "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0479"
+      ]
+    },
+    {
+      "type": "Research",
+      "slug": "small-business-outsourcing-control-transfer-study",
+      "title": "Do Controls Survive When Outsourced Work Changes Owners?",
+      "route": "/research/small-business-outsourcing-control-transfer-study",
+      "thumbnail": "/october-13-2026/small-business-outsourcing-control-transfer-study.png",
+      "words": 1591,
+      "sources": [
+        "https://www.sba.gov/business-guide/manage-your-business",
+        "https://www.nist.gov/cyberframework",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.gao.gov/greenbook",
+        "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business-0",
+        "https://www.cisa.gov/topics/cybersecurity-best-practices/identity-and-access-management",
+        "https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping",
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://www.iso.org/quality-management/principles",
+        "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0479"
+      ]
+    }
+  ]
+}
