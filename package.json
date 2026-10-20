@@ -12,6 +12,7 @@
     "validate:sep22-blog": "node scripts/validate-sep22-blog.mjs",
     "validate:sep23-blog": "node scripts/validate-sep23-blog.mjs",
     "verify:supplier-coordination-handoff": "node scripts/verify-supplier-coordination-handoff.mjs",
+    "verify:lead-intake-handoff": "node scripts/verify-lead-intake-handoff.mjs",
     "validate:sep24-blog": "node scripts/validate-sep24-blog.mjs",
     "validate:sep24-research": "node scripts/validate-sep24-research.mjs",
     "validate:sep25-blog": "node scripts/validate-sep25-blog.mjs",
