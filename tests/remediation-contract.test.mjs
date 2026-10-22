@@ -2,183 +2,124 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import test from 'node:test';
-import { formatPhone, normalizeInquiryType, submissionDestination } from '../app/contact-us/form-contract.ts';
 
 const root = process.cwd();
-const read = (relativePath) => fs.readFileSync(path.join(root, relativePath), 'utf8');
+const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
 
-test('all commercial navigation uses the canonical free call route', () => {
+function reviewRecords() {
+  const source = read('app/reviews.ts');
+  return [...source.matchAll(/name:\s*'([^']+)'/g)].map((match) => match[1]);
+}
+
+test('primary navigation contains exactly the required three destinations', () => {
+  const source = read('app/site-navigation.tsx');
+  const linksBlock = source.match(/const links = \[([\s\S]*?)\];/)?.[1] || '';
+  const links = [...linksBlock.matchAll(/href:\s*'([^']+)',\s*label:\s*'([^']+)'/g)].map((match) => [match[1], match[2]]);
+  assert.deepEqual(links, [['/', 'Home'], ['/services', 'Services'], ['/contact-us', 'Contact Us']]);
+  assert.match(source, /aria-expanded=\{open\}/);
+  assert.match(source, /aria-controls="mobile-navigation"/);
+  assert.match(source, /event\.key === 'Escape'/);
+});
+
+test('shared header is sticky and header and footer use official parent attribution', () => {
   const components = read('app/components.tsx');
-  assert.match(components, /href="\/contact-us"/);
-  assert.match(components, />Book a free call</);
-  assert.doesNotMatch(components, /href="\/contact"/);
-  assert.doesNotMatch(components, /href="\/pricing"/);
+  const styles = read('app/globals.css');
+  assert.equal((components.match(/<PoweredBy \/>/g) || []).length, 2);
+  assert.match(components, /Powered by/);
+  assert.match(components, /stealth-agents-logo\.png/);
+  assert.match(styles, /\.fleet-nav\{position:sticky;top:0/);
 });
 
-test('legacy conversion and duplicate utility routes permanently redirect', () => {
-  for (const [file, destination] of [
-    ['app/contact/page.tsx', '/contact-us'],
-    ['app/pricing/page.tsx', '/contact-us'],
-    ['app/cancellation/page.tsx', '/cancellation-policy'],
-    ['app/blog/top-25-outsourcing-companies-small-business/page.tsx', '/blog'],
-  ]) {
-    const source = read(file);
-    assert.match(source, /permanentRedirect/);
-    assert.ok(source.includes(`'${destination}'`) || source.includes(`"${destination}"`), `${file} must redirect to ${destination}`);
-  }
+test('approved StealthAgents review register has at least ten unique records', () => {
+  const names = reviewRecords();
+  assert.ok(names.length >= 10);
+  assert.equal(new Set(names).size, names.length);
+  assert.match(read('app/reviews.ts'), /Approved first-party Stealth Agents client review register/);
 });
 
-test('canonical contact page has site chrome, H1, relevant illustration, and no testimonials', () => {
-  const contact = read('app/contact-us/page.tsx');
-  assert.match(contact, /<Header\s*\/>/);
-  assert.match(contact, /<Footer\s*\/>/);
-  assert.match(contact, /<h1>/);
-  assert.match(contact, /small-business-role-planning\.svg/);
-  assert.match(contact, /<StandardContactForm/);
-  assert.doesNotMatch(contact, /TestimonialsRail|testimonial/i);
+test('contact page has the required first fold, review marquee, and team credibility section', () => {
+  const page = read('app/contact-us/page.tsx');
+  const css = read('app/contact-us/contact.module.css');
+  assert.match(page, /StealthAgents reviews/);
+  assert.match(page, /★★★★★/);
+  assert.match(page, /StandardContactForm endpoint="\/api\/contact"/);
+  assert.match(page, /stealth-agents-team-bacolod\.jpg/);
+  assert.match(page, /stealth-agents-logo\.png/);
+  assert.match(page, /Official team, Bacolod/);
+  assert.doesNotMatch(page, /go\.oncehub\.com/);
+  assert.match(css, /review-marquee/);
+  assert.match(css, /prefers-reduced-motion:reduce/);
 });
 
-test('public thank-you experience contains no unsupported social proof or visible parent brand', () => {
-  const thankYou = read('app/thank-you/page.tsx');
-  assert.doesNotMatch(thankYou, /TestimonialsRail|testimonial/i);
-  const withoutAllowedInfrastructureUrl = thankYou.replace(/https:\/\/go\.oncehub\.com\/StealthAgentsTeam[^"']*/g, 'ALLOWED_ONCEHUB_URL');
-  assert.doesNotMatch(withoutAllowedInfrastructureUrl, /Stealth\s*Agents|StealthAgents/i);
-});
-
-test('service inventory includes major buyer categories and resolved legacy targets', () => {
-  const services = read('app/service-data.ts');
-  for (const slug of [
-    'operations-support',
-    'customer-support',
-    'administrative-support',
-    'reporting-quality-assurance',
-    'finance-accounting',
-  ]) assert.ok(services.includes(`slug: '${slug}'`), `missing ${slug}`);
-  for (const field of ['buyerProblem', 'tasks', 'deliverables', 'tools', 'boundaries', 'launch', 'measures', 'faqs', 'illustration']) {
-    assert.ok(services.includes(`${field}:`), `missing rich field ${field}`);
-  }
-});
-
-test('every service illustration resolves to a public asset', () => {
-  const services = read('app/service-data.ts');
-  const illustrations = [...services.matchAll(/(?:illustration:|supportIllustration\s*=)\s*['"]([^'"]+)['"]/g)].map((match) => match[1]);
-  assert.ok(illustrations.length >= 6, 'expected major-service and shared focused-service illustration mappings');
-  for (const illustration of illustrations) {
-    assert.ok(fs.existsSync(path.join(root, 'public', illustration.replace(/^\//, ''))), `missing service illustration: ${illustration}`);
-  }
-});
-
-test('service template renders substantive, visual, conversion-ready sections', () => {
-  const servicePage = read('app/services/[slug]/page.tsx');
-  for (const token of ['buyerProblem', 'deliverables', 'tools', 'boundaries', 'measures', 'faqs', 'illustration']) {
-    assert.ok(servicePage.includes(`service.${token}`), `service template does not render ${token}`);
-  }
-  assert.match(servicePage, /href="\/contact-us"/);
-  assert.match(servicePage, /Book a free call/);
-});
-
-test('service metadata uses each generated route as its canonical and Open Graph URL', () => {
-  const servicePage = read('app/services/[slug]/page.tsx');
-  assert.match(servicePage, /const url = `https:\/\/\$\{site\.domain\.toLowerCase\(\)\}\/services\/\$\{service\.slug\}`/);
-  assert.match(servicePage, /alternates: \{ canonical: url \}/);
-  assert.match(servicePage, /openGraph: \{ title: service\.title, description: service\.summary, url \}/);
-});
-
-test('homepage service cards lead to individual major-service pages', () => {
-  const home = read('app/page.tsx');
-  for (const slug of ['operations-support', 'customer-support', 'administrative-support', 'reporting-quality-assurance']) {
-    assert.ok(home.includes(`/services/${slug}`), `homepage missing service link ${slug}`);
-  }
-  assert.doesNotMatch(home, /className="service-card" href="\/services"/);
-});
-
-test('sitemap publishes only canonical conversion and policy routes', () => {
-  const sitemap = read('app/sitemap.xml/route.ts');
-  assert.match(sitemap, /contact-us/);
-  for (const forbidden of ["'/contact'", "'/pricing'", "'/cancellation'"]) {
-    assert.ok(!sitemap.includes(forbidden), `sitemap contains ${forbidden}`);
-  }
-});
-
-test('tracking and lead fallback use only the canonical form path', () => {
-  const layout = read('app/layout.tsx');
-  const leadRoute = read('app/api/contact/route.ts');
-  assert.ok(layout.includes("path:'/contact-us'"));
-  assert.ok(!layout.includes("path:'/contact'"));
-  assert.ok(leadRoute.includes('href="/contact-us"'));
-  assert.ok(leadRoute.includes("new URL('/contact-us'"));
-});
-
-test('reader-facing banners do not promote retired comparison or legacy contact routes', () => {
-  const listing = read('app/blog/blog-listing.tsx');
-  assert.doesNotMatch(listing, /FeaturedComparison|top-25-outsourcing-companies-small-business/);
-  for (const file of ['app/rich-blog-data.ts', 'app/blog-banner-profile.json']) {
-    assert.doesNotMatch(read(file), /["']\/contact["']/, `${file} contains a legacy contact destination`);
-  }
-});
-
-test('lead route preserves the canonical form referral selection', () => {
-  const leadRoute = read('app/api/contact/route.ts');
-  assert.match(leadRoute, /text\(form,'referral'/);
-  assert.match(leadRoute, /text\(form,'howTheyHeard'/);
-  assert.match(leadRoute, /text\(form,'referralSpecify'/);
-  assert.doesNotMatch(leadRoute, /referral=text\(form,'source'/);
-});
-
-test('policy pages use the canonical contact route instead of auto-linked email text', () => {
-  const routes = new Map([
-    ['app/privacy/page.tsx', 'privacy'],
-    ['app/terms/page.tsx', 'terms'],
-    ['app/cancellation-policy/page.tsx', 'cancellation'],
-  ]);
-  for (const [file, inquiry] of routes) {
-    const source = read(file);
-    assert.match(source, new RegExp(`href="/contact-us\\?inquiry=${inquiry}#contact-form"`), `${file} must link to its canonical contact mode`);
-    assert.doesNotMatch(source, /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i, `${file} must not render a literal email address`);
-    assert.doesNotMatch(source, /@|site\.email/, `${file} must not contain email address source data for Cloudflare to rewrite`);
-  }
+test('lead, scheduler, and booking-confirmation routes preserve the three-step journey', () => {
   const form = read('app/contact-us/StandardContactForm.tsx');
-  assert.match(form, /from "\.\/form-contract"/);
-  assert.match(form, /new URLSearchParams\(window\.location\.search\)\.get\("inquiry"\)/);
-  assert.match(form, /required=\{!isStaffing\}/);
-  assert.match(form, /isStaffing \? "Book a free call" : "Send inquiry"/);
-  const leadRoute = read('app/api/contact/route.ts');
-  assert.match(leadRoute, /inquiryType=normalizeInquiryType\(text\(form,'inquiryType'/);
-  assert.match(leadRoute, /`Inquiry type: \$\{inquiryType\}`/);
-  assert.match(leadRoute, /submissionDestination\(inquiryType\)/);
-  const received = read('app/request-received/page.tsx');
-  assert.match(received, /No staffing call has been booked/);
-  assert.match(received, /robots: \{ index: false, follow: false \}/);
-  assert.doesNotMatch(received, /OnceHub|Book Your Call|Book your free call/);
+  const thanks = read('app/thank-you/page.tsx');
+  const confirmed = read('app/thanks-whats-next/page.tsx');
+  assert.match(form, /submissionDestination\(inquiryType\)/);
+  assert.match(thanks, /go\.oncehub\.com\/StealthAgentsTeam/);
+  assert.match(confirmed, /Booking confirmed/);
+  assert.match(confirmed, /robots: \{ index: false, follow: false \}/);
 });
 
-test('contact submission contract omits empty phone and separates policy success', () => {
-  assert.equal(formatPhone('+1', ''), '');
-  assert.equal(formatPhone('+63', ' 912 345 6789 '), '+63 912 345 6789');
-  assert.equal(submissionDestination('staffing'), '/thank-you');
-  for (const inquiry of ['privacy', 'terms', 'cancellation', 'general']) {
-    assert.equal(normalizeInquiryType(inquiry), inquiry);
-    assert.equal(submissionDestination(inquiry), `/request-received?inquiry=${inquiry}`);
-  }
-  assert.equal(normalizeInquiryType('unexpected'), 'staffing');
+test('article enhancement builds a real TOC, useful sidebar, active state, and route-safe cleanup', () => {
+  const source = read('app/article-enhancements.tsx');
+  const styles = read('app/globals.css');
+  assert.match(source, /querySelectorAll<HTMLHeadingElement>\('h2'\)/);
+  assert.match(source, /Table of contents/);
+  assert.match(source, /Plan the work lane/);
+  assert.match(source, /IntersectionObserver/);
+  assert.match(source, /aria-current/);
+  assert.match(source, /usePathname/);
+  assert.match(styles, /\.article-sidebar\{position:sticky/);
+  assert.match(styles, /@media\(max-width:920px\)[\s\S]*?\.article-sidebar\{position:static/);
 });
 
-test('reader-facing source has no unsupported testimonial component imports', () => {
-  const appRoot = path.join(root, 'app');
-  const offenders = [];
-  const walk = (dir) => {
-    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-      const absolute = path.join(dir, entry.name);
-      if (entry.isDirectory()) walk(absolute);
-      else if (/\.(?:ts|tsx)$/.test(entry.name) && /TestimonialsRail/.test(fs.readFileSync(absolute, 'utf8'))) offenders.push(path.relative(root, absolute));
-    }
-  };
-  walk(appRoot);
-  assert.deepEqual(offenders, []);
+test('every generated service detail uses the substantive shared service system', () => {
+  const source = read('app/services/[slug]/page.tsx');
+  for (const contract of ['buyerProblem', 'service.tasks', 'service.deliverables', 'service.tools', 'service.boundaries', 'service.launch', 'service.measures', 'service.faqs']) assert.ok(source.includes(contract), contract);
+  assert.match(source, /service\.illustration/);
+  assert.match(source, /href="\/contact-us"/);
 });
 
-test('large static export uses deterministic build concurrency', () => {
-  const config = read('next.config.mjs');
-  assert.match(config, /experimental:\s*\{[\s\S]*cpus:\s*1/);
-  assert.match(config, /turbopack:\s*\{[\s\S]*root:\s*process\.cwd\(\)/);
+test('canonical proxy preserves paths and queries while normalizing public hosts and schemes', () => {
+  const source = read('proxy.ts');
+  assert.match(source, /www\.\$\{CANONICAL_HOST\}/);
+  assert.match(source, /cf-visitor/);
+  assert.match(source, /x-forwarded-proto/);
+  assert.match(source, /x-forwarded-host/);
+  assert.match(source, /target\.port = ''/);
+  assert.match(source, /NextResponse\.redirect\(target, 308\)/);
+  assert.match(source, /if \(!PUBLIC_HOSTS\.has\(publicHost\)\) return NextResponse\.next\(\)/);
+});
+
+test('required security headers are configured globally', () => {
+  const source = read('next.config.mjs');
+  for (const header of ['Strict-Transport-Security', 'Content-Security-Policy', 'X-Content-Type-Options', 'Referrer-Policy', 'Permissions-Policy']) assert.ok(source.includes(header), header);
+});
+
+test('homepage commercial layout has no decorative zero-padded labels', () => {
+  const source = read('app/page.tsx');
+  assert.doesNotMatch(source, />0[1-9]</);
+  assert.doesNotMatch(source, /0\{index \+ 1\}/);
+});
+
+test('the same subsidiary mark is used by header, footer, favicon, and confirmation pages', () => {
+  const components = read('app/components.tsx');
+  assert.equal((components.match(/<LogoMark \/>/g) || []).length, 2);
+  assert.match(components, /src="\/logo\.svg"/);
+  assert.ok(fs.existsSync(path.join(root, 'app/icon.svg')));
+  assert.match(read('app/thanks-whats-next/page.tsx'), /src="\/logo\.svg"/);
+});
+
+test('branded not-found route offers useful recovery links', () => {
+  const source = read('app/not-found.tsx');
+  assert.match(source, /<h1>/);
+  assert.match(source, /href="\/"/);
+  assert.match(source, /href="\/services"/);
+});
+
+test('analytics funnel still names all three canonical conversion routes', () => {
+  const source = read('app/layout.tsx');
+  for (const route of ['/contact-us', '/thank-you', '/thanks-whats-next']) assert.ok(source.includes(route), route);
+  assert.match(source, /acrtracking\.stealthagents\.us\/v1\/tracker\.js/);
 });

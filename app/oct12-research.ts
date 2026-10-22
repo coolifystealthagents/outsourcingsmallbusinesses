@@ -69,7 +69,7 @@ export const octoberTwelveResearchBatch=[
       }
     ],
     "serviceHandoff": {
-      "href": "/services/reporting-and-qa",
+      "href": "/services/reporting-quality-assurance",
       "label": "Review reporting and QA support",
       "description": "A Philippines-based specialist can prepare evidence and maintain the study record while accountable owners retain consequential decisions."
     },
@@ -179,7 +179,7 @@ export const octoberTwelveResearchBatch=[
       }
     ],
     "serviceHandoff": {
-      "href": "/services/reporting-and-qa",
+      "href": "/services/reporting-quality-assurance",
       "label": "Review reporting and QA support",
       "description": "A Philippines-based specialist can prepare evidence and maintain the study record while accountable owners retain consequential decisions."
     },
@@ -289,7 +289,7 @@ export const octoberTwelveResearchBatch=[
       }
     ],
     "serviceHandoff": {
-      "href": "/services/reporting-and-qa",
+      "href": "/services/reporting-quality-assurance",
       "label": "Review reporting and QA support",
       "description": "A Philippines-based specialist can prepare evidence and maintain the study record while accountable owners retain consequential decisions."
     },
@@ -399,7 +399,7 @@ export const octoberTwelveResearchBatch=[
       }
     ],
     "serviceHandoff": {
-      "href": "/services/reporting-and-qa",
+      "href": "/services/reporting-quality-assurance",
       "label": "Review reporting and QA support",
       "description": "A Philippines-based specialist can prepare evidence and maintain the study record while accountable owners retain consequential decisions."
     },
@@ -509,7 +509,7 @@ export const octoberTwelveResearchBatch=[
       }
     ],
     "serviceHandoff": {
-      "href": "/services/reporting-and-qa",
+      "href": "/services/reporting-quality-assurance",
       "label": "Review reporting and QA support",
       "description": "A Philippines-based specialist can prepare evidence and maintain the study record while accountable owners retain consequential decisions."
     },

@@ -70,7 +70,7 @@ export const octoberThirteenResearchBatch=[
     ],
     "studyNote": "For How Reliably Are Outsourced Handoffs Accepted?, reviewers must preserve the first observed record, explain every exclusion, and report how a handoff can appear transferred when the receiving owner has not accepted its evidence, authority, deadline, or unresolved risks changes under each declared sensitivity rule.",
     "serviceHandoff": {
-      "href": "/services/reporting-and-qa",
+      "href": "/services/reporting-quality-assurance",
       "label": "Review reporting and QA support",
       "description": "A Philippines-based specialist can prepare evidence and maintain the study record while accountable owners retain consequential decisions."
     },
@@ -185,7 +185,7 @@ export const octoberThirteenResearchBatch=[
     ],
     "studyNote": "For Which Source Conflicts Cause the Most Outsourced Rework?, reviewers must preserve the first observed record, explain every exclusion, and report how different systems can express plausible but incompatible customer, vendor, schedule, inventory, and finance facts changes under each declared sensitivity rule.",
     "serviceHandoff": {
-      "href": "/services/reporting-and-qa",
+      "href": "/services/reporting-quality-assurance",
       "label": "Review reporting and QA support",
       "description": "A Philippines-based specialist can prepare evidence and maintain the study record while accountable owners retain consequential decisions."
     },
@@ -300,7 +300,7 @@ export const octoberThirteenResearchBatch=[
     ],
     "studyNote": "For How Does Scope Drift Enter Small-Business Outsourcing Work?, reviewers must preserve the first observed record, explain every exclusion, and report how one-off favors and urgent requests may gradually become routine work without matching authority, access, training, or review changes under each declared sensitivity rule.",
     "serviceHandoff": {
-      "href": "/services/reporting-and-qa",
+      "href": "/services/reporting-quality-assurance",
       "label": "Review reporting and QA support",
       "description": "A Philippines-based specialist can prepare evidence and maintain the study record while accountable owners retain consequential decisions."
     },
@@ -415,7 +415,7 @@ export const octoberThirteenResearchBatch=[
     ],
     "studyNote": "For What Does the Oldest Outsourced Queue Item Reveal?, reviewers must preserve the first observed record, explain every exclusion, and report how headline averages can improve while a few consequential items remain unresolved because clocks pause or records close administratively changes under each declared sensitivity rule.",
     "serviceHandoff": {
-      "href": "/services/reporting-and-qa",
+      "href": "/services/reporting-quality-assurance",
       "label": "Review reporting and QA support",
       "description": "A Philippines-based specialist can prepare evidence and maintain the study record while accountable owners retain consequential decisions."
     },
@@ -530,7 +530,7 @@ export const octoberThirteenResearchBatch=[
     ],
     "studyNote": "For Do Controls Survive When Outsourced Work Changes Owners?, reviewers must preserve the first observed record, explain every exclusion, and report how role changes and absence coverage can preserve task volume while losing source context, authority limits, or unresolved exceptions changes under each declared sensitivity rule.",
     "serviceHandoff": {
-      "href": "/services/reporting-and-qa",
+      "href": "/services/reporting-quality-assurance",
       "label": "Review reporting and QA support",
       "description": "A Philippines-based specialist can prepare evidence and maintain the study record while accountable owners retain consequential decisions."
     },

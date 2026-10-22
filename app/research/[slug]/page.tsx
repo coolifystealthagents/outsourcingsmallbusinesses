@@ -108,7 +108,7 @@ export default async function ResearchArticle({
             <>
               <section>
                 <h2>Sources</h2>
-                {post.referenceSources ? <ul>{post.referenceSources.map((source)=><li key={source.url}><a href={source.url}>{source.title}</a> — {source.publisher}; checked {source.checked}</li>)}</ul> : <ul>
+                {post.referenceSources ? <ul>{post.referenceSources.map((source)=><li key={source.url}><a href={source.url}>{source.title}</a>, {source.publisher}; checked {source.checked}</li>)}</ul> : <ul>
                   <li>
                     <a href="https://www.sba.gov/business-guide/manage-your-business">
                       U.S. Small Business Administration: Manage your business

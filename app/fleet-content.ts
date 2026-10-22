@@ -99,7 +99,7 @@ export const researchPosts: ReadonlyArray<{slug:string;title:string;excerpt:stri
   ]},
   {slug:'outsourcing-small-business-social-content-claims-review',title:'Daily Research: Social Content Administration and Approval Controls',excerpt:'How small businesses can outsource content operations while retaining brand and claims oversight.',published:'2026-08-10',body:[
     'Headline finding: FTC endorsement guidance requires disclosures when material connections could affect how an endorsement is understood. Content operations therefore need an approval boundary for claims and endorsements.',
-    'Method: this brief separates production administration—calendars, formatting, asset checks—from editorial and compliance approval.',
+    'Method: this brief separates production administration, including calendars, formatting, and asset checks, from editorial and compliance approval.',
     'Key takeaways: maintain a source note for factual claims; use an approval queue; archive final assets; and never publish unapproved customer claims. Sources: FTC, https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides; SBA, https://www.sba.gov/business-guide/manage-your-business.',
     'FAQ: Can scheduling be delegated? Yes, when the final asset and publishing window are approved.'
   ]},
@@ -123,7 +123,7 @@ export const researchPosts: ReadonlyArray<{slug:string;title:string;excerpt:stri
   ]},
   {slug:'outsourcing-small-business-owner-dashboard-exceptions',title:'Daily Research: Owner Dashboard Reporting: Turning Operations Into Decisions',excerpt:'A concise research guide to daily reporting that highlights decisions instead of vanity metrics.',published:'2026-08-10',body:[
     'Headline finding: SBA financial-management guidance recommends regular review of financial information. A dashboard should connect operational counts to an action or decision.',
-    'Method: we use a small daily set—queue received, completed, aging, exceptions, and owner decisions—to avoid burying signals in excessive reporting.',
+    'Method: we use a small daily set of queue received, completed, aging, exceptions, and owner decisions to avoid burying signals in excessive reporting.',
     'Key takeaways: define each metric; preserve the underlying record; show trend and threshold; and include a written next action. Sources: SBA, https://www.sba.gov/business-guide/manage-your-business/manage-your-finances; NIST, https://www.nist.gov/cyberframework.',
     'FAQ: How many metrics are enough? Start with the few that change an owner decision, then add only when a recurring blind spot is proven.'
   ]},
@@ -189,7 +189,7 @@ export const researchPosts: ReadonlyArray<{slug:string;title:string;excerpt:stri
   ]},
   {slug:'outsourcing-small-business-social-content',title:'Social Content Administration and Approval Controls',excerpt:'How small businesses can outsource content operations while retaining brand and claims oversight.',published:'2026-08-10',body:[
     'Headline finding: FTC endorsement guidance requires disclosures when material connections could affect how an endorsement is understood. Content operations therefore need an approval boundary for claims and endorsements.',
-    'Method: this brief separates production administration—calendars, formatting, asset checks—from editorial and compliance approval.',
+    'Method: this brief separates production administration, including calendars, formatting, and asset checks, from editorial and compliance approval.',
     'Key takeaways: maintain a source note for factual claims; use an approval queue; archive final assets; and never publish unapproved customer claims. Sources: FTC, https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides; SBA, https://www.sba.gov/business-guide/manage-your-business.',
     'FAQ: Can scheduling be delegated? Yes, when the final asset and publishing window are approved.'
   ]},
@@ -213,7 +213,7 @@ export const researchPosts: ReadonlyArray<{slug:string;title:string;excerpt:stri
   ]},
   {slug:'outsourcing-small-business-owner-reporting',title:'Owner Dashboard Reporting: Turning Operations Into Decisions',excerpt:'A concise research guide to daily reporting that highlights decisions instead of vanity metrics.',published:'2026-08-10',body:[
     'Headline finding: SBA financial-management guidance recommends regular review of financial information. A dashboard should connect operational counts to an action or decision.',
-    'Method: we use a small daily set—queue received, completed, aging, exceptions, and owner decisions—to avoid burying signals in excessive reporting.',
+    'Method: we use a small daily set of queue received, completed, aging, exceptions, and owner decisions to avoid burying signals in excessive reporting.',
     'Key takeaways: define each metric; preserve the underlying record; show trend and threshold; and include a written next action. Sources: SBA, https://www.sba.gov/business-guide/manage-your-business/manage-your-finances; NIST, https://www.nist.gov/cyberframework.',
     'FAQ: How many metrics are enough? Start with the few that change an owner decision, then add only when a recurring blind spot is proven.'
   ]},
