@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Oct22Toc from '../../oct22-toc';
 import type { Metadata } from "next";
 import { Header, Footer } from "../../components";
 import { researchPosts } from "../../fleet-content";
@@ -90,7 +91,7 @@ export default async function ResearchArticle({
           <p className="lead">{post.excerpt}</p>
           {post.studyNote ? <p>{post.studyNote}</p> : null}
           <time dateTime={post.published}>
-            Published: {formatPublicDate(post.published)}
+            Published {formatPublicDate(post.published)}
           </time>
           {post.imagePath && (
             <img
@@ -101,9 +102,8 @@ export default async function ResearchArticle({
               style={{ width: "100%", height: "auto", margin: "2rem 0" }}
             />
           )}
-          {post.body.map((x, i) => (
-            <p key={i}>{x}</p>
-          ))}
+          <Oct22Toc /><nav className="o22-aside" aria-label="Table of contents">{post.body.filter((x) => x.startsWith("Section: ")).map((x) => { const label = x.replace("Section: ",""); const id = label.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,""); return <a key={id} href={`#${id}`}>{label}</a>; })}</nav>
+          {post.body.map((x, i) => x.startsWith("Section: ") ? <h2 id={x.replace("Section: ","").replace(/[^a-z0-9]+/gi,"-").replace(/(^-|-$)/g,"").toLowerCase()} key={i}>{x.replace("Section: ","")}</h2> : <p key={i}>{x}</p>)}
           {(post.referenceSources || isAug31 || isSep4 || isSep7 || isSep8 || isSep9 || isSep10 || isSep14) && (
             <>
               <section>

@@ -110,7 +110,7 @@ export function BlogBanner({ position }: { position: Position }) {
   >
     <div>
       <p className="eyebrow article-kicker">{variant.eyebrow}</p>
-      <h2>{variant.title}</h2>
+      <h3>{variant.title}</h3>
       <p>{variant.body}</p>
     </div>
     <a
