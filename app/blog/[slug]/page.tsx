@@ -34,6 +34,7 @@ import { octoberEightBlogBatch } from '../../oct8-blog-batch';
 import { octoberTwelveBlogBatch } from '../../oct12-blog-batch';
 import { octoberThirteenBlogBatch } from '../../oct13-blog-batch';
 import { octoberTwentyTwoBlogBatch } from '../../oct22-blog-batch';
+import { octoberTwentySixBlogBatch } from '../../oct26-blog-batch';
 import Oct22Toc from '../../oct22-toc';
 
 const baseUrl = 'https://outsourcingsmallbusinesses.com';
@@ -83,6 +84,7 @@ const octoberFiveBySlug = new Map<string, { post: (typeof octoberFiveBlogBatch)[
 const octoberEightBySlug = new Map<string, { post: (typeof octoberEightBlogBatch)[number]; index: number }>(octoberEightBlogBatch.map((post, index) => [post.slug, { post, index }]));
 const octoberTwelveBySlug = new Map<string, { post: (typeof octoberTwelveBlogBatch)[number]; index: number }>(octoberTwelveBlogBatch.map((post, index) => [post.slug, { post, index }]));
 const octoberTwentyTwoBySlug = new Map<string, { post: (typeof octoberTwentyTwoBlogBatch)[number]; index: number }>(octoberTwentyTwoBlogBatch.map((post, index) => [post.slug, { post, index }]));
+const octoberTwentySixBySlug = new Map<string, { post: (typeof octoberTwentySixBlogBatch)[number]; index: number }>(octoberTwentySixBlogBatch.map((post, index) => [post.slug, { post, index }]));
 const octoberThirteenBySlug = new Map<string, { post: (typeof octoberThirteenBlogBatch)[number]; index: number }>(octoberThirteenBlogBatch.map((post, index) => [post.slug, { post, index }]));
 
 export function generateStaticParams() {
@@ -475,6 +477,14 @@ function OctoberTwelveArticle({ index }: { index: number }) {
   return <><JsonLd data={schema}/><article className="container guide-article strict-article" data-article-family="blog" data-batch="2026-10-12"><link rel="canonical" href={url}/><meta property="article:published_time" content={post.publicationDate}/><p className="eyebrow">Small business outsourcing decision guide</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><time dateTime={post.publicationDate}>Published: October 12, 2026</time><figure><img src={post.imagePath} alt={post.title} width="1536" height="1024" style={{width:'100%',height:'auto'}}/></figure><aside className="article-handoff" aria-label="Related small-business outsourcing service"><h2>Put this control into a bounded service lane</h2><p>An outsourced specialist can prepare the evidence and maintain the queue while your named owners retain consequential decisions.</p><a href={`/services/${servicePathFor(post.service)}`}>Review the related service</a></aside>{post.sections.map(({heading,paragraphs})=><section key={heading}><h2>{heading}</h2>{paragraphs.map((body)=><p key={body}>{body}</p>)}</section>)}<section><h2>Authoritative sources and next step</h2><ul>{post.sources.map(([label,sourceUrl])=><li key={sourceUrl}><a href={sourceUrl} target="_blank" rel="noreferrer">{label}</a></li>)}</ul><p>Compare this workflow with our <a href={`/services/${servicePathFor(post.service)}`}>relevant small-business outsourcing service</a>, or browse <a href="/services">all service options</a>.</p></section><section><h2>Related October 12 guides</h2><div className="fleet-card-grid">{related.map(p=><a className="fleet-card" href={`/blog/${p.slug}`} key={p.slug}><h3>{p.title}</h3><p>{p.excerpt}</p></a>)}</div></section></article><CTA/></>;
 }
 
+function OctoberTwentySixArticle({ index }: { index: number }) {
+  const post = octoberTwentySixBlogBatch[index];
+  const url = `${baseUrl}/blog/${post.slug}`;
+  const related = octoberTwentySixBlogBatch.filter((_,i)=>i!==index).slice(index%9,index%9+3);
+  const schema = {'@context':'https://schema.org','@type':'BlogPosting',headline:post.title,description:post.excerpt,url,datePublished:post.publicationDate,dateModified:post.publicationDate,mainEntityOfPage:url,image:`${baseUrl}${post.imagePath}`,citation:post.sources.map(([,sourceUrl])=>sourceUrl),author:{'@type':'Organization',name:site.brand},publisher:{'@type':'Organization',name:site.brand,url:baseUrl}};
+  return <><JsonLd data={schema}/><article className="container guide-article strict-article" data-article-family="blog" data-batch="2026-10-26"><link rel="canonical" href={url}/><meta property="article:published_time" content={post.publicationDate}/><p className="eyebrow">Small business outsourcing decision guide</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><time dateTime={post.publicationDate}>Published October 26, 2026</time><figure><img src={post.imagePath} alt={post.title} width="1200" height="630" style={{width:'100%',height:'auto'}}/></figure><nav className="o22-aside" aria-label="Table of contents">{post.sections.map(({heading}) => { const id = heading.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,""); return <a key={id} href={`#${id}`}>{heading}</a>; })}</nav><aside className="article-handoff" aria-label="Related small-business outsourcing service"><h2>Put this control into a bounded service lane</h2><p>An outsourced specialist can prepare evidence and maintain the queue while named business owners retain consequential decisions.</p><a href={`/services/${servicePathFor(post.service)}`}>Review the related service</a></aside>{post.sections.map(({heading,paragraphs})=><section key={heading}><h2 id={heading.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'')}>{heading}</h2>{paragraphs.map((body)=><p key={body}>{body}</p>)}</section>)}<section><h2>Authoritative sources and next step</h2><ul>{post.sources.map(([label,sourceUrl])=><li key={sourceUrl}><a href={sourceUrl} target="_blank" rel="noreferrer">{label}</a></li>)}</ul><p>Compare this workflow with our <a href={`/services/${servicePathFor(post.service)}`}>relevant small-business outsourcing service</a>, or browse <a href="/services">all service options</a>.</p></section><section><h2>Related October 26 guides</h2><div className="fleet-card-grid">{related.map(p=><a className="fleet-card" href={`/blog/${p.slug}`} key={p.slug}><h3>{p.title}</h3><p>{p.excerpt}</p></a>)}</div></section></article><CTA/></>;
+}
+
 function OctoberTwentyTwoArticle({ index }: { index: number }) {
   const post = octoberTwentyTwoBlogBatch[index];
   const url = `${baseUrl}/blog/${post.slug}`;
@@ -501,6 +511,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const octoberEight = octoberEightBySlug.get(slug);
   const octoberTwelve = octoberTwelveBySlug.get(slug);
   const octoberTwentyTwo = octoberTwentyTwoBySlug.get(slug);
+  const octoberTwentySix = octoberTwentySixBySlug.get(slug);
   const octoberThirteen = octoberThirteenBySlug.get(slug);
   const richDetail = richDetailsBySlug[slug];
   const daily = dailyBySlug.get(slug);
@@ -526,6 +537,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const septemberTwentyThree = septemberTwentyThreeBySlug.get(slug);
   const septemberTwentyFour = septemberTwentyFourBySlug.get(slug);
   const septemberTwentyFive = septemberTwentyFiveBySlug.get(slug);
+  if (octoberTwentySix) return <><Header articleMode /><main className="section"><OctoberTwentySixArticle index={octoberTwentySix.index} /><Oct22Toc /></main><Footer articleMode /></>;
   if (octoberTwentyTwo) return <><Header articleMode /><main className="section"><OctoberTwentyTwoArticle index={octoberTwentyTwo.index} /><Oct22Toc /></main><Footer articleMode /></>;
   if (octoberThirteen) return <><Header articleMode /><main className="section"><OctoberThirteenArticle index={octoberThirteen.index} /></main><Footer articleMode /></>;
   if (octoberTwelve) return <><Header articleMode /><main className="section"><OctoberTwelveArticle index={octoberTwelve.index} /></main><Footer articleMode /></>;
