@@ -23,6 +23,7 @@ import { octoberTwelveResearchBatch } from './oct12-research';
 import { octoberThirteenResearchBatch } from './oct13-research';
 import { octoberTwentyTwoResearchBatch } from './oct22-research';
 import { octoberTwentySixResearchBatch } from './oct26-research';
+import { octoberTwentySevenResearchBatch } from './oct27-research';
 
 import { fleetServices } from './service-data';
 export { fleetServices } from './service-data';
@@ -30,6 +31,7 @@ import { augustThirteenResearchBatch } from './aug13-research-batch';
 import { augustFourteenResearchBatch } from './aug14-research-batch';
 
 export const researchPosts: ReadonlyArray<{slug:string;title:string;excerpt:string;published:string;modified?:string;body:readonly string[];studyNote?:string;imagePath?:string;referenceSources?:ReadonlyArray<{title:string;publisher:string;url:string;checked:string}>;serviceHandoff?:{href:string;label:string;description:string}}> = [
+  ...(octoberTwentySevenResearchBatch as any),
   ...(octoberTwentySixResearchBatch as any),
   ...(octoberTwentyTwoResearchBatch as any),
   ...octoberThirteenResearchBatch,
