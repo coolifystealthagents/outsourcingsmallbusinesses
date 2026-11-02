@@ -123,3 +123,12 @@ test('analytics funnel still names all three canonical conversion routes', () =>
   for (const route of ['/contact-us', '/thank-you', '/thanks-whats-next']) assert.ok(source.includes(route), route);
   assert.match(source, /acrtracking\.stealthagents\.us\/v1\/tracker\.js/);
 });
+
+test('October 5 rendered validator discovers blog cards across generated pagination pages', () => {
+  const source = read('scripts/validate-oct5-rendered.mjs');
+  assert.match(source, /const pageDirectory='\.next\/server\/app\/blog\/page';/);
+  assert.match(source, /fs\.readdirSync\(pageDirectory,\{withFileTypes:true\}\)/);
+  assert.match(source, /`\/blog\/page\/\$\{entry\.name\.slice\(0,-5\)\}`/);
+  assert.match(source, /match\[1\]===href/);
+  assert.match(source, /indexPaths\.length!==1/);
+});
