@@ -186,7 +186,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
-  ...nov03BlogBatch,
+  ...nov03BlogBatch.map((post) => ({ ...post, minutes: 12 })),
   ...nov02BlogBatch.map((post) => ({ ...post, minutes: 12 })),
   ...octoberTwentySevenBlogBatch.map((post) => ({ ...post, minutes: 12 })),
   ...octoberTwentySixBlogBatch.map((post) => ({ ...post, minutes: 12 })),
