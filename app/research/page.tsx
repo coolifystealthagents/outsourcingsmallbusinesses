@@ -7,7 +7,7 @@ const formatDate = (date: string) =>
     year: "numeric",
     timeZone: "UTC",
   }).format(new Date(`${date}T00:00:00Z`));
-export const metadata = {
+export const metadata = { alternates: { canonical: 'https://outsourcingsmallbusinesses.com/research' },
   title: "Research",
   description:
     "Research notes about Philippines-based staffing and operations.",

@@ -9,6 +9,9 @@ const securityHeaders = [
 ];
 
 const nextConfig = {
+  async redirects() {
+    return [{ source: '/pricing', destination: '/contact-us', permanent: true }];
+  },
   experimental: { cpus: 1 },
   turbopack: { root: process.cwd() },
   async headers() {

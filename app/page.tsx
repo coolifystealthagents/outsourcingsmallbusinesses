@@ -1,3 +1,4 @@
+export const metadata = { alternates: { canonical: 'https://outsourcingsmallbusinesses.com/' } };
 import { Footer, Header, JsonLd } from './components';
 import { blogPosts, services, site, staffingOffer } from './data';
 
@@ -30,7 +31,7 @@ export default function Home() {
           <div className="hero-copy">
             <p className="eyebrow">Filipino talent for small business teams</p>
             <h1>Build a Filipino support team around the work slowing your small business.</h1>
-            <p className="lead">Build a Filipino support role around the work eating up your week, from inbox cleanup and customer follow-up to operations reporting.</p>
+            <p className="lead">Give a Philippines-based assistant a defined queue: appointment requests, customer follow-ups, order questions, or recurring client updates. Set the reply rules, review owner, and decisions that must come back to you.</p>
             <div className="actions">
               <a className="btn primary" href="/contact-us">Book a free call</a>
               <a className="text-link" href="#work-board">See what to hand off <span aria-hidden="true">↓</span></a>

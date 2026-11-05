@@ -1,7 +1,8 @@
+import { SectorScenarios } from "../sector-scenarios";
 import { CTA, Footer, Header } from '../components';
 import { fleetServices } from '../service-data';
 
-export const metadata = { title: 'Small Business Outsourcing Services', description: 'Explore realistic Philippines-based support services with clear deliverables, tools, owner controls, and launch plans.' };
+export const metadata = { alternates: { canonical: 'https://outsourcingsmallbusinesses.com/services' }, title: 'Small Business Outsourcing Services', description: 'Explore realistic Philippines-based support services with clear deliverables, tools, owner controls, and launch plans.' };
 const majorSlugs = new Set(['operations-support', 'customer-support', 'administrative-support', 'reporting-quality-assurance', 'finance-accounting']);
 
 export default function ServicesPage() {
@@ -11,5 +12,5 @@ export default function ServicesPage() {
     <section className="section"><div className="container"><p className="eyebrow">Core support categories</p><h2>Start with the lane that removes a repeated owner bottleneck</h2><div className="fleet-card-grid two">{major.map((service) => <article key={service.slug}><h3><a href={`/services/${service.slug}`}>{service.title}</a></h3><p>{service.summary}</p><a className="text-link" href={`/services/${service.slug}`}>Review tasks and controls</a></article>)}</div></div></section>
     <section className="section alt"><div className="container"><p className="eyebrow">Focused work lanes</p><h2>Delegate a narrower recurring queue</h2><div className="fleet-card-grid three">{focused.map((service) => <article key={service.slug}><h3><a href={`/services/${service.slug}`}>{service.title}</a></h3><p>{service.summary}</p><a className="text-link" href={`/services/${service.slug}`}>See the service plan</a></article>)}</div></div></section>
     <CTA />
-  </main><Footer /></>;
+  <SectorScenarios /></main><Footer /></>;
 }
