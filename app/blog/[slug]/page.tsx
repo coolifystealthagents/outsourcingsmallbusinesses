@@ -184,7 +184,7 @@ function RichArticle({ post, detail }: { post: (typeof blogPosts)[number]; detai
           <p className="eyebrow">Listen for specifics</p>
           <h2 id="answer-check-heading">Weak answers and useful answers</h2>
           <p>A polished pitch is easy. Use this table to bring the call back to the work you are buying.</p>
-          <div className="guide-table-wrap">
+          <div className="guide-table-wrap" role="region" aria-labelledby="answer-check-heading" tabIndex={0} data-scroll-cue="Scroll to see all three columns">
             <table className="guide-table">
               <thead><tr><th>Topic</th><th>Weak answer</th><th>Useful answer</th></tr></thead>
               <tbody>{detail.readinessRows.map((row) => <tr key={row.topic}><th scope="row">{row.topic}</th><td>{row.weak}</td><td>{row.useful}</td></tr>)}</tbody>
