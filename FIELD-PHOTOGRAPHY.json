@@ -106,5 +106,29 @@
     "source": "https://www.pexels.com/photo/open-planner-with-2025-date-and-office-supplies-29509437/",
     "file": "29509437.webp",
     "description": "open planner with 2025 date and office supplies"
+  },
+  {
+    "id": "7289719",
+    "file": "7289719.webp",
+    "source": "https://www.pexels.com/photo/woman-using-brown-box-for-packaging-7289719/",
+    "placement": "journal thumbnail"
+  },
+  {
+    "id": "7857510",
+    "file": "7857510.webp",
+    "source": "https://www.pexels.com/photo/woman-wrapping-clothes-7857510/",
+    "placement": "journal thumbnail"
+  },
+  {
+    "id": "6169033",
+    "file": "6169033.webp",
+    "source": "https://www.pexels.com/photo/woman-writing-down-on-a-carton-box-while-looking-at-a-clipboard-6169033/",
+    "placement": "journal thumbnail"
+  },
+  {
+    "id": "7289743",
+    "source": "https://www.pexels.com/photo/man-on-the-phone-while-woman-busy-packing-7289743/",
+    "file": "7289743.webp",
+    "placement": "homepage field note"
   }
 ]

@@ -94,13 +94,7 @@ export default async function ResearchArticle({
             Published {formatPublicDate(post.published)}
           </time>
           {post.imagePath && (
-            <img
-              src={post.imagePath}
-              alt={`${post.title} evidence workspace`}
-              width="1536"
-              height="1024"
-              style={{ width: "100%", height: "auto", margin: "2rem 0" }}
-            />
+            <></>
           )}
           <Oct22Toc />
           {post.body.map((x, i) => x.startsWith("Section: ") ? <h2 id={x.replace("Section: ","").replace(/[^a-z0-9]+/gi,"-").replace(/(^-|-$)/g,"").toLowerCase()} key={i}>{x.replace("Section: ","")}</h2> : <p key={i}>{x}</p>)}

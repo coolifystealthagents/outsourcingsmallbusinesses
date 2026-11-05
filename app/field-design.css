@@ -19,3 +19,11 @@ main .field-frame{min-height:0;max-height:none;background:transparent}
  .service-dossier,.ledger-row,.desk-intro,.image-feature,.section-rule{min-height:0}
 }
 @media(max-width:800px){.field-split{grid-template-columns:minmax(0,1fr);gap:16px}.decision-hero__visual.field-frame,.index-hero__image.field-frame,.hero-visual.field-frame,.billing-visual.field-frame,.shop-front{width:100%;min-height:0!important;height:auto!important;padding:0;aspect-ratio:3/2}.field-frame .field-photo{position:static;width:100%;height:auto;aspect-ratio:3/2}.decision-hero h1,.room-hero h1,.billing-hero h1,.hero-grid h1{max-width:19ch;font-size:clamp(37px,9vw,54px);line-height:1.04}.hero-grid,.room-hero-grid,.billing-hero-grid{min-height:0!important}}
+
+/* Reading pages: bring the heading and first paragraph into the first screen. */
+.editorial-article .editorial-hero,.editorial-page .editorial-hero{display:block;min-height:0;height:auto;padding-block:clamp(20px,3vw,44px)}.editorial-hero-media:empty,article figure:empty{display:none}.editorial-hero-copy{max-width:80ch}.editorial-hero h1{max-width:26ch;text-wrap:balance}.article-card img,.editorial-card__image img{object-fit:cover}
+
+.field-story{width:min(1160px,calc(100% - 40px));margin:clamp(25px,4vw,56px) auto;display:grid;grid-template-columns:minmax(0,.84fr) minmax(0,1.16fr);align-items:center;gap:clamp(20px,4vw,60px);padding-block:clamp(18px,2.7vw,40px);border-block:1px solid #ccc3b5}
+.field-story img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.field-story>div{max-width:68ch}.field-story h2{font-size:clamp(26px,3vw,44px);line-height:1.08;margin:0 0 16px;color:#182b31}.field-story p{margin:0 0 11px;color:#324349;line-height:1.58}.field-story .field-intro{font-size:1.1rem}.field-story a{display:inline-block;margin-top:5px;color:#123e4b;text-decoration:underline;text-underline-offset:.22em;font-weight:700}.field-story a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+@media(max-width:760px){.field-story{grid-template-columns:1fr;gap:18px}.field-story img{aspect-ratio:16/9;max-height:265px}}
