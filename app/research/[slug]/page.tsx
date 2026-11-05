@@ -79,7 +79,7 @@ export default async function ResearchArticle({
     <>
       <Header />
       <main className="fleet-main">
-        <article className="section article-shell">
+        <article className="section article-shell article-shell-toc" data-no-enhance data-batch={post.published}>
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -102,7 +102,7 @@ export default async function ResearchArticle({
               style={{ width: "100%", height: "auto", margin: "2rem 0" }}
             />
           )}
-          <Oct22Toc /><nav className="o22-aside" aria-label="Table of contents">{post.body.filter((x) => x.startsWith("Section: ")).map((x) => { const label = x.replace("Section: ",""); const id = label.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,""); return <a key={id} href={`#${id}`}>{label}</a>; })}</nav>
+          <Oct22Toc />
           {post.body.map((x, i) => x.startsWith("Section: ") ? <h2 id={x.replace("Section: ","").replace(/[^a-z0-9]+/gi,"-").replace(/(^-|-$)/g,"").toLowerCase()} key={i}>{x.replace("Section: ","")}</h2> : <p key={i}>{x}</p>)}
           {(post.referenceSources || isAug31 || isSep4 || isSep7 || isSep8 || isSep9 || isSep10 || isSep14) && (
             <>

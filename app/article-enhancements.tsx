@@ -12,7 +12,7 @@ export function ArticleEnhancements({ family }: { family: 'blog' | 'research' })
   const pathname = usePathname();
   useEffect(() => {
     const article = document.querySelector<HTMLElement>(family === 'blog' ? 'article.guide-article, article.strict-article' : 'article.article-shell');
-    if (!article || article.dataset.editorialEnhanced === 'true') return;
+    if (!article || article.hasAttribute('data-no-enhance') || article.dataset.editorialEnhanced === 'true') return;
     const headings = Array.from(article.querySelectorAll<HTMLHeadingElement>('h2'));
     if (!headings.length) return;
     article.dataset.editorialEnhanced = 'true';
