@@ -1,6 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
+import { usePathname } from 'next/navigation';
 import profileData from './blog-banner-profile.json';
 
 type Position = 'top' | 'middle' | 'bottom';
@@ -83,12 +85,38 @@ function pushEvent(event: 'blog_banner_impression' | 'blog_banner_click', positi
   });
 }
 
+// Keep the navigation first and the footer last on every article template.
+function findBannerAnchor(position: Position): Element | null {
+  const main = document.querySelector('main') ?? document.querySelector('article');
+  const headings = main ? Array.from(main.querySelectorAll('h2')).filter(heading =>
+    !heading.closest('nav, aside, footer, [data-blog-banner-slot]')
+  ) : [];
+  if (position === 'top') return headings.length >= 3 ? headings[1] : null;
+  if (position === 'middle') return headings.length >= 6 ? headings[Math.floor(headings.length / 2)] : null;
+  return document.querySelector('footer');
+}
+
 export function BlogBanner({ position }: { position: Position }) {
+  const pathname = usePathname();
+  const [slot, setSlot] = useState<HTMLDivElement | null>(null);
+  useEffect(() => {
+    const anchor = findBannerAnchor(position);
+    if (!anchor) {
+      setSlot(null);
+      return;
+    }
+    const wrapper = document.createElement('div');
+    wrapper.className = 'article-offer-slot';
+    anchor.before(wrapper);
+    setSlot(wrapper);
+    return () => wrapper.remove();
+  }, [pathname, position]);
   const variants = profile.positions[position];
   const week = isoWeek(new Date());
   const [variant, setVariant] = useState(variants[0]);
 
   useEffect(() => {
+    if (!slot) return;
     const seedKey = `blog-banner-seed:${profile.siteKey}`;
     let browserSeed = localStorage.getItem(seedKey);
     if (!browserSeed) {
@@ -99,10 +127,11 @@ export function BlogBanner({ position }: { position: Position }) {
     setVariant(selected);
     record(position, selected.id, 'impressions');
     pushEvent('blog_banner_impression', position, selected.id, week);
-  }, [position, variants, week]);
+  }, [position, slot, variants, week]);
 
   const href = taggedHref(variant.href, position, variant.id, week);
-  return <aside
+  if (!slot) return null;
+  return createPortal(<aside
     className="article-rotation-banner article-banner blog-conversion-banner"
     data-blog-banner-slot={position}
     data-blog-banner-variant={variant.id}
@@ -121,5 +150,5 @@ export function BlogBanner({ position }: { position: Position }) {
         pushEvent('blog_banner_click', position, variant.id, week);
       }}
     >{variant.cta}</a>
-  </aside>;
+  </aside>, slot);
 }
