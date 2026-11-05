@@ -30,7 +30,7 @@ export default function Home() {
         <div className="container hero-grid">
           <div className="hero-copy">
             <p className="eyebrow">Filipino talent for small business teams</p>
-            <h1>Build a Filipino support team around the work slowing your small business.</h1>
+            <h1>More time to run your business.</h1>
             <p className="lead">Give a Philippines-based assistant a defined queue: appointment requests, customer follow-ups, order questions, or recurring client updates. Set the reply rules, review owner, and decisions that must come back to you.</p>
             <div className="actions">
               <a className="btn primary" href="/contact-us">Book a free call</a>
@@ -39,22 +39,7 @@ export default function Home() {
             <p className="disclosure">Staffing teams accepting requests through this site recruit and hire only in the Philippines. Your request may be routed to one of those teams for follow-up.</p>
           </div>
 
-          <div className="handoff-board" id="work-board" aria-label="Example small business handoff board">
-            <div className="board-topline">
-              <span>Owner's handoff board</span>
-              <span className="board-status"><i /> Ready to scope</span>
-            </div>
-            <div className="board-photo">
-              <img src="/illustrations/getillustrations/goodle-business/owner-approved-remote-handoff.svg" alt="Illustration of an owner approving a remote support handoff" />
-              <span className="photo-label">Owner-approved handoff</span>
-            </div>
-            <div className="board-list">
-              <div><span className="task-icon coral" aria-hidden="true">✉</span><span className="task-symbol"><img src="/icons/getillustrations/sharpie-business/inbox-task-approval.svg" alt="Inbox and calendar task icon" /></span><p><strong>Inbox and calendar</strong><small>Draft, sort, schedule</small></p><b>Daily</b></div>
-              <div><span className="task-icon mint" aria-hidden="true">↗</span><span className="task-symbol"><img src="/icons/getillustrations/sharpie-business/customer-follow-up-target.svg" alt="Customer follow-up icon" /></span><p><strong>Customer follow-up</strong><small>Reply, tag, escalate</small></p><b>Daily</b></div>
-              <div><span className="task-icon navy" aria-hidden="true">✓</span><span className="task-symbol"><img src="/icons/getillustrations/sharpie-business/operations-reporting.svg" alt="Operations reporting icon" /></span><p><strong>Operations report</strong><small>Gather, check, flag</small></p><b>Weekly</b></div>
-            </div>
-            <div className="owner-line"><span>Owner approval stays with</span><strong>Money, people, exceptions</strong></div>
-          </div>
+          <figure className="field-frame shop-front" id="work-board"><img className="field-photo" src="/design-photography/7289725.webp" alt="man preparing packages" width={1440} height={960} loading="eager" fetchPriority="high" /><figcaption>From order intake to dispatch</figcaption></figure>
         </div>
         <div className="container truth-strip">
           <span>Start with the work, not a vague job title.</span>
@@ -84,7 +69,7 @@ export default function Home() {
             <p className="eyebrow">A calmer first hire</p>
             <h2>Make the role small enough to explain.</h2>
             <p>A useful role plan names the work, the tools, the schedule, and the decisions that stay with you. That makes matching Filipino talent easier and gives everyone a fair start.</p>
-            <img className="scope-support-illustration" src="/illustrations/getillustrations/humano-scenes/small-business-role-planning.svg" alt="Illustration of a small team collaborating on a practical business role plan" />
+            <img className="scope-support-illustration field-photo" src="/design-photography/7857532.webp" alt="woman sitting at the table and packing orders" width={1440} height={960} loading="lazy" />
             <a className="btn secondary" href="/contact-us">Book a free call</a>
           </div>
           <div className="scope-sheet">

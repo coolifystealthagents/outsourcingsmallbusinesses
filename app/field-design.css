@@ -1,0 +1,21 @@
+
+/* Live editorial photography and content-sized opening compositions. */
+.field-frame{margin:0;position:relative;overflow:hidden;align-self:center}
+.field-photo,.field-frame>img{display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:3/2}
+.field-frame>img{border-radius:inherit}
+main .field-frame{min-height:0;max-height:none;background:transparent}
+.shop-front figcaption{font-size:.8rem;padding:.65rem 0;color:#594632}
+.field-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(24px,4vw,56px)}
+@media(min-width:801px){
+ .decision-hero,.billing-hero,.room-hero,main>.hero,.architecture-hero,.fleet-hero,.index-hero,.service-hero-stage{min-height:0!important;height:auto}
+ .decision-hero,.index-hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center}
+ .decision-hero .decision-hero__copy,.index-hero .index-hero__copy{min-height:0;padding:clamp(24px,3.2vw,52px)}
+ .decision-hero h1,.billing-hero h1,.room-hero h1,.hero-grid h1,.index-hero h1{font-size:clamp(48px,4.65vw,76px);max-width:18ch;line-height:1.03;text-wrap:balance}
+ .decision-hero .field-frame,.index-hero .field-frame{padding:0;align-self:center;aspect-ratio:3/2;margin:16px 22px 16px 0}
+ .field-frame .field-photo{position:static;inset:auto;width:100%;height:100%;object-fit:cover}
+ .billing-hero-grid,.room-hero-grid,.hero-grid{min-height:0!important;align-items:center;padding-block:clamp(24px,3vw,46px)!important}
+ .billing-hero .billing-visual,.room-hero .hero-visual,.shop-front{width:100%;height:auto;min-height:0!important;transform:none;aspect-ratio:auto}
+ .service-hero-grid .service-hero-image,.service-hero-art img,.service-illustration.field-photo,.service-detail .service-illustration{width:100%;height:clamp(260px,26vw,390px);object-fit:cover}
+ .service-dossier,.ledger-row,.desk-intro,.image-feature,.section-rule{min-height:0}
+}
+@media(max-width:800px){.field-split{grid-template-columns:minmax(0,1fr);gap:16px}.decision-hero__visual.field-frame,.index-hero__image.field-frame,.hero-visual.field-frame,.billing-visual.field-frame,.shop-front{width:100%;min-height:0!important;height:auto!important;padding:0;aspect-ratio:3/2}.field-frame .field-photo{position:static;width:100%;height:auto;aspect-ratio:3/2}.decision-hero h1,.room-hero h1,.billing-hero h1,.hero-grid h1{max-width:19ch;font-size:clamp(37px,9vw,54px);line-height:1.04}.hero-grid,.room-hero-grid,.billing-hero-grid{min-height:0!important}}
