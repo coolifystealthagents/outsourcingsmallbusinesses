@@ -64,3 +64,6 @@ main.section:has(article) .final-cta {
   margin-block: clamp(1.5rem, 3vw, 2.5rem) 0;
   padding-block: clamp(1.5rem, 3vw, 2.75rem);
 }
+
+.sa-booking-calendar .booking-direct-link { display: inline-block; margin-block: .5rem 1rem; text-decoration: underline; }
+.sa-booking-calendar .sa-oncehub-frame { height: clamp(32rem, 76svh, 47.5rem); }
