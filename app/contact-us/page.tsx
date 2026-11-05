@@ -15,14 +15,13 @@ export const metadata: Metadata = {
 };
 
 function ReviewMarquee() {
-  const loop = [...stealthAgentsReviews, ...stealthAgentsReviews];
   return <section className={styles.reviews} aria-labelledby="reviews-title">
     <div className={styles.reviewHeading}><div><p>Approved client feedback</p><h2 id="reviews-title">StealthAgents reviews</h2></div></div>
-    <div className={styles.reviewViewport} tabIndex={0} aria-label="StealthAgents client reviews">
-      <div className={styles.reviewTrack}>{loop.map((review, index) => <article className={styles.reviewCard} key={`${review.name}-${index}`} aria-hidden={index >= stealthAgentsReviews.length ? true : undefined}>
+    <div className={styles.reviewViewport} aria-label="StealthAgents client reviews">
+      <div className={styles.reviewTrack}>{[0, 1].map(copy => <div className={styles.reviewGroup} key={copy} aria-hidden={copy === 1 ? true : undefined}>{stealthAgentsReviews.map(review => <article className={styles.reviewCard} key={review.name}>
         <div className={styles.stars} aria-label="5 out of 5 stars">★★★★★</div>
         <h3>{review.name}</h3><blockquote>{review.quote}</blockquote><p>{review.role}</p>
-      </article>)}</div>
+      </article>)}</div>)}</div>
     </div>
     <p className={styles.reviewSource}>{reviewsProvenance}</p>
   </section>;
