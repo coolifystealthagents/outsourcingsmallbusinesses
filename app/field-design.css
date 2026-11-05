@@ -57,3 +57,10 @@ main.section:has(article) {
   margin-block-start: clamp(1rem, 2vw, 1.75rem);
   padding: clamp(1.25rem, 2.5vw, 2.25rem) clamp(1rem, 2vw, 1.75rem);
 }
+main.section:has(article) {
+  padding-block-end: clamp(1rem, 2vw, 2rem);
+}
+main.section:has(article) .final-cta {
+  margin-block: clamp(1.5rem, 3vw, 2.5rem) 0;
+  padding-block: clamp(1.5rem, 3vw, 2.75rem);
+}
