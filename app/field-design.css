@@ -45,3 +45,8 @@ main[data-design] .shop-front{margin:0}
 @media (max-width: 640px) {
   .article-offer-slot .blog-conversion-banner { margin-block: 1rem; }
 }
+
+/* Start the reading column one text line below the site masthead. */
+main.section:has(article) {
+  padding-block-start: clamp(1.25rem, 2.6vw, 2.25rem);
+}
