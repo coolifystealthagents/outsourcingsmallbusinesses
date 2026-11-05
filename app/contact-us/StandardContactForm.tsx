@@ -113,18 +113,18 @@ export default function StandardContactForm({ endpoint = "/api/contact", encodin
         <button type="submit" disabled={submitting}>{submitting ? "Submitting..." : isStaffing ? "Book a free call" : "Send inquiry"}</button>
       </form>
       <style jsx>{`
-        .sa-form-card{width:100%;max-width:650px;margin:0 auto;background:#fffdf8;border:1px solid #d9d3c8;border-radius:18px;padding:18px 22px 20px;box-shadow:0 18px 48px rgba(23,42,58,.13);color:#344a57;text-align:left}
+        .sa-form-card{box-sizing:border-box;min-width:0;width:100%;max-width:650px;margin:0 auto;background:#fffdf8;border:1px solid #d9d3c8;border-radius:18px;padding:18px 22px 20px;box-shadow:0 18px 48px rgba(23,42,58,.13);color:#344a57;text-align:left}
         h2{margin:0 0 10px;color:#172a3a;font-size:19px;line-height:1.25;font-weight:800;letter-spacing:-.02em}
-        form{display:flex;flex-direction:column;gap:8px}.sa-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-        label{display:flex;flex-direction:column;gap:3px;font-size:10px;line-height:1.2;font-weight:800;color:#344a57}
-        input,select,textarea{box-sizing:border-box;width:100%;border:1px solid #bdc8c5;border-radius:8px;background:#fff;color:#1f2937;font:inherit;font-size:12px;padding:7px 9px;outline:none;min-height:32px}
+        form{display:flex;flex-direction:column;gap:8px}.sa-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+        label{min-width:0;display:flex;flex-direction:column;gap:3px;font-size:10px;line-height:1.2;font-weight:800;color:#344a57}
+        input,select,textarea{box-sizing:border-box;min-width:0;width:100%;border:1px solid #bdc8c5;border-radius:8px;background:#fff;color:#1f2937;font:inherit;font-size:12px;padding:7px 9px;outline:none;min-height:32px}
         input:focus,select:focus,textarea:focus{border-color:#0b655d;box-shadow:0 0 0 3px rgba(11,101,93,.14)}
-        .sa-phone{display:grid;grid-template-columns:105px 1fr;border:1px solid #bdc8c5;border-radius:8px;overflow:hidden}.sa-phone:focus-within{border-color:#0b655d;box-shadow:0 0 0 3px rgba(11,101,93,.14)}
+        .sa-phone{display:grid;grid-template-columns:105px minmax(0,1fr);border:1px solid #bdc8c5;border-radius:8px;overflow:hidden}.sa-phone:focus-within{border-color:#0b655d;box-shadow:0 0 0 3px rgba(11,101,93,.14)}
         .sa-phone select,.sa-phone input{border:0;border-radius:0;box-shadow:none!important}.sa-phone select{border-right:1px solid #dbe1ea;padding-right:4px}.sa-phone input{min-width:0}
         textarea{resize:vertical;min-height:42px;max-height:64px}button{width:100%;border:0;border-radius:9px;background:#c94929;color:#fff;padding:10px 16px;font-size:14px;font-weight:800;cursor:pointer;box-shadow:0 7px 16px rgba(201,73,41,.2)}
         button:hover{background:#bd3f25}button:disabled{cursor:wait;opacity:.65}.sa-error{margin:0;color:#b42318;font-size:11px}.sa-hp{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important}
         @media(max-width:980px){.sa-form-card{max-width:760px;padding:28px}.sa-form-card h2{font-size:25px;margin-bottom:20px}.sa-form-card form{gap:17px}.sa-form-card label{gap:7px;font-size:15px}.sa-form-card input,.sa-form-card select,.sa-form-card textarea{min-height:48px;padding:12px 14px;font-size:15px}.sa-form-card textarea{min-height:110px;max-height:none}.sa-form-card button{padding:16px;font-size:18px}}
-        @media(max-width:700px){.sa-form-card{padding:24px 18px 28px;border-radius:16px}.sa-grid{grid-template-columns:1fr;gap:17px}.sa-phone{grid-template-columns:112px 1fr}}
+        @media(max-width:700px){.sa-form-card{padding:24px 18px 28px;border-radius:16px}.sa-grid{grid-template-columns:minmax(0,1fr);gap:17px}.sa-phone{grid-template-columns:112px minmax(0,1fr)}}
       `}</style>
     </div>
   );
