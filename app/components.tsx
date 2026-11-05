@@ -19,9 +19,8 @@ function PoweredBy() {
 
 export function Header(_props: { articleMode?: boolean } = {}) {
   return <header className="nav fleet-nav"><a className="skip-link" href="#main-content">Skip to main content</a><div className="nav-inner">
-    <a className="logo" href="/" aria-label="Outsourcing Small Businesses home"><LogoMark /></a>
+    <div className="brand-with-parent"><a className="logo" href="/" aria-label="Outsourcing Small Businesses home"><LogoMark /></a><PoweredBy /></div>
     <SiteNavigation />
-    <PoweredBy />
   </div></header>;
 }
 
