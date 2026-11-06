@@ -46,7 +46,7 @@ export default function Home() {
           <ul><li>Philippines-only hiring</li><li>Clear approval lines</li><li>Managed follow-up</li></ul>
         </div>
       </section>
-<section className="field-story" aria-labelledby="field-story-title"><img src="/design-photography/7289743.webp" alt="man on the phone while woman busy packing" width={1200} height={800} loading="lazy"/><div><h2 id="field-story-title">What happens after the order ships?</h2><p className="field-intro">A customer writes because their parcel hasn’t arrived. The owner shouldn’t have to reconstruct the order from four inboxes.</p><p>An assistant checks the order, carrier scan and delivery promise, then drafts a reply using your approved policy.</p><p>If the package is missing or a refund is requested, you get the facts and tracking link together. The refund decision stays with you.</p><a href="/services/ecommerce-order-support">Explore order support <span aria-hidden="true">→</span></a></div></section>
+
 
 
       <section className="container section" id="tasks">
@@ -65,6 +65,7 @@ export default function Home() {
         </div>
       </section>
 
+<section className="field-story" aria-labelledby="field-story-title"><img src="/design-photography/7289743.webp" alt="man on the phone while woman busy packing" width={1200} height={800} loading="lazy"/><div><h2 id="field-story-title">What happens after the order ships?</h2><p className="field-intro">A customer writes because their parcel hasn’t arrived. The owner shouldn’t have to reconstruct the order from four inboxes.</p><p>An assistant checks the order, carrier scan and delivery promise, then drafts a reply using your approved policy.</p><p>If the package is missing or a refund is requested, you get the facts and tracking link together. The refund decision stays with you.</p><a href="/services/ecommerce-order-support">Explore order support <span aria-hidden="true">→</span></a></div></section>
       <section className="scope-section">
         <div className="container scope-grid">
           <div className="scope-copy">

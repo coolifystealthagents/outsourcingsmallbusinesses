@@ -96,3 +96,41 @@ main>.section,.fleet-main .section{padding-block:clamp(28px,3.8vw,52px)}
 .service-illustration[src="/design-photography/7653771.webp"]{object-position:center 85%!important}
 
 #tasks .service-card{min-height:0;padding:24px;display:flex;flex-direction:column;align-items:flex-start}#tasks .service-card h3{margin:18px 0 10px}#tasks .service-card>strong{position:static;margin-top:16px}#tasks .service-card p{margin-bottom:0}
+
+/* A service brief, rather than a series of thin full-width bands. */
+.brief-shell{width:min(1160px,calc(100% - 48px));margin-inline:auto}
+.brief-section{padding:32px 0;color:#20343a;background:#fffdf9;border-bottom:1px solid #d8ddd7}
+.brief-tint{background:#eef2ed}
+.brief-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 28px;background:#fffdf9;padding:14px 24px;border-bottom:1px solid #d6ddd7;font-size:14px;font-weight:700}
+.brief-nav a{color:#254c43;padding:4px 0;text-decoration:none;border-bottom:1px solid #77968a}
+.brief-context{display:grid;grid-template-columns:220px 1fr;gap:12px 28px;padding-bottom:24px;margin-bottom:24px;border-bottom:1px solid #d4ddd7}
+.brief-context>p{margin:0;line-height:1.6;font-size:17px;max-width:82ch}
+.brief-context>p:first-child{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:750;color:#42675b}
+.brief-context .brief-audience{grid-column:2;font-size:15px;color:#4e5e62}
+.brief-columns{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:36px;align-items:start}
+.brief-section h2{font-size:clamp(26px,2.5vw,36px)!important;line-height:1.15!important;letter-spacing:-.025em;margin:0 0 16px!important;color:inherit}
+.brief-section h3{font-size:19px;line-height:1.3;margin:22px 0 10px;color:inherit}
+.brief-section p,.brief-section li{font-size:16px;line-height:1.6;color:inherit}
+.brief-section p{margin:0 0 12px}.brief-section ul{padding-left:21px;margin:0}.brief-section li{padding:5px 0;margin:0}
+.brief-output{background:#193d34;color:#fff;padding:26px 28px;border-radius:4px;border-top:4px solid #c29a62}
+.brief-output .eyebrow,.brief-output .service-kicker{color:#c4ddce!important}
+.brief-output li{border-bottom:1px solid #ffffff26;padding:11px 0}.brief-output li:last-child{border:0}
+.brief-fit{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 20px;margin-top:24px;padding-top:18px;border-top:1px solid #d7ded8;font-size:13px;color:#405950}
+.brief-fit span{flex:1 1 220px}
+.brief-heading{margin-bottom:22px}.brief-heading .eyebrow,.brief-heading .service-kicker{margin-bottom:8px}
+.brief-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;list-style:none;padding:0;margin:0}
+.brief-steps>li{border-top:2px solid #819e90;padding:16px 0 0}.brief-steps>li>span{font-size:25px;letter-spacing:-.05em;color:#476a5d;font-weight:750}.brief-steps h3{margin:9px 0}.brief-steps p{margin-bottom:0;font-size:15px}
+.brief-examples{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;border-top:1px solid #bbcbbf;margin-top:26px;padding-top:20px}
+.brief-examples h3{margin:0 0 9px;font-size:18px}.brief-examples p{font-size:15px}
+.brief-section .brief-note{background:#f1eee5;border-left:3px solid #a77b41;padding:14px 16px;margin:20px 0 0;font-size:14px}
+.brief-faq details{border:0;border-top:1px solid #bfcfc6;border-radius:0;background:transparent;padding:16px 0;margin:0;box-shadow:none}
+.brief-faq summary{font-size:17px;font-weight:650;cursor:pointer;line-height:1.4}.brief-faq details p{padding-top:12px;max-width:85ch;margin-bottom:0}
+.brief-related{display:flex;gap:12px 24px;flex-wrap:wrap;align-items:baseline;padding-top:24px;font-size:14px}.brief-related a{color:#285647;text-decoration:underline;text-underline-offset:4px}
+.brief-section a:focus-visible,.brief-nav a:focus-visible{outline:3px solid currentColor;outline-offset:4px}
+@media(max-width:760px){.brief-shell{width:calc(100% - 36px)}.brief-section{padding:24px 0}.brief-columns,.brief-context{grid-template-columns:1fr;gap:20px}.brief-context .brief-audience{grid-column:auto}.brief-context{gap:8px}.brief-steps{grid-template-columns:1fr 1fr;gap:22px}.brief-output{padding:22px}.brief-nav{justify-content:flex-start;gap:6px 20px;padding-inline:18px}.brief-examples{grid-template-columns:1fr}.brief-section h2{font-size:27px!important}.brief-fit span{flex-basis:100%}}
+@media(max-width:420px){.brief-steps{grid-template-columns:1fr}.brief-steps>li{display:grid;grid-template-columns:35px 1fr;gap:0 12px;padding-top:12px}.brief-steps>li>span{grid-row:1/3}.brief-steps>li>h3{margin:0 0 6px}.brief-steps>li>p{grid-column:2}}
+
+.small-directory .fleet-card-grid.two,.small-directory .fleet-card-grid.three{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid #c5cfc4;border-left:1px solid #c5cfc4;margin-top:22px}.small-directory .fleet-card-grid>article{border:0;border-bottom:1px solid #c5cfc4;border-right:1px solid #c5cfc4;border-radius:0;padding:23px 26px;background:transparent;display:block}.small-directory .fleet-card-grid.two>article:last-child:nth-child(odd){grid-column:auto}.small-directory .fleet-card-grid>article h3{font-size:24px;margin-bottom:12px}.small-directory .fleet-card-grid>article p{font-size:15px;line-height:1.6}.small-directory .fleet-card-grid>article .text-link{display:inline-block;margin-top:15px;padding:0;font-size:14px}.small-directory .fleet-card-grid>article:last-child:nth-child(odd){background:#e9eee3}.small-directory .section h2{max-width:none;font-size:34px}
+@media(max-width:680px){.small-directory .fleet-card-grid.two,.small-directory .fleet-card-grid.three{grid-template-columns:1fr}.small-directory .fleet-card-grid>article{padding:20px}.small-directory .section h2{font-size:28px}}
+
+main[data-design="small-business-handoff-2026"] .section-heading{margin-bottom:22px}main[data-design="small-business-handoff-2026"] h2{font-size:clamp(28px,3vw,40px);line-height:1.12}main[data-design="small-business-handoff-2026"] .service-grid{gap:16px}main[data-design="small-business-handoff-2026"] .service-card h3{font-size:24px}main[data-design="small-business-handoff-2026"] .scope-grid{align-items:start;gap:32px}main[data-design="small-business-handoff-2026"] .scope-support-illustration{height:230px;object-fit:cover;margin-block:18px}main[data-design="small-business-handoff-2026"] .scope-sheet{transform:none;min-height:0;padding:24px}main[data-design="small-business-handoff-2026"] .scope-sheet dl>div{padding:16px 0}main[data-design="small-business-handoff-2026"] .fit-card{padding:24px;min-height:0}main[data-design="small-business-handoff-2026"] .final-cta{padding:28px;margin-block:28px}main[data-design="small-business-handoff-2026"] .field-story img{max-height:290px;aspect-ratio:16/10}
