@@ -139,3 +139,7 @@ main[data-design="small-business-handoff-2026"] .section-heading{margin-bottom:2
 
 /* Section headings carry the hierarchy without decorative numbering. */
 .brief-steps>li{display:block!important}.brief-steps>li>h3,.brief-steps>li>p{grid-column:auto!important}.service-brief-card>header{display:block}.service-number{display:none}
+
+/* Align flat service rows and keep the scope brief balanced. */
+main[data-design="small-business-handoff-2026"] .service-card{transform:none!important;clip-path:none!important;border-radius:0!important;box-shadow:none!important}main[data-design="small-business-handoff-2026"] .field-story{margin-block:24px;padding-block:24px}main[data-design="small-business-handoff-2026"] .section,main[data-design="small-business-handoff-2026"] .scope-section,main[data-design="small-business-handoff-2026"] .guide-section{padding-block:32px}main[data-design="small-business-handoff-2026"] .scope-sheet::before,main[data-design="small-business-handoff-2026"] .scope-sheet::after{display:none}main[data-design="small-business-handoff-2026"] .scope-copy>.btn{margin-top:16px}
+@media(max-width:760px){main[data-design="small-business-handoff-2026"] .section,main[data-design="small-business-handoff-2026"] .scope-section,main[data-design="small-business-handoff-2026"] .guide-section{padding-block:24px}}

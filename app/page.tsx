@@ -72,7 +72,6 @@ export default function Home() {
             <p className="eyebrow">A calmer first hire</p>
             <h2>Make the role small enough to explain.</h2>
             <p>A useful role plan names the work, the tools, the schedule, and the decisions that stay with you. That makes matching Filipino talent easier and gives everyone a fair start.</p>
-            <img className="scope-support-illustration field-photo" src="/design-photography/7857532.webp" alt="woman sitting at the table and packing orders" width={1440} height={960} loading="lazy" />
             <a className="btn secondary" href="/contact-us">Book a free call</a>
           </div>
           <div className="scope-sheet">
