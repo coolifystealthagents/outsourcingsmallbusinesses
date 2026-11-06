@@ -94,3 +94,5 @@ main>.section,.fleet-main .section{padding-block:clamp(28px,3.8vw,52px)}
 
 /* Keep the people and laptop in view in this portrait photograph. */
 .service-illustration[src="/design-photography/7653771.webp"]{object-position:center 85%!important}
+
+#tasks .service-card{min-height:0;padding:24px;display:flex;flex-direction:column;align-items:flex-start}#tasks .service-card h3{margin:18px 0 10px}#tasks .service-card>strong{position:static;margin-top:16px}#tasks .service-card p{margin-bottom:0}
