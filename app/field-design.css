@@ -67,3 +67,5 @@ main.section:has(article) .final-cta {
 
 .sa-booking-calendar .booking-direct-link { display: inline-block; margin-block: .5rem 1rem; text-decoration: underline; }
 .sa-booking-calendar .sa-oncehub-frame { height: clamp(32rem, 76svh, 47.5rem); }
+
+.pagination a[aria-current="page"] { color: #241a14; background-color: #f97316; }
