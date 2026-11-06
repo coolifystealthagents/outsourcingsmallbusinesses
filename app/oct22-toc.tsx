@@ -61,13 +61,13 @@ export default function Oct22Toc() {
     mobile.style.top = `${top}px`;
     const mobileList = mobile.querySelector('ol')!;
 
-    let desktop = article.querySelector<HTMLElement>('.o22-toc-desktop');
+    const desktopHost = article.parentElement || article;
+    let desktop = desktopHost.querySelector<HTMLElement>(':scope > .o22-toc-desktop');
     if (!desktop) {
       desktop = document.createElement('nav');
       desktop.className = 'o22-toc-desktop';
       desktop.setAttribute('aria-label', 'Table of contents');
-      const host = article.parentElement || article;
-      host.insertBefore(desktop, article);
+      desktopHost.insertBefore(desktop, article);
     }
     desktop.innerHTML = '<strong>Contents</strong><ol></ol>';
     const desktopList = desktop.querySelector('ol')!;

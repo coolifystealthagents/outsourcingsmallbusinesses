@@ -145,3 +145,7 @@ main[data-design="small-business-handoff-2026"] .service-card{transform:none!imp
 @media(max-width:760px){main[data-design="small-business-handoff-2026"] .section,main[data-design="small-business-handoff-2026"] .scope-section,main[data-design="small-business-handoff-2026"] .guide-section{padding-block:24px}}
 
 .footer.legit-footer{padding-top:32px}.footer.legit-footer .footer-grid{gap:28px}.footer.legit-footer .footer-bottom{margin-top:26px}
+
+/* Listing cards: readable linked title, independent of the article H2 scale. */
+.fleet-main .fleet-card h2{font-size:1.25rem;line-height:1.3}
+

@@ -93,9 +93,19 @@ export default async function ResearchArticle({
           <time dateTime={post.published}>
             Published {formatPublicDate(post.published)}
           </time>
-          {post.imagePath && (
+          {post.imagePath && (post.published === "2026-11-06" ? (
+            <figure>
+              <img
+                src={post.imagePath}
+                alt={post.title}
+                width="1200"
+                height="630"
+                style={{ width: "100%", height: "auto", margin: "2rem 0" }}
+              />
+            </figure>
+          ) : (
             <></>
-          )}
+          ))}
           <Oct22Toc />
           {post.body.map((x, i) => x.startsWith("Section: ") ? <h2 id={x.replace("Section: ","").replace(/[^a-z0-9]+/gi,"-").replace(/(^-|-$)/g,"").toLowerCase()} key={i}>{x.replace("Section: ","")}</h2> : <p key={i}>{x}</p>)}
           {(post.referenceSources || isAug31 || isSep4 || isSep7 || isSep8 || isSep9 || isSep10 || isSep14) && (
