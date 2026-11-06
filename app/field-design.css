@@ -162,3 +162,6 @@ main[data-design="small-business-handoff-2026"] .hero::before{display:none}
 
 /* Keep the subject visible when this portrait fills the landscape service hero. */
 .service-illustration[src="/design-photography/6953814.webp"]{object-position:center 10%!important}
+
+/* Preserve the shop owner’s face in the order-support hero. */
+.service-illustration[src="/design-photography/7289733.webp"]{object-position:center top!important}
