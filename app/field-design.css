@@ -84,3 +84,10 @@ main>.section,.fleet-main .section{padding-block:clamp(28px,3.8vw,52px)}
 .scope-section,.guide-section,.fit-section{padding-block:clamp(28px,3.8vw,52px)}
 .final-cta{margin-block:32px;padding:clamp(24px,4vw,48px)}
 @media(max-width:640px){.fleet-main .fleet-hero{padding-block:24px}.fleet-main .service-hero-grid{gap:20px}.fleet-main .service-illustration{max-height:230px}.fleet-main .fleet-card-grid>article{padding:20px}.fleet-main .split-detail{gap:20px}}
+
+.fleet-main .fleet-card-grid>article{border:1px solid #d4d6c9;border-top:3px solid #2b655f;background:#fffdf8;display:flex;flex-direction:column;align-items:start;gap:12px}
+.fleet-main .fleet-card-grid>article h3{font-size:23px;line-height:1.2;margin:0}
+.fleet-main .fleet-card-grid>article p{font-size:16px;line-height:1.6;margin:0}
+.fleet-main .fleet-card-grid>article .text-link{margin-top:auto;padding-top:6px}
+.fleet-main .problem-section .narrow{max-width:1160px;border-left:3px solid #b85c34;padding-left:24px}
+.fleet-main .problem-section p{max-width:80ch}
