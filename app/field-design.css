@@ -169,3 +169,9 @@ main[data-design="small-business-handoff-2026"] .hero::before{display:none}
 .service-illustration[src="/design-photography/8867440.webp"]{object-position:center 20%!important}
 
 .service-detail .service-illustration[src$="9301293.webp"]{object-position:center 25%}
+
+/* Keep directory pagination usable at every viewport. */
+.pagination{flex-wrap:wrap;padding-inline:14px;max-width:1160px;margin-inline:auto}
+.pagination a{flex:0 0 auto}
+.fleet-main:has(.pagination) .fleet-card{padding:24px;border-radius:8px}
+@media(max-width:600px){.fleet-main:has(.pagination) .fleet-card{padding:20px}.pagination{gap:8px}}

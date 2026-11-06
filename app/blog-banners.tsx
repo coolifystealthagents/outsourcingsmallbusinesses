@@ -100,6 +100,11 @@ export function BlogBanner({ position }: { position: Position }) {
   const pathname = usePathname();
   const [slot, setSlot] = useState<HTMLDivElement | null>(null);
   useEffect(() => {
+    // Directory cards are links, not article sections: never insert offers inside them.
+    if (pathname === '/blog' || pathname.startsWith('/blog/page/')) {
+      setSlot(null);
+      return;
+    }
     const anchor = findBannerAnchor(position);
     if (!anchor) {
       setSlot(null);
