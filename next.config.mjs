@@ -5,7 +5,7 @@ const securityHeaders = [
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
   { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
   { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
-  { key: 'Content-Security-Policy', value: "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' https://acrtracking.stealthagents.us https://cdn.oncehub.com; connect-src 'self' https://acrtracking.stealthagents.us https://*.oncehub.com; frame-src https://go.oncehub.com https://*.oncehub.com; upgrade-insecure-requests" },
+  { key: 'Content-Security-Policy', value: "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;  https://databull.stealthagents.us 'self' 'unsafe-inline' https://acrtracking.stealthagents.us https://cdn.oncehub.com;  https://databull.stealthagents.us 'self' https://acrtracking.stealthagents.us https://*.oncehub.com; frame-src https://go.oncehub.com https://*.oncehub.com; upgrade-insecure-requests" },
 ];
 
 const nextConfig = {
