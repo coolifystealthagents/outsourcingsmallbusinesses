@@ -149,3 +149,13 @@ main[data-design="small-business-handoff-2026"] .service-card{transform:none!imp
 /* Listing cards: readable linked title, independent of the article H2 scale. */
 .fleet-main .fleet-card h2{font-size:1.25rem;line-height:1.3}
 
+
+/* Keep separated cards complete and remove the empty heading column. */
+main[data-design="small-business-handoff-2026"] .service-grid{border:0}
+main[data-design="small-business-handoff-2026"] .service-card{border:1px solid var(--line)}
+main[data-design="small-business-handoff-2026"] #tasks .service-card h3{margin-top:0}
+main[data-design="small-business-handoff-2026"] .fit-section{grid-template-columns:1fr;gap:22px;padding-block:32px}
+main[data-design="small-business-handoff-2026"] .fit-intro h2{max-width:32ch}
+main[data-design="small-business-handoff-2026"] .fit-grid{align-items:start}
+main[data-design="small-business-handoff-2026"] .scope-sheet{box-shadow:none}
+main[data-design="small-business-handoff-2026"] .hero::before{display:none}
