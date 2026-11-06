@@ -69,3 +69,18 @@ main.section:has(article) .final-cta {
 .sa-booking-calendar .sa-oncehub-frame { height: clamp(32rem, 76svh, 47.5rem); }
 
 .pagination a[aria-current="page"] { color: #241a14; background-color: #f97316; }
+
+/* Compact commercial-page sections, without reducing readable body type. */
+main>.section,.fleet-main .section{padding-block:clamp(28px,3.8vw,52px)}
+.fleet-main .fleet-hero{padding:32px 0}
+.fleet-main .service-hero-grid{gap:32px;align-items:center}
+.fleet-main .service-hero-grid h1{font-size:clamp(36px,4.5vw,60px);line-height:1.06;max-width:22ch}
+.fleet-main .service-illustration{height:auto;max-height:350px;aspect-ratio:3/2;object-fit:cover}
+.fleet-main .fleet-card-grid>article{padding:24px;min-height:0;border-radius:8px;box-shadow:none}
+.fleet-main .fleet-card-grid.two>article:last-child:nth-child(odd){grid-column:1/-1}
+.fleet-main .split-detail{gap:32px}
+.fleet-main h2{font-size:clamp(27px,3vw,40px);line-height:1.12}
+.fleet-main .section+.section{border-top:1px solid #dedbd1}
+.scope-section,.guide-section,.fit-section{padding-block:clamp(28px,3.8vw,52px)}
+.final-cta{margin-block:32px;padding:clamp(24px,4vw,48px)}
+@media(max-width:640px){.fleet-main .fleet-hero{padding-block:24px}.fleet-main .service-hero-grid{gap:20px}.fleet-main .service-illustration{max-height:230px}.fleet-main .fleet-card-grid>article{padding:20px}.fleet-main .split-detail{gap:20px}}
