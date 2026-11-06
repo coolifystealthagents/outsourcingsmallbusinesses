@@ -9,10 +9,11 @@ const formatDate = (date: string) =>
     timeZone: "UTC",
   }).format(new Date(`${date}T00:00:00Z`));
 export const PAGE_SIZE = 24;
+export const uniqueResearchPosts = researchPosts.filter((post, index, posts) => posts.findIndex(candidate => candidate.slug === post.slug) === index);
 export function ResearchListing({ page = 1 }: { page?: number }) {
-  const totalPages = Math.max(1, Math.ceil(researchPosts.length / PAGE_SIZE));
+  const totalPages = Math.max(1, Math.ceil(uniqueResearchPosts.length / PAGE_SIZE));
   if (!Number.isInteger(page) || page < 1 || page > totalPages) notFound();
-  const ordered = [...researchPosts].sort(
+  const ordered = [...uniqueResearchPosts].sort(
     (a, b) =>
       b.published.localeCompare(a.published) || a.slug.localeCompare(b.slug),
   );

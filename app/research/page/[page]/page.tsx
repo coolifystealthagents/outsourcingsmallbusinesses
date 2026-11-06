@@ -1,7 +1,6 @@
-import { researchPosts } from '../../../fleet-content';
-import { ResearchListing, PAGE_SIZE } from '../../research-listing';
+import { ResearchListing, PAGE_SIZE, uniqueResearchPosts } from '../../research-listing';
 export function generateStaticParams() {
-  return Array.from({length: Math.max(1, Math.ceil(researchPosts.length / PAGE_SIZE))}, (_, i) => ({page: String(i + 1)}));
+  return Array.from({length: Math.max(1, Math.ceil(uniqueResearchPosts.length / PAGE_SIZE))}, (_, i) => ({page: String(i + 1)}));
 }
 export async function generateMetadata({params}: {params: Promise<{page: string}>}) {
   const {page} = await params;
