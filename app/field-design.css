@@ -91,3 +91,6 @@ main>.section,.fleet-main .section{padding-block:clamp(28px,3.8vw,52px)}
 .fleet-main .fleet-card-grid>article .text-link{margin-top:auto;padding-top:6px}
 .fleet-main .problem-section .narrow{max-width:1160px;border-left:3px solid #b85c34;padding-left:24px}
 .fleet-main .problem-section p{max-width:80ch}
+
+/* Keep the people and laptop in view in this portrait photograph. */
+.service-illustration[src="/design-photography/7653771.webp"]{object-position:center 85%!important}
