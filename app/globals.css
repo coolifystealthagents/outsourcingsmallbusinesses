@@ -384,3 +384,12 @@ main[id],section[id],article[id],h1[id],h2[id],h3[id]{scroll-margin-top:104px}
 /* Policy links remain visibly identifiable within reading text. */
 .legal-card a { text-decoration:underline; text-underline-offset:3px; color:var(--ink); }
 @media(max-width:640px){.legal-hero{padding:26px 0}.legal-card{width:100%;margin:24px auto;padding:22px 20px;border-radius:8px}}
+
+/* Compact, paginated research directory. */
+.research-directory .fleet-hero { padding: 28px 0 24px; }
+.research-directory .fleet-hero .lead { margin-bottom: 0; }
+.research-directory .section { padding: 24px 0 32px; }
+.research-directory .fleet-card { padding: 22px; border-radius: 8px; }
+.research-directory .fleet-card > :last-child { margin-bottom: 0; }
+.research-directory .pagination { flex-wrap: wrap; margin-top: 24px; }
+.research-directory .pagination a[aria-current="page"] { background: var(--text); color: var(--surface); }

@@ -1,55 +1,7 @@
-import { Header, Footer } from "../components";
-import { researchPosts } from "../fleet-content";
-const formatDate = (date: string) =>
-  new Intl.DateTimeFormat("en-US", {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-    timeZone: "UTC",
-  }).format(new Date(`${date}T00:00:00Z`));
+import { ResearchListing } from "./research-listing";
 export const metadata = { alternates: { canonical: 'https://outsourcingsmallbusinesses.com/research' },
   title: "Research",
   description:
     "Research notes about Philippines-based staffing and operations.",
 };
-export default function Research() {
-  const ordered = [...researchPosts].sort(
-    (a, b) =>
-      b.published.localeCompare(a.published) || a.slug.localeCompare(b.slug),
-  );
-  return (
-    <>
-      <Header />
-      <main className="fleet-main">
-        <section className="fleet-hero">
-          <div className="container">
-            <p className="eyebrow">Research library</p>
-            <h1>Research for planning Philippines-based teams</h1>
-            <p className="lead">
-              Sourced notes about role design, operating controls, and staffing
-              decisions for small businesses.
-            </p>
-          </div>
-        </section>
-        <section className="section">
-          <div className="container fleet-card-grid">
-            {ordered.map((p) => (
-              <a
-                className="fleet-card"
-                href={`/research/${p.slug}`}
-                key={p.slug}
-              >
-                <h2>{p.title}</h2>
-                <p>{p.excerpt}</p>
-                <p className="eyebrow">
-                  Published <time dateTime={p.published}>{formatDate(p.published)}</time>
-                </p>
-              </a>
-            ))}
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </>
-  );
-}
+export default function Research() { return <ResearchListing />; }
