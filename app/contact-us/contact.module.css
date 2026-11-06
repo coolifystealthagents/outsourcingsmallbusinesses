@@ -12,3 +12,17 @@
 
 .parentBrand .eyebrow{color:#b9e9df}
 .guidance dd{line-height:1.6;font-weight:600}
+
+/* Give the handoff information the same compact rhythm as the intake. */
+.parentBrand{padding:36px 0}
+.parentGrid{gap:32px}
+.parentGrid h2,.guidance h2{font-size:clamp(30px,3.2vw,42px);line-height:1.12;margin:0 0 16px}
+.parentGrid>figure>img{border-radius:8px 8px 0 0}
+.officialPlate{border-radius:0 0 8px 8px;box-shadow:none}
+.guidance{padding-top:36px;padding-bottom:36px;gap:32px}
+.guidance p:last-child{margin-bottom:0}
+@media(max-width:640px){
+ .parentBrand{padding:26px 0}
+ .parentGrid,.guidance{gap:24px}
+ .guidance{padding-top:26px;padding-bottom:26px}
+}
