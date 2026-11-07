@@ -31,6 +31,7 @@ import { octoberTwentyTwoBlogBatch } from './oct22-blog-batch';
 import { octoberTwentySixBlogBatch } from './oct26-blog-batch';
 import { octoberTwentySevenBlogBatch } from './oct27-blog-batch';
 import { nov03BlogBatch } from './nov03-blog-batch';
+import { nov07BlogBatch } from './nov07-blog-batch';
 import { nov06BlogBatch } from './nov06-blog-batch';
 import { nov05BlogBatch } from './nov05-blog-batch';
 import { nov04BlogBatch } from './nov04-blog-batch';
@@ -189,6 +190,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...nov07BlogBatch.map((post) => ({ ...post, minutes: 12 })),
   ...nov06BlogBatch.map((post) => ({ ...post, minutes: 12 })),
   ...nov05BlogBatch.map((post) => ({ ...post, minutes: 12 })),
   ...nov04BlogBatch.map((post) => ({ ...post, minutes: 12 })),
