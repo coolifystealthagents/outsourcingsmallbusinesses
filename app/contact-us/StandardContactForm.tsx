@@ -70,17 +70,10 @@ export default function StandardContactForm({ endpoint = "/api/contact", encodin
         : { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) };
       const response = await fetch(endpoint, request);
       if (!response.ok) throw new Error("Lead endpoint rejected the request");
-      try { (window as TrackerWindow).acrTracker?.trackLead?.(payload); } catch {}
+      try { /* ACR captures the native submit event once. */ } catch {}
       window.location.assign(submissionDestination(inquiryType));
     } catch {
-      try {
-        const tracker = (window as TrackerWindow).acrTracker?.trackLead;
-        if (tracker) {
-          tracker(payload);
-          window.location.assign(submissionDestination(inquiryType));
-          return;
-        }
-      } catch {}
+      /* ACR auto capture must not turn a rejected booking into success. */
       setError("We could not submit your request. Please try again.");
       setSubmitting(false);
     }
@@ -89,7 +82,7 @@ export default function StandardContactForm({ endpoint = "/api/contact", encodin
   return (
     <div className="sa-form-card">
       <h2>{isStaffing ? "Tell us what recurring work you want to hand off" : "Send a policy or general inquiry"}</h2>
-      <form action={endpoint} method="post" onSubmit={submit} id="contactPageForm">
+      <form data-acr-managed="react" action={endpoint} method="post" onSubmit={submit} id="contactPageForm">
         <input className="sa-hp" name="website_url" type="hidden" tabIndex={-1} autoComplete="off" aria-label="Leave this field empty" />
         <label>What can we help with? *<select name="inquiryType" required value={inquiryType} onChange={(e) => setInquiryType(e.target.value as InquiryType)}>{inquiryTypes.map(([value, label]) => <option value={value} key={value}>{label}</option>)}</select></label>
         <div className="sa-grid">
