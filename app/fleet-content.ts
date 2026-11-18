@@ -28,6 +28,7 @@ import { nov03ResearchBatch } from './nov03-research';
 import { nov07ResearchBatch } from './nov07-research';
 import { nov08ResearchBatch } from './nov08-research';
 import { nov09ResearchBatch } from './nov09-research';
+import { nov18ResearchBatch } from './nov18-research';
 import { nov17ResearchBatch } from './nov17-research';
 import { nov16ResearchBatch } from './nov16-research';
 import { nov10ResearchBatch } from './nov10-research';
@@ -42,6 +43,7 @@ import { augustThirteenResearchBatch } from './aug13-research-batch';
 import { augustFourteenResearchBatch } from './aug14-research-batch';
 
 export const researchPosts: ReadonlyArray<{slug:string;title:string;excerpt:string;published:string;modified?:string;body:readonly string[];studyNote?:string;imagePath?:string;referenceSources?:ReadonlyArray<{title:string;publisher:string;url:string;checked:string}>;serviceHandoff?:{href:string;label:string;description:string}}> = [
+  ...(nov18ResearchBatch as any),
   ...(nov17ResearchBatch as any),
   ...(nov16ResearchBatch as any),
   ...(nov10ResearchBatch as any),
