@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Build a customer deposit reconciliation sheet for an assistant-run shop",
+    "kind": "Blog",
+    "background": "/private/tmp/hbophotos/1497366811353-6870744d04b2.jpg",
+    "output": "/Users/teoadiputra/fleet/repos/outsourcingsmallbusinesses/public/thumbnails/november-19/build-a-customer-deposit-reconciliation-sheet-for-an-assistant-run-shop.png",
+    "sha256": "a58affb6503d7c5a2088ccc77fdbc3628bfb2d27bc64d4e6adae83df937cfe85"
+  },
+  {
+    "title": "Set a supplier delivery appointment window tracker for a small-business assistant",
+    "kind": "Blog",
+    "background": "/private/tmp/hbophotos/1497366754035-f200968a6e72.jpg",
+    "output": "/Users/teoadiputra/fleet/repos/outsourcingsmallbusinesses/public/thumbnails/november-19/set-a-supplier-delivery-appointment-window-tracker-for-a-small-business-assistant.png",
+    "sha256": "eecd7c086464f81f8cdd6898a6767cd17bc4732648395bce86e2f6c6080eb011"
+  },
+  {
+    "title": "Build a customer callback request register for an assistant-run repair shop",
+    "kind": "Blog",
+    "background": "/private/tmp/hbophotos/1521737711867-e3b97375f902.jpg",
+    "output": "/Users/teoadiputra/fleet/repos/outsourcingsmallbusinesses/public/thumbnails/november-19/build-a-customer-callback-request-register-for-an-assistant-run-repair-shop.png",
+    "sha256": "9a72a7466e107d88874995afd4916348087d90a89ab53cbee12409bd00820b01"
+  },
+  {
+    "title": "Set a daily cash drawer variance review for an assistant-run shop",
+    "kind": "Blog",
+    "background": "/private/tmp/hbophotos/1524758631624-e2822e304c36.jpg",
+    "output": "/Users/teoadiputra/fleet/repos/outsourcingsmallbusinesses/public/thumbnails/november-19/set-a-daily-cash-drawer-variance-review-for-an-assistant-run-shop.png",
+    "sha256": "88d6a70aab7209862d79b05c06c1d9aa61574fef018395f712e0841067b20305"
+  },
+  {
+    "title": "Build a special-order lead time confirmation record for an assistant-run shop",
+    "kind": "Blog",
+    "background": "/private/tmp/hbophotos/1521737711867-e3b97375f902.jpg",
+    "output": "/Users/teoadiputra/fleet/repos/outsourcingsmallbusinesses/public/thumbnails/november-19/build-a-special-order-lead-time-confirmation-record-for-an-assistant-run-shop.png",
+    "sha256": "00469ca888bf9b9fdaded6fd2aff5832caa9d7c1e36d25deb3018e103d756f18"
+  },
+  {
+    "title": "What share of customer deposits are matched to an order within one business day?",
+    "kind": "Research",
+    "background": "/private/tmp/hbophotos/1497366754035-f200968a6e72.jpg",
+    "output": "/Users/teoadiputra/fleet/repos/outsourcingsmallbusinesses/public/thumbnails/november-19/what-share-of-customer-deposits-are-matched-to-an-order-within-one-business-day.png",
+    "sha256": "22de34c699d559989a032f624f7ca86c2b96c19f9dfb47a925aea417e53bfebb"
+  },
+  {
+    "title": "How often do supplier deliveries arrive outside the booked appointment window?",
+    "kind": "Research",
+    "background": "/private/tmp/hbophotos/1524758631624-e2822e304c36.jpg",
+    "output": "/Users/teoadiputra/fleet/repos/outsourcingsmallbusinesses/public/thumbnails/november-19/how-often-do-supplier-deliveries-arrive-outside-the-booked-appointment-window.png",
+    "sha256": "9c4f87eed5ea9cd3ce10df1fa0cb51b2e265785c6e8c3ba08aa949a11987dd93"
+  },
+  {
+    "title": "How long do service callback requests wait before a technician is assigned?",
+    "kind": "Research",
+    "background": "/private/tmp/hbophotos/1497366811353-6870744d04b2.jpg",
+    "output": "/Users/teoadiputra/fleet/repos/outsourcingsmallbusinesses/public/thumbnails/november-19/how-long-do-service-callback-requests-wait-before-a-technician-is-assigned.png",
+    "sha256": "735c5e04c27987979fde439954cca982c2e6106cbe4d2f80c6d9ae23efc784b0"
+  },
+  {
+    "title": "How often does a daily cash drawer count differ from the recorded opening balance?",
+    "kind": "Research",
+    "background": "/private/tmp/hbophotos/1521737711867-e3b97375f902.jpg",
+    "output": "/Users/teoadiputra/fleet/repos/outsourcingsmallbusinesses/public/thumbnails/november-19/how-often-does-a-daily-cash-drawer-count-differ-from-the-recorded-opening-balance.png",
+    "sha256": "f47c763ce2a30830ffea75c2ad557a62d0db4cdab5c3ccc0844e026028f9cccd"
+  },
+  {
+    "title": "What share of special orders reach the customer with a confirmed lead time before payment?",
+    "kind": "Research",
+    "background": "/private/tmp/hbophotos/1524758631624-e2822e304c36.jpg",
+    "output": "/Users/teoadiputra/fleet/repos/outsourcingsmallbusinesses/public/thumbnails/november-19/what-share-of-special-orders-reach-the-customer-with-a-confirmed-lead-time-before-payment.png",
+    "sha256": "4ff9550d05ad552b98e3e2e271b843017b9737588f523e706d20a4db187b22bb"
+  }
+]

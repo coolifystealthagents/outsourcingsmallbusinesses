@@ -41,6 +41,7 @@ import { nov07BlogBatch } from '../../nov07-blog-batch';
 import { nov08BlogBatch } from '../../nov08-blog-batch';
 import { nov09BlogBatch } from '../../nov09-blog-batch';
 import { nov18BlogBatch } from '../../nov18-blog-batch';
+import { nov19BlogBatch } from '../../nov19-blog-batch';
 import { nov17BlogBatch } from '../../nov17-blog-batch';
 import { nov16BlogBatch } from '../../nov16-blog-batch';
 import { nov10BlogBatch } from '../../nov10-blog-batch';
@@ -102,6 +103,7 @@ const nov07BySlug = new Map<string, { post: (typeof nov07BlogBatch)[number]; ind
 const nov08BySlug = new Map<string, { post: (typeof nov08BlogBatch)[number]; index: number }>(nov08BlogBatch.map((post, index) => [post.slug, { post, index }]));
 const nov09BySlug = new Map<string, { post: (typeof nov09BlogBatch)[number]; index: number }>(nov09BlogBatch.map((post, index) => [post.slug, { post, index }]));
 const nov18BySlug = new Map<string, { post: (typeof nov18BlogBatch)[number]; index: number }>(nov18BlogBatch.map((post, index) => [post.slug, { post, index }]));
+const nov19BySlug = new Map<string, { post: (typeof nov19BlogBatch)[number]; index: number }>(nov19BlogBatch.map((post, index) => [post.slug, { post, index }]));
 const nov17BySlug = new Map<string, { post: (typeof nov17BlogBatch)[number]; index: number }>(nov17BlogBatch.map((post, index) => [post.slug, { post, index }]));
 const nov16BySlug = new Map<string, { post: (typeof nov16BlogBatch)[number]; index: number }>(nov16BlogBatch.map((post, index) => [post.slug, { post, index }]));
 const nov10BySlug = new Map<string, { post: (typeof nov10BlogBatch)[number]; index: number }>(nov10BlogBatch.map((post, index) => [post.slug, { post, index }]));
@@ -557,6 +559,17 @@ function NovemberNineArticle({ index }: { index: number }) {
   return <><JsonLd data={schema}/><article className="container guide-article strict-article" data-article-family="blog" data-batch="2026-11-09" data-no-enhance><link rel="canonical" href={url}/><meta property="article:published_time" content={post.publicationDate}/><p className="eyebrow">Small business outsourcing workflow guide</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><time dateTime={post.publicationDate}>Published November 9, 2026</time><figure><img src={post.imagePath} alt={post.title} width="1200" height="630" style={{width:'100%',height:'auto'}}/></figure>{post.sections.map(({heading,paragraphs})=><section key={heading}><h2 id={heading.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'')}>{heading}</h2>{paragraphs.map((body)=><p key={body}>{body}</p>)}</section>)}<section><h2>Sources and next steps</h2><ul>{post.sources.map(([label,sourceUrl])=><li key={sourceUrl}><a href={sourceUrl} target="_blank" rel="noreferrer">{label}</a></li>)}</ul><p>Compare this workflow with the <a href="/services">small-business outsourcing service guides</a> and bring a redacted source record to the scoping call.</p></section><section><h2>Related guides</h2><div className="fleet-card-grid">{related.map((item)=><a className="fleet-card" href={`/blog/${item!.slug}`} key={item!.slug}><h3>{item!.title}</h3><p>{item!.excerpt}</p></a>)}</div></section></article><CTA/></>;
 }
 
+function NovemberNineteenArticle({ index }: { index: number }) {
+  const post = nov19BlogBatch[index];
+  const url = `${baseUrl}/blog/${post.slug}`;
+  const related = post.related
+    .map((relatedSlug) => nov19BlogBatch.find((item) => item.slug === relatedSlug))
+    .filter(Boolean)
+    .slice(0, 3);
+  const schema = {'@context':'https://schema.org','@type':'BlogPosting',headline:post.title,description:post.excerpt,url,datePublished:post.publicationDate,dateModified:post.publicationDate,mainEntityOfPage:url,image:`${baseUrl}${post.imagePath}`,citation:post.sources.map(([,sourceUrl])=>sourceUrl),author:{'@type':'Organization',name:site.brand},publisher:{'@type':'Organization',name:site.brand,url:baseUrl}};
+  return <><JsonLd data={schema}/><article className="container guide-article strict-article" data-article-family="blog" data-batch="2026-11-19" data-no-enhance><link rel="canonical" href={url}/><meta property="article:published_time" content={post.publicationDate}/><p className="eyebrow">Small business outsourcing workflow guide</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><time dateTime={post.publicationDate}>Published November 19, 2026</time><figure><img src={post.imagePath} alt={post.title} width="1200" height="630" style={{width:'100%',height:'auto'}}/></figure><section className="takeaway-box"><h2>Key takeaways</h2><ul>{post.takeaways.map((takeaway)=><li key={takeaway}>{takeaway}</li>)}</ul></section>{post.sections.map(({heading,paragraphs})=><section key={heading}><h2 id={heading.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'')}>{heading}</h2>{paragraphs.map((body)=><p key={body}>{body}</p>)}</section>)}<section><h2>Sources and next steps</h2><ul>{post.sources.map(([label,sourceUrl])=><li key={sourceUrl}><a href={sourceUrl} target="_blank" rel="noreferrer">{label}</a></li>)}</ul><p>Compare this workflow with the <a href="/services">small-business outsourcing service guides</a> and bring a redacted source record to the scoping call.</p></section><section><h2>Related guides</h2><div className="fleet-card-grid">{related.map((item)=><a className="fleet-card" href={`/blog/${item!.slug}`} key={item!.slug}><h3>{item!.title}</h3><p>{item!.excerpt}</p></a>)}</div></section></article><CTA/></>;
+}
+
 function NovemberEighteenArticle({ index }: { index: number }) {
   const post = nov18BlogBatch[index];
   const url = `${baseUrl}/blog/${post.slug}`;
@@ -662,6 +675,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const nov08 = nov08BySlug.get(slug);
   const nov09 = nov09BySlug.get(slug);
   const nov18 = nov18BySlug.get(slug);
+  const nov19 = nov19BySlug.get(slug);
   const nov17 = nov17BySlug.get(slug);
   const nov16 = nov16BySlug.get(slug);
   const nov10 = nov10BySlug.get(slug);
@@ -692,6 +706,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const septemberTwentyThree = septemberTwentyThreeBySlug.get(slug);
   const septemberTwentyFour = septemberTwentyFourBySlug.get(slug);
   const septemberTwentyFive = septemberTwentyFiveBySlug.get(slug);
+  if (nov19) return <><Header articleMode /><main className="section"><NovemberNineteenArticle index={nov19.index} /><Oct22Toc /></main><Footer articleMode /></>;
   if (nov18) return <><Header articleMode /><main className="section"><NovemberEighteenArticle index={nov18.index} /><Oct22Toc /></main><Footer articleMode /></>;
   if (nov17) return <><Header articleMode /><main className="section"><NovemberSeventeenArticle index={nov17.index} /><Oct22Toc /></main><Footer articleMode /></>;
   if (nov16) return <><Header articleMode /><main className="section"><NovemberSixteenArticle index={nov16.index} /><Oct22Toc /></main><Footer articleMode /></>;

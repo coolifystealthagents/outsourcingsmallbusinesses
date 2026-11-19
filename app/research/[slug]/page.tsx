@@ -93,7 +93,7 @@ export default async function ResearchArticle({
           <time dateTime={post.published}>
             Published {formatPublicDate(post.published)}
           </time>
-          {post.imagePath && (post.published === "2026-11-06" || post.published === "2026-11-07" || post.published === "2026-11-08" || post.published === "2026-11-09" || post.published === "2026-11-10" || post.published === "2026-11-16" || post.published === "2026-11-17" || post.published === "2026-11-18" ? (
+          {post.imagePath && (post.published === "2026-11-06" || post.published === "2026-11-07" || post.published === "2026-11-08" || post.published === "2026-11-09" || post.published === "2026-11-10" || post.published === "2026-11-16" || post.published === "2026-11-17" || post.published === "2026-11-18" || post.published === "2026-11-19" ? (
             <figure>
               <img
                 src={post.imagePath}
