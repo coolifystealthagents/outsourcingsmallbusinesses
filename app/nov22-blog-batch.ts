@@ -58,7 +58,10 @@ export const nov22BlogBatch = [
       "Name both people who counted and the variance explanation.",
       "Keep the note with the deposit and the daily sales report.",
       "Review repeated variances by shift and by assistant."
-    ]
+    ],
+    "publicationDate": "2026-11-22",
+    "date": "2026-11-22",
+    "imagePath": "/thumbnails/november-22/build-a-cash-handling-handover-note-for-an-assistant-run-shop.png"
   },
   {
     "slug": "set-a-supplier-invoice-matching-checklist-for-a-small-shop-assistant",
@@ -119,7 +122,10 @@ export const nov22BlogBatch = [
       "Record the quantity, the unit price, and the tax before approving.",
       "Route a mismatch to a named owner instead of paying and fixing later.",
       "Review unmatched invoices weekly for repeat suppliers."
-    ]
+    ],
+    "publicationDate": "2026-11-22",
+    "date": "2026-11-22",
+    "imagePath": "/thumbnails/november-22/set-a-supplier-invoice-matching-checklist-for-a-small-shop-assistant.png"
   },
   {
     "slug": "create-a-customer-special-order-deposit-record-for-an-assistant-run-store",
@@ -180,7 +186,10 @@ export const nov22BlogBatch = [
       "Record the deposit amount, the method, and the receipt number.",
       "Get the customer's acknowledgment before the order is placed.",
       "Refund or apply the deposit only under the written terms."
-    ]
+    ],
+    "publicationDate": "2026-11-22",
+    "date": "2026-11-22",
+    "imagePath": "/thumbnails/november-22/create-a-customer-special-order-deposit-record-for-an-assistant-run-store.png"
   },
   {
     "slug": "build-a-daily-opening-checklist-for-an-assistant-run-retail-shop",
@@ -241,7 +250,10 @@ export const nov22BlogBatch = [
       "Check the cash float, the alarm, the doors, and the till before customers enter.",
       "Note the stock gaps that affect the day's selling plan.",
       "Send the completed checklist to the owner by a fixed time."
-    ]
+    ],
+    "publicationDate": "2026-11-22",
+    "date": "2026-11-22",
+    "imagePath": "/thumbnails/november-22/build-a-daily-opening-checklist-for-an-assistant-run-retail-shop.png"
   },
   {
     "slug": "set-a-staff-scheduling-change-log-for-a-small-business-assistant",
@@ -302,6 +314,9 @@ export const nov22BlogBatch = [
       "Check coverage and overtime before approving a swap.",
       "Name the approver and the time the change took effect.",
       "Send the updated schedule to the team after each change."
-    ]
+    ],
+    "publicationDate": "2026-11-22",
+    "date": "2026-11-22",
+    "imagePath": "/thumbnails/november-22/set-a-staff-scheduling-change-log-for-a-small-business-assistant.png"
   }
 ];
