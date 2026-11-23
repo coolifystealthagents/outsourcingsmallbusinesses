@@ -31,6 +31,7 @@ import { nov09ResearchBatch } from './nov09-research';
 import { nov18ResearchBatch } from './nov18-research';
 import { nov19ResearchBatch } from './nov19-research';
 import { nov20ResearchBatch } from './nov20-research';
+import { nov22ResearchBatch } from './nov22-research';
 import { nov21ResearchBatch } from './nov21-research';
 import { nov17ResearchBatch } from './nov17-research';
 import { nov16ResearchBatch } from './nov16-research';
@@ -49,6 +50,7 @@ export const researchPosts: ReadonlyArray<{slug:string;title:string;excerpt:stri
   ...(nov18ResearchBatch as any),
   ...(nov19ResearchBatch as any),
   ...(nov20ResearchBatch as any),
+  ...(nov22ResearchBatch as any),
   ...(nov21ResearchBatch as any),
   ...(nov17ResearchBatch as any),
   ...(nov16ResearchBatch as any),

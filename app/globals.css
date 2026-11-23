@@ -393,3 +393,13 @@ main[id],section[id],article[id],h1[id],h2[id],h3[id]{scroll-margin-top:104px}
 .research-directory .fleet-card > :last-child { margin-bottom: 0; }
 .research-directory .pagination { flex-wrap: wrap; margin-top: 24px; }
 .research-directory .pagination a[aria-current="page"] { background: var(--ink); color: var(--white); }
+
+/* 2026-11-22 article ToC placement for the small-business template */
+@media (min-width: 901px) {
+  .o22-toc-desktop { float: right; width: 240px; margin: 0 0 1rem 1.5rem; }
+}
+@media (max-width: 900px) {
+  .o22-grid { display: block !important; }
+  .o22-toc-desktop { display: none !important; }
+  .o22-sticky-toc { position: static !important; }
+}

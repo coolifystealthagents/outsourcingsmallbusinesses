@@ -1,0 +1,172 @@
+export const nov22ResearchBatch = [
+  {
+    "slug": "what-share-of-supplier-invoices-reach-payment-without-a-three-way-match",
+    "title": "What share of supplier invoices reach payment without a three-way match?",
+    "excerpt": "A local method for measuring how often supplier invoices are paid without a purchase order and delivery match, with separate checks for price, quantity, and credit.",
+    "published": "2026-11-22",
+    "imagePath": "/thumbnails/november-22/what-share-of-supplier-invoices-reach-payment-without-a-three-way-match.png",
+    "body": [
+      "This protocol measures what share of supplier invoices reach payment without a three-way match in a small shop. The unit is one invoice line. A match means the purchase order, the delivery note, and the invoice agree on the item, quantity, and price. The result describes one shop and one payment period.",
+      "Section: Question and scope",
+      "Include invoices paid during the window, including partial payments and credits. Exclude invoices for utilities and rent that have no goods receipt. Record the supplier, the amount, and the payment date. If the shop changed its purchasing system during the period, split the sample.",
+      "A line that is waiting for a credit note is reported as pending, while a line paid without a delivery record is missing. State that rule before scoring. A pending credit may still be resolved, so keep the two states separate. The reviewer should record the status beside each line.",
+      "Section: Definitions and evidence standard",
+      "Define a three-way match as an invoice line that agrees with an approved purchase order and a delivery note on the item, quantity, and unit price. A total that matches is not enough when the lines differ. Record the three documents and the comparison. The reviewer should note any line that cannot be matched.",
+      "Define a complete record as one with the order, the delivery, the invoice, the match result, and the approver. A record missing any of the five is incomplete. Record the missing fields. The study should not treat a paid invoice as a matched one.",
+      "Section: Sampling and measurement",
+      "Draw the sample from the payment run, not from the invoices the assistant remembers. Record the export date and the filter. Include different suppliers and amount bands. A sample of large invoices may look better because they receive more attention.",
+      "Measure the number of lines, the share matched, the share paid without a delivery note, and the share with a price difference. Report the counts by supplier and amount band. A single percentage hides the small repeat supplier that is never checked. The reviewer should keep the raw counts.",
+      "Section: Findings and interpretation",
+      "Present the distribution before suggesting a cause. A cluster with one supplier may point to a missing delivery note, while a cluster in one amount band may point to a threshold. Read the lines behind the largest group before naming a reason. The reviewer should keep the individual cases.",
+      "Separate a missing delivery note from a price mismatch. The first is a receiving problem, while the second is a purchasing problem. Report both counts. The fix for one is a receipt step, and the fix for the other is an order update.",
+      "Section: Limitations",
+      "The measure cannot show whether the price was fair or whether the goods were used. It shows only whether the documents agree. A matched invoice can still be a bad purchase, and an unmatched one can still be correct. Keep the evidence result separate from the buying decision.",
+      "The sample is local to one shop and one payment period. A different supplier mix can produce a different share. Report the definitions and counts so the review can be repeated. Do not present the result as a benchmark.",
+      "Section: Practical next step",
+      "Choose one repair that matches the most common gap, such as a required delivery-note field at payment. Write the owner and the start date. Define the measure that will show whether it worked, using the same categories. Keep the working list separate from the official record.",
+      "Test the repair on the next payment run before applying it to every supplier. Record the test group and the result. If the repair adds a step without improving the match, simplify it. A small test is enough to show whether the field is being used."
+    ],
+    "takeaways": [
+      "Count an invoice as matched only when the order, delivery, and price agree.",
+      "Separate a missing delivery note from a price mismatch.",
+      "Report the supplier and the amount band beside the share.",
+      "Test one approval field and recheck the next payment run."
+    ]
+  },
+  {
+    "slug": "how-often-do-special-order-deposits-lack-a-written-customer-approval",
+    "title": "How often do special-order deposits lack a written customer approval?",
+    "excerpt": "A local method for measuring how often special-order deposits are taken without a written customer approval, with separate checks for the terms, the receipt, and the refund.",
+    "published": "2026-11-22",
+    "imagePath": "/thumbnails/november-22/how-often-do-special-order-deposits-lack-a-written-customer-approval.png",
+    "body": [
+      "This protocol measures how often a special-order deposit is taken without a written customer approval. The unit is one deposit for one special order. The evidence is the order record, the terms, the receipt, and the customer acknowledgment. The result describes one shop and one period.",
+      "Section: Question and scope",
+      "Include special orders with a deposit during the window, including orders later cancelled. Exclude ordinary sales paid in full. Record the item, the value, and the order source. If the shop changed its deposit policy during the period, split the sample.",
+      "A deposit that is waiting for the customer's signature is pending, while one taken without terms is missing. State that rule before scoring. A pending signature may still be collected, so keep the two states separate. The reviewer should record the status beside each order.",
+      "Section: Definitions and evidence standard",
+      "Define written approval as a customer acknowledgment of the item, price, expected date, cancellation terms, and deposit amount. A verbal yes is not written approval. Record the document and the date. The rule should be fixed before any order is coded.",
+      "Define a complete deposit record as one with the order, the terms, the receipt, the approval, and the refund rule. A record missing any of the five is incomplete. Record the missing fields. The study should not treat a payment receipt as a complete record.",
+      "Section: Sampling and measurement",
+      "Draw the sample from the special-order register, not from the deposits the assistant remembers. Record the export date and the filter. Include different item values and staff members. A sample of large orders may look better because they receive more attention.",
+      "Measure the number of deposits, the share with written approval, the share with a receipt, and the share with a refund rule. Report the counts by value band and order source. A single percentage hides the small order that was taken on a phone call. The reviewer should keep the raw counts.",
+      "Section: Findings and interpretation",
+      "Present the distribution before suggesting a cause. A cluster with one staff member may point to training, while a cluster in one order source may point to a phone process. Read the orders behind the largest group before naming a reason. The reviewer should keep the individual cases.",
+      "Separate a missing approval from a missing receipt. The first is a consent problem, while the second is a cash-record problem. Report both counts. The fix for one is a form, and the fix for the other is a receipt step.",
+      "Section: Limitations",
+      "The measure cannot show whether the customer understood the terms or whether the deposit was fair. It shows only whether a written approval exists. A complete record can still hide a poor explanation, and a missing one can still be a simple order. Keep the evidence result separate from the customer experience.",
+      "The sample is local to one shop and one period. A different item mix can produce a different share. Report the definitions and counts so the work can be repeated. Do not present the result as a benchmark.",
+      "Section: Practical next step",
+      "Choose one repair that matches the most common gap, such as a required customer signature on the deposit form. Write the owner and the start date. Define the measure that will show whether it worked, using the same categories. Keep the working list separate from the official record.",
+      "Test the repair on the next batch of special orders before applying it to every item. Record the test group and the result. If the repair adds a step without improving the approval, simplify it. A small test is enough to show whether the form is being used."
+    ],
+    "takeaways": [
+      "Count a deposit as approved only when the customer received the written terms.",
+      "Separate a missing signature from a missing receipt.",
+      "Report the item value and the order source beside the share.",
+      "Test one deposit form and recheck the next batch."
+    ]
+  },
+  {
+    "slug": "what-share-of-opening-checklists-lack-a-named-reviewer",
+    "title": "What share of opening checklists lack a named reviewer?",
+    "excerpt": "A local method for measuring how often an opening checklist is completed without a named reviewer, with separate checks for the cash float, the security step, and the exceptions.",
+    "published": "2026-11-22",
+    "imagePath": "/thumbnails/november-22/what-share-of-opening-checklists-lack-a-named-reviewer.png",
+    "body": [
+      "This protocol measures what share of daily opening checklists lack a named reviewer in a small shop. The unit is one opening checklist for one trading day. The evidence is the checklist, the timestamp, and the owner's acknowledgment. The result describes one shop and one period.",
+      "Section: Question and scope",
+      "Include every trading day in the window, including days with a late opening. Exclude closed days and days when the shop was closed for a holiday. Record the shift, the opener, and the checklist version. If the checklist changed during the period, split the sample.",
+      "A checklist that is waiting for the owner's review is pending, while one with no reviewer after trading starts is missing. State that rule before scoring. A pending review may still happen, so keep the two states separate. The reviewer should record the status beside each day.",
+      "Section: Definitions and evidence standard",
+      "Define a named reviewer as a person, other than the opener, who confirms the checklist and records a date or time. A shared inbox or a group chat is not a reviewer. Record the name and the confirmation. The rule should be fixed before any checklist is coded.",
+      "Define a complete checklist as one with the time, the float count, the security check, the exceptions, and the reviewer. A checklist missing any of the five is incomplete. Record the missing fields. The study should not treat a ticked box as a complete review.",
+      "Section: Sampling and measurement",
+      "Collect every trading day in the window rather than a sample, because the opening routine applies to each day. If the shop has several locations, collect each separately. Record the export date and the source. Report the number of days and the exceptions.",
+      "Measure the number of checklists, the share with a reviewer, the share with a float count, and the share with a recorded exception. Report the counts by shift and checklist version. A single percentage hides the Monday morning that is always rushed. The reviewer should keep the raw counts.",
+      "Section: Findings and interpretation",
+      "Present the distribution before suggesting a cause. A cluster on one shift may point to a staffing gap, while a cluster in one version may point to a form that is too long. Read the days behind the largest group before naming a reason. The reviewer should keep the individual cases.",
+      "Separate a missing reviewer from a missing opening step. The first is an oversight problem, while the second is an operating problem. Report both counts. The fix for one is a sign-off field, and the fix for the other is a training or staffing change.",
+      "Section: Limitations",
+      "The measure cannot show whether the opening work was actually done or whether the reviewer looked at the shop. It shows only whether the record names a reviewer. A complete record can still hide a missed step, and a missing name can still be a safe opening. Keep the evidence result separate from the operating outcome.",
+      "The sample is local to one shop and one period. A different shift pattern can produce a different share. Report the definitions and counts so the review can be repeated. Do not present the result as a benchmark.",
+      "Section: Practical next step",
+      "Choose one repair that matches the most common gap, such as a required reviewer field on the checklist. Write the owner and the start date. Define the measure that will show whether it worked, using the same categories. Keep the working list separate from the official record.",
+      "Test the repair on the next week before applying it to every location. Record the test group and the result. If the repair adds a step without improving the review, simplify it. A small test is enough to show whether the field is being used."
+    ],
+    "takeaways": [
+      "Count a checklist as reviewed only when a person is named and dated.",
+      "Separate a missing reviewer from a missing opening step.",
+      "Report the shift and the checklist version beside the share.",
+      "Test one sign-off field and recheck the next week."
+    ]
+  },
+  {
+    "slug": "how-often-do-shift-changes-lack-a-recorded-approval",
+    "title": "How often do shift changes lack a recorded approval?",
+    "excerpt": "A local method for measuring how often a shift change is made without a recorded approval, with separate checks for the coverage, the overtime, and the published schedule.",
+    "published": "2026-11-22",
+    "imagePath": "/thumbnails/november-22/how-often-do-shift-changes-lack-a-recorded-approval.png",
+    "body": [
+      "This protocol measures how often a shift change is made without a recorded approval in a small business. The unit is one change to one scheduled shift. The evidence is the schedule, the change message, and the approval record. The result describes one team and one period.",
+      "Section: Question and scope",
+      "Include swaps, covers, and time changes during the window, including changes made on the day. Exclude changes that were requested but never accepted. Record the shift, the employees, and the reason category. If the approval rule changed during the period, split the sample.",
+      "A change that is waiting for approval is pending, while a change that took effect with no approver is missing. State that rule before scoring. A pending change may still be approved, so keep the two states separate. The reviewer should record the status beside each change.",
+      "Section: Definitions and evidence standard",
+      "Define a recorded approval as a named person, a decision, and a date or time attached to the change. A message that says okay with no author is not sufficient. Record the approver and the time. The rule should be fixed before any change is coded.",
+      "Define a complete change as one with the original shift, the new shift, the coverage check, the overtime check, and the approval. A change missing any of the five is incomplete. Record the missing fields. The study should not treat a group-chat announcement as a complete record.",
+      "Section: Sampling and measurement",
+      "Draw the sample from the schedule history, not from the changes the manager remembers. Record the export date and the filter. Include different shifts and reason categories. A sample of planned changes may look better because they had more notice.",
+      "Measure the number of changes, the share with approval, the share with a coverage check, and the share with an updated schedule. Report the counts by shift and reason. A single percentage hides the last-minute change that was never reviewed. The reviewer should keep the raw counts.",
+      "Section: Findings and interpretation",
+      "Present the distribution before suggesting a cause. A cluster on one shift may point to a coverage problem, while a cluster in one reason category may point to a process gap. Read the changes behind the largest group before naming a reason. The reviewer should keep the individual cases.",
+      "Separate a missing approval from a missing schedule update. The first is a decision problem, while the second is a communication problem. Report both counts. The fix for one is an approval step, and the fix for the other is a publish step.",
+      "Section: Limitations",
+      "The measure cannot show whether the change was fair or whether the employee agreed. It shows only whether the record names an approver. A complete record can still hide a pressured swap, and a missing one can still be a harmless change. Keep the evidence result separate from the people decision.",
+      "The sample is local to one team and one period. A different shift pattern can produce a different share. Report the definitions and counts so the review can be repeated. Do not present the result as a benchmark.",
+      "Section: Practical next step",
+      "Choose one repair that matches the most common gap, such as a required approver field in the schedule tool. Write the owner and the start date. Define the measure that will show whether it worked, using the same categories. Keep the working list separate from the official record.",
+      "Test the repair on the next schedule cycle before applying it to every team. Record the test group and the result. If the repair adds a step without improving the approval, simplify it. A small test is enough to show whether the field is being used."
+    ],
+    "takeaways": [
+      "Count a change as approved only when a named person and a date are recorded.",
+      "Separate a missing approval from a missing schedule update.",
+      "Report the shift and the reason category beside the share.",
+      "Test one approval step and recheck the next schedule cycle."
+    ]
+  },
+  {
+    "slug": "what-share-of-cash-handovers-lack-a-counted-closing-total",
+    "title": "What share of cash handovers lack a counted closing total?",
+    "excerpt": "A local method for measuring how often a cash handover records a deposit but no counted closing total, with separate checks for the float, the variance, and the signatures.",
+    "published": "2026-11-22",
+    "imagePath": "/thumbnails/november-22/what-share-of-cash-handovers-lack-a-counted-closing-total.png",
+    "body": [
+      "This protocol measures what share of cash handovers lack a counted closing total in a small shop. The unit is one handover for one drawer and one shift. The evidence is the handover note, the sales report, and the deposit record. The result describes one shop and one period.",
+      "Section: Question and scope",
+      "Include every shift close in the window, including shifts with a cash drop and shifts with no sales. Exclude days when the shop was closed. Record the drawer, the shift, and the opener. If the handover form changed during the period, split the sample.",
+      "A handover that is waiting for a second count is pending, while one with a deposit but no count is missing. State that rule before scoring. A pending count may still happen, so keep the two states separate. The reviewer should record the status beside each handover.",
+      "Section: Definitions and evidence standard",
+      "Define a counted closing total as a recorded count of each denomination and a total that a second person confirmed. A deposit amount copied from the sales report is not a count. Record the count and the confirmer. The rule should be fixed before any handover is coded.",
+      "Define a complete handover as one with the opening float, the closing count, the variance, the deposit, and both signatures. A record missing any of the five is incomplete. Record the missing fields. The study should not treat a bank deposit as proof of a drawer count.",
+      "Section: Sampling and measurement",
+      "Collect every shift close in the window rather than a sample, because the handover applies to each shift. If the shop has several drawers, collect each separately. Record the export date and the source. Report the number of shifts and the exceptions.",
+      "Measure the number of handovers, the share with a counted total, the share with both signatures, and the share with an explained variance. Report the counts by shift and drawer. A single percentage hides the closing shift that always leaves early. The reviewer should keep the raw counts.",
+      "Section: Findings and interpretation",
+      "Present the distribution before suggesting a cause. A cluster on one shift may point to a time pressure, while a cluster in one drawer may point to a counting habit. Read the handovers behind the largest group before naming a reason. The reviewer should keep the individual cases.",
+      "Separate a missing count from a missing signature. The first is a counting problem, while the second is a review problem. Report both counts. The fix for one is a count step, and the fix for the other is a second-person rule.",
+      "Section: Limitations",
+      "The measure cannot show whether the cash was correct or whether the count was honest. It shows only whether a counted total is recorded. A complete handover can still hide a theft, and a missing one can still be a correct deposit. Keep the evidence result separate from the cash outcome.",
+      "The sample is local to one shop and one period. A different shift pattern can produce a different share. Report the definitions and counts so the review can be repeated. Do not present the result as a benchmark.",
+      "Section: Practical next step",
+      "Choose one repair that matches the most common gap, such as a required count field on the handover form. Write the owner and the start date. Define the measure that will show whether it worked, using the same categories. Keep the working list separate from the official record.",
+      "Test the repair on the next week of closes before applying it to every drawer. Record the test group and the result. If the repair adds a step without improving the record, simplify it. A small test is enough to show whether the field is being used."
+    ],
+    "takeaways": [
+      "Count a handover as complete only when the closing total is counted and recorded.",
+      "Separate a missing count from a missing signature.",
+      "Report the shift and the drawer beside the share.",
+      "Test one handover form and recheck the next week."
+    ]
+  }
+];

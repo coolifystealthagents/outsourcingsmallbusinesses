@@ -43,6 +43,7 @@ import { nov09BlogBatch } from '../../nov09-blog-batch';
 import { nov18BlogBatch } from '../../nov18-blog-batch';
 import { nov19BlogBatch } from '../../nov19-blog-batch';
 import { nov20BlogBatch } from '../../nov20-blog-batch';
+import { nov22BlogBatch } from '../../nov22-blog-batch';
 import { nov21BlogBatch } from '../../nov21-blog-batch';
 import { nov17BlogBatch } from '../../nov17-blog-batch';
 import { nov16BlogBatch } from '../../nov16-blog-batch';
@@ -108,6 +109,7 @@ const nov18BySlug = new Map<string, { post: (typeof nov18BlogBatch)[number]; ind
 const nov19BySlug = new Map<string, { post: (typeof nov19BlogBatch)[number]; index: number }>(nov19BlogBatch.map((post, index) => [post.slug, { post, index }]));
 const nov20BySlug = new Map<string, { post: (typeof nov20BlogBatch)[number]; index: number }>(nov20BlogBatch.map((post, index) => [post.slug, { post, index }]));
 const nov21BySlug = new Map<string, { post: (typeof nov21BlogBatch)[number]; index: number }>(nov21BlogBatch.map((post, index) => [post.slug, { post, index }]));
+const nov22BySlug = new Map<string, { post: (typeof nov22BlogBatch)[number]; index: number }>(nov22BlogBatch.map((post, index) => [post.slug, { post, index }]));
 const nov17BySlug = new Map<string, { post: (typeof nov17BlogBatch)[number]; index: number }>(nov17BlogBatch.map((post, index) => [post.slug, { post, index }]));
 const nov16BySlug = new Map<string, { post: (typeof nov16BlogBatch)[number]; index: number }>(nov16BlogBatch.map((post, index) => [post.slug, { post, index }]));
 const nov10BySlug = new Map<string, { post: (typeof nov10BlogBatch)[number]; index: number }>(nov10BlogBatch.map((post, index) => [post.slug, { post, index }]));
@@ -704,6 +706,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const nov19 = nov19BySlug.get(slug);
   const nov20 = nov20BySlug.get(slug);
   const nov21 = nov21BySlug.get(slug);
+  const nov22 = nov22BySlug.get(slug);
   const nov17 = nov17BySlug.get(slug);
   const nov16 = nov16BySlug.get(slug);
   const nov10 = nov10BySlug.get(slug);
@@ -735,6 +738,8 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const septemberTwentyFour = septemberTwentyFourBySlug.get(slug);
   const septemberTwentyFive = septemberTwentyFiveBySlug.get(slug);
   if (nov21) return <><Header articleMode /><main className="section"><NovemberTwentyOneArticle index={nov21.index} /><Oct22Toc /></main><Footer articleMode /></>;
+  if (nov22) return <><Header articleMode /><main className="section"><div className="o22-grid" style={{display:'grid',gridTemplateColumns:'240px minmax(0,1fr)',gap:'32px',alignItems:'start'}}><article className="container guide-article strict-article"><p className="eyebrow">Small business outsourcing decision guide</p><h1>{nov22.post.title}</h1><p className="lead">{nov22.post.excerpt}</p><time dateTime={nov22.post.published}>Published November 22, 2026</time><Oct22Toc />{nov22.post.sections.map(({heading,paragraphs})=><section key={heading}><h2 id={heading.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'')}>{heading}</h2>{paragraphs.map((body)=><p key={body}>{body}</p>)}</section>)}<section><h2>Next step</h2><p>Use these checks with the shop's own policy and a named owner for each decision.</p></section></article></div></main><Footer articleMode /></>;
+
   if (nov20) return <><Header articleMode /><main className="section"><NovemberTwentyArticle index={nov20.index} /><Oct22Toc /></main><Footer articleMode /></>;
   if (nov19) return <><Header articleMode /><main className="section"><NovemberNineteenArticle index={nov19.index} /><Oct22Toc /></main><Footer articleMode /></>;
   if (nov18) return <><Header articleMode /><main className="section"><NovemberEighteenArticle index={nov18.index} /><Oct22Toc /></main><Footer articleMode /></>;
