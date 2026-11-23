@@ -23,8 +23,8 @@ export const nov22ResearchBatch = [
       "The measure cannot show whether the price was fair or whether the goods were used. It shows only whether the documents agree. A matched invoice can still be a bad purchase, and an unmatched one can still be correct. Keep the evidence result separate from the buying decision.",
       "The sample is local to one shop and one payment period. A different supplier mix can produce a different share. Report the definitions and counts so the review can be repeated. Do not present the result as a benchmark.",
       "Section: Practical next step",
-      "Choose one repair that matches the most common gap, such as a required delivery-note field at payment. Write the owner and the start date. Define the measure that will show whether it worked, using the same categories. Keep the working list separate from the official record.",
-      "Test the repair on the next payment run before applying it to every supplier. Record the test group and the result. If the repair adds a step without improving the match, simplify it. A small test is enough to show whether the field is being used."
+      "Pick one correction that fits the biggest gap, such as a mandatory delivery-note field before payment. Name the person and the start date. State the measure that will show a change, using the same buckets. The working list stays apart from the official payment file.",
+      "Try the fix on the next payment run before using it for every supplier. Note the trial group and the outcome. If it adds work without a better match, drop a step instead of adding another. A short trial shows whether the field is used."
     ],
     "takeaways": [
       "Count an invoice as matched only when the order, delivery, and price agree.",
@@ -57,8 +57,8 @@ export const nov22ResearchBatch = [
       "The measure cannot show whether the customer understood the terms or whether the deposit was fair. It shows only whether a written approval exists. A complete record can still hide a poor explanation, and a missing one can still be a simple order. Keep the evidence result separate from the customer experience.",
       "The sample is local to one shop and one period. A different item mix can produce a different share. Report the definitions and counts so the work can be repeated. Do not present the result as a benchmark.",
       "Section: Practical next step",
-      "Choose one repair that matches the most common gap, such as a required customer signature on the deposit form. Write the owner and the start date. Define the measure that will show whether it worked, using the same categories. Keep the working list separate from the official record.",
-      "Test the repair on the next batch of special orders before applying it to every item. Record the test group and the result. If the repair adds a step without improving the approval, simplify it. A small test is enough to show whether the form is being used."
+      "Select a single correction for the most frequent gap, such as a customer signature line on the deposit form. Name the owner and the first day. Write the measure that will reveal an improvement, with the same categories. Keep the test sheet out of the official order file.",
+      "Apply the fix to the next set of special orders before every item. Record the trial group and the result. If the extra step does not improve approval, simplify it. A small trial is enough to see whether the form is completed."
     ],
     "takeaways": [
       "Count a deposit as approved only when the customer received the written terms.",
@@ -91,8 +91,8 @@ export const nov22ResearchBatch = [
       "The measure cannot show whether the opening work was actually done or whether the reviewer looked at the shop. It shows only whether the record names a reviewer. A complete record can still hide a missed step, and a missing name can still be a safe opening. Keep the evidence result separate from the operating outcome.",
       "The sample is local to one shop and one period. A different shift pattern can produce a different share. Report the definitions and counts so the review can be repeated. Do not present the result as a benchmark.",
       "Section: Practical next step",
-      "Choose one repair that matches the most common gap, such as a required reviewer field on the checklist. Write the owner and the start date. Define the measure that will show whether it worked, using the same categories. Keep the working list separate from the official record.",
-      "Test the repair on the next week before applying it to every location. Record the test group and the result. If the repair adds a step without improving the review, simplify it. A small test is enough to show whether the field is being used."
+      "Pick one fix for the largest gap, such as a reviewer box on the opening form. Name the person and the date it begins. Record the measure that will show whether the fix helps, using the same groups. The working notes stay separate from the daily record.",
+      "Try the fix for one week before extending it to every location. Note the trial days and the outcome. If the work grows without a better review, remove a step. A short trial shows whether the box is used."
     ],
     "takeaways": [
       "Count a checklist as reviewed only when a person is named and dated.",
@@ -125,8 +125,8 @@ export const nov22ResearchBatch = [
       "The measure cannot show whether the change was fair or whether the employee agreed. It shows only whether the record names an approver. A complete record can still hide a pressured swap, and a missing one can still be a harmless change. Keep the evidence result separate from the people decision.",
       "The sample is local to one team and one period. A different shift pattern can produce a different share. Report the definitions and counts so the review can be repeated. Do not present the result as a benchmark.",
       "Section: Practical next step",
-      "Choose one repair that matches the most common gap, such as a required approver field in the schedule tool. Write the owner and the start date. Define the measure that will show whether it worked, using the same categories. Keep the working list separate from the official record.",
-      "Test the repair on the next schedule cycle before applying it to every team. Record the test group and the result. If the repair adds a step without improving the approval, simplify it. A small test is enough to show whether the field is being used."
+      "Choose one correction for the biggest gap, such as an approver slot in the scheduling tool. Name the owner and the start date. Define the measure that will show a change, with the same categories. Keep the trial list away from the official schedule.",
+      "Test the fix on the next schedule cycle before every team. Record the trial group and the result. If the extra step does not improve approval, simplify it. A small trial shows whether the field is filled."
     ],
     "takeaways": [
       "Count a change as approved only when a named person and a date are recorded.",
@@ -159,8 +159,8 @@ export const nov22ResearchBatch = [
       "The measure cannot show whether the cash was correct or whether the count was honest. It shows only whether a counted total is recorded. A complete handover can still hide a theft, and a missing one can still be a correct deposit. Keep the evidence result separate from the cash outcome.",
       "The sample is local to one shop and one period. A different shift pattern can produce a different share. Report the definitions and counts so the review can be repeated. Do not present the result as a benchmark.",
       "Section: Practical next step",
-      "Choose one repair that matches the most common gap, such as a required count field on the handover form. Write the owner and the start date. Define the measure that will show whether it worked, using the same categories. Keep the working list separate from the official record.",
-      "Test the repair on the next week of closes before applying it to every drawer. Record the test group and the result. If the repair adds a step without improving the record, simplify it. A small test is enough to show whether the field is being used."
+      "Select one fix for the most common gap, such as a count box on the handover sheet. Name the person and the first day. Write the measure that will show an improvement, using the same buckets. The working sheet stays apart from the official cash record.",
+      "Try the fix on the next week of closes before every drawer. Note the trial shifts and the result. If the work grows without a better count, remove a step. A short trial shows whether the box is used."
     ],
     "takeaways": [
       "Count a handover as complete only when the closing total is counted and recorded.",
