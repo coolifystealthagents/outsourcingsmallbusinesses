@@ -4,6 +4,8 @@ import './globals.css';
 import "./field-design.css";
 import type { Metadata } from 'next';
 
+import "./site-chrome-fixes.css";
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://outsourcingsmallbusinesses.com'),
   title: {
